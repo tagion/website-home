@@ -76,7 +76,7 @@ let config = {
   }
 };
 
-if (!process.env.STAGE) {
+if (!process.env.STAGE && process.env.NODE_ENV !== "development") {
   config.plugins.push;
   config.plugins.push([
     "@vuepress/google-analytics",
@@ -101,7 +101,5 @@ if (!process.env.STAGE) {
     }
   ]);
 }
-
-console.log(config);
 
 module.exports = config;

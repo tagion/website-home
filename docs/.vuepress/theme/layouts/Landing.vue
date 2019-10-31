@@ -16,7 +16,7 @@
                   scroll-reveal-opacity
                   data-reveal-delay="200"
                 >
-                  <span class="hero__quote-muted">&nbsp;Creating</span>
+                  <span class="hero__quote-muted">&nbsp;Creating A</span>
                   <br />
                   <span class="hero__quote-accent">&nbsp;Sustainable</span>
                   <br />

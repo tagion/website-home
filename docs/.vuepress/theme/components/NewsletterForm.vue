@@ -6,6 +6,9 @@
       @submit.native.prevent="onSubmit"
       @keydown.native.enter="onSubmit"
       v-on:submit.prevent="onSubmit"
+      ref="newsletter-form"
+      :action="formAction" :method="formAction ? 'post' : ''"
+      :target="formAction ? '_blank' : ''"
       class="t-form"
     >
       <!-- <b-form-text text-variant="muted" class="pb-1">Don't miss important updates:</b-form-text> -->
@@ -15,7 +18,7 @@
           type="email"
           :value="email"
           :disabled="inputDisabled"
-          name="email"
+          name="EMAIL" id="mce-EMAIL"
           placeholder="Your Email"
           aria-label="Your Email"
           :state="validation"
@@ -54,7 +57,8 @@ export default {
       email: "",
       emailProgress: false,
       emailSent: false,
-      emailError: ""
+      emailError: "",
+      formAction: undefined
     };
   },
   computed: {
@@ -73,31 +77,32 @@ export default {
     onInput(value) {
       this.email = value;
       if (!value) {
+        this.setFormAction(true);
         this.emailError = "";
       } else if (!this.validateEmail(value)) {
+        this.setFormAction(true);
         this.emailError = "Please, enter valid email address.";
       } else {
+        this.setFormAction()
         this.emailError = "";
       }
     },
-    async onSubmit() {
+    async onSubmit(event) {
       if (this.validation) {
-        try {
-          this.emailProgress = true;
-          await this.$http.post("http://localhost:4501/action/subscribe", {
-            email: this.email
-          });
-
-          this.emailSent = true;
-          this.emailError = "";
-          this.emailProgress = false;
-        } catch (e) {
-          this.emailProgress = false;
-          this.emailError = e.message;
+        this.setFormAction();
+        let submitForm = this.$refs['newsletter-form']
+        if (submitForm) {
+          submitForm.submit();
         }
       } else {
+        event.preventDefault();
+        this.setFormAction(true);
         this.emailError = "Please, enter valid email address.";
       }
+    },
+    setFormAction(reset) {
+      if (reset) this.formAction = '';
+      else this.formAction = 'https://tagion.us5.list-manage.com/subscribe/post?u=374351fbb938dd675075d28ae&amp;id=f736a9c5ae'
     }
   }
 };

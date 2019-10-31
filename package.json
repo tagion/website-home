@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Tagion.org website",
   "scripts": {
-    "dev": "vuepress dev docs",
+    "dev": "NODE_ENV=development vuepress dev docs",
     "build": "vuepress build docs",
     "build:stage": "STAGE=1 vuepress build docs"
   },

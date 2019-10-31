@@ -52,8 +52,8 @@
         <b-col class="col-newsletter mt-8 mt-xl-0 outbound-negative-space-fix" cols=12 xl=4>
           <h6 class="mb-3">Join Us</h6>
           <social-buttons class="mb-3 mt-3" dark />
-          <!-- <p class="mb-1"><small>Get all important updates on your email:</small></p> -->
-          <!-- <newsletter-form class="footer-newsletter" /> -->
+          <p class="mb-1"><small>Get all important updates on your email:</small></p>
+          <newsletter-form class="footer-newsletter" />
         </b-col>
       </b-row>
 
