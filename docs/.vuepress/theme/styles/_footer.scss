@@ -1,0 +1,71 @@
+.layout-footer {
+  background: #f8f9fa;
+  border-top: 1px solid rgb(228, 231, 235);
+  color: mix($dark, #fff, 60%);
+  padding-top: 4em;
+  padding-bottom: 6em;
+  box-sizing: border-box;
+  font-size: 0.95em;
+  
+
+  a {
+    color: mix($dark, #fff, 80%);
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+      color: $secondary;
+    }
+  }
+
+  p {
+    color: mix($dark, #fff, 60%);
+  }
+
+  h6 {
+    font-weight: bold;
+    color: mix($dark, #fff, 70%);
+    font-size: 0.8em;
+  }
+
+  h6 {
+    letter-spacing: 1px;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    color: $secondary;
+  }
+
+  .nav {
+    li {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  .mt-10 {
+    margin-top: 6em !important;
+  }
+}
+
+
+
+.has-sidebar {
+  .row {
+    justify-content: space-between;
+  }
+
+  .layout-footer {
+    @include media-breakpoint-up(lg) {
+      .container {
+        .row {
+          margin-right: 2em;
+        }
+      }
+    }
+
+    .col-newsletter {
+      max-width: 100%;
+      flex-basis: 100%;
+      margin-top: 3.5em !important;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+@mixin link-active() {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 4px;
+  left: -14px;
+  width: 3px;
+  background: $secondary;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.layout-sidebar {
+  border-left: 1px solid rgb(228, 231, 235);
+  background: #f8f9fa;
+
+  @include media-breakpoint-down(md) {
+    border-left: none;
+  }
+}
+
+.sidebar {
+  padding-top: 3.4em;
+  padding-bottom: 5.4em;
+  padding-left: 2.3em;
+  padding-right: 1em;
+  color: mix($dark, #fff, 80%);
+
+  .nav {
+    flex-direction: column;
+    padding-bottom: 1.6rem;
+    margin-bottom: 2rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #eee;
+    }
+
+    li {
+      display: block;
+
+      a {
+        color: $dark;
+        padding: 0.3rem 0;
+        position: relative;
+
+        &.nav-link--button {
+          margin-left: -1.2rem !important;
+          border: 0;
+          padding: 0.2rem 1.2rem 0.4rem;
+          margin-top: 1rem;
+          background: #{$primary}11;
+
+          &:hover {
+            background: #{$primary}22;
+          }
+        }
+
+        &::before {
+          @include link-active();
+        }
+
+        &.router-link-active {
+          color: $secondary;
+
+          &::before {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  .collapsable {
+    .sidebar-heading {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+
+      .arrow {
+        position: absolute;
+        right: -20px;
+        top: 10px;
+        border: solid mix($dark, #fff, 30%);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        transition: transform 100ms ease, top 100ms ease;
+      }
+
+      &.open {
+        .arrow {
+          top: 7px;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .sidebar-heading {
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    user-select: none;
+  }
+
+  .sidebar-links {
+    ul {
+      padding-left: 10px;
+    }
+
+    li .sidebar-group {
+      margin-top: 1.6rem;
+    }
+
+    li:first-child .sidebar-group {
+      margin-top: 0;
+    }
+
+    li a + ul {
+      padding-left: 1rem;
+    }
+
+    li {
+      padding-top: 0.5rem;
+      list-style: none;
+      margin: 0;
+      line-height: 1.4;
+
+      a {
+        color: $dark;
+        position: relative;
+        opacity: 0.8;
+
+        &::before {
+          @include link-active();
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &.active {
+          &::before {
+            opacity: 1;
+            background: $secondary-lighter;
+          }
+          opacity: 1;
+          color: $secondary;
+        }
+
+
+      }
+
+      a + ul {
+        display: none;
+      }
+
+      a.active + ul {
+        display: block;
+      }
+    }
+  }
+}

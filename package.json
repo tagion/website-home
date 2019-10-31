@@ -1,0 +1,36 @@
+{
+  "name": "tagion-dot-org-website",
+  "version": "0.0.1",
+  "description": "Tagion.org website",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "docs:build": "vuepress build docs"
+  },
+  "author": "Vlad Pazych <vp@tagion.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-canonical": "^1.0.0",
+    "vuepress-plugin-sitemap": "https://github.com/ekoeryanto/vuepress-plugin-sitemap#master"
+  },
+  "dependencies": {
+    "@vuepress/plugin-active-header-links": "^1.0.2",
+    "@vuepress/plugin-blog": "^1.2.4",
+    "@vuepress/plugin-last-updated": "^1.0.2",
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.26",
+    "focus-visible": "^5.0.2",
+    "lodash.throttle": "^4.1.1",
+    "moment": "^2.24.0",
+    "remove-markdown": "^0.3.0",
+    "vue": "^2.6.10",
+    "vue-axios": "^2.1.4",
+    "vue-scrollto": "^2.15.0",
+    "vue-typed-js": "^0.1.2"
+  }
+}

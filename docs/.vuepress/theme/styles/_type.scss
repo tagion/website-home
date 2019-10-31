@@ -1,0 +1,306 @@
+@mixin headline-margin($var) {
+  margin-top: calc(-1 * (#{$header-height} - #{$var}));
+}
+
+body {
+  font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+.typography {
+  margin: auto;
+}
+
+.has-sidebar {
+  .typography {
+    margin: 0;
+  }
+}
+
+.typography {
+  font-size: 1em;
+  line-height: 1.8;
+  max-width: 800px;
+  color: mix($dark, #fff, 90%);
+
+  &--full {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    padding-top: calc(#{$header-height} + 0.6em);
+    margin-top: calc(-1 * #{$header-height} + 0.7em);
+    margin-bottom: 0.2em;
+    font-weight: bold;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: calc(-1 * #{$header-height} + 0.4em);
+      margin-bottom: 0.2em;
+    }
+
+    &:hover .header-anchor {
+      opacity: 0.3;
+    }
+  }
+
+  h1:first-child {
+    @include headline-margin(-0.5em);
+
+    .header-anchor {
+      display: none;
+    }
+
+    @include media-breakpoint-down(lg) {
+      @include headline-margin(-0.4em);
+    }
+  }
+
+  h1 {
+    font-size: 2.8em;
+    z-index: 5;
+    font-weight: 600;
+    color: $dark;
+    margin-bottom: 1.6em;
+    position: static;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 1.4em;
+    }
+
+    &::before {
+      content: "";
+      background: #f8f9fa;
+      border-bottom: 1px solid rgb(228, 231, 235);
+      position: absolute;
+      top: 0;
+      height: 14rem;
+      left: 0;
+      right: 0;
+      z-index: -1;
+
+      @include media-breakpoint-down(lg) {
+        height: 13rem;
+      }
+
+      @include media-breakpoint-down(md) {
+        height: 10.5rem;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 2.3em;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 2.2em;
+    }
+
+    + h2 {
+      margin-top: -4.8rem;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: -3.8rem;
+      }
+    }
+  }
+  h2 {
+    font-size: 2em;
+    z-index: 4;
+    font-weight: 500;
+    padding-right: 0.2em;
+    color: $primary;
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    margin-top: calc(-1 * #{$header-height} + 0.5em);
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -0.6rem;
+      width: 40%;
+      height: 4px;
+      border-radius: 100px;
+      background: $primary;
+      opacity: 0.5;
+      left: -0.3rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 1.8em;
+    }
+
+    + p {
+      margin-top: 1.2rem;
+    }
+  }
+  h3 {
+    font-size: 1.6em;
+    z-index: 3;
+    // opacity: 0.9;
+    color: $secondary-darkest;
+    font-weight: 500;
+    @include media-breakpoint-down(lg) {
+      font-size: 1.3em;
+    }
+  }
+  h4 {
+    font-size: 1.1em;
+    z-index: 2;
+    color: $primary;
+    font-weight: 500;
+    @include media-breakpoint-down(lg) {
+      font-size: 1.1em;
+    }
+  }
+  h5 {
+    font-size: 1.1em;
+    z-index: 1;
+    font-weight: 600;
+    color: $primary;
+    @include media-breakpoint-down(lg) {
+      font-size: 1em;
+    }
+  }
+  h6 {
+    font-size: 1em;
+    z-index: 0;
+    font-weight: 600;
+    color: $primary;
+    @include media-breakpoint-down(lg) {
+      font-size: 0.9em;
+    }
+  }
+
+  p {
+    margin-bottom: 0.85em;
+    position: relative;
+    z-index: 6;
+    font-size: 1em;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 1em;
+    }
+  }
+
+  ul {
+    margin: 1.6em 0em 2.2em;
+    position: relative;
+    z-index: 6;
+
+    li {
+      margin-bottom: 0.5em;
+      line-height: 1.5;
+
+      ul {
+        margin: 0.6em 0em 1.2em;
+      }
+    }
+  }
+
+  a {
+    color: $dark;
+    background: mix(#fff, $secondary, 93%);
+    border-bottom: 1px solid mix(#fff, $secondary, 60%);
+    transition: all 100ms linear;
+
+    &:hover {
+      background: mix(#fff, $secondary, 80%);
+      border-bottom: 1px solid mix(#fff, $secondary, 40%);
+    }
+  }
+
+  p code {
+    color: $dark;
+    background: #f8f8f8;
+    padding: 0.2em 0.3em;
+  }
+
+  pre {
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 6px;
+  }
+
+  .header-anchor {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    font-weight: normal;
+    width: 2rem;
+    left: -0.9em;
+    top: calc(#{$header-height} + 0.62em);
+    background: transparent;
+    width: 1em;
+    z-index: 2;
+    border-color: transparent;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    &:hover {
+      background: transparent;
+      border-color: transparent;
+      opacity: 1 !important;
+      text-decoration: none;
+    }
+
+    &::before {
+      content: "#";
+    }
+  }
+
+  .forkbox {
+    margin-top: 5em;
+  }
+
+  blockquote {
+    background: $secondary-lightest;
+    padding: 1.8rem 2rem 0.8rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-left: 5px solid $secondary;
+    border-radius: 6px;
+  }
+}
+
+.wiki-image-figure {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.wiki-image-small {
+  width: 18%;
+  margin: 0 2em 1em 0;
+  border-radius: 600px;
+  border: 2px solid #{$primary-lightest}55;
+}
+
+.wiki-image-float-left {
+  float: left;
+  margin: 0 2em 1em 0;
+}
+.wiki-image-float-right {
+  float: right;
+  margin: 0 0 1em 2em;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

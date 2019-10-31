@@ -1,0 +1,30 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="59" y="0" width="266" height="290">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M88.8197 76.3527C84.7798 100.414 92.306 123.744 107.348 140.659C97.0365 148.074 89.534 159.402 87.2648 172.918C82.7003 200.103 101.038 225.842 128.224 230.406C132.691 231.156 137.119 231.288 141.42 230.864C142.305 250.745 156.946 267.998 177.364 271.427C198.985 275.057 219.546 261.918 225.751 241.485C231.014 245.14 237.147 247.72 243.885 248.852C268.304 252.952 291.423 236.48 295.523 212.061C298.197 196.139 292.123 180.769 280.803 170.864C292.282 164.612 300.877 153.338 303.209 139.447C307.239 115.447 291.049 92.7241 267.049 88.6944C258.458 87.252 250.031 88.4002 242.566 91.57C243.795 53.431 216.665 19.3131 177.992 12.8198C135.824 5.73961 95.8999 34.1843 88.8197 76.3527Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<ellipse opacity="0.075" rx="179.459" ry="179.459" transform="matrix(-0.165584 0.986196 0.986196 0.165584 467.085 198.289)" fill="white"/>
+<ellipse opacity="0.075" rx="179.459" ry="180.253" transform="matrix(-0.165584 0.986196 0.986196 0.165584 387.208 184.877)" fill="white"/>
+<ellipse opacity="0.075" rx="179.459" ry="179.459" transform="matrix(-0.165584 0.986196 0.986196 0.165584 308.114 171.597)" fill="white"/>
+<ellipse opacity="0.075" rx="179.459" ry="179.459" transform="matrix(-0.165584 0.986196 0.986196 0.165584 229.021 158.317)" fill="white"/>
+<ellipse opacity="0.075" rx="180.253" ry="179.459" transform="matrix(-0.165584 0.986196 0.986196 0.165584 214.952 242.109)" fill="white"/>
+<ellipse opacity="0.075" rx="180.253" ry="179.459" transform="matrix(-0.165584 0.986196 0.986196 0.165584 201.015 325.119)" fill="white"/>
+<ellipse opacity="0.075" rx="179.856" ry="179.459" transform="matrix(-0.165584 0.986196 0.986196 0.165584 243.024 74.9166)" fill="white"/>
+<ellipse opacity="0.075" rx="179.856" ry="179.459" transform="matrix(-0.165584 0.986196 0.986196 0.165584 256.961 -8.09246)" fill="white"/>
+<circle opacity="0.075" cx="236.108" cy="217.614" r="267.733" transform="rotate(99.5312 236.108 217.614)" fill="white"/>
+<ellipse opacity="0.075" cx="236.108" cy="217.614" rx="236.235" ry="236.235" transform="rotate(99.5312 236.108 217.614)" fill="white"/>
+<ellipse opacity="0.075" cx="236.107" cy="217.614" rx="184.356" ry="184.356" transform="rotate(99.5312 236.107 217.614)" fill="white"/>
+<g opacity="0.3">
+<circle opacity="0.075" cx="287.369" cy="18.3691" r="267.733" transform="rotate(99.5312 287.369 18.3691)" fill="white"/>
+<ellipse opacity="0.075" cx="287.369" cy="18.3691" rx="236.235" ry="236.235" transform="rotate(99.5312 287.369 18.3691)" fill="white"/>
+<ellipse opacity="0.075" cx="287.369" cy="18.3691" rx="184.356" ry="184.356" transform="rotate(99.5312 287.369 18.3691)" fill="white"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="600" height="400" fill="white"/>
+</clipPath>
+</defs>
+</svg>

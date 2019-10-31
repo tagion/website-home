@@ -1,0 +1,100 @@
+.search-box {
+  margin-top: 0.2rem;
+  margin-right: 1rem;
+  position: relative;
+  
+  @include media-breakpoint-down(lg) {
+    margin-right: 0;
+  }
+
+  input {
+    cursor: pointer;
+    width: 0;
+    border-color: transparent;
+    position: relative;
+    background: transparent url(../images/icon-search.svg) 0.5rem 0.4rem
+      no-repeat;
+      background-size: 1.2rem;
+    padding-left: 1.4rem;
+    border: none;
+    border-radius: 100px;
+    color: mix($dark, #fff, 70%);
+    transition: all 100ms linear, width 200ms linear;
+    padding-top: 0.2rem;
+    padding-bottom: 0.1rem;
+    height: auto;
+
+    &:hover {
+      background-color: #ffffff22;
+    }
+
+    &:focus {
+      background-color: #ffffff44;
+      color: #ffffff88;
+      cursor: text;
+      width: 10rem;
+      outline: none;
+      padding: 0.1rem 1.2rem 0.2rem 2.3rem;
+    }
+  }
+
+  .suggestions {
+    font-size: 0.9em;
+    background: #fff;
+    width: 20rem;
+    position: absolute;
+    top: 2.5rem;
+    right: -4rem;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem;
+    list-style-type: none;
+    max-width: 80vw;
+    z-index: 3;
+    border: 1px solid #eee;
+
+    @include media-breakpoint-down(md) {
+      right: 0rem;
+    }
+
+    &.align-right {
+      right: 0;
+    }
+
+    .suggestion {
+      line-height: 1.4;
+      padding: 0.4rem 0.6rem;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: transparent;
+      transition: all 100ms linear;
+
+      a {
+        white-space: normal;
+        color: $dark;
+
+        .page-title {
+          font-weight: 600;
+          background-color: transparent;
+        }
+
+        span {
+          background-color: transparent;
+        }
+
+        .header {
+          margin-left: 0.25em;
+          display: inline;
+        }
+      }
+
+      &.focused {
+        background-color: mix($primary, #fff, 5%);
+
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

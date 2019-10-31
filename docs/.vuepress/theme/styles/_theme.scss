@@ -1,0 +1,143 @@
+@import "./header";
+@import "./footer";
+@import "./sidebar-button";
+@import "./search-box";
+@import "./sidebar";
+@import "./type";
+@import "./blog";
+@import "./pagination";
+@import "./forms";
+@import "./social-buttons";
+@import "./fix";
+
+.page {
+  padding-top: 1.4em;
+  padding-bottom: 6.8em;
+  box-sizing: border-box;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 3.4em;
+  }
+}
+
+.has-sidebar {
+  .page {
+    @include media-breakpoint-up(lg) {
+      padding-right: 1em;
+    }
+  }
+}
+
+a {
+  transition: color 100ms linear, opacity 100ms linear;
+}
+
+.forkbox {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(md) {
+    display: block;
+
+    .forkbox__secondary {
+      margin-top: 0.4rem;
+    }
+  }
+
+  .muted {
+    color: mix($dark, #fff, 60%);
+  }
+
+  a,
+  a:hover {
+    background: transparent;
+    border: none;
+    opacity: 0.6;
+  }
+
+  a:hover {
+    color: $primary;
+    opacity: 1;
+  }
+
+  .forkbox__secondary {
+    opacity: 0.8;
+  }
+
+  .forkbox__secondary-date {
+    opacity: 0.7;
+  }
+}
+
+.outbound-negative-space-fix {
+  .icon.outbound {
+    position: relative;
+    left: -3px;
+  }
+}
+
+.link-muted {
+  color: mix($dark, #fff, 60%);
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.t-cookies-alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 31;
+  transform: translateY(30px);
+  transition: transform 300ms ease-out, opacity 100ms linear;
+  opacity: 0;
+  pointer-events: none;
+  
+  &.t-cookies-alert--shown {
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.t-cookies-alert__block {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  position: relative;
+  background: $primary;
+  color: #fff;
+  padding: 1.4rem 2.4rem;
+  border-radius: 6px;
+  margin-bottom: -2rem;
+  padding-bottom: 4rem;
+
+  a {
+    color: #eee;
+
+    &:hover {
+      color: #ddd;
+    }
+  }
+
+  .t-cookies-alert__close {
+    top: 1.6rem;
+    right: 0.6rem;
+  }
+
+  .t-cookies-alert__text {
+    display: inline-block;
+  }
+}
+
+.email-field {
+  max-width: 400px;
+}
+
+.footer-newsletter {
+  margin-left: -0.2rem;
+}

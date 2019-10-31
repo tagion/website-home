@@ -1,0 +1,12 @@
+:not(input) {
+    :focus {
+      outline-color: rgba($color: $primary-lighter, $alpha: 0.5);
+      outline-style: dashed;
+      outline-width: 3px;
+      outline-offset: 3px;
+    }
+  
+    :focus:not(.focus-visible) {
+      outline: none;
+    }
+  }

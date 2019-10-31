@@ -1,0 +1,136 @@
+.t-form {
+  a {
+    text-decoration: underline;
+  }
+
+  input,
+  .form-control {
+    background-image: none !important;
+    background: #fff;
+    border: 1px solid mix($primary, white, 10%);
+    transition: all 100ms;
+
+    box-sizing: border-box;
+
+    &:focus {
+      background: #fff;
+      border-color: #eee;
+    }
+
+    &:disabled {
+      background: #f6f6f6;
+      border-color: #eee !important;
+      color: #bbb;
+    }
+  }
+
+  .btn {
+    box-sizing: border-box;
+    border: none !important;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    &:active,
+    &:hover:active,
+    &:focus:active {
+      border-color: rgba(0, 0, 0, 0) !important;
+    }
+  }
+
+  .input-group {
+    > :first-child {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-right: none;
+    }
+
+    button:last-child {
+      border-right: 1px solid #eee;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    .btn {
+      padding-top: inherit !important;
+      padding-bottom: inherit !important;
+    }
+
+    .input-group-append {
+      margin-left: 0;
+    }
+  }
+
+  .form-control.is-invalid,
+  .form-control.is-valid,
+  .was-validated .form-control:invalid,
+  .was-validated .form-control:valid {
+    background-image: none !important;
+    // box-shadow: none !important;
+    position: relative;
+    padding-right: 1rem;
+  }
+
+  .form-control.is-invalid,
+  .was-validated .form-control:invalid {
+    border-color: $danger;
+  }
+
+  .form-control.is-valid,
+  .was-validated .form-control:valid {
+    border-color: $success;
+  }
+
+  .btn,
+  input,
+  .form-control {
+    &:focus {
+      //   box-shadow: none;
+    }
+  }
+
+  .custom-checkbox {
+    .custom-control-label {
+      user-select: none;
+
+      &::before {
+        border: 1px solid #eee;
+      }
+
+      &::before,
+      &::after {
+        top: 0.38rem;
+      }
+    }
+
+    input:focus {
+      + .custom-control-label {
+        &::before {
+          border-color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+  }
+
+  .btn-muted {
+      background: $dark;
+      color: #eee;
+      
+      &:hover {
+        background: mix($dark, #fff, 80%);
+      }
+  }
+
+  .spinner-border {
+    position: relative;
+  }
+}
+
+input {
+  /* Remove First */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

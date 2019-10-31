@@ -1,0 +1,66 @@
+.social-buttons {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    :not(:last-child) {
+      margin-right: 0.6rem;
+    }
+
+    a {
+      width: 1.8rem;
+      height: 1.8rem;
+      color: $primary;
+      background: #fff;
+      display: inline-block;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 150ms ease;
+      opacity: 0.6;
+
+      svg {
+        width: 50%;
+        height: 50%;
+      }
+
+      &:hover {
+        opacity: 1;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .social-buttons__divider {
+    width: 2px;
+    height: 1rem;
+    background: #fff;
+    position: relative;
+    opacity: 0.4;
+    top: 6px;
+    border-radius: 2px;
+    left: -4px;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+
+  &--dark {
+    li a {
+      background: $secondary;
+      opacity: 1;
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .social-buttons__divider {
+      background: $primary-lightest;
+    }
+  }
+}
