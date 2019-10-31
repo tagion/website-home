@@ -1,15 +1,10 @@
 const path = require("path");
 const moment = require("moment");
 const removeMd = require("remove-markdown");
+const fs = require("fs");
 
-module.exports = {
+let config = {
   plugins: [
-    [
-      "@vuepress/google-analytics",
-      {
-        ga: "UA-124576760-1"
-      }
-    ],
     [
       "@vuepress/blog",
       {
@@ -33,21 +28,7 @@ module.exports = {
         stripExtension: true
       }
     ],
-    [
-      "sitemap",
-      {
-        hostname: "https://tagion.org",
-        exclude: [
-          "/meta/cookie-policy.html",
-          "/meta/privacy-policy.html",
-          "/meta/terms-of-use.html",
-          "/meta/subscribed.html",
-          "/meta/unsubscribed.html",
-          "/meta/500.html",
-          "/404.html"
-        ]
-      }
-    ],
+
     [
       "@vuepress/active-header-links",
       {
@@ -94,3 +75,33 @@ module.exports = {
     }
   }
 };
+
+if (!process.env.STAGE) {
+  config.plugins.push;
+  config.plugins.push([
+    "@vuepress/google-analytics",
+    {
+      ga: "UA-124576760-1"
+    }
+  ]);
+
+  config.plugins.push([
+    "sitemap",
+    {
+      hostname: "https://tagion.org",
+      exclude: [
+        "/meta/cookie-policy.html",
+        "/meta/privacy-policy.html",
+        "/meta/terms-of-use.html",
+        "/meta/subscribed.html",
+        "/meta/unsubscribed.html",
+        "/meta/500.html",
+        "/404.html"
+      ]
+    }
+  ]);
+}
+
+console.log(config);
+
+module.exports = config;

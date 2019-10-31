@@ -2,18 +2,18 @@
 
 IS_STAGE="stage"
 
-if [ $1 == $IS_STAGE ];
-then
-echo 'Deploying to stage.tagion.org...'
-else
-echo 'Deploying to tagion.org...'
-fi
-
 # abort on errors
 set -e
 
 # build
-npm run docs:build
+if [ $1 == $IS_STAGE ];
+then
+echo 'Deploying to stage.tagion.org...'
+npm run build:stage
+else
+echo 'Deploying to tagion.org...'
+npm run build
+fi
 
 # navigate into the build output directory
 cd docs/.vuepress/dist
@@ -22,6 +22,9 @@ cd docs/.vuepress/dist
 if [ $1 == $IS_STAGE ];
 then
 echo 'stage.tagion.org' > CNAME
+
+echo 'User-agent: *' > robots.txt
+echo 'Disallow: *' >> robots.txt
 else
 echo 'tagion.org' > CNAME
 fi

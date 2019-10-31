@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "docs:build": "vuepress build docs"
+    "build:stage": "STAGE=1 vuepress build docs"
   },
   "author": "Vlad Pazych <vp@tagion.org>",
   "license": "MIT",
