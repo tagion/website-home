@@ -93,8 +93,6 @@ if (!process.env.STAGE && process.env.NODE_ENV !== "development") {
         "/meta/cookie-policy.html",
         "/meta/privacy-policy.html",
         "/meta/terms-of-use.html",
-        "/meta/subscribed.html",
-        "/meta/unsubscribed.html",
         "/meta/500.html",
         "/404.html"
       ]
