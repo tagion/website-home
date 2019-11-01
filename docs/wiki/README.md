@@ -6,7 +6,7 @@ sidebarDepth: 0
 editLink: true
 ---
 
-# 👋 Welcome to Tagion Wiki!
+# Welcome to Tagion Wiki!
 
 Tagion is an **open protocol**, that enables a **digital peer-to-peer cash**, and an infrastructure of **open banking services**.
 

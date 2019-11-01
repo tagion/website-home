@@ -15,16 +15,11 @@
               <slot />
             </main>
           </div>
-          
         </b-container>
       </slot>
       <div class="layout-sidebar">
-            <Sidebar
-              class="layout-sidebar__inner"
-              :items="sidebarItems"
-              @close-sidebar="closeSidebar"
-            />
-          </div>
+        <Sidebar class="layout-sidebar__inner" :items="sidebarItems" @close-sidebar="closeSidebar" />
+      </div>
     </div>
     <div class="layout-footer">
       <Footer :class="{ 'home': isLanding }" />

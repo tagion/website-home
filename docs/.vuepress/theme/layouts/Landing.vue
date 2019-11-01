@@ -199,14 +199,14 @@
                     to="/wiki/development/roadmap.html"
                     reveal
                     scroll-reveal-child
-                    scroll-reveal-right
+                    scroll-reveal-up
                     scroll-reveal-opacity
-                    data-reveal-delay="500"
+                    data-reveal-delay="400"
                   >Detailed Roadmap</brand-button>
                 </div>
               </b-col>
               <b-col cols="12" lg="7">
-                <div scroll-reveal scroll-reveal-left scroll-reveal-opacity data-reveal-delay="900">
+                <div scroll-reveal scroll-reveal-up scroll-reveal-opacity data-reveal-delay="700">
                   <roadmap class="lcontainer--roadmap__roadmap" />
                 </div>
               </b-col>

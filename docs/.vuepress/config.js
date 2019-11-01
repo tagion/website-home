@@ -1,13 +1,13 @@
+const webpack = require("webpack");
+
 module.exports = {
   title: "Tagion",
-  description: "Tagion resources",
+  description:
+    "Tagion is an open banking protocol, that enables digital peer-to-peer cryptocurrency and a decentralized exchange, governed by its users. By design, Tagion network has no central authority and belongs to all its users. It will be open-sourced and open for everyone to join once the software is ready.",
   base: "/",
   themeConfig: {
     activeHeaderLinks: true,
-    nav: [
-      { text: "Wiki", link: "/wiki/" },
-      // { text: "Blog", link: "/blog/" }
-    ],
+    nav: [{ text: "Wiki", link: "/wiki/" }],
     sidebar: {
       "/wiki/": [
         ["/wiki/", "Welcome"],
@@ -18,15 +18,13 @@ module.exports = {
             ["/wiki/synopsis/dex", "Decentralized Exchange"],
             ["/wiki/synopsis/node-governance", "Node Governance"],
             ["/wiki/synopsis/consensus", "Hashgraph Consensus"],
-            ["/wiki/synopsis/data-storage", "Data Storage"],
+            ["/wiki/synopsis/data-storage", "Data Storage"]
           ]
         },
         {
           title: "Community",
           collapsable: false,
-          children: [
-            ["/wiki/community/", "Social Media"],
-          ]
+          children: [["/wiki/community/", "Social Media"]]
         },
         {
           title: "Development",
@@ -50,10 +48,10 @@ module.exports = {
         ["/community/general", "General Groups"]
       ]
     },
-    repo: "vladpazych/sandboxtagpage",
+    repo: "tagion/homepage",
     editLinks: "tree",
     docsBranch: "source/docs",
-    docsRepo: "vladpazych/sandboxtagpage"
+    docsRepo: "tagion/homepage"
   },
   head: [
     [
@@ -65,8 +63,8 @@ module.exports = {
       }
     ],
     ["link", { rel: "icon", type: "image/png", href: "/favicon.ico" }],
-    ["meta", { name: "twitter:site", content: "@Tagion" }],
-    ["meta", { name: "twitter:creator", content: "@Tagion" }],
+    ["meta", { name: "twitter:site", content: "@TagionTeam" }],
+    ["meta", { name: "twitter:creator", content: "@TagionTeam" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:title", content: "Tagion" }],
     ["meta", { property: "og:site_name", content: "tagion.org" }],
@@ -75,7 +73,7 @@ module.exports = {
       {
         property: "og:description",
         content:
-          "Tagion is a digital peer-to-peer cash, governed by people, not corporations. To reach consensus, Tagion uses Hashgraph algorithm instead of Blockchain, which makes it fast and scalable."
+          "Tagion is an open banking protocol, that enables digital peer-to-peer cryptocurrency and a decentralized exchange, governed by its users. By design, Tagion network has no central authority and belongs to all its users. It will be open-sourced and open for everyone to join once the software is ready."
       }
     ],
     ["meta", { property: "og:url", content: "https://tagion.org" }],
@@ -83,7 +81,7 @@ module.exports = {
       "meta",
       {
         property: "og:image",
-        content: "https://tagion.org/logo-dark.png"
+        content: "https://tagion.org/bgphoto1.jpg"
       }
     ]
   ],
@@ -93,5 +91,6 @@ module.exports = {
   },
   configureWebpack: (config, isServer) => {
     config.output.globalObject = "this";
+    config.plugins.push(new webpack.EnvironmentPlugin(["NODE_ENV", "STAGE"]));
   }
 };
