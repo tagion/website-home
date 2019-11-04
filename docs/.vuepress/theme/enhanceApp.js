@@ -9,18 +9,18 @@ import {
 import * as VueScrollTo from "vue-scrollto";
 import axios from "axios";
 import VueAxios from "vue-axios";
-import VueFacebookPixel from "vue-analytics-fb";
+import { AnalyticsPlugin } from "./plugins/analytics";
 import "focus-visible";
 
 export default ({ Vue, options, router, siteData }) => {
-  // process.env.STAGE === undefined && 
-  if (process.env.NODE_ENV !== "development") {
-    Vue.use(VueFacebookPixel);
+  // !process.env.STAGE &&
+  // if ( process.env.NODE_ENV !== "development") {
+  //   console.log('init?')
+  //   if (window && window.fbq) {
+  //     console.log('init')
 
-    Vue.analytics.fbq.init("1707211522748212", {
-      em: "info@tagion.org"
-    });
-  }
+  //   }
+  // }
 
   Vue.use(VueScrollTo, {
     easing: "ease-in-out"
@@ -29,6 +29,7 @@ export default ({ Vue, options, router, siteData }) => {
   Vue.use(FormPlugin);
   Vue.use(FormInputPlugin);
   Vue.use(VueAxios, axios);
+  Vue.use(AnalyticsPlugin);
   Vue.component("b-nav", BNav);
   Vue.component("b-button", BButton);
   Vue.component("b-input-group", BInputGroup);

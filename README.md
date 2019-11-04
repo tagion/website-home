@@ -12,7 +12,7 @@ If you’re interested in helping to improve [tagion.org](https://tagion.org), s
 - Collection of explanatory articles
 - Collection of useful resources for our community
 
-Since we all are interested in growth of our community, the landing page of tagion.org is made in promotional style, pointing out the main features of Tagion. The goal of the landing page is to convert visitors to the new members of community: investors, developers, experts or any other interested parties.
+Since we all are interested in growth of our community, the landing page of tagion.org is made in promotional style, pointing out the main features of Tagion. The goal of the landing page is to convert visitors to the new members of community: developers, experts or any other interested parties.
 
 ## How can I contribute?
 

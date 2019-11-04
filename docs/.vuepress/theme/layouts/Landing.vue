@@ -238,7 +238,7 @@
               >
                 <div class="feature-card__internal">
                   <h4>Hashgraph</h4>
-                  <p>Tagion uses hashgraph for consensus, which in the Tagion implementation, makes it possible to process more than 20.000 transactions per second69 per Shard. Tagion is architected to be able to scale to hundreds of Shards that operate equally fast in parallel.</p>
+                  <p>Tagion uses hashgraph for consensus, which in the Tagion implementation, makes it possible to process more than 20.000 transactions per second per Shard. Tagion is architected to be able to scale to hundreds of Shards that operate equally fast in parallel.</p>
                   <!-- <p class="feature-card__read-more">Read more</p> -->
                 </div>
               </a>
@@ -681,7 +681,7 @@
                             <h5>
                               Shane McQuillan
                               <br />
-                              <span class="team-table__card-position">Funding Advisor</span>
+                              <span class="team-table__card-position">Project Manager</span>
                             </h5>
                             <p class="team-table__card-read-more">Read more</p>
                           </div>
@@ -708,7 +708,7 @@
                             <h5>
                               Sam Kawtharani
                               <br />
-                              <span class="team-table__card-position">Funding Advisor</span>
+                              <span class="team-table__card-position">Project Manager</span>
                             </h5>
                             <p class="team-table__card-read-more">Read more</p>
                           </div>

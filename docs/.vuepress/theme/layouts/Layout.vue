@@ -32,18 +32,11 @@ export default {
         return;
       }
 
-      const {
-        editLinks,
-        docsDir = "",
-        docsBranch = "master",
-        docsRepo = repo
-      } = this.$site.themeConfig;
+      const docsRepo = this.$site.themeConfig.docsRepo;
 
-      if (docsRepo && editLinks && this.$page.relativePath) {
+      if (docsRepo && this.$page.relativePath) {
         return this.createEditLink(
           docsRepo,
-          docsDir,
-          docsBranch,
           this.$page.relativePath
         );
       }
@@ -51,15 +44,9 @@ export default {
   },
 
   methods: {
-    createEditLink(docsRepo, docsDir, docsBranch, path) {
-      const base = `https://github.com/${docsRepo}`;
-      return (
-        base.replace(this.endingSlashRE, "") +
-        `/tree` +
-        `/${docsBranch}/` +
-        (docsDir ? docsDir.replace(endingSlashRE, "") + "/" : "") +
-        path
-      );
+    createEditLink(docsRepo, path) {
+      const base = `https://github.com/${docsRepo}/`;
+      return base.replace(this.endingSlashRE, "") + path;
     }
   }
 };

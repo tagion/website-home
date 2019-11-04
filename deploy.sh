@@ -9,7 +9,7 @@ set -e
 if [ $1 == $IS_STAGE ];
 then
 echo 'Deploying to stage.tagion.org...'
-npm run build:stage
+npm run build:staging
 else
 echo 'Deploying to tagion.org...'
 npm run build

@@ -55,8 +55,6 @@ His desire to seek new adventures brought him to audio world leader Jabra servin
 
 In the early days of the Tagion journey, he simultaneously worked as GDPR consultant and Enterprise Architect at the largest power producer in Denmark, Ørsted.
 
-His commitment to the project is best reflected in the sacrifices he has brought to the project by working two jobs to fund not only himself but also four further full- time Tagion team members.
-
 [LinkedIn](https://www.linkedin.com/in/kristian-vestergaard-a59b4a/)
 
 <div class="clearfix"></div>

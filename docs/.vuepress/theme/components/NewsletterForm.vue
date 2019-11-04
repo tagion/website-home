@@ -7,7 +7,8 @@
       @keydown.native.enter="onSubmit"
       v-on:submit.prevent="onSubmit"
       ref="newsletter-form"
-      :action="formAction" :method="formAction ? 'post' : ''"
+      :action="formAction"
+      :method="formAction ? 'post' : ''"
       :target="formAction ? '_blank' : ''"
       class="t-form"
     >
@@ -18,7 +19,8 @@
           type="email"
           :value="email"
           :disabled="inputDisabled"
-          name="EMAIL" id="mce-EMAIL"
+          name="EMAIL"
+          id="mce-EMAIL"
           placeholder="Your Email"
           aria-label="Your Email"
           :state="validation"
@@ -83,16 +85,25 @@ export default {
         this.setFormAction(true);
         this.emailError = "Please, enter valid email address.";
       } else {
-        this.setFormAction()
+        this.setFormAction();
         this.emailError = "";
       }
     },
     async onSubmit(event) {
       if (this.validation) {
         this.setFormAction();
-        let submitForm = this.$refs['newsletter-form']
+        let submitForm = this.$refs["newsletter-form"];
         if (submitForm) {
-          submitForm.submit();
+          console.log('logging sub?')
+          if (window && window.fbq) {
+            console.log('logging sub')
+            console.log(window.ga, window)
+            window.fbq("trackCustom", "SubNewsletter", {
+              placement: "Footer",
+              email: this.email
+            });
+          }
+          // submitForm.submit();
         }
       } else {
         event.preventDefault();
@@ -101,8 +112,10 @@ export default {
       }
     },
     setFormAction(reset) {
-      if (reset) this.formAction = '';
-      else this.formAction = 'https://tagion.us5.list-manage.com/subscribe/post?u=374351fbb938dd675075d28ae&amp;id=f736a9c5ae'
+      if (reset) this.formAction = "";
+      else
+        this.formAction =
+          "https://tagion.us5.list-manage.com/subscribe/post?u=374351fbb938dd675075d28ae&amp;id=f736a9c5ae";
     }
   }
 };

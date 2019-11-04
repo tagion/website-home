@@ -40,7 +40,6 @@ You can find all official and non-official social media channels in [community s
 Have some questions? Feel free to contact the core team using following emails:
 
 - General - [info@tagion.org](mailto:info@tagion.org).
-- Funding - [finance@tagion.org](mailto:finance@tagion.org).
 - Support - [support@tagion.org](mailto:support@tagion.org).
 
 Members of Tagion's team are also present on [Telegram Channel](https://t.me/tagion) and [Tagion's Subreddit](https://www.reddit.com/r/Tagion/).

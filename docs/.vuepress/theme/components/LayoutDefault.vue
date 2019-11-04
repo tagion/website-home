@@ -52,6 +52,8 @@ export default {
     CookiesNotification
   },
   mounted() {
+    this.$analytics.init('hello');
+    
     const hash = this.$route.hash;
     if (hash) {
       this.$scrollTo(hash);

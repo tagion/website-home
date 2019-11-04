@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 
-module.exports = {
+let config = {
   title: "Tagion",
   description:
     "Tagion is an open banking protocol, that enables digital peer-to-peer cryptocurrency and a decentralized exchange, governed by its users. By design, Tagion network has no central authority and belongs to all its users. It will be open-sourced and open for everyone to join once the software is ready.",
@@ -48,10 +48,7 @@ module.exports = {
         ["/community/general", "General Groups"]
       ]
     },
-    repo: "tagion/homepage",
-    editLinks: "tree",
-    docsBranch: "source/docs",
-    docsRepo: "tagion/homepage"
+    docsRepo: "tagion/homepage/blob/release/docs"
   },
   head: [
     [
@@ -91,6 +88,37 @@ module.exports = {
   },
   configureWebpack: (config, isServer) => {
     config.output.globalObject = "this";
-    config.plugins.push(new webpack.EnvironmentPlugin(["NODE_ENV", "STAGE"]));
+    config.plugins.push(new webpack.EnvironmentPlugin(["NODE_ENV"]));
   }
 };
+
+if (process.env.NODE_ENV === "development") {
+  config.head = [
+    ...config.head,
+    [
+      "script",
+      {},
+      `
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq("init", "1707211522748212");
+    fbq("track", "PageView");`
+    ],
+    [
+      "noscript",
+      {},
+      `
+    <img height="1" width="1" style="display:none" 
+    src="https://www.facebook.com/tr?id=1707211522748212&ev=PageView&noscript=1"/>
+    `
+    ]
+  ];
+}
+
+module.exports = config;

@@ -1,26 +1,8 @@
 const path = require("path");
 const moment = require("moment");
-const removeMd = require("remove-markdown");
-const fs = require("fs");
 
 let config = {
   plugins: [
-    [
-      "@vuepress/blog",
-      {
-        directories: [
-          {
-            id: "post",
-            dirname: "_posts",
-            path: "/blog/",
-            itemPermalink: "/blog/:year/:month/:day/:slug",
-            pagination: {
-              lengthPerPage: 6
-            }
-          }
-        ]
-      }
-    ],
     [
       "vuepress-plugin-canonical",
       {
@@ -51,40 +33,10 @@ let config = {
         }
       }
     ]
-  ],
-  extendPageData($page) {
-    const {
-      _filePath,
-      _computed,
-      _content,
-      _strippedContent,
-      key,
-      frontmatter,
-      regularPath,
-      path
-    } = $page;
-
-    // Add dates to blog posts from file names
-    if (regularPath.indexOf("/_posts/") !== -1) {
-      let docDateString = regularPath.replace("/_posts/", "");
-      const dateReg = /(.*)_/gm;
-      docDateString = dateReg.exec(docDateString)[1];
-      let docDate = Date.parse(docDateString);
-      docDate = moment(docDate).format("MMMM DD, YYYY");
-      $page.filedate = docDate;
-    }
-  }
+  ]
 };
 
-if (!process.env.STAGE && process.env.NODE_ENV !== "development") {
-  config.plugins.push;
-  config.plugins.push([
-    "@vuepress/google-analytics",
-    {
-      ga: "UA-124576760-1"
-    }
-  ]);
-
+if (process.env.NODE_ENV === "production") {
   config.plugins.push([
     "sitemap",
     {
