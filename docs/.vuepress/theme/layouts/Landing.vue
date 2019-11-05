@@ -4,10 +4,10 @@
       <div class="landing">
         <div class="hero" scroll-reveal>
           <b-container class="lcontainer lcontainer--hero">
-            <div
-              class="parallax-element parallax-element--fast hero__background"
-              data-parallax-factor="0.12"
-            ></div>
+              <div
+                class="parallax-element parallax-element--fast hero__background"
+                data-parallax-factor="0.12"
+              ></div>
             <div class="parallax-element parallax-element--fast" data-parallax-factor="-0.03">
               <div class="hero__quote">
                 <h2
@@ -810,14 +810,12 @@ export default {
   methods: {
     throttleParallax: throttle(function() {
       this.handleParallax();
-    }, 50),
+    }, 20),
     throttleReveal: throttle(function() {
       this.handleReveal();
     }, 200),
     handleParallax() {
-      let scrollY = window.scrollY;
-
-      scrollY += window.innerHeight;
+      let scrollY = window.scrollY + window.innerHeight;
 
       for (let i = 0; i < this.parallaxElements.length; i++) {
         let element = this.parallaxElements[i];
@@ -827,8 +825,9 @@ export default {
 
         if (elOffset < scrollY) {
           let parallaxTranslate = (scrollY - elOffset) * multiplier;
-          if (Math.abs(parallaxTranslate) < 300) {
+          if (element.dataset.parallaxCache != parallaxTranslate && Math.abs(parallaxTranslate) < 300) {
             element.style.transform = `translateY(${parallaxTranslate}px)`;
+            element.dataset.parallaxCache = parallaxTranslate;
           }
         }
       }

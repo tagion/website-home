@@ -9,17 +9,17 @@
 .landing {
   overflow-x: hidden;
 
-  .parallax-element {
-    transition: transform 150ms linear;
-  }
+  // .parallax-element {
+  //   transition: transform 150ms linear;
+  // }
 
-  .parallax-element--fast {
-    transition: transform 0.1s cubic-bezier(0.19, 1, 0.22, 1);
-  }
+  // .parallax-element--fast {
+  //   transition: transform 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+  // }
 
-  .parallax-element--slow {
-    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  }
+  // .parallax-element--slow {
+  //   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  // }
 
   .feature-cards {
     display: flex;
