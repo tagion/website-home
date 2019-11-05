@@ -837,6 +837,7 @@ import LayoutDefault from "@theme/components/LayoutDefault";
 import WhitePaper from "@theme/components/WhitePaper";
 import Roadmap from "@theme/components/Roadmap";
 import BrandButton from "@theme/components/BrandButton";
+import SocialButtons from "@theme/components/SocialButtons";
 import DownloadBrandButton from "@theme/components/DownloadBrandButton";
 import * as throttle from "lodash.throttle";
 
@@ -854,7 +855,8 @@ export default {
     WhitePaper,
     Roadmap,
     BrandButton,
-    DownloadBrandButton
+    DownloadBrandButton,
+    SocialButtons
   },
   created() {
     // let pages = this.$site.pages;

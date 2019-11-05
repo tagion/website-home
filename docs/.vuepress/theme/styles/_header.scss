@@ -118,8 +118,8 @@ body.scrolled-down {
   @include media-breakpoint-down(md) {
     .layout-page:not(.sidebar-open) {
       .header {
-        border-color: transparent;
-        transform: translateY(-1 * $header-height);
+        // border-color: transparent;
+        // transform: translateY(-1 * $header-height);
       }
     }
   }

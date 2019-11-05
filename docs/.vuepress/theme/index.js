@@ -18,12 +18,7 @@ let config = {
         headerAnchorSelector: ".header-anchor"
       }
     ],
-    [
-      "@vuepress/register-components",
-      {
-        componentsDir: [path.resolve(__dirname, "components")]
-      }
-    ],
+   
     [
       "@vuepress/last-updated",
       {

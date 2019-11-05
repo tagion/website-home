@@ -1,29 +1,30 @@
-<a href="https://tagion.org"><img alt="tagion logo" src="./docs/.vuepress/public/wordmark-dark.svg" alt="tagion.org" height="60"></a>
+<center><a href="https://tagion.org"><img alt="tagion logo" src="./docs/.vuepress/public/github/logomark.svg" alt="tagion.org" height="60"></a></center>
 
-# Welcome to Tagion!
+<center><h1>Welcome to Tagion!</h1></center>
+
 
 [Tagion.org](https://tagion.org) is a primary online resource for the Tagion community. It is improved and changed over time through the contributions of community members who submit content, give feedback, or volunteer their time to managing its evolution.
 
 If you’re interested in helping to improve [tagion.org](https://tagion.org), start here. This contribution guide will help you get started.
 
-**Tagion.org should serve as:**
+**Tagion.org is a hub for:**
 
-- Accessible entry point for newcomers
-- Collection of explanatory articles
-- Collection of useful resources for our community
+- Explanatory articles;
+- Collections of related resources;
+- Developer manuals & API references.
 
-Since we all are interested in growth of our community, the landing page of tagion.org is made in promotional style, pointing out the main features of Tagion. The goal of the landing page is to convert visitors to the new members of community: developers, experts or any other interested parties.
+Since we all are interested in growth of our community, the landing page of tagion.org is made in promotional style, pointing out the main features of Tagion. It serves as an entry point, highlighting the main values of Tagion, with the goal to convert visitors to the new members of community.
 
 ## How can I contribute?
 
 There are many ways you can get involved in improving the website:
 
-- Check out the issues page and see if you can help with some of them
-- Identify out-of-date information on tagion.org and submit a pull-request
-- Suggest improvements for promotional page by opening an issue
-- Suggest improvements on existing content by opening an issue
-- Suggest ideas for new wiki articles, new collections by opening an issue
-- Suggest any other improvements by opening an issue
+- Check out the issues page and see if you can help with some of them;
+- Identify out-of-date information on tagion.org and submit a pull-request;
+- Suggest improvements for promotional page by opening an issue;
+- Suggest improvements on existing content by opening an issue;
+- Suggest ideas for new wiki articles, new collections by opening an issue;
+- Suggest any other improvements by opening an issue;
 
 ## How are decisions about the site made?
 
@@ -48,15 +49,16 @@ npm run dev
 
 ### Deployment
 
-```
-# In the root folder:
-./deploy.sh
-```
+You can suggest changes by submitting a pull request. If the PR integrates well, it will be approved and the website automatically rebuilt thanks to Travis CI.
+
+You should always make a pull request to the `stage` branch.
 
 ### Structure
 
-Branch `gh-pages` contains built version of the website, while `source` branch contains the source code.
+Branch `gh-pages` contains built version of the website, while `release` and `stage` branches contain the source code.
 
-Site content is in `/docs` folder. Everything else in `/docs/.vuepress`.
+The stage.tagion.org is hosted in [another repo](https://github.com/tagion/homepage.stage/), built from `stage` branch.
 
-We don't use `master` branch since it is indexable by search engines, which makes duplicate content and this is bad for SEO.
+Site content (except promo pages) is in `/docs` folder. Everything else in `/docs/.vuepress`.
+
+We don't use `master` branch since it is indexable by search engines, which makes duplicate content, which is bad for SEO.
