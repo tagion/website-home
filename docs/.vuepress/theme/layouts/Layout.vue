@@ -35,10 +35,7 @@ export default {
       const docsRepo = this.$site.themeConfig.docsRepo;
 
       if (docsRepo && this.$page.relativePath) {
-        return this.createEditLink(
-          docsRepo,
-          this.$page.relativePath
-        );
+        return this.createEditLink(docsRepo, this.$page.relativePath);
       }
     }
   },

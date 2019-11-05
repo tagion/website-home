@@ -71,38 +71,25 @@ b {
     z-index: 5;
     font-weight: 600;
     color: $dark;
-    margin-bottom: 1.6em;
+    margin-bottom: 1.2em;
     position: relative;
-
-    @include media-breakpoint-down(lg) {
-      margin-bottom: 1.4em;
-    }
+    padding-bottom: 1rem;
 
     &::before {
       content: "";
-      background: #f8f9fa;
-      border-bottom: 1px solid rgb(228, 231, 235);
       position: absolute;
-      top: 0;
-      height: 14rem;
-      left: 0;
-      right: 0;
-      z-index: -1;
-
-      @include media-breakpoint-down(lg) {
-        height: 13rem;
-      }
-
-      @include media-breakpoint-down(md) {
-        height: 10.5rem;
-      }
+      bottom: 0rem;
+      width: 40%;
+      height: 4px;
+      background: #{$primary}55;
+      left: -0.3rem;
     }
 
     @include media-breakpoint-down(lg) {
-      font-size: 2.3em;
+      font-size: 2.4em;
     }
     @include media-breakpoint-down(md) {
-      font-size: 2.2em;
+      font-size: 2.1em;
     }
 
     + h2 {
@@ -127,12 +114,10 @@ b {
     &::before {
       content: "";
       position: absolute;
-      bottom: -0.6rem;
+      bottom: -0.7rem;
       width: 40%;
       height: 4px;
-      border-radius: 100px;
-      background: $primary;
-      opacity: 0.5;
+      background: #{$primary}55;
       left: -0.3rem;
     }
 
