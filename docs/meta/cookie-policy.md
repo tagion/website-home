@@ -4,6 +4,7 @@ lang: en-US
 sidebar: false
 indexable: false
 editLink: false
+privacyVersion: 1
 ---
 
 # Cookie Policy

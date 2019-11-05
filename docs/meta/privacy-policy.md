@@ -4,6 +4,7 @@ lang: en-US
 sidebar: false
 editLink: false
 indexable: false
+privacyVersion: 1
 ---
 
 # Privacy Policy
