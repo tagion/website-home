@@ -42,7 +42,7 @@
                   data-parallax-factor="0.02"
                 >
                   <div
-                    class="hero__button-wrapper hero__button-wrapper--social mr-3"
+                    class="hero__button-wrapper hero__button-wrapper--social"
                     scroll-reveal-child
                     scroll-reveal-up
                     scroll-reveal-opacity
@@ -84,9 +84,7 @@
                 scroll-reveal-down
                 scroll-reveal-opacity
                 data-reveal-delay="100"
-              >
-                Tagion is a monetary system with revolutionary protocols that have the potential to replace legacy banking systems and trigger a paradigm shift in the current financial ecosystem.
-              </p>
+              >Tagion is a monetary system with revolutionary protocols that have the potential to replace legacy banking systems and trigger a paradigm shift in the current financial ecosystem.</p>
             </div>
             <div class="feature-cards" scroll-reveal data-reveal-delay="200">
               <a
@@ -179,7 +177,7 @@
         <div class="lcontainer-wrapper lcontainer-wrapper--dark">
           <b-container class="lcontainer lcontainer--bluebg lcontainer--roadmap">
             <b-row>
-              <b-col cols="12" lg="5">
+              <b-col cols="12" xl="5" class="d-flex align-items-center">
                 <div class="lcontainer__headline" scroll-reveal>
                   <h2
                     scroll-reveal-child
@@ -187,7 +185,7 @@
                     scroll-reveal-opacity
                     data-reveal-delay="0"
                   >
-                    <span class="lcontainer__headline__number">4.</span>Roadmap
+                    <span class="lcontainer__headline__number">2.</span>Roadmap
                   </h2>
                   <p
                     scroll-reveal-child
@@ -199,13 +197,13 @@
                     to="/wiki/development/roadmap.html"
                     reveal
                     scroll-reveal-child
-                    scroll-reveal-up
+                    scroll-reveal-right
                     scroll-reveal-opacity
                     data-reveal-delay="400"
                   >Detailed Roadmap</brand-button>
                 </div>
               </b-col>
-              <b-col cols="12" lg="7">
+              <b-col cols="12" xl="7" class="d-none d-md-block">
                 <div scroll-reveal scroll-reveal-up scroll-reveal-opacity data-reveal-delay="700">
                   <roadmap class="lcontainer--roadmap__roadmap" />
                 </div>
@@ -311,105 +309,34 @@
           </b-container>
         </div>
 
-        <!-- <div class="lcontainer-wrapper lcontainer-wrapper--grey">
+        <div class="lcontainer-wrapper lcontainer-wrapper--grey">
           <b-container class="lcontainer">
             <div class="lcontainer__headline" scroll-reveal>
               <h2 scroll-reveal-child scroll-reveal-up scroll-reveal-opacity data-reveal-delay="50">
-                <span class="lcontainer__headline__number">2.</span>Latest from Tagion
+                <span class="lcontainer__headline__number">4.</span>Latest from Tagion
               </h2>
             </div>
-            <div
-              class="blog-post-list blog-post-list--promo mt-6"
-              scroll-reveal
-              data-reveal-delay="200"
-            >
-              <router-link
-                v-if="blogPosts.length >= 1"
-                class="page-link blog-post-preview blog-post-preview--primary"
-                :to="blogPosts[0].path"
-                scroll-reveal-child
-                scroll-reveal-up
-                scroll-reveal-opacity
-                data-reveal-delay="100"
-              >
+            <div class="mt-6">
+              <div scroll-reveal scroll-reveal-up scroll-reveal-opacity data-reveal-delay="300">
                 <div
-                  class="blog-post-preview__cover"
-                  :style="{background: blogPosts[0].frontmatter.color}"
+                  id="medium-widget"
+                  class="lcontainer__medium-widget"
+                  :class="{'lcontainer__medium-widget--loaded': isMediumLoaded}"
                 >
-                  <img :src="`/covers/${blogPosts[0].frontmatter.cover}`" :alt="blogPosts[0].title" />
-                </div>
-                <div class="blog-post-preview__content">
-                  <h4>{{ blogPosts[0].title }}</h4>
-                  <div class="blog-post-preview__meta">
-                    <div class="small">{{blogPosts[0].filedate}}</div>
-                    <div class="small">
-                      by
-                      <span>{{ blogPosts[0].frontmatter.author }}</span>
-                    </div>
+                  <div class="lcontainer__spinner">
+                    <spinner />
                   </div>
                 </div>
-              </router-link>
-              <router-link
-                v-if="blogPosts.length >= 2"
-                class="page-link blog-post-preview blog-post-preview--secondary"
-                :to="blogPosts[1].path"
-                scroll-reveal-child
-                scroll-reveal-up
-                scroll-reveal-opacity
-                data-reveal-delay="200"
-              >
-                <div
-                  class="blog-post-preview__cover"
-                  :style="{background: blogPosts[1].frontmatter.color}"
-                >
-                  <img :src="`/covers/${blogPosts[1].frontmatter.cover}`" :alt="blogPosts[1].title" />
-                </div>
-                <div class="blog-post-preview__content">
-                  <h4>{{ blogPosts[1].title }}</h4>
-                  <div class="blog-post-preview__meta">
-                    <div class="small">{{blogPosts[1].filedate}}</div>
-                    <div class="small">
-                      by
-                      <span>{{ blogPosts[1].frontmatter.author }}</span>
-                    </div>
-                  </div>
-                </div>
-              </router-link>
-              <router-link
-                v-if="blogPosts.length >= 3"
-                class="page-link blog-post-preview blog-post-preview--secondary"
-                :to="blogPosts[2].path"
-                scroll-reveal-child
-                scroll-reveal-up
-                scroll-reveal-opacity
-                data-reveal-delay="300"
-              >
-                <div
-                  class="blog-post-preview__cover"
-                  :style="{background: blogPosts[2].frontmatter.color}"
-                >
-                  <img :src="`/covers/${blogPosts[2].frontmatter.cover}`" :alt="blogPosts[2].title" />
-                </div>
-                <div class="blog-post-preview__content">
-                  <h4>{{ blogPosts[2].title }}</h4>
-                  <div class="blog-post-preview__meta">
-                    <div class="small">{{blogPosts[2].filedate}}</div>
-                    <div class="small">
-                      by
-                      <span>{{ blogPosts[2].frontmatter.author }}</span>
-                    </div>
-                  </div>
-                </div>
-              </router-link>
+              </div>
             </div>
           </b-container>
-        </div>-->
+        </div>
 
         <div class="lcontainer-wrapper lcontainer-wrapper--white">
           <b-container class="lcontainer lcontainer--team">
             <div class="lcontainer__headline" scroll-reveal>
               <h2 scroll-reveal-child scroll-reveal-up scroll-reveal-opacity data-reveal-delay="0">
-                <span class="lcontainer__headline__number">4.</span>Team
+                <span class="lcontainer__headline__number">5.</span>Team
               </h2>
               <p
                 scroll-reveal-child
@@ -839,6 +766,7 @@ import Roadmap from "@theme/components/Roadmap";
 import BrandButton from "@theme/components/BrandButton";
 import SocialButtons from "@theme/components/SocialButtons";
 import DownloadBrandButton from "@theme/components/DownloadBrandButton";
+import Spinner from "@theme/components/Spinner";
 import * as throttle from "lodash.throttle";
 
 export default {
@@ -847,7 +775,7 @@ export default {
       parallaxElements: [],
       revealElements: [],
       layoutElement: undefined,
-      blogPosts: []
+      isMediumLoaded: false
     };
   },
   components: {
@@ -856,30 +784,12 @@ export default {
     Roadmap,
     BrandButton,
     DownloadBrandButton,
-    SocialButtons
-  },
-  created() {
-    // let pages = this.$site.pages;
-    // for (let i = 0; i < pages.length; i++) {
-    //   let page = pages[i];
-    //   if (
-    //     page &&
-    //     page.relativePath &&
-    //     page.relativePath.indexOf("_posts") !== -1
-    //   ) {
-    //     this.blogPosts.push(page);
-    //     if (this.blogPosts.length >= 3) {
-    //       break;
-    //     }
-    //   }
-    // }
-    // this.blogPosts = this.blogPosts.sort((a, b) => {
-    //   let aDate = new Date(a.filedate);
-    //   let bDate = new Date(b.filedate);
-    //   return aDate.getTime() < bDate.getTime() ? 1 : -1;
-    // });
+    SocialButtons,
+    Spinner
   },
   mounted() {
+    this.initMediumScript();
+    this.initMedium();
     this.layoutElement = document.getElementById("landing-page");
     this.parallaxElements = Array.from(
       document.getElementsByClassName("parallax-element")
@@ -981,6 +891,36 @@ export default {
       var rect = el.getBoundingClientRect(),
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       return rect.top + scrollTop;
+    },
+    initMediumScript() {
+      let el = document.createElement("script");
+      el.src = "https://medium-widget.pixelpoint.io/widget.js";
+      el.async = !0;
+      document.head.appendChild(el);
+    },
+    initMedium() {
+      if (!window.MediumWidget) {
+        setTimeout(() => {
+          this.initMedium();
+        }, 1000);
+        return;
+      }
+
+      window.MediumWidget.Init({
+        renderTo: "#medium-widget",
+        params: {
+          resource: "https://medium.com/tagion",
+          postsPerLine: 3,
+          limit: 3,
+          picture: "big",
+          fields: ["description", "author", "publishAt"],
+          ratio: "landscape"
+        }
+      });
+
+      setTimeout(() => {
+        this.isMediumLoaded = true;
+      }, 500);
     }
   }
 };
