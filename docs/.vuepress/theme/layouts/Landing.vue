@@ -292,6 +292,7 @@
               >Currency. Consensus. Data Storage. Governance.</p>
               <brand-button
                 href="/tagionwhitepaper.pdf"
+                @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
                 reveal
                 target="_blank"
                 rel="nofollow noopener noreferrer"

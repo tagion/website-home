@@ -3,15 +3,16 @@
   "version": "0.0.1",
   "description": "Official tagion.org homepage",
   "scripts": {
-    "dev": "NODE_ENV=development vuepress dev docs",
-    "build": "NODE_ENV=production vuepress build docs",
-    "build:staging": "NODE_ENV=staging vuepress build docs"
+    "dev": "NODE_ENV=development APP_ENV=development vuepress dev docs",
+    "build": "APP_ENV=production vuepress build docs",
+    "build:staging": "APP_ENV=staging vuepress build docs"
   },
   "author": "Vlad Pazych <vp@tagion.org>",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
+    "url": "^0.11.0",
     "vuepress": "^1.2.0",
     "vuepress-plugin-canonical": "^1.0.0",
     "vuepress-plugin-sitemap": "^2.3.0"

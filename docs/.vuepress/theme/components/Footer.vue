@@ -12,13 +12,13 @@
               <router-link to="/wiki/development/roadmap.html">Roadmap</router-link>
             </li>
             <li>
-              <a href="/tagionwhitepaper.pdf" target="_blank" rel="noopener noreferrer nofollow">
+              <a href="/tagionwhitepaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Footer'}})" target="_blank" rel="noopener noreferrer nofollow">
                 Whitepaper
                 <OutboundLink />
               </a>
             </li>
             <li>
-              <a href="/tagiontechpaper.pdf" target="_blank" rel="noopener noreferrer nofollow">
+              <a href="/tagiontechpaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'TechpaperDownload', fields: {placement: 'Footer'}})" target="_blank" rel="noopener noreferrer nofollow">
                 Technical Paper
                 <OutboundLink />
               </a>

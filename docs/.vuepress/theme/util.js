@@ -1,7 +1,7 @@
 export const hashRE = /#.*$/;
 export const extRE = /\.(md|html)$/;
 export const endingSlashRE = /\/$/;
-export const outboundRE = /^(https?:|mailto:|tel:)/;
+export const outboundRE = /^(https?:|mailto:|tel:)|(.*\.pdf$)/;
 
 export function normalize(path) {
   return decodeURI(path)
@@ -23,6 +23,7 @@ export function isExternal(path) {
 }
 
 export function isMailto(path) {
+  console.log('ismailto', path)
   return /^mailto:/.test(path);
 }
 

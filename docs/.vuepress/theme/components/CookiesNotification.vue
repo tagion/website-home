@@ -18,8 +18,8 @@
               type="button"
               class="btn btn-sm btn-light"
               aria-label="Accept cookies policy and close"
-              @click="close()"
-            >I Agree</button>
+              @click="accept()"
+            >Accept</button>
           </div>
         </b-col>
       </b-row>
@@ -35,33 +35,14 @@ export default {
     };
   },
   mounted() {
-    if (typeof localStorage !== "undefined") {
-      setTimeout(() => {
-        let lastUpdated = this.getPrivacyPolicyLastUpdated();
-        let localStorageLastUpdated = localStorage.getItem("privacyPolicySeen");
-
-        if (lastUpdated !== localStorageLastUpdated) {
-          this.privacySeen = false;
-        } else {
-          this.privacySeen = true;
-        }
-      }, 500);
-    }
+    setTimeout(() => {
+      this.privacySeen = this.$privacy.isAccepted();
+    }, 1000);
   },
   methods: {
-    getPrivacyPolicyLastUpdated() {
-      let privacyPolicy = this.$site.pages.filter(
-        value => value.title === "Privacy Policy"
-      )[0];
-
-      let lastUpdated = privacyPolicy.lastUpdated;
-      return lastUpdated;
-    },
-    close() {
-      if (typeof localStorage !== "undefined") {
-        let lastUpdated = this.getPrivacyPolicyLastUpdated();
-        localStorage.setItem("privacyPolicySeen", lastUpdated);
-      }
+    accept() {
+      this.$privacy.accept();
+      this.$analytics.init();
       this.privacySeen = true;
     }
   }

@@ -36,7 +36,7 @@ let config = {
   ]
 };
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.APP_ENV === "production") {
   config.plugins.push([
     "sitemap",
     {

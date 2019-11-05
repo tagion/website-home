@@ -1,5 +1,6 @@
 <template>
   <router-link
+    @click="$emit('click')"
     v-if="to"
     :to="to"
     v-bind="$attrs"
@@ -17,6 +18,7 @@
   </router-link>
   <a
     v-else
+    @click="$emit('click')"
     :href="href"
     v-bind="$attrs"
     class="brand-button"

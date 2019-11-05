@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const markdownLinkPlugin = require("./theme/plugins/markdown/link");
 
 let config = {
   title: "Tagion",
@@ -84,41 +85,24 @@ let config = {
   ],
   markdown: {
     anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: "" },
-    externalLinks: { target: "_blank", rel: "noopener noreferrer nofollow" }
+    externalLinks: { target: "_blank", rel: "noopener noreferrer nofollow" },
+    chainMarkdown(config) {
+      // Replace default link converted, to have more control over which links are
+      // considered external
+      config.plugins.delete("convert-router-link");
+
+      config
+        .plugin("convert-router-link")
+        .use(markdownLinkPlugin, [
+          { target: "_blank", rel: "noopener noreferrer nofollow" }
+        ])
+        .end();
+    }
   },
   configureWebpack: (config, isServer) => {
     config.output.globalObject = "this";
-    config.plugins.push(new webpack.EnvironmentPlugin(["NODE_ENV"]));
+    config.plugins.push(new webpack.EnvironmentPlugin(["NODE_ENV", "APP_ENV"]));
   }
 };
-
-if (process.env.NODE_ENV === "development") {
-  config.head = [
-    ...config.head,
-    [
-      "script",
-      {},
-      `
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq("init", "1707211522748212");
-    fbq("track", "PageView");`
-    ],
-    [
-      "noscript",
-      {},
-      `
-    <img height="1" width="1" style="display:none" 
-    src="https://www.facebook.com/tr?id=1707211522748212&ev=PageView&noscript=1"/>
-    `
-    ]
-  ];
-}
 
 module.exports = config;

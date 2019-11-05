@@ -52,8 +52,9 @@ export default {
     CookiesNotification
   },
   mounted() {
-    this.$analytics.init('hello');
-    
+    this.$analytics.recordUtm(this.$route);
+    this.$analytics.init();
+
     const hash = this.$route.hash;
     if (hash) {
       this.$scrollTo(hash);
@@ -62,6 +63,9 @@ export default {
     if (localStorage) {
       this.darkMode = localStorage.getItem("dark-mode") || false;
     }
+  },
+  updated() {
+    this.$analytics.init();
   },
   computed: {
     isLanding() {

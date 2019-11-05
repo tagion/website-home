@@ -60,7 +60,8 @@ export default {
       emailProgress: false,
       emailSent: false,
       emailError: "",
-      formAction: undefined
+      formAction: undefined,
+      startTypeRecorded: false
     };
   },
   computed: {
@@ -88,22 +89,30 @@ export default {
         this.setFormAction();
         this.emailError = "";
       }
+      if (!this.startTypeRecorded) {
+        this.$analytics.triggerEvent({
+          category: "Newsletter",
+          action: "StartRegistration"
+        });
+        this.startTypeRecorded = true;
+      }
     },
     async onSubmit(event) {
       if (this.validation) {
         this.setFormAction();
         let submitForm = this.$refs["newsletter-form"];
         if (submitForm) {
-          console.log('logging sub?')
-          if (window && window.fbq) {
-            console.log('logging sub')
-            console.log(window.ga, window)
-            window.fbq("trackCustom", "SubNewsletter", {
-              placement: "Footer",
-              email: this.email
-            });
-          }
-          // submitForm.submit();
+          this.$analytics.triggerEvent({
+            category: "Newsletter",
+            action: "CompleteRegistration",
+            fields: {
+              email: this.email,
+              currency: "USD",
+              value: 1
+            }
+          });
+
+          submitForm.submit();
         }
       } else {
         event.preventDefault();

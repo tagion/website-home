@@ -4,7 +4,7 @@
       <NavLink :item="item" />
     </li>
     <li>
-      <a class="nav-link nav-link--button" href="/tagionwhitepaper.pdf" target="_blank" rel="noopener noreferrer nofollow">
+      <a class="nav-link nav-link--button" href="/tagionwhitepaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Nav'}})" target="_blank" rel="noopener noreferrer nofollow">
        Whitepaper <OutboundLink />
       </a>
     </li>
