@@ -97,7 +97,7 @@
 }
 
 body:not(.scrolled) {
-  .landing-page {
+  .landing-page:not(.sidebar-open) {
     .header {
       transition: background 200ms, border 500ms;
       background: transparent;

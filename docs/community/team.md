@@ -6,7 +6,7 @@ sidebarDepth: 0
 editLink: true
 ---
 
-# Team
+# Tagion Team
 
 ## Core Team
 

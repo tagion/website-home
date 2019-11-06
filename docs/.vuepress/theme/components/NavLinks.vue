@@ -3,11 +3,11 @@
     <li v-for="item in userLinks" :key="item.link">
       <NavLink :item="item" />
     </li>
-    <li>
+    <!-- <li>
       <a class="nav-link nav-link--button" href="/tagionwhitepaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Nav'}})" target="_blank" rel="noopener noreferrer nofollow">
        Whitepaper <OutboundLink />
       </a>
-    </li>
+    </li> -->
   </b-nav>
 </template>
 

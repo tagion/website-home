@@ -8,50 +8,41 @@ let config = {
   base: "/",
   themeConfig: {
     activeHeaderLinks: true,
-    nav: [{ text: "Wiki", link: "/wiki/" }],
+    nav: [
+      // { text: "Docs", link: "/docs/" },
+      { text: "Community", link: "/community/" },
+      { text: "Whitepaper", link: "/whitepaper/" }
+    ],
     sidebar: {
-      "/wiki/": [
-        ["/wiki/", "Welcome"],
+      "/docs/": [["/docs/", "Welcome"]],
+      "/whitepaper/": [
+        ["/whitepaper/", "Introduction"],
         {
           title: "Synopsis",
           collapsable: true,
           children: [
-            "/wiki/synopsis/dex",
-            "/wiki/synopsis/consensus",
-            "/wiki/synopsis/energy-consumption",
-            "/wiki/synopsis/governance",
-            "/wiki/synopsis/money-supply",
-            "/wiki/synopsis/proof-of-people",
-            "/wiki/synopsis/transaction-volumes",
-            "/wiki/synopsis/transaction-speed",
-            "/wiki/synopsis/use-of-data",
-          ]
-        },
-        {
-          title: "Community",
-          collapsable: false,
-          children: [["/wiki/community/", "Social Media"]]
-        },
-        {
-          title: "Foundation",
-          collapsable: false,
-          children: [
-            ["/wiki/foundation/team", "Team"],
-            ["/wiki/foundation/roadmap", "Roadmap"],
-            ["/wiki/foundation/contribute", "Contribute"]
+            "/whitepaper/synopsis/dex",
+            "/whitepaper/synopsis/consensus",
+            "/whitepaper/synopsis/energy-consumption",
+            "/whitepaper/synopsis/governance",
+            "/whitepaper/synopsis/money-supply",
+            "/whitepaper/synopsis/proof-of-people",
+            "/whitepaper/synopsis/transaction-volumes",
+            "/whitepaper/synopsis/transaction-speed",
+            "/whitepaper/synopsis/use-of-data"
           ]
         },
         {
           title: "Other",
-          collapsable: false,
-          children: [["/wiki/terminology", "Terminology"]]
+          collapsable: true,
+          children: [["/whitepaper/terminology", "Terminology"]]
         }
       ],
       "/community/": [
-        ["/community/", "Overview"],
-        ["/community/news", "Official News"],
-        ["/community/technical", "Technical Groups"],
-        ["/community/general", "General Groups"]
+        ["/community/", "Welcome"],
+        ["/community/social-media", "Social Media"],
+        ["/community/team", "Tagion Team"],
+        ["/community/roadmap", "Tagion Roadmap"]
       ]
     },
     docsRepo: "tagion/homepage/blob/release/docs"

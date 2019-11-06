@@ -121,6 +121,10 @@ body {
     opacity: 0;
     pointer-events: none;
     transform: translateY(10px);
+    top: $header-height;
+    .sidebar {
+      padding-top: 0;
+    }
   }
 }
 
