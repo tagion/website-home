@@ -16,11 +16,11 @@ You can contribute to core software, create tooling around Tagion, participate i
 
 Currently, [Tagion Node Software](/wiki/terminology.html#tagion-node-software) is closed, mainly because of the lack of documentation and a few legal processes that take time.
 
-If you would like to contribute to the core software, email us to <info@tagion.org> and we will discuss terms. We are prepared to open the code for those who sign NDA.
+If you would like to contribute to the core software, email us to [info@tagion.org](mailto:info@tagion.org) and we will discuss terms. We are prepared to open the code for those who sign NDA.
 
 ## Community software
 
-While the source code of the core software is closed, it's quite tricky to create tooling around it, yet if you have an idea, email us at <info@tagion.org>.
+While the source code of the core software is closed, it's quite tricky to create tooling around it, yet if you have an idea, email us at [info@tagion.org](mailto:info@tagion.org).
 
 All community software will be listed in our wiki.
 

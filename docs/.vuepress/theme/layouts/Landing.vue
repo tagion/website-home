@@ -4,10 +4,10 @@
       <div class="landing">
         <div class="hero" scroll-reveal>
           <b-container class="lcontainer lcontainer--hero">
-              <div
-                class="parallax-element parallax-element--fast hero__background"
-                data-parallax-factor="0.12"
-              ></div>
+            <div
+              class="parallax-element parallax-element--fast hero__background"
+              data-parallax-factor="0.12"
+            ></div>
             <div class="parallax-element parallax-element--fast" data-parallax-factor="-0.03">
               <div class="hero__quote">
                 <h2
@@ -87,7 +87,8 @@
               >Tagion is a monetary system with revolutionary protocols that have the potential to replace legacy banking systems and trigger a paradigm shift in the current financial ecosystem.</p>
             </div>
             <div class="feature-cards" scroll-reveal data-reveal-delay="200">
-              <a
+              <router-link
+                to="/wiki/synopsis/governance.html"
                 class="feature-card feature-card--c1"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -95,27 +96,14 @@
                 data-reveal-delay="100"
               >
                 <div class="feature-card__internal">
-                  <h4>Fast Transactions</h4>
-                  <p>Tagion secures fast, private, cheap and uncensored transactions.</p>
-                  <!-- <p class="feature-card__read-more">Read more</p> -->
+                  <h4>Genuine Democratic Governance Model</h4>
+                  <p>Power concentration made impossible. Tagion’s governance modelmodel is based on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom.</p>
+                  <p class="feature-card__read-more">Read more</p>
                 </div>
-              </a>
-              <a
-                to="/wiki/#inflation-control"
-                class="feature-card feature-card--c2"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
-                data-reveal-delay="200"
-              >
-                <div class="feature-card__internal">
-                  <h4>Money Supply Control</h4>
-                  <p>In Tagion algorithms function as money supply oracles that control the supply, based on intrinsic variables.</p>
-                  <!-- <p class="feature-card__read-more">Read more</p> -->
-                </div>
-              </a>
-              <a
-                to="/wiki/#cash-anonymity"
+              </router-link>
+              
+              <router-link
+                to="/wiki/synopsis/transaction-volumes.html"
                 class="feature-card feature-card--c3"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -123,13 +111,27 @@
                 data-reveal-delay="300"
               >
                 <div class="feature-card__internal">
-                  <h4>Anonymous Payments</h4>
-                  <p>Digital bills are stored in the database, one record per bill. Ownership is unknown. There are no accounts in the system, only bills. Therefore it's much harder to trace.</p>
-                  <!-- <p class="feature-card__read-more">Read more</p> -->
+                  <h4>Transaction Volumes</h4>
+                  <p>Volume is king. It is said that DLT’s will never be able to compete with conventional banking systems in the area of transaction volumes. It might have been true once, but not anymore.</p>
+                  <p class="feature-card__read-more">Read more</p>
                 </div>
-              </a>
-              <a
-                to="/wiki/#multi-currency"
+              </router-link>
+              <router-link
+                to="/wiki/synopsis/energy-consumption.html"
+                class="feature-card feature-card--c6"
+                scroll-reveal-child
+                scroll-reveal-left
+                scroll-reveal-opacity
+                data-reveal-delay="500"
+              >
+                <div class="feature-card__internal">
+                  <h4>Energy Consumption</h4>
+                  <p>Bitcoin mining accounts for 0.29% of the world's annual electricity consumption. Mining of a single bitcoin block consumes enough energy to power more than 28 U.S. homes for a day. Tagion consumes 10,000% less energy, compared to Bitcoin.</p>
+                  <p class="feature-card__read-more">Read more</p>
+                </div>
+              </router-link>
+              <router-link
+                to="/wiki/synopsis/transaction-speed.html"
                 class="feature-card feature-card--c4"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -137,39 +139,82 @@
                 data-reveal-delay="400"
               >
                 <div class="feature-card__internal">
-                  <h4>Decentralized Crypto Exchange</h4>
-                  <p>DEX allows everyone to make exchanges between supported cryptocurrencies with no mediator.</p>
-                  <!-- <p class="feature-card__read-more">Read more</p> -->
+                  <h4>Transaction Speed</h4>
+                  <p>Faster than fast. One of the main reasons current DLT¨s have failed in mass adaption is their lack of speed. That is not an issue Tagion is facing.</p>
+                  <p class="feature-card__read-more">Read more</p>
                 </div>
-              </a>
-              <a
-                to="/wiki/#sharding-by-default"
-                class="feature-card feature-card--c5"
+              </router-link>
+              <router-link
+                to="/wiki/synopsis/money-supply.html"
+                class="feature-card feature-card--c2"
                 scroll-reveal-child
                 scroll-reveal-left
                 scroll-reveal-opacity
-                data-reveal-delay="500"
+                data-reveal-delay="200"
               >
                 <div class="feature-card__internal">
-                  <h4>Node Runs on a Laptop</h4>
-                  <p>The hashgraph consensus mechanism, DART, and the lean script executions allow Tagion to operate on low powered commodity hardware, such as smartphones.</p>
-                  <!-- <p class="feature-card__read-more">Read more</p> -->
+                  <h4>Algorithmic Money supply</h4>
+                  <p>Fractional banking not allowed. Tagion aims to bring trust back to the market and financial systems.</p>
+                  <p class="feature-card__read-more">Read more</p>
                 </div>
-              </a>
-              <a
-                to="/wiki/#governed-by-users"
-                class="feature-card feature-card--c6"
+              </router-link>
+              
+              <router-link
+                to="/wiki/synopsis/use-of-data.html"
+                class="feature-card feature-card--c4"
                 scroll-reveal-child
                 scroll-reveal-left
                 scroll-reveal-opacity
                 data-reveal-delay="600"
               >
                 <div class="feature-card__internal">
-                  <h4>Owned and Governed by Users</h4>
-                  <p>Tagion utilises what is dubbed the Proof-of-People protocol, a heuristic social protocol based on random validation and social components, to achieve a democratic principle of “one person – one node” and “one person – one vote”.</p>
-                  <!-- <p class="feature-card__read-more">Read more</p> -->
+                  <h4>Efficient Use of Data</h4>
+                  <p>If you want to move fast, you pack light. Tagion is probably the fastest decentralized transaction network available. All thanks to DART.</p>
+                  <p class="feature-card__read-more">Read more</p>
                 </div>
-              </a>
+              </router-link>
+              <router-link
+                to="/wiki/synopsis/consensus.html"
+                class="feature-card feature-card--c2"
+                scroll-reveal-child
+                scroll-reveal-left
+                scroll-reveal-opacity
+                data-reveal-delay="700"
+              >
+                <div class="feature-card__internal">
+                  <h4>Hashgraph</h4>
+                  <p>Exact (fair) ordering and parallel execution for scaling? Efficient resource utilization? Deterministic, i.e. finality on settlements fast? Now it is possible.</p>
+                  <p class="feature-card__read-more">Read more</p>
+                </div>
+              </router-link>
+              <router-link
+                to="/wiki/synopsis/dex.html"
+                class="feature-card feature-card--c1"
+                scroll-reveal-child
+                scroll-reveal-left
+                scroll-reveal-opacity
+                data-reveal-delay="800"
+              >
+                <div class="feature-card__internal">
+                  <h4>Decentralized Crypto Exchange</h4>
+                  <p>DEX allows everyone to make exchanges between supported cryptocurrencies with no mediator.</p>
+                  <p class="feature-card__read-more">Read more</p>
+                </div>
+              </router-link>
+              <router-link
+                to="/wiki/synopsis/proof-of-people.html"
+                class="feature-card feature-card--c6"
+                scroll-reveal-child
+                scroll-reveal-left
+                scroll-reveal-opacity
+                data-reveal-delay="900"
+              >
+                <div class="feature-card__internal">
+                  <h4>Proof-of-people</h4>
+                  <p>Tagion utilises what is dubbed the Proof-of-People protocol, a heuristic social protocol based on random validation and social components, to achieve a democratic principle of “one person – one node” and “one person – one vote”.</p>
+                  <p class="feature-card__read-more">Read more</p>
+                </div>
+              </router-link>
             </div>
           </b-container>
         </div>
@@ -194,7 +239,8 @@
                     data-reveal-delay="100"
                   >The team behind Tagion has spent significant time and money on building a system that addresses many of the issues that both the fiat-based monetary system and DLT based systems are suffering from. Tagion is both an alternative -and a supplement -to both the current system and the DLT based systems.</p>
                   <brand-button
-                    to="/wiki/development/roadmap.html"
+                    to="/wiki/foundation/roadmap.html"
+                    class="mt-5"
                     reveal
                     scroll-reveal-child
                     scroll-reveal-right
@@ -212,62 +258,17 @@
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--grey">
-          <b-container class="lcontainer lcontainer--bulletpoints">
+        <div class="lcontainer-wrapper lcontainer-wrapper--grey pt-0">
+          <b-container class="lcontainer lcontainer--news">
             <div class="lcontainer__headline" scroll-reveal>
-              <h2 scroll-reveal-child scroll-reveal-up scroll-reveal-opacity data-reveal-delay="0">
-                <span class="lcontainer__headline__number">3.</span>Built for Scale
+              <h2 scroll-reveal-child scroll-reveal-up scroll-reveal-opacity data-reveal-delay="50">
+                <span class="lcontainer__headline__number">3.</span>Latest from Tagion
               </h2>
-              <p
-                scroll-reveal-child
-                scroll-reveal-down
-                scroll-reveal-opacity
-                data-reveal-delay="100"
-              >Tagion solves many of the issues found in other major cryptocurrency networks.</p>
             </div>
-            <div class="feature-cards" scroll-reveal data-reveal-delay="200">
-              <a
-                to="/wiki/architecture/hashgraph.html"
-                class="feature-card feature-card--c6"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
-                data-reveal-delay="100"
-              >
-                <div class="feature-card__internal">
-                  <h4>Hashgraph</h4>
-                  <p>Tagion uses hashgraph for consensus, which in the Tagion implementation, makes it possible to process more than 20.000 transactions per second per Shard. Tagion is architected to be able to scale to hundreds of Shards that operate equally fast in parallel.</p>
-                  <!-- <p class="feature-card__read-more">Read more</p> -->
-                </div>
-              </a>
-              <a
-                to="/wiki/architecture/proof-of-people.html"
-                class="feature-card feature-card--c3"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
-                data-reveal-delay="200"
-              >
-                <div class="feature-card__internal">
-                  <h4>Proof of People</h4>
-                  <p>Tagion reputational scoring model and proof-of-people protocol incentivise nodes to serve the network loyally. This approach leapfrogs the governance mechanisms in other ‘decentralised’ systems.</p>
-                  <!-- <p class="feature-card__read-more">Read more</p> -->
-                </div>
-              </a>
-              <a
-                to="/wiki/development/open-source.html"
-                class="feature-card feature-card--c2"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
-                data-reveal-delay="300"
-              >
-                <div class="feature-card__internal">
-                  <h4>Open Source</h4>
-                  <p>The Tagion network will eventually be open-sourced. The open-source license type is not fully determined yet, but it will be along the lines of GNU GPL.</p>
-                  <!-- <p class="feature-card__read-more">Read more</p> -->
-                </div>
-              </a>
+            <div class="mt-4">
+              <div scroll-reveal scroll-reveal-up scroll-reveal-opacity data-reveal-delay="300">
+                <news/>
+              </div>
             </div>
           </b-container>
         </div>
@@ -309,34 +310,11 @@
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--grey">
-          <b-container class="lcontainer">
-            <div class="lcontainer__headline" scroll-reveal>
-              <h2 scroll-reveal-child scroll-reveal-up scroll-reveal-opacity data-reveal-delay="50">
-                <span class="lcontainer__headline__number">4.</span>Latest from Tagion
-              </h2>
-            </div>
-            <div class="mt-6">
-              <div scroll-reveal scroll-reveal-up scroll-reveal-opacity data-reveal-delay="300">
-                <div
-                  id="medium-widget"
-                  class="lcontainer__medium-widget"
-                  :class="{'lcontainer__medium-widget--loaded': isMediumLoaded}"
-                >
-                  <div class="lcontainer__spinner">
-                    <spinner />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </b-container>
-        </div>
-
         <div class="lcontainer-wrapper lcontainer-wrapper--white">
           <b-container class="lcontainer lcontainer--team">
             <div class="lcontainer__headline" scroll-reveal>
               <h2 scroll-reveal-child scroll-reveal-up scroll-reveal-opacity data-reveal-delay="0">
-                <span class="lcontainer__headline__number">5.</span>Team
+                <span class="lcontainer__headline__number">4.</span>Team
               </h2>
               <p
                 scroll-reveal-child
@@ -355,7 +333,7 @@
                     data-reveal-delay="300"
                   >
                     <router-link
-                      to="/wiki/development/team.html#theis-simonsen"
+                      to="/wiki/foundation/team.html#theis-simonsen"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -382,7 +360,7 @@
                     data-reveal-delay="400"
                   >
                     <router-link
-                      to="/wiki/development/team.html#carsten-bleser-rasmussen"
+                      to="/wiki/foundation/team.html#carsten-bleser-rasmussen"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -409,7 +387,7 @@
                     data-reveal-delay="500"
                   >
                     <router-link
-                      to="/wiki/development/team.html#kristian-vestergaard"
+                      to="/wiki/foundation/team.html#kristian-vestergaard"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -437,7 +415,7 @@
                     data-reveal-delay="600"
                   >
                     <router-link
-                      to="/wiki/development/team.html#tobias-ambs-thomsen"
+                      to="/wiki/foundation/team.html#tobias-ambs-thomsen"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -464,7 +442,7 @@
                     data-reveal-delay="700"
                   >
                     <router-link
-                      to="/wiki/development/team.html#vlad-pazych"
+                      to="/wiki/foundation/team.html#vlad-pazych"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -491,7 +469,7 @@
                     data-reveal-delay="800"
                   >
                     <router-link
-                      to="/wiki/development/team.html#oleksandr-sushko"
+                      to="/wiki/foundation/team.html#oleksandr-sushko"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -518,7 +496,7 @@
                     data-reveal-delay="900"
                   >
                     <router-link
-                      to="/wiki/development/team.html#oksana-perederii"
+                      to="/wiki/foundation/team.html#oksana-perederii"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -545,7 +523,7 @@
                     data-reveal-delay="1000"
                   >
                     <router-link
-                      to="/wiki/development/team.html#leif-bloch-rasmussen"
+                      to="/wiki/foundation/team.html#leif-bloch-rasmussen"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -572,7 +550,7 @@
                     data-reveal-delay="1100"
                   >
                     <router-link
-                      to="/wiki/development/team.html#richard-kastelein"
+                      to="/wiki/foundation/team.html#richard-kastelein"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -599,7 +577,7 @@
                     data-reveal-delay="1200"
                   >
                     <router-link
-                      to="/wiki/development/team.html#shane-mcquillan"
+                      to="/wiki/foundation/team.html#shane-mcquillan"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -626,7 +604,7 @@
                     data-reveal-delay="1300"
                   >
                     <router-link
-                      to="/wiki/development/team.html#sam-kawtharani"
+                      to="/wiki/foundation/team.html#sam-kawtharani"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -653,7 +631,7 @@
                     data-reveal-delay="1400"
                   >
                     <router-link
-                      to="/wiki/development/team.html#michael-harboe"
+                      to="/wiki/foundation/team.html#michael-harboe"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -680,7 +658,7 @@
                     data-reveal-delay="1500"
                   >
                     <router-link
-                      to="/wiki/development/team.html#michel-avital"
+                      to="/wiki/foundation/team.html#michel-avital"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
@@ -766,7 +744,7 @@ import Roadmap from "@theme/components/Roadmap";
 import BrandButton from "@theme/components/BrandButton";
 import SocialButtons from "@theme/components/SocialButtons";
 import DownloadBrandButton from "@theme/components/DownloadBrandButton";
-import Spinner from "@theme/components/Spinner";
+import News from "@theme/components/landing/News";
 import * as throttle from "lodash.throttle";
 
 export default {
@@ -775,7 +753,6 @@ export default {
       parallaxElements: [],
       revealElements: [],
       layoutElement: undefined,
-      isMediumLoaded: false
     };
   },
   components: {
@@ -785,11 +762,9 @@ export default {
     BrandButton,
     DownloadBrandButton,
     SocialButtons,
-    Spinner
+    News
   },
   mounted() {
-    this.initMediumScript();
-    this.initMedium();
     this.layoutElement = document.getElementById("landing-page");
     this.parallaxElements = Array.from(
       document.getElementsByClassName("parallax-element")
@@ -825,7 +800,10 @@ export default {
 
         if (elOffset < scrollY) {
           let parallaxTranslate = (scrollY - elOffset) * multiplier;
-          if (element.dataset.parallaxCache != parallaxTranslate && Math.abs(parallaxTranslate) < 300) {
+          if (
+            element.dataset.parallaxCache != parallaxTranslate &&
+            Math.abs(parallaxTranslate) < 300
+          ) {
             element.style.transform = `translateY(${parallaxTranslate}px)`;
             element.dataset.parallaxCache = parallaxTranslate;
           }
@@ -890,36 +868,6 @@ export default {
       var rect = el.getBoundingClientRect(),
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       return rect.top + scrollTop;
-    },
-    initMediumScript() {
-      let el = document.createElement("script");
-      el.src = "https://medium-widget.pixelpoint.io/widget.js";
-      el.async = !0;
-      document.head.appendChild(el);
-    },
-    initMedium() {
-      if (!window.MediumWidget) {
-        setTimeout(() => {
-          this.initMedium();
-        }, 1000);
-        return;
-      }
-
-      window.MediumWidget.Init({
-        renderTo: "#medium-widget",
-        params: {
-          resource: "https://medium.com/tagion",
-          postsPerLine: 3,
-          limit: 3,
-          picture: "big",
-          fields: ["description", "author", "publishAt"],
-          ratio: "landscape"
-        }
-      });
-
-      setTimeout(() => {
-        this.isMediumLoaded = true;
-      }, 500);
     }
   }
 };

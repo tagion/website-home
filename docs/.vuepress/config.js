@@ -14,12 +14,17 @@ let config = {
         ["/wiki/", "Welcome"],
         {
           title: "Synopsis",
-          collapsable: false,
+          collapsable: true,
           children: [
-            ["/wiki/synopsis/dex", "Decentralized Exchange"],
-            ["/wiki/synopsis/node-governance", "Node Governance"],
-            ["/wiki/synopsis/consensus", "Hashgraph Consensus"],
-            ["/wiki/synopsis/data-storage", "Data Storage"]
+            "/wiki/synopsis/dex",
+            "/wiki/synopsis/consensus",
+            "/wiki/synopsis/energy-consumption",
+            "/wiki/synopsis/governance",
+            "/wiki/synopsis/money-supply",
+            "/wiki/synopsis/proof-of-people",
+            "/wiki/synopsis/transaction-volumes",
+            "/wiki/synopsis/transaction-speed",
+            "/wiki/synopsis/use-of-data",
           ]
         },
         {
@@ -28,12 +33,12 @@ let config = {
           children: [["/wiki/community/", "Social Media"]]
         },
         {
-          title: "Development",
+          title: "Foundation",
           collapsable: false,
           children: [
-            ["/wiki/development/team", "Team"],
-            ["/wiki/development/roadmap", "Roadmap"],
-            ["/wiki/development/contribute", "Contribute"]
+            ["/wiki/foundation/team", "Team"],
+            ["/wiki/foundation/roadmap", "Roadmap"],
+            ["/wiki/foundation/contribute", "Contribute"]
           ]
         },
         {

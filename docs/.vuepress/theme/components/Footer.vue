@@ -9,7 +9,7 @@
               <router-link to="/wiki/">Tagion Wiki</router-link>
             </li>
             <li>
-              <router-link to="/wiki/development/roadmap.html">Roadmap</router-link>
+              <router-link to="/wiki/foundation/roadmap.html">Roadmap</router-link>
             </li>
             <li>
               <a href="/tagionwhitepaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Footer'}})" target="_blank" rel="noopener noreferrer nofollow">

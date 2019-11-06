@@ -13,6 +13,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "url": "^0.11.0",
+    "vue-plugin-load-script": "^1.2.0",
     "vuepress": "^1.2.0",
     "vuepress-plugin-canonical": "^1.0.0",
     "vuepress-plugin-sitemap": "^2.3.0"

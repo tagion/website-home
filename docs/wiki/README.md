@@ -8,11 +8,14 @@ editLink: true
 
 # Welcome to Tagion Wiki!
 
-Tagion is an **open protocol**, that enables a **digital peer-to-peer cash**, and an infrastructure of **open banking services**.
+Tagion is an **open banking protocol**, that enables a **digital peer-to-peer cash**, and an infrastructure for **banking services**.
 
-<p class="mb-1">&nbsp;</p>
 
-*This wiki is a community-driven knowladge base about Tagion and eco system around it. Found an typo or some inconsistency? Please let us now via [info@tagion.org](mailto:info@tagion.org) or using a 'Edit page on GitHub' link in the bottom of every page.*
+---
+
+_This wiki is a community-driven knowladge base about Tagion and eco system around it. Found an typo or some inconsistency? Please let us now via [info@tagion.org](mailto:info@tagion.org) or using a 'Edit page on GitHub' link in the bottom of every page._
+
+---
 
 ## Where to Start
 
@@ -22,10 +25,10 @@ If you want to get overall understanding of Tagion, its purpose and components i
 
 To get a better understanding of Tagion, we recommed reading synopsis on four main components:
 
-- [Decentralized Exchange](/wiki/synopsis/dex.html)
-- [Node Governance](/wiki/synopsis/node-governance.html)
-- [Hashgraph Consensus](/wiki/synopsis/consensus.html)
-- [Data Storage](/wiki/synopsis/data-storage.html)
+- [DEX](/wiki/synopsis/dex.html)
+- [Governance](/wiki/synopsis/governance.html)
+- [Hashgraph](/wiki/synopsis/consensus.html)
+- [Speed](/wiki/synopsis/transaction-speed.html)
 
 ## Community
 
