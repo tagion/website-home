@@ -57,27 +57,7 @@ let config = {
       }
     ],
     ["link", { rel: "icon", type: "image/png", href: "/favicon.ico" }],
-    ["meta", { name: "twitter:site", content: "@TagionTeam" }],
-    ["meta", { name: "twitter:creator", content: "@TagionTeam" }],
-    ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:title", content: "Tagion" }],
-    ["meta", { property: "og:site_name", content: "tagion.org" }],
-    [
-      "meta",
-      {
-        property: "og:description",
-        content:
-          "Tagion is an open banking protocol, that enables digital peer-to-peer cryptocurrency and a decentralized exchange, governed by its users. By design, Tagion network has no central authority and belongs to all its users. It will be open-sourced and open for everyone to join once the software is ready."
-      }
-    ],
-    ["meta", { property: "og:url", content: "https://tagion.org" }],
-    [
-      "meta",
-      {
-        property: "og:image",
-        content: "https://tagion.org/bgphoto1.jpg"
-      }
-    ]
+    ["meta", { name: "twitter:creator", content: "@TagionTeam" }]
   ],
   markdown: {
     anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: "" },

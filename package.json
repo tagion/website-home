@@ -21,6 +21,8 @@
     "vue-plugin-load-script": "^1.2.0",
     "vuepress": "^1.2.0",
     "vuepress-plugin-canonical": "^1.0.0",
+    "vuepress-plugin-img-lazy": "^1.0.0",
+    "vuepress-plugin-seo": "^0.1.2",
     "vuepress-plugin-sitemap": "^2.3.0"
   },
   "dependencies": {

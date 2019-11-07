@@ -1,10 +1,10 @@
 ---
 title: Algorithmic Money supply
 lang: en-US
-lastUpdated: 11/6/2019
 sidebar: true
 sidebarDepth: 0
 editLink: false
+shareButtons: true
 ---
 
 # Algorithmic Money supply

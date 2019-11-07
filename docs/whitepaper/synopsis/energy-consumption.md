@@ -4,6 +4,7 @@ lang: en-US
 sidebar: true
 sidebarDepth: 0
 editLink: false
+shareButtons: true
 ---
 
 # Energy Consumption
