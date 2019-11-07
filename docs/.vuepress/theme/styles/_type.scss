@@ -27,11 +27,59 @@ b {
   line-height: 1.8;
   max-width: 800px;
   color: mix($dark, #fff, 90%);
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   &--full {
     max-width: 100%;
+  }
+
+  abbr {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: calc(100% + 0.4rem);
+      left: 0;
+      border-radius: 0.2rem;
+      display: block;
+      padding: 0.4rem 0.6rem;
+      background: $primary;
+      color: #fff;
+      font-size: 0.8rem;
+      line-height: 1.4;
+      width: auto;
+      min-width: 8rem;
+      max-width: 14rem;
+      opacity: 0;
+      transform: translateY(3px);
+      transition: all 100ms;
+      content: attr(title);
+    }
+  }
+
+  abbr:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .footnotes-sep {
+    margin-top: 2rem;
+  }
+  .footnotes {
+    .footnotes-list {
+      font-size: 0.8em;
+      padding-left: 1.8rem;
+
+      .footnote-item {
+        padding-top: calc(#{$header-height} + 0.6em);
+        margin-top: calc(-1 * #{$header-height} - .4em);
+      }
+    }
+
+    .footnote-backref {
+      display: none;
+    }
   }
 
   h1,
@@ -46,7 +94,7 @@ b {
     margin-bottom: 0.2em;
     font-weight: bold;
     font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
     @include media-breakpoint-down(lg) {
       margin-top: calc(-1 * #{$header-height} + 0.4em);
@@ -75,7 +123,7 @@ b {
     z-index: 5;
     font-weight: 600;
     color: $dark;
-    margin-bottom: .8em;
+    margin-bottom: 0.8em;
     position: relative;
     padding-bottom: 1rem;
 
@@ -175,7 +223,7 @@ b {
     margin-bottom: 0.85em;
     position: relative;
     z-index: 6;
-    font-size: .95em;
+    font-size: 0.95em;
     color: #{$primary-darker}dd;
     line-height: 1.8;
 

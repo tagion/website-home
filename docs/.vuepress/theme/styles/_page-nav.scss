@@ -1,0 +1,57 @@
+.layout-footer-nav {
+  border-top: 1px solid rgb(228, 231, 235);
+  .page-nav {
+    .inner {
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 2.6rem;
+      padding-right: 1.6rem;
+
+      @include media-breakpoint-down(xs) {
+        flex-direction: column-reverse;
+
+
+        .prev {
+            margin-top: 2rem;
+        }
+    }
+
+      .nav-label {
+        font-size: 0.6em;
+        color: $secondary;
+      }
+
+      .next {
+
+        text-align: right;
+      }
+
+      .prev,
+      .next {
+        font-size: 1.7rem;
+        padding-top: .6rem;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 1.5rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 1.4rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 1.4rem;
+        }
+        
+        a {
+          border-bottom: 1px solid #ddd;
+
+          &:hover {
+              border-color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

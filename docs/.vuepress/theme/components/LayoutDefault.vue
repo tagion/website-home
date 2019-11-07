@@ -21,6 +21,9 @@
         <Sidebar class="layout-sidebar__inner" :items="sidebarItems" @close-sidebar="closeSidebar" />
       </div>
     </div>
+    <div class="layout-footer-nav">
+      <slot name="footer-pagenav" />
+    </div>
     <div class="layout-footer">
       <Footer :class="{ 'home': isLanding }" />
     </div>
@@ -35,9 +38,9 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import SidebarButton from "./SidebarButton.vue";
 import CookiesNotification from "./CookiesNotification.vue";
-import { resolveSidebarItems } from "../util";
 
 export default {
+  props: ["sidebarItems"],
   data() {
     return {
       isSidebarOpen: false,
@@ -83,14 +86,6 @@ export default {
 
     showSidebar() {
       return this.$page.frontmatter.sidebar;
-    },
-    sidebarItems() {
-      return resolveSidebarItems(
-        this.$page,
-        this.$route,
-        this.$site,
-        this.$localePath
-      );
     },
     contentClasses() {
       return {

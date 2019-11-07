@@ -10,7 +10,7 @@ editLink: false
 
 ---
 
-_This wiki is a community-driven knowladge base about Tagion and eco system around it. Found an typo or some inconsistency? Please let us now via [info@tagion.org](mailto:info@tagion.org) or using a 'Edit page on GitHub' link in the bottom of every page._
+_This wiki is a community-driven knowladge base about Tagion and eco system around it. Found an typo or some inconsistency? Please let us now via [info@tagion.org](mailto:info@tagion.org) or using a 'Edit on Github' link in the bottom of every page._
 
 ---
 

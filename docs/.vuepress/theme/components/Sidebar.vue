@@ -3,7 +3,7 @@
     <div class="sidebar__inner" @click="handleNavClick">
       <NavLinks class="d-flex d-lg-none" />
       <slot name="top" />
-      <b-nav vertical class="sidebar-links" v-if="items.length">
+      <b-nav vertical class="sidebar-links" v-if="items && items.length">
         <li v-for="(item, i) in items" :key="i">
           <SidebarGroup
             v-if="item.type === 'group'"
@@ -73,6 +73,7 @@ export default {
 };
 
 function resolveOpenGroupIndex(route, items, instance) {
+  if (!items) return -1;
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     if (

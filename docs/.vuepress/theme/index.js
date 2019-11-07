@@ -18,7 +18,7 @@ let config = {
         headerAnchorSelector: ".header-anchor"
       }
     ],
-   
+
     [
       "@vuepress/last-updated",
       {
