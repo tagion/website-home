@@ -73,7 +73,10 @@ b {
 
       .footnote-item {
         padding-top: calc(#{$header-height} + 0.6em);
-        margin-top: calc(-1 * #{$header-height} - .4em);
+        margin-top: calc(-1 * #{$header-height} - 0.4em);
+        p {
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -232,10 +235,12 @@ b {
     }
   }
 
-  ul {
-    margin: 1.6em 0em 2.2em;
+  ul,
+  ol {
+    margin: 1em 0em 2.2em;
     position: relative;
     z-index: 6;
+    font-size: 0.95em;
 
     li {
       margin-bottom: 0.2em;

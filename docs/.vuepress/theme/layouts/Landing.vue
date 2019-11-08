@@ -88,7 +88,7 @@
             </div>
             <div class="feature-cards" scroll-reveal data-reveal-delay="200">
               <router-link
-                to="/wiki/synopsis/governance.html"
+                to="/whitepaper/synopsis/governance.html"
                 class="feature-card feature-card--c1"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -96,14 +96,14 @@
                 data-reveal-delay="100"
               >
                 <div class="feature-card__internal">
-                  <h4>Genuine Democratic Governance Model</h4>
+                  <h4>Democratic Governance Model</h4>
                   <p>Power concentration made impossible. Tagion’s governance modelmodel is based on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom.</p>
                   <p class="feature-card__read-more">Read more</p>
                 </div>
               </router-link>
               
               <router-link
-                to="/wiki/synopsis/transaction-volumes.html"
+                to="/whitepaper/synopsis/transaction-volumes.html"
                 class="feature-card feature-card--c3"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -117,7 +117,7 @@
                 </div>
               </router-link>
               <router-link
-                to="/wiki/synopsis/energy-consumption.html"
+                to="/whitepaper/synopsis/energy-consumption.html"
                 class="feature-card feature-card--c6"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -131,7 +131,7 @@
                 </div>
               </router-link>
               <router-link
-                to="/wiki/synopsis/transaction-speed.html"
+                to="/whitepaper/synopsis/transaction-speed.html"
                 class="feature-card feature-card--c4"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -145,7 +145,7 @@
                 </div>
               </router-link>
               <router-link
-                to="/wiki/synopsis/money-supply.html"
+                to="/whitepaper/synopsis/money-supply.html"
                 class="feature-card feature-card--c2"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -160,7 +160,7 @@
               </router-link>
               
               <router-link
-                to="/wiki/synopsis/use-of-data.html"
+                to="/whitepaper/synopsis/use-of-data.html"
                 class="feature-card feature-card--c4"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -174,7 +174,7 @@
                 </div>
               </router-link>
               <router-link
-                to="/wiki/synopsis/consensus.html"
+                to="/whitepaper/synopsis/consensus.html"
                 class="feature-card feature-card--c2"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -182,13 +182,13 @@
                 data-reveal-delay="700"
               >
                 <div class="feature-card__internal">
-                  <h4>Hashgraph</h4>
+                  <h4>Hashgraph Consensus</h4>
                   <p>Exact (fair) ordering and parallel execution for scaling? Efficient resource utilization? Deterministic, i.e. finality on settlements fast? Now it is possible.</p>
                   <p class="feature-card__read-more">Read more</p>
                 </div>
               </router-link>
               <router-link
-                to="/wiki/synopsis/dex.html"
+                to="/whitepaper/synopsis/dex.html"
                 class="feature-card feature-card--c1"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -202,7 +202,7 @@
                 </div>
               </router-link>
               <router-link
-                to="/wiki/synopsis/proof-of-people.html"
+                to="/whitepaper/synopsis/proof-of-people.html"
                 class="feature-card feature-card--c6"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -239,7 +239,7 @@
                     data-reveal-delay="100"
                   >The team behind Tagion has spent significant time and money on building a system that addresses many of the issues that both the fiat-based monetary system and DLT based systems are suffering from. Tagion is both an alternative -and a supplement -to both the current system and the DLT based systems.</p>
                   <brand-button
-                    to="/wiki/foundation/roadmap.html"
+                    to="/community/roadmap.html"
                     class="mt-5"
                     reveal
                     scroll-reveal-child
@@ -333,12 +333,12 @@
                     data-reveal-delay="300"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#theis-simonsen"
+                      to="/community/team.html#theis-simonsen"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/ts.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/ts.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Theis Simonsen
@@ -360,12 +360,12 @@
                     data-reveal-delay="400"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#carsten-bleser-rasmussen"
+                      to="/community/team.html#carsten-bleser-rasmussen"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/cr.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/cr.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Carsten Bleser Rasmussen
@@ -387,12 +387,12 @@
                     data-reveal-delay="500"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#kristian-vestergaard"
+                      to="/community/team.html#kristian-vestergaard"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/kv.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/kv.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Kristian Vestergaard
@@ -415,12 +415,12 @@
                     data-reveal-delay="600"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#tobias-ambs-thomsen"
+                      to="/community/team.html#tobias-ambs-thomsen"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/ta.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/ta.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Tobias Ambs-Thomsen
@@ -442,12 +442,12 @@
                     data-reveal-delay="700"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#vlad-pazych"
+                      to="/community/team.html#vlad-pazych"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/vp.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/vp.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Vlad Pazych
@@ -469,12 +469,12 @@
                     data-reveal-delay="800"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#oleksandr-sushko"
+                      to="/community/team.html#oleksandr-sushko"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/as.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/as.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Oleksandr Sushko
@@ -496,12 +496,12 @@
                     data-reveal-delay="900"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#oksana-perederii"
+                      to="/community/team.html#oksana-perederii"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/op.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/op.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Oksana Perederii
@@ -523,12 +523,12 @@
                     data-reveal-delay="1000"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#leif-bloch-rasmussen"
+                      to="/community/team.html#leif-bloch-rasmussen"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/lr.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/lr.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Leif Bloch Rasmussen
@@ -550,12 +550,12 @@
                     data-reveal-delay="1100"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#richard-kastelein"
+                      to="/community/team.html#richard-kastelein"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/kastalein.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/kastalein.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Richard Kastelein
@@ -577,12 +577,12 @@
                     data-reveal-delay="1200"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#shane-mcquillan"
+                      to="/community/team.html#shane-mcquillan"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/shane.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/shane.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Shane McQuillan
@@ -604,12 +604,12 @@
                     data-reveal-delay="1300"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#sam-kawtharani"
+                      to="/community/team.html#sam-kawtharani"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/sam.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/sam.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Sam Kawtharani
@@ -631,12 +631,12 @@
                     data-reveal-delay="1400"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#michael-harboe"
+                      to="/community/team.html#michael-harboe"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/harboe.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/harboe.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Michael Harboe
@@ -658,12 +658,12 @@
                     data-reveal-delay="1500"
                   >
                     <router-link
-                      to="/wiki/foundation/team.html#michel-avital"
+                      to="/community/team.html#michel-avital"
                       class="team-table__card"
                     >
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
-                          <img src="/team/avital.jpg" />
+                          <img loading="lazy" class="lazy" data-src="/team/avital.jpg" />
                           <div class="team-table__card-header">
                             <h5>
                               Michel Avital

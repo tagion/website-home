@@ -16,19 +16,19 @@ let config = {
     sidebar: {
       "/docs/": [["/docs/", "Welcome"]],
       "/whitepaper/": [
-        ["/whitepaper/", "Introduction"],
+        ["/whitepaper/", "Overview"],
         {
           title: "Synopsis",
-          collapsable: true,
+          collapsable: false,
           children: [
             "/whitepaper/synopsis/dex",
             "/whitepaper/synopsis/consensus",
-            "/whitepaper/synopsis/energy-consumption",
             "/whitepaper/synopsis/governance",
-            "/whitepaper/synopsis/money-supply",
             "/whitepaper/synopsis/proof-of-people",
             "/whitepaper/synopsis/transaction-volumes",
             "/whitepaper/synopsis/transaction-speed",
+            "/whitepaper/synopsis/energy-consumption",
+            "/whitepaper/synopsis/money-supply",
             "/whitepaper/synopsis/use-of-data"
           ]
         },

@@ -3,6 +3,7 @@ const moment = require("moment");
 
 let config = {
   plugins: [
+    ['check-md'],
     ["img-lazy"],
     [
       "seo",

@@ -20,9 +20,9 @@ Websites. By using the Websites or by clicking to accept or agree to the
 Terms of Use when this option is made available to you, you accept and
 agree to be bound and abide by these Terms of Use in addition to
 
-- our [Privacy Policy](/meta/privacy-policy/), incorporated herein by
+- our [Privacy Policy](/meta/privacy-policy.md), incorporated herein by
   reference; and
-- our [Cookie Policy](/meta/cookie-policy/), incorporated herein by
+- our [Cookie Policy](/meta/cookie-policy.md), incorporated herein by
   reference.
 
 If you do not to agree to these Terms of Use or the Privacy Policy, you
@@ -223,7 +223,7 @@ no obligation to update such material.
 #### Information About You and Your Visits to the Websites
 
 All information we collect on this Websites is subject to our [Privacy
-Policy](/meta/privacy-policy/). By using the Website, you consent to all
+Policy](/meta/privacy-policy.md). By using the Website, you consent to all
 actions taken by us with respect to your information in compliance with
 the Privacy Policy.
 

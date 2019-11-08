@@ -8,6 +8,8 @@
     padding: 0;
     list-style: none;
     display: flex;
+    align-items: center;
+
     :not(:last-child) {
       margin-right: 0.6rem;
     }
@@ -15,6 +17,8 @@
     &--label {
       margin-right: 1rem;
       color: $primary-lighter;
+      position: relative;
+      top: 1px;
     }
 
     a {

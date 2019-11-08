@@ -1,15 +1,20 @@
 ---
-title: Inefficient Use of Data
+title: Efficient Use of Data
 lang: en-US
 sidebar: true
 sidebarDepth: 0
 editLink: false
 shareButtons: true
+
+image: /figures/png/use-of-data.png
+description: If you want to move fast, you pack light. In Tagion, a node does not keep a complete history of transactions, but only alive records.
 ---
 
-# Inefficient Use of Data
+# Efficient Use of Data
 
-_If you want to move fast, you pack light. Tagion is probably the fastest decentralized transaction network available. All thanks to DART._
+_If you want to move fast, you pack light. In Tagion, a node does not keep a complete history of transactions, but only alive records._
+
+<img src="/figures/use-of-data.svg" alt="Use of Data" class="wiki-image-figure"/>
 
 Most DLTs uses a decentralised immutable database for storage. The blockchain data structure is immutable meaning all data should be stored forever and cannot be deleted. 
 

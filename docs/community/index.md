@@ -23,7 +23,7 @@ Community is an essential part of any open-source project. Even though Tagion is
 
 Join the general discussion on [Telegram Channel](https://t.me/tagion) and [Tagion's Subreddit](https://www.reddit.com/r/Tagion/).
 
-You can find all official and non-official social media channels in the [social media section](/community/social-media.html).
+You can find all official and non-official social media channels in the [social media section](/community/social-media.md).
 
 ## Contact
 

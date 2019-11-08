@@ -5,11 +5,16 @@ sidebar: true
 sidebarDepth: 0
 editLink: false
 shareButtons: true
+
+image: /figures/png/proof-of-people.png
+description: Tagion utilises what is dubbed the Proof-of-People protocol, a heuristic social protocol based on random validation and social components, to achieve a democratic principle of “one person – one node” and “one person – one vote”.
 ---
 
 # Proof of People
 
 _Tagion utilises what is dubbed the Proof-of-People protocol, a heuristic social protocol based on random validation and social components, to achieve a democratic principle of “one person – one node” and “one person – one vote”._
+
+<img src="/figures/proof-of-people.svg" alt="Proof of People" class="wiki-image-figure"/>
 
 Tagion utilises what is dubbed the Proof-of-People protocol, a heuristic social protocol based on random validation and social components, to achieve a democratic principle of “one person – one node“ and “one person – one vote”. The social component makes it difficult to operate more than one node, while the scoring mechanism reduces the incentive of doing so even more.
 

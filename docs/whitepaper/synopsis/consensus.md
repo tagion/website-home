@@ -1,17 +1,20 @@
 ---
-title: Hashgraph
+title: Hashgraph Consensus
 lang: en-US
 sidebar: true
 sidebarDepth: 0
 editLink: false
 shareButtons: true
 
+image: /figures/png/hashgraph.png
 description: Exact (fair) ordering and parallel execution for scaling? Efficient resource utilization? Deterministic, i.e. finality on settlements fast? Now it is possible
 ---
 
-# Hashgraph
+# Hashgraph Consensus
 
 _Exact (fair) ordering and parallel execution for scaling? Efficient resource utilization? Deterministic, i.e. finality on settlements fast? Now it is possible._
+
+<img src="/figures/hashgraph.svg" alt="Hashgraph" class="wiki-image-figure"/>
 
 Proof-of-work systems are probabilistic systems with no ordering, there is no accurate timestamp on each transaction. The miners decide on which transaction to put in a block and validate the transaction. It is usually decided by price but can also be chosen freely by the miner. It means, it is not necessarily the first to submit a transaction, which gets it approved first. It is also means it cannot function for ordering of bids and asks sorted by timestamps, do price-discovery and fair matching.
 

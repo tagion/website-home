@@ -8,13 +8,13 @@ editLink: false
 
 # Terminology
 
-This is a collection of terms used in this wiki. Some of them are specific to Tagion, and some are generally used in the cryptocurrency field.
+This is a collection of terms often used in the context related to crypto and Tagion specifically. 
 
 ## Tagion Terms
 
 #### Tagion Protocol
 
-A set of rules that define communication between computers (e.g., [gossip protocol](#gossip-protocol)) in the [Tagion Network](#tagion-network), data storage (e.g., [DART](#dart)), [consensus](#consensus-protocol) on the order of events and voting, related to [governance](#governance).
+A set of rules that defines communication between computers (e.g., [gossip protocol](#gossip-protocol)) in the [Tagion Network](#tagion-network), data storage (e.g., [DART](#dart)), [consensus](#consensus-protocol) on the order of events and voting, related to [governance](#governance).
 
 #### Tagion Network
 
@@ -66,13 +66,17 @@ A lightweight distributed open-source database, made specifically for Tagion.
 
 The name comes from the fact that the architecture can be visually explained using a dartboard (from a game of Darts) as a metaphor.
 
-DART is an acronym for the phrase yet to be determined.
+DART is an acronym for the Distributed Archive of Random Transactions.
 
-[DART architecture](/wiki/architecture/dart.html) is not disclosed yet, because it is a part of a to-be filed [patent](/wiki/foundation/open-source.html#patents-and-open-licenses).
+DART architecture is not disclosed yet, because it is a part of a to-be filed patent.
+
+#### HiBON
+
+Data format similar to [BSON](https://en.wikipedia.org/wiki/BSON), but hash-invariant. The order of keys is sorted before calculating a hash, so the same data always has the same hash.
 
 #### HBSON
 
-Data format similar to [BSON](https://en.wikipedia.org/wiki/BSON), but hash-invariant. The order of keys is sorted before calculating a hash, so the same data always has the same hash.
+An original name of [HiBON](#hibon).
 
 ## General Terms
 
@@ -96,9 +100,9 @@ Extension of [Gossip Protocol](#gossip-protocol) that includes information neede
 
 #### Virtual Voting
 
-An algorithm used in [Hasgraph](#hashgraph) protocol that defines how [Network Nodes](#network-node) agree on the order of transactions without transmitting actual voting information over the network.
+An algorithm used in [Hasgraph](#hashgraph) protocol that defines how [Network Nodes](#tagion-network-node) agree on the order of transactions without transmitting actual voting information over the network.
 
-Thanks to [Gossip about Gossip](#gossip-about-gossip), every [Network Node](#network-node) knows what other nodes know, thus can determine how they would cast their votes.
+Thanks to [Gossip about Gossip](#gossip-about-gossip), every [Network Node](#tagion-network-node) knows what other nodes know, thus can determine how they would cast their votes.
 
 The fact that voting is virtual enables the network to reach consensus much faster.
 
@@ -132,7 +136,7 @@ Fiat currency is an object (like a paper bill or metal coin) that has been estab
 
 Governance is an approach to decision making. 
 
-In the field of cryptocurrencies, governance is usually decentralized, which means the [Network Nodes](#network-node) are voting for some change to be adopted by whole network.
+In the field of cryptocurrencies, governance is usually decentralized, which means the [Network Nodes](#tagion-network-node) are voting for some change to be adopted by whole network.
 
 #### Merkle tree
 

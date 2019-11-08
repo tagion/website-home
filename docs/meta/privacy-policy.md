@@ -13,7 +13,7 @@ privacyVersion: 1
 
 When you entrust us with your personal data, we promise in return to process this in a secure and transparent manner. We would appreciate if you would take the time to read through our privacy policy, so you are informed about how we handle your personal data.
 
-The purpose of this privacy policy is to explain how I25S collects and processes your personal data when you interact with our website. The privacy policy applies to tagion.org, but please do also be aware and check out how we make use of data collected in cookies when you visit tagion.org in our cookie policy at [Cookie Policy page](/meta/cookie-policy/).
+The purpose of this privacy policy is to explain how I25S collects and processes your personal data when you interact with our website. The privacy policy applies to tagion.org, but please do also be aware and check out how we make use of data collected in cookies when you visit tagion.org in our cookie policy at [Cookie Policy page](/meta/cookie-policy.md).
 
 At I25S we receive data about all visitors on tagion.org.
 
@@ -30,7 +30,7 @@ We collect and process your personal information when you are using/requesting o
 The necessary personal data is processed for the following purposes:
 
 Delivery of service: We collect the data to enable us to deliver a digital service requested by you.
-Optimization and development: We use the data to optimize and develop the user experience of tagion.org and the services we provide. For further details, see our cookie policy at [Cookie Policy page](/meta/cookie-policy/).
+Optimization and development: We use the data to optimize and develop the user experience of tagion.org and the services we provide. For further details, see our cookie policy at [Cookie Policy page](/meta/cookie-policy.md).
 Statistics: We use the data to build usage statistics of our website, helping us to improve it.
 We process your personal data in order to communicate with you and to respond to your requests (e.g. providing service to you as a user and giving you the best possible service).
 We process your personal data in order to send you marketing material, newsletters, company announcements and other information from I25S, which you have consented to receive and so that you receive marketing material and information about us via social media (for example Facebook and LinkedIn), and personal data is also used to identify other persons who may be interested in I25S.
