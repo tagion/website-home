@@ -50,5 +50,8 @@
         </g>
       </svg>
     </div>
+    <div class="layout-sidebar-button__text">
+      Menu
+    </div>
   </div>
 </template>
