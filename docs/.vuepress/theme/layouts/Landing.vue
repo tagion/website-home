@@ -88,7 +88,7 @@
             </div>
             <div class="feature-cards" scroll-reveal data-reveal-delay="200">
               <router-link
-                to="/whitepaper/synopsis/governance.html"
+                to="/whitepaper/synopsis/dex.html"
                 class="feature-card feature-card--c1"
                 scroll-reveal-child
                 scroll-reveal-left
@@ -96,21 +96,73 @@
                 data-reveal-delay="100"
               >
                 <div class="feature-card__internal">
+                  <img data-src="/figures/circle/dex.svg" loading="lazy" class="lazy" />
+                  <h4>Decentralized Crypto Exchange</h4>
+                  <p>DEX allows everyone to make exchanges between supported cryptocurrencies with no mediator.</p>
+                  <p class="feature-card__read-more">Read more</p>
+                </div>
+              </router-link>
+              <router-link
+                to="/whitepaper/synopsis/governance.html"
+                class="feature-card feature-card--c1"
+                scroll-reveal-child
+                scroll-reveal-left
+                scroll-reveal-opacity
+                data-reveal-delay="200"
+              >
+                <div class="feature-card__internal">
+                  <img data-src="/figures/circle/governance.svg" loading="lazy" class="lazy" />
                   <h4>Democratic Governance Model</h4>
                   <p>Power concentration made impossible. Tagion’s governance modelmodel is based on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom.</p>
                   <p class="feature-card__read-more">Read more</p>
                 </div>
               </router-link>
-              
               <router-link
-                to="/whitepaper/synopsis/transaction-volumes.html"
-                class="feature-card feature-card--c3"
+                to="/whitepaper/synopsis/consensus.html"
+                class="feature-card feature-card--c2"
                 scroll-reveal-child
                 scroll-reveal-left
                 scroll-reveal-opacity
                 data-reveal-delay="300"
               >
                 <div class="feature-card__internal">
+                  <img data-src="/figures/circle/hashgraph.svg" loading="lazy" class="lazy" />
+                  <h4>Hashgraph Consensus</h4>
+                  <p>Exact (fair) ordering and parallel execution for scaling? Efficient resource utilization? Deterministic, i.e. finality on settlements fast? Now it is possible.</p>
+                  <p class="feature-card__read-more">Read more</p>
+                </div>
+              </router-link>
+
+              <router-link
+                to="/whitepaper/synopsis/proof-of-people.html"
+                class="feature-card feature-card--c6"
+                scroll-reveal-child
+                scroll-reveal-left
+                scroll-reveal-opacity
+                data-reveal-delay="400"
+              >
+                <div class="feature-card__internal">
+                  <img data-src="/figures/circle/proof-of-people.svg" loading="lazy" class="lazy" />
+                  <h4>Proof-of-people</h4>
+                  <p>Tagion utilises what is dubbed the Proof-of-People protocol, a heuristic social protocol based on random validation and social components, to achieve a democratic principle of “one person – one node” and “one person – one vote”.</p>
+                  <p class="feature-card__read-more">Read more</p>
+                </div>
+              </router-link>
+
+              <router-link
+                to="/whitepaper/synopsis/transaction-volumes.html"
+                class="feature-card feature-card--c3"
+                scroll-reveal-child
+                scroll-reveal-left
+                scroll-reveal-opacity
+                data-reveal-delay="500"
+              >
+                <div class="feature-card__internal">
+                  <img
+                    data-src="/figures/circle/transaction-volume.svg"
+                    loading="lazy"
+                    class="lazy"
+                  />
                   <h4>Transaction Volumes</h4>
                   <p>Volume is king. It is said that DLT’s will never be able to compete with conventional banking systems in the area of transaction volumes. It might have been true once, but not anymore.</p>
                   <p class="feature-card__read-more">Read more</p>
@@ -122,9 +174,14 @@
                 scroll-reveal-child
                 scroll-reveal-left
                 scroll-reveal-opacity
-                data-reveal-delay="500"
+                data-reveal-delay="600"
               >
                 <div class="feature-card__internal">
+                  <img
+                    data-src="/figures/circle/energy-consumption.svg"
+                    loading="lazy"
+                    class="lazy"
+                  />
                   <h4>Energy Consumption</h4>
                   <p>Bitcoin mining accounts for 0.29% of the world's annual electricity consumption. Mining of a single bitcoin block consumes enough energy to power more than 28 U.S. homes for a day. Tagion consumes 10,000% less energy, compared to Bitcoin.</p>
                   <p class="feature-card__read-more">Read more</p>
@@ -136,9 +193,10 @@
                 scroll-reveal-child
                 scroll-reveal-left
                 scroll-reveal-opacity
-                data-reveal-delay="400"
+                data-reveal-delay="700"
               >
                 <div class="feature-card__internal">
+                  <img data-src="/figures/circle/transaction-speed.svg" loading="lazy" class="lazy" />
                   <h4>Transaction Speed</h4>
                   <p>Faster than fast. One of the main reasons current DLT¨s have failed in mass adaption is their lack of speed. That is not an issue Tagion is facing.</p>
                   <p class="feature-card__read-more">Read more</p>
@@ -150,68 +208,28 @@
                 scroll-reveal-child
                 scroll-reveal-left
                 scroll-reveal-opacity
-                data-reveal-delay="200"
+                data-reveal-delay="800"
               >
                 <div class="feature-card__internal">
+                  <img data-src="/figures/circle/money-supply.svg" loading="lazy" class="lazy" />
                   <h4>Algorithmic Money supply</h4>
                   <p>Fractional banking not allowed. Tagion aims to bring trust back to the market and financial systems.</p>
                   <p class="feature-card__read-more">Read more</p>
                 </div>
               </router-link>
-              
+
               <router-link
                 to="/whitepaper/synopsis/use-of-data.html"
                 class="feature-card feature-card--c4"
                 scroll-reveal-child
                 scroll-reveal-left
                 scroll-reveal-opacity
-                data-reveal-delay="600"
-              >
-                <div class="feature-card__internal">
-                  <h4>Efficient Use of Data</h4>
-                  <p>If you want to move fast, you pack light. Tagion is probably the fastest decentralized transaction network available. All thanks to DART.</p>
-                  <p class="feature-card__read-more">Read more</p>
-                </div>
-              </router-link>
-              <router-link
-                to="/whitepaper/synopsis/consensus.html"
-                class="feature-card feature-card--c2"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
-                data-reveal-delay="700"
-              >
-                <div class="feature-card__internal">
-                  <h4>Hashgraph Consensus</h4>
-                  <p>Exact (fair) ordering and parallel execution for scaling? Efficient resource utilization? Deterministic, i.e. finality on settlements fast? Now it is possible.</p>
-                  <p class="feature-card__read-more">Read more</p>
-                </div>
-              </router-link>
-              <router-link
-                to="/whitepaper/synopsis/dex.html"
-                class="feature-card feature-card--c1"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
-                data-reveal-delay="800"
-              >
-                <div class="feature-card__internal">
-                  <h4>Decentralized Crypto Exchange</h4>
-                  <p>DEX allows everyone to make exchanges between supported cryptocurrencies with no mediator.</p>
-                  <p class="feature-card__read-more">Read more</p>
-                </div>
-              </router-link>
-              <router-link
-                to="/whitepaper/synopsis/proof-of-people.html"
-                class="feature-card feature-card--c6"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
                 data-reveal-delay="900"
               >
                 <div class="feature-card__internal">
-                  <h4>Proof-of-people</h4>
-                  <p>Tagion utilises what is dubbed the Proof-of-People protocol, a heuristic social protocol based on random validation and social components, to achieve a democratic principle of “one person – one node” and “one person – one vote”.</p>
+                  <img data-src="/figures/circle/use-of-data.svg" loading="lazy" class="lazy" />
+                  <h4>Efficient Use of Data</h4>
+                  <p>If you want to move fast, you pack light. Tagion is probably the fastest decentralized transaction network available. All thanks to DART.</p>
                   <p class="feature-card__read-more">Read more</p>
                 </div>
               </router-link>
@@ -267,7 +285,7 @@
             </div>
             <div class="mt-4">
               <div scroll-reveal scroll-reveal-up scroll-reveal-opacity data-reveal-delay="300">
-                <news/>
+                <news />
               </div>
             </div>
           </b-container>
@@ -332,10 +350,7 @@
                     scroll-reveal-opacity
                     data-reveal-delay="300"
                   >
-                    <router-link
-                      to="/community/team.html#theis-simonsen"
-                      class="team-table__card"
-                    >
+                    <router-link to="/community/team.html#theis-simonsen" class="team-table__card">
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
                           <img loading="lazy" class="lazy" data-src="/team/ts.jpg" />
@@ -441,10 +456,7 @@
                     scroll-reveal-opacity
                     data-reveal-delay="700"
                   >
-                    <router-link
-                      to="/community/team.html#vlad-pazych"
-                      class="team-table__card"
-                    >
+                    <router-link to="/community/team.html#vlad-pazych" class="team-table__card">
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
                           <img loading="lazy" class="lazy" data-src="/team/vp.jpg" />
@@ -576,10 +588,7 @@
                     scroll-reveal-opacity
                     data-reveal-delay="1200"
                   >
-                    <router-link
-                      to="/community/team.html#shane-mcquillan"
-                      class="team-table__card"
-                    >
+                    <router-link to="/community/team.html#shane-mcquillan" class="team-table__card">
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
                           <img loading="lazy" class="lazy" data-src="/team/shane.jpg" />
@@ -603,10 +612,7 @@
                     scroll-reveal-opacity
                     data-reveal-delay="1300"
                   >
-                    <router-link
-                      to="/community/team.html#sam-kawtharani"
-                      class="team-table__card"
-                    >
+                    <router-link to="/community/team.html#sam-kawtharani" class="team-table__card">
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
                           <img loading="lazy" class="lazy" data-src="/team/sam.jpg" />
@@ -630,10 +636,7 @@
                     scroll-reveal-opacity
                     data-reveal-delay="1400"
                   >
-                    <router-link
-                      to="/community/team.html#michael-harboe"
-                      class="team-table__card"
-                    >
+                    <router-link to="/community/team.html#michael-harboe" class="team-table__card">
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
                           <img loading="lazy" class="lazy" data-src="/team/harboe.jpg" />
@@ -657,10 +660,7 @@
                     scroll-reveal-opacity
                     data-reveal-delay="1500"
                   >
-                    <router-link
-                      to="/community/team.html#michel-avital"
-                      class="team-table__card"
-                    >
+                    <router-link to="/community/team.html#michel-avital" class="team-table__card">
                       <div class="team-table__card-bio">
                         <div class="team-table__card-header-row">
                           <img loading="lazy" class="lazy" data-src="/team/avital.jpg" />
@@ -752,7 +752,7 @@ export default {
     return {
       parallaxElements: [],
       revealElements: [],
-      layoutElement: undefined,
+      layoutElement: undefined
     };
   },
   components: {
