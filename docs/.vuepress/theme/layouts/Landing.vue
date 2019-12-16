@@ -9,11 +9,13 @@
               <b-col cols="12" xl="5">
                 <reveal class="hero__quote" child opacity direction="up">
                   <h2>
-                    <span class="hero__quote-accent">Open</span>
+                    <span class="hero__quote-muted">Creating a</span>
                     <br />
-                    <span class="hero__quote-muted">Banking</span>
+                    <span class="hero__quote-accent">Sustainable</span>
                     <br />
-                    <span class="hero__quote-muted">Protocol</span>
+                    <span class="hero__quote-muted">Economic</span>
+                    <br />
+                    <span class="hero__quote-muted">World</span>
                   </h2>
                 </reveal>
                 <div class="hero__details">
@@ -60,7 +62,7 @@
                 >
                   <iframe
                     class="hero__video"
-                    src="https://www.youtube.com/embed/2xPvrTZDAp8?autoplay=1&modestbranding=1&rel=0"
+                    src="https://www.youtube.com/embed/2xPvrTZDAp8?modestbranding=1&rel=0"
                     allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
@@ -269,7 +271,6 @@ import Roadmap from "@theme/components/Roadmap";
 import BrandButton from "@theme/components/BrandButton";
 import SocialButtons from "@theme/components/SocialButtons";
 import DownloadBrandButton from "@theme/components/DownloadBrandButton";
-import VideoModal from "@theme/components/VideoModal";
 import NewsletterForm from "@theme/components/NewsletterForm";
 import TeamCard from "@theme/components/landing/TeamCard";
 import Reveal from "@theme/components/landing/Reveal";
@@ -295,7 +296,6 @@ export default {
     DownloadBrandButton,
     SocialButtons,
     NewsletterForm,
-    VideoModal,
     TeamCard,
     Reveal,
     News

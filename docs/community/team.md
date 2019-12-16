@@ -4,6 +4,8 @@ lang: en-US
 sidebar: true
 sidebarDepth: 0
 editLink: true
+
+description: Theis Simonsen, CEO - experienced strategist, developer, lecturer and executive. Carsten Bleser Rasmussen, CTO - technical cornerstone of Tagion and responsible for low-level architecture and core network concepts. Kristian Vestergaard - 20+ years of experience as an engineer, software architect and leader to the team.
 ---
 
 # Tagion Team

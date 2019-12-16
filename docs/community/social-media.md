@@ -4,6 +4,8 @@ lang: en-US
 sidebar: true
 sidebarDepth: 0
 editLink: true
+
+description: Community is an essential part of any open-source project. Even though Tagion is still in its early days, healthy community of developers and early adopters is one Tagion's top priorities.
 ---
 
 # Social Media
@@ -18,7 +20,7 @@ _Created or found non-official community related to Tagion? Let's list it here! 
 
 ## General Discussions
 
-- [Official Telegram Channel](https://t.me/tagion)
+- [Official Telegram Chat](https://t.me/tagionChat)
 - [Official Tagion's Subreddit](https://www.reddit.com/r/Tagion/)
 
 ## Official Pages
@@ -26,6 +28,7 @@ _Created or found non-official community related to Tagion? Let's list it here! 
 - [Tagion on LinkedIn](https://www.linkedin.com/company/33286266)
 - [Tagion Team on Twitter](https://twitter.com/tagionTeam)
 - [Tagion Team on Facebook](https://www.facebook.com/tagionTeam)
+- [Official Telegram Channel](https://t.me/tagion)
 
 ## Blogs
 

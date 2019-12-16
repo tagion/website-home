@@ -3,7 +3,7 @@ const moment = require("moment");
 
 let config = {
   plugins: [
-    ['check-md'],
+    ["check-md"],
     ["img-lazy"],
     [
       "seo",
@@ -22,8 +22,9 @@ let config = {
             : "website",
         url: (_, $site, path) => ($site.themeConfig.domain || "") + path,
         image: ($page, $site) =>
-          $page.frontmatter.image &&
-          ($site.themeConfig.domain || "") + $page.frontmatter.image,
+          $page.frontmatter.image
+            ? ($site.themeConfig.domain || "") + $page.frontmatter.image
+            : ($site.themeConfig.domain || "") + "/avatar-black.png",
         publishedAt: $page =>
           $page.frontmatter.date && new Date($page.frontmatter.date),
         modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated)

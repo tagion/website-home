@@ -1,9 +1,11 @@
 ---
-title: Welcome
+title: Community
 lang: en-US
 sidebar: true
 sidebarDepth: 0
 editLink: true
+
+description: Tagion is an open banking protocol, that enables a digital peer-to-peer cash, and an infrastructure for banking services. Tagion includes the protocol for decentralized exchange, DART database, HiBON data format.
 ---
 
 # Welcome to Tagion!

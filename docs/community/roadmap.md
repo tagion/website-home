@@ -4,6 +4,8 @@ lang: en-US
 sidebar: true
 sidebarDepth: 0
 editLink: true
+
+description: The team behind Tagion has spent a significant amount of time, funding itself, while building core components - Hashgraph, Gossip protocol, DART database, HiBON data format, the underlying API and more. We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project.
 ---
 
 # Tagion Roadmap
@@ -33,7 +35,6 @@ editLink: true
 - Creating legal structure for Tagion project;
 - Developing full test node and developer package;
 - Creating materials and documentation about the project;
-
 
 ## Future
 

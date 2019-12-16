@@ -6,7 +6,7 @@
           <h6 class="mb-3">Quick Links</h6>
           <b-nav vertical>
             <li>
-              <router-link to="/community/foundation/roadmap.html">Roadmap</router-link>
+              <router-link to="/community/roadmap.html">Roadmap</router-link>
             </li>
             <li>
               <router-link to="/whitepaper/">Whitepaper</router-link>

@@ -4,6 +4,8 @@ lang: en-US
 sidebar: true
 sidebarDepth: 0
 editLink: false
+
+description: collection of terms often used in the context related to crypto and Tagion specifically. Tagion Protocol, DEX, HiBON, DART and other terms.
 ---
 
 # Terminology
