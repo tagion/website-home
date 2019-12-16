@@ -2,123 +2,128 @@
   <layout-default class="landing-page" id="landing-page">
     <template slot="root-content">
       <div class="landing">
-        <div class="hero" scroll-reveal>
+        <reveal class="hero">
           <b-container class="lcontainer lcontainer--hero">
             <div class="hero__background"></div>
             <b-row class="hero_content">
-              <b-col cols=12 xl=5>
-                <div class="hero__quote">
-                  <h2
-                    scroll-reveal-child
-                    scroll-reveal-up
-                    scroll-reveal-opacity
-                    data-reveal-delay="200"
-                  >
+              <b-col cols="12" xl="5">
+                <reveal class="hero__quote" child opacity direction="up">
+                  <h2>
                     <span class="hero__quote-accent">Open</span>
                     <br />
                     <span class="hero__quote-muted">Banking</span>
                     <br />
                     <span class="hero__quote-muted">Protocol</span>
                   </h2>
-                </div>
+                </reveal>
                 <div class="hero__details">
-                  <p>
-                    <b>Peer-to-peer cryptocurrency</b>, governed by its users. Designed for adoption on a massive scale.
-                  </p>
+                  <reveal child opacity direction="down" :delay="250">
+                    <p>
+                      <b>Tagion</b> is a peer-to-peer cryptocurrency designed for adoption on a massive scale.
+                    </p>
+                  </reveal>
 
                   <div class="hero__buttons mt-5">
                     <div class="hero__button-wrapper">
-                      <p>
-                        <small>Subscribe to our newsletter to get updates on the latest developments. We don't spam and you can unsubscribe at any time.</small>
-                      </p>
-                      <newsletter-form dark class="hero__newsletter" />
-                      <social-buttons light class="mt-3" />
+                      <reveal child opacity direction="down" :delay="350">
+                        <social-buttons light class="mb-3" />
+                      </reveal>
+                      <reveal child opacity direction="down" :delay="450">
+                        <p>
+                          <small>
+                            Subscribe to our newsletter to stay in the loop.
+                            <br />You can unsubscribe at any time.
+                          </small>
+                        </p>
+                      </reveal>
+                      <reveal
+                        child
+                        opacity
+                        direction="down"
+                        :delay="550"
+                        style="position: relative; z-index: 5;"
+                      >
+                        <newsletter-form dark class="hero__newsletter" />
+                      </reveal>
                     </div>
                   </div>
                 </div>
               </b-col>
-              <b-col  cols=12 xl=7 class="hero__video-wrapper">
-                <iframe
-                  class="hero__video"
-                  src="https://www.youtube.com/embed/2xPvrTZDAp8?autoplay=1&modestbranding=1&rel=0"
-                  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+              <b-col cols="12" xl="7">
+                <reveal
+                  class="hero__video-wrapper"
+                  child
+                  opacity
+                  direction="up"
+                  :delay="750"
+                  style="position: relative; z-index: 5; width: 100%; height; 100%;"
+                >
+                  <iframe
+                    class="hero__video"
+                    src="https://www.youtube.com/embed/2xPvrTZDAp8?autoplay=1&modestbranding=1&rel=0"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </reveal>
               </b-col>
             </b-row>
           </b-container>
-        </div>
+        </reveal>
 
         <div class="lcontainer-wrapper lcontainer-wrapper--grey" id="starter-section">
           <b-container class="lcontainer lcontainer--bulletpoints">
-            <div class="lcontainer__headline" scroll-reveal>
-              <h2 scroll-reveal-child scroll-reveal-up scroll-reveal-opacity data-reveal-delay="0">
-                <span class="lcontainer__headline__number">1.</span> Creating a Sustainable Economic World
-              </h2>
-              <p
-                scroll-reveal-child
-                scroll-reveal-down
-                scroll-reveal-opacity
-                data-reveal-delay="100"
-              >Tagion is a decentralized monetary system with basic banking services built-in, unifying cryptocurrencies instead of fighting them. Designed for adoption on a massive scale.</p>
-            </div>
-            <div class="feature-cards" scroll-reveal data-reveal-delay="200">
-              <router-link
-                to="/whitepaper/synopsis/dex.html"
-                class="feature-card feature-card--c1"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
-                data-reveal-delay="100"
-              >
-                <div class="feature-card__internal">
-                  <img data-src="/figures/circle/dex.svg" loading="lazy" class="lazy" />
-                  <h4>Decentralized Exchange Protocol</h4>
-                  <p>
-                    DEX protocol enables
-                    <b>trustless</b> exchange of any cryptocurrency that supports Lightning Protocol. Tagion aims to unify cryptocurrencies instead of fighting them.
-                  </p>
-                  <p class="feature-card__read-more">Read more</p>
-                </div>
+            <reveal class="lcontainer__headline">
+              <reveal child opacity direction="up">
+                <h2>
+                  <span class="lcontainer__headline__number">1.</span> Creating a Sustainable Economic World
+                </h2>
+              </reveal>
+              <reveal child opacity direction="down">
+                <p>Tagion is a decentralized monetary system with basic banking services built-in. We aim to create an infrastructure to unify cryptocurrencies into one interconnected system.</p>
+              </reveal>
+            </reveal>
+            <reveal class="feature-cards" :delay="300">
+              <router-link to="/whitepaper/synopsis/dex.html" class="feature-card">
+                <reveal child opacity direction="left" :delay="100">
+                  <div class="feature-card__internal">
+                    <img data-src="/figures/circle/dex.svg" loading="lazy" class="lazy" />
+                    <h4>Decentralized Exchange Protocol</h4>
+                    <p>
+                      DEX protocol enables a
+                      <b>trustless</b> exchange of any cryptocurrency that supports Lightning Protocol. Tagion aims to unify cryptocurrencies instead of fighting them.
+                    </p>
+                    <p class="feature-card__read-more">Read more</p>
+                  </div>
+                </reveal>
               </router-link>
-              <router-link
-                to="/whitepaper/synopsis/governance.html"
-                class="feature-card feature-card--c1"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
-                data-reveal-delay="200"
-              >
-                <div class="feature-card__internal">
-                  <img data-src="/figures/circle/governance.svg" loading="lazy" class="lazy" />
-                  <h4>Democratic Governance</h4>
-                  <p>
-                    Tagion’s governance model is based on the
-                    <b>"Governing the Commons"</b> by the Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom.
-                  </p>
-                  <p class="feature-card__read-more">Read more</p>
-                </div>
+              <router-link to="/whitepaper/synopsis/governance.html" class="feature-card">
+                <reveal child opacity direction="left" :delay="200">
+                  <div class="feature-card__internal">
+                    <img data-src="/figures/circle/governance.svg" loading="lazy" class="lazy" />
+                    <h4>Democratic Governance</h4>
+                    <p>
+                      We based Tagion’s governance model on the
+                      <b>"Governing the Commons"</b> work by the Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom.
+                    </p>
+                    <p class="feature-card__read-more">Read more</p>
+                  </div>
+                </reveal>
               </router-link>
-              <router-link
-                to="/whitepaper/synopsis/consensus.html"
-                class="feature-card feature-card--c2"
-                scroll-reveal-child
-                scroll-reveal-left
-                scroll-reveal-opacity
-                data-reveal-delay="300"
-              >
-                <div class="feature-card__internal">
-                  <img data-src="/figures/circle/hashgraph.svg" loading="lazy" class="lazy" />
-                  <h4>Hashgraph Consensus</h4>
-                  <p>
-                    Insteal of Blockchain, Tagion uses
-                    <b>Hashgraph</b> - a leaderless aBFT consensus mechanism.
-                    <b>Fast payments</b>, low energy consumption, effecient data usage.
-                  </p>
-                  <p class="feature-card__read-more">Read more</p>
-                </div>
+              <router-link to="/whitepaper/synopsis/consensus.html" class="feature-card">
+                <reveal child opacity direction="left" :delay="300">
+                  <div class="feature-card__internal">
+                    <img data-src="/figures/circle/hashgraph.svg" loading="lazy" class="lazy" />
+                    <h4>Hashgraph Consensus</h4>
+                    <p>
+                      Instead of Blockchain, Tagion uses
+                      <b>Hashgraph</b> - a leaderless aBFT consensus mechanism.
+                      <b>Fast payments</b>, low energy consumption, efficient data usage.
+                    </p>
+                    <p class="feature-card__read-more">Read more</p>
+                  </div>
+                </reveal>
               </router-link>
-            </div>
+            </reveal>
           </b-container>
         </div>
 
@@ -126,36 +131,27 @@
           <b-container class="lcontainer lcontainer--bluebg lcontainer--roadmap">
             <b-row>
               <b-col cols="12" xl="5" class="d-flex align-items-center">
-                <div class="lcontainer__headline" scroll-reveal>
-                  <h2
-                    scroll-reveal-child
-                    scroll-reveal-up
-                    scroll-reveal-opacity
-                    data-reveal-delay="0"
-                  >
-                    <span class="lcontainer__headline__number">2.</span>Roadmap
-                  </h2>
-                  <p
-                    scroll-reveal-child
-                    scroll-reveal-down
-                    scroll-reveal-opacity
-                    data-reveal-delay="100"
-                  >The team behind Tagion has spent significant time and money on building a system that addresses many of the issues that both the fiat-based monetary system and DLT based systems are suffering from. Tagion is both an alternative -and a supplement -to both the current system and the DLT based systems.</p>
-                  <brand-button
-                    to="/community/roadmap.html"
-                    class="mt-5"
-                    reveal
-                    scroll-reveal-child
-                    scroll-reveal-right
-                    scroll-reveal-opacity
-                    data-reveal-delay="400"
-                  >Detailed Roadmap</brand-button>
-                </div>
+                <reveal class="lcontainer__headline">
+                  <reveal child direction="up" opacity>
+                    <h2>
+                      <span class="lcontainer__headline__number">2.</span>Roadmap
+                    </h2>
+                  </reveal>
+                  <reveal child direction="down" opacity>
+                    <p>
+                      The team behind Tagion has spent a significant amount of time, funding itself, while building core components: Hashgraph, Gossip protocol,
+                      DART database, HiBON data format, the underlying API and more. We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project.
+                    </p>
+                  </reveal>
+                  <reveal child direction="right" opacity :delay="200">
+                    <brand-button reveal to="/community/roadmap.html" class="mt-5">Detailed Roadmap</brand-button>
+                  </reveal>
+                </reveal>
               </b-col>
               <b-col cols="12" xl="7" class="d-none d-md-block">
-                <div scroll-reveal scroll-reveal-up scroll-reveal-opacity data-reveal-delay="700">
+                <reveal opacity direction="up" :delay="700">
                   <roadmap class="lcontainer--roadmap__roadmap" />
-                </div>
+                </reveal>
               </b-col>
             </b-row>
           </b-container>
@@ -163,16 +159,18 @@
 
         <div class="lcontainer-wrapper lcontainer-wrapper--grey pt-0">
           <b-container class="lcontainer lcontainer--news">
-            <div class="lcontainer__headline" scroll-reveal>
-              <h2 scroll-reveal-child scroll-reveal-up scroll-reveal-opacity data-reveal-delay="50">
-                <span class="lcontainer__headline__number">3.</span>Latest from Tagion
-              </h2>
-            </div>
-            <div class="mt-4">
-              <div scroll-reveal scroll-reveal-up scroll-reveal-opacity data-reveal-delay="300">
+            <reveal class="lcontainer__headline">
+              <reveal child direction="up" opacity>
+                <h2>
+                  <span class="lcontainer__headline__number">3.</span>Latest from Tagion
+                </h2>
+              </reveal>
+            </reveal>
+            <reveal class="mt-4" opacity direction="up" :delay="500">
+              <div>
                 <news />
               </div>
-            </div>
+            </reveal>
           </b-container>
         </div>
 
@@ -180,35 +178,31 @@
           <b-container
             class="lcontainer lcontainer--bluebg lcontainer--illustrated lcontainer--whitepaper"
           >
-            <div class="lcontainer__headline" scroll-reveal>
-              <h2 scroll-reveal-child scroll-reveal-up scroll-reveal-opacity data-reveal-delay="0">
-                The Tagion
-                <br />White Paper
-              </h2>
-              <p
-                scroll-reveal-child
-                scroll-reveal-down
-                scroll-reveal-opacity
-                data-reveal-delay="100"
-                class="mb-4"
-              >Currency. Consensus. Data Storage. Governance.</p>
-              <brand-button
-                href="/tagionwhitepaper.pdf"
-                @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
-                reveal
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                class="brand-button--down"
-                scroll-reveal-child
-                scroll-reveal-right
-                scroll-reveal-opacity
-                data-reveal-delay="500"
-              >Download White Paper</brand-button>
-            </div>
+            <reveal class="lcontainer__headline">
+              <reveal child direction="up" opacity>
+                <h2>
+                  The Tagion
+                  <br />Whitepaper
+                </h2>
+              </reveal>
+              <reveal child direction="down" opacity>
+                <p class="mb-4">Currency, DEX, Hashgraph and Governance.</p>
+              </reveal>
+              <reveal child direction="right" opacity :delay="500">
+                <brand-button
+                  href="/tagionwhitepaper.pdf"
+                  @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
+                  reveal
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  class="brand-button--down"
+                >Download Whitepaper</brand-button>
+              </reveal>
+            </reveal>
             <div class="lcontainer__illustrations">
-              <div class="lcontainer__illustration" scroll-reveal data-reveal-delay="200">
+              <reveal class="lcontainer__illustration" :delay="200">
                 <white-paper />
-              </div>
+              </reveal>
             </div>
           </b-container>
         </div>
@@ -218,17 +212,14 @@
             <reveal class="lcontainer__headline">
               <reveal child direction="up" opacity>
                 <h2>
-                  <span class="lcontainer__headline__number">4.</span>Team
+                  <span class="lcontainer__headline__number">4.</span>Tagion Team
                 </h2>
               </reveal>
-              <reveal direction="down" opacity child>
-                <p>Learn more about truly dedicated team behind Tagion.</p>
-              </reveal>
             </reveal>
-            <div class="team-table" scroll-reveal scroll-reveal-opacity>
+            <reveal class="team-table">
               <b-row>
-                <b-col cols="12" md="6" xl="4" v-for="teamMember in teamMembers">
-                  <reveal child opacity direction="left" :delay="300">
+                <b-col cols="12" md="6" xl="4" v-for="(teamMember, index) in teamMembers">
+                  <reveal child opacity direction="left" :delay="50 * index">
                     <team-card
                       :name="teamMember.name"
                       :title="teamMember.title"
@@ -238,22 +229,30 @@
                   </reveal>
                 </b-col>
               </b-row>
-            </div>
+            </reveal>
           </b-container>
         </div>
 
         <div class="lcontainer-wrapper lcontainer-wrapper--dark">
-          <b-container class="lcontainer lcontainer--bluebg lcontainer--community">
+          <b-container class="lcontainer lcontainer--bluebg lcontainer--narrow">
             <reveal class="lcontainer__headline" :delay="100">
-              <reveal class="mb-2" direction="up" opacity child>
-                <h2>Join the Conversation!</h2>
+              <reveal direction="up" opacity child>
+                <h2>Trust & Transparency</h2>
               </reveal>
               <reveal direction="down" opacity child>
-                <p>Tagion is a community-centric project and is still in its early days. Join to participate in discussions, suggest ideas, contribute. You are an essential part of Tagion!</p>
+                <p>
+                  <b>We are fully committed to transparency.</b> Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.
+                </p>
               </reveal>
 
-              <reveal child direction="down" opacity :delay="350" class="mt-4">
-                <social-buttons light />
+              <reveal child direction="right" opacity :delay="450" class="mt-4">
+                <brand-button
+                  href="https://www.trustedintrading.com/profile/tagion/"
+                  @click="$analytics.triggerEvent({category: 'Exploration', action: 'TrustedInTrading', fields: {placement: 'Landing'}})"
+                  reveal
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >See Tagion on TrustedIn Trading</brand-button>
               </reveal>
             </reveal>
           </b-container>
@@ -284,7 +283,6 @@ export default {
     return {
       parallaxElements: [],
       revealElements: [],
-      layoutElement: undefined,
       videoOpened: false,
       teamMembers
     };
@@ -303,62 +301,24 @@ export default {
     News
   },
   mounted() {
-    this.layoutElement = document.getElementById("landing-page");
-    this.parallaxElements = Array.from(
-      document.getElementsByClassName("parallax-element")
-    );
     this.revealElements = Array.from(
       document.querySelectorAll("[scroll-reveal]")
     );
 
     if (!isMobile()) {
-      window.addEventListener("scroll", this.throttleParallax);
       window.addEventListener("scroll", this.throttleReveal);
       this.handleReveal();
     } else {
       this.handleRevealAll();
     }
-
-    this.handleParallax();
   },
   beforeDestroy() {
-    window.removeEventListener("scroll", this.throttleParallax);
     window.removeEventListener("scroll", this.throttleReveal);
   },
   methods: {
-    openVideo() {
-      this.videoOpened = true;
-    },
-    closeVideo() {
-      this.videoOpened = false;
-    },
-    throttleParallax: throttle(function() {
-      this.handleParallax();
-    }, 50),
     throttleReveal: throttle(function() {
       this.handleReveal();
     }, 200),
-    handleParallax() {
-      let scrollY = window.scrollY + window.innerHeight;
-
-      for (let i = 0; i < this.parallaxElements.length; i++) {
-        let element = this.parallaxElements[i];
-        let elOffset = this.offset(element.parentElement);
-        let multiplier =
-          this.parallaxElements[i].dataset.parallaxFactor || 0.05;
-
-        if (elOffset < scrollY) {
-          let parallaxTranslate = (scrollY - elOffset) * multiplier;
-          if (
-            element.dataset.parallaxCache != parallaxTranslate &&
-            Math.abs(parallaxTranslate) < 300
-          ) {
-            element.style.transform = `translateY(${parallaxTranslate}px)`;
-            element.dataset.parallaxCache = parallaxTranslate;
-          }
-        }
-      }
-    },
     handleRevealAll() {
       for (let i = 0; i < this.revealElements.length; i++) {
         let element = this.revealElements[i];

@@ -3,6 +3,7 @@
 
 @import "roadmap";
 @import "./config";
+@import "./scroll-reveal";
 
 @import "node_modules/bootstrap/scss/variables";
 
@@ -11,8 +12,8 @@
 
   .hero {
     overflow-y: hidden;
-    min-height: 80vh;
     min-height: 40em;
+    min-height: 80vh;
     padding-top: $header-height;
     position: relative;
     color: #fff;
@@ -67,7 +68,7 @@
       left: 0;
       z-index: 1;
       opacity: 0.3;
-      background: url(../../public/bgphoto1.webp);
+      background: url(../../public/bgphoto1.jpg);
       background-position: right top;
       background-size: cover;
       pointer-events: none;
@@ -87,7 +88,7 @@
     }
 
     .hero_content {
-      margin-top: -5rem;
+      margin-top: -4rem;
 
       @include media-breakpoint-down(lg) {
         margin-top: 0;
@@ -108,8 +109,9 @@
       z-index: 5;
       width: 80%;
       min-height: 20rem;
-      border-radius: 2px;
       margin-top: 2rem;
+      margin-bottom: 4rem;
+      border-radius: 2px;
       border: 6px solid rgba(0, 0, 0, 0.3);
 
       @include media-breakpoint-down(lg) {
@@ -373,8 +375,9 @@
     color: $secondary;
     font-weight: 600;
     opacity: 0;
-    transition: opacity 200ms;
+    transition: opacity 200ms, transform 200ms;
     font-size: 0.8em;
+    transform: translateY(4px);
 
     @include media-breakpoint-down(md) {
       opacity: 0.6;
@@ -386,45 +389,45 @@
     padding-bottom: 0.8em;
     padding-right: 3em;
 
-    &::after {
-      content: "";
-      position: absolute;
-      opacity: 0.5;
-      top: 0;
-      bottom: 3rem;
-      right: 1.8rem;
-      left: 0;
-      z-index: -1;
-      transition: all 200ms;
-      border-bottom: 4px solid transparent;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   opacity: 0.5;
+    //   top: 0;
+    //   bottom: 3rem;
+    //   right: 1.8rem;
+    //   left: 0;
+    //   z-index: -1;
+    //   transition: all 200ms;
+    //   border-bottom: 4px solid transparent;
+    // }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -0.1rem;
-      width: 0;
-      height: 4px;
-      border-radius: 1px;
-      background: $secondary;
-      opacity: 1;
-      transition: all 200ms ease;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: -0.1rem;
+    //   width: 0;
+    //   height: 4px;
+    //   border-radius: 1px;
+    //   background: $secondary;
+    //   opacity: 1;
+    //   transition: all 200ms ease;
+    // }
   }
 
   &:hover {
-    transform: translateY(-10px);
+    // transform: translateY(-10px);
 
     p {
       opacity: 1;
     }
 
     .feature-card__internal {
-      transform: translateY(-10px);
+      // transform: translateY(-10px);
 
       img {
-        transform: translateY(8px);
+        // transform: translateY(8px);
       }
 
       &::after {
@@ -443,6 +446,7 @@
 
     .feature-card__read-more {
       opacity: 1;
+      transform: translateY(0);
     }
   }
 }
@@ -452,7 +456,7 @@
 //
 
 .lcontainer {
-  padding-top: 6em;
+  padding-top: 5em;
   padding-bottom: 3em;
 
   &.lcontainer--small-spacing {
@@ -473,12 +477,12 @@
     line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 0em;
+    margin-bottom: .5em;
     color: $secondary;
   }
 
   h2 + p {
-    margin-top: 1.2em;
+    margin-top: 1.6em;
   }
 
   h3 {
@@ -504,7 +508,7 @@
         position: absolute;
         height: 1rem;
         width: 1px;
-        right: -0.6rem;
+        right: -0.3rem;
         top: 4px;
         background: $primary;
       }
@@ -578,6 +582,15 @@
           background: #fff;
         }
       }
+    }
+  }
+
+  &.lcontainer--narrow {
+    .lcontainer__headline {
+
+      padding-top: 3.4rem;
+      padding-bottom: 2.8rem;
+      max-width: 50rem;
     }
   }
 
@@ -944,10 +957,11 @@
       color: $secondary;
       font-weight: 600;
       opacity: 0;
-      transition: opacity 200ms;
+      transition: opacity 200ms, transform 200ms;
       position: absolute;
       bottom: -1.4rem;
       font-size: 0.7em;
+      transform: translateY(4px);
 
       @include media-breakpoint-down(sm) {
         opacity: 0;
@@ -970,7 +984,6 @@
     }
 
     &:hover {
-      transform: translateY(-0.5rem);
       &::before {
         opacity: 0.03;
         bottom: -1.2rem;
@@ -978,6 +991,7 @@
 
       .team-table__card-read-more {
         opacity: 0.8;
+        transform: translateY(0);
       }
     }
 

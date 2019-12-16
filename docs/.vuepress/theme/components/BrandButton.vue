@@ -10,7 +10,7 @@
     <span class="brand-button__wrapper">
       <span class="brand-button__icon"></span>
     </span>
-    <span :scroll-reveal-child="reveal" scroll-reveal-right data-reveal-delay="250">
+    <span :scroll-reveal-child="reveal" scroll-reveal-opacity scroll-reveal-right data-reveal-delay="250">
       <div class="brand-button__text">
         <slot />
       </div>
@@ -27,7 +27,7 @@
     <span class="brand-button__wrapper">
       <span class="brand-button__icon"></span>
     </span>
-    <span :scroll-reveal-child="reveal" scroll-reveal-right data-reveal-delay="250">
+    <span :scroll-reveal-child="reveal" scroll-reveal-opacity scroll-reveal-right data-reveal-delay="250">
       <div class="brand-button__text">
         <slot />
       </div>
