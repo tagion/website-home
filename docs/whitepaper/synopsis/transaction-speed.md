@@ -14,7 +14,7 @@ description: Faster than fast. One of the main reasons current DLT¨s have faile
 
 _Faster than fast. One of the main reasons current DLT's have failed in mass adaption is their lack of speed. That is not an issue Tagion is facing._
 
-<img src="/figures/transaction-speed.svg" alt="Transaction Speed" class="wiki-image-figure"/>
+<img data-src="/figures/transaction-speed.svg" loading="lazy"  alt="Transaction Speed" class="wiki-image-figure lazy"/>
 
 Bitcoin uses 10 minutes on average to validate a transaction. On the VISA network validation takes place in two to three seconds. Transactions are validated in two to three seconds in the Tagion system, putting it on par with VISA in terms of validation speed.
 

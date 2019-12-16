@@ -1,6 +1,7 @@
 <svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1080" height="1080" rx="540" fill="#20263D"/>
-<ellipse opacity="0.6" cx="426.667" cy="540" rx="227" ry="226.667" transform="rotate(-90 426.667 540)" fill="#1EBBFF"/>
-<ellipse opacity="0.6" cx="653.333" cy="540" rx="227" ry="226.667" transform="rotate(-90 653.333 540)" fill="#1EBBFF"/>
-<ellipse opacity="0.6" cx="540" cy="540" rx="195.22" ry="194.933" transform="rotate(-90 540 540)" fill="#1EBBFF"/>
+<g opacity="0.8">
+<ellipse opacity="0.6" cx="391.667" cy="540" rx="297" ry="296.667" transform="rotate(-90 391.667 540)" fill="#20263D"/>
+<ellipse opacity="0.6" cx="688.333" cy="540" rx="297" ry="296.667" transform="rotate(-90 688.333 540)" fill="#20263D"/>
+<ellipse opacity="0.6" cx="540" cy="540" rx="255.42" ry="255.133" transform="rotate(-90 540 540)" fill="#20263D"/>
+</g>
 </svg>

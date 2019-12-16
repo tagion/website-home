@@ -9,12 +9,16 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      // { text: "Docs", link: "/docs/" },
+      { text: "Docs", link: "/docs/" },
       { text: "Community", link: "/community/" },
       { text: "Whitepaper", link: "/whitepaper/" }
     ],
     sidebar: {
-      "/docs/": [["/docs/", "Welcome"]],
+      "/docs/": [
+        ["/docs/", "Welcome"],
+        ["/docs/funnel", "Funnel"],
+        ["/docs/scripting-engine", "Scripting Engine"]
+      ],
       "/whitepaper/": [
         ["/whitepaper/", "Overview"],
         {
@@ -78,6 +82,18 @@ let config = {
         ])
         .end();
     }
+  },
+  chainWebpack(config, isServer) {
+    const inlineLimit = 10000;
+    config.module
+      .rule("images")
+      .test(/\.(png|jpe?g|gif|webp)(\?.*)?$/)
+      .use("url-loader")
+      .loader("url-loader")
+      .options({
+        limit: inlineLimit,
+        name: `assets/img/[name].[hash:8].[ext]`
+      });
   },
   configureWebpack: (config, isServer) => {
     config.output.globalObject = "this";

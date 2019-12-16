@@ -1,25 +1,26 @@
 <svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1080" height="1080" rx="540" fill="#20263D"/>
-<circle opacity="0.7" r="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 265.25 814.75)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 375.15 814.75)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 485.05 814.75)" fill="#1EBBFF"/>
-<ellipse opacity="0.1" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 594.95 814.75)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 704.85 814.75)" fill="#1EBBFF"/>
-<circle opacity="0.7" r="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 814.75 814.75)" fill="#1EBBFF"/>
-<ellipse opacity="0.4" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 375.15 704.85)" fill="#1EBBFF"/>
-<ellipse opacity="0.6" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 375.15 594.95)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 485.05 594.95)" fill="#1EBBFF"/>
-<circle opacity="0.4" r="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 485.05 485.05)" fill="#1EBBFF"/>
-<ellipse opacity="0.4" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 814.75 375.15)" fill="#1EBBFF"/>
-<ellipse opacity="0.9" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 594.95 265.25)" fill="#1EBBFF"/>
-<ellipse rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 485.05 704.85)" fill="#1EBBFF"/>
-<circle opacity="0.7" r="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 594.95 704.85)" fill="#1EBBFF"/>
-<circle opacity="0.4" r="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 704.85 704.85)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 814.75 704.85)" fill="#1EBBFF"/>
-<circle opacity="0.1" r="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 594.95 594.95)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 814.75 594.95)" fill="#1EBBFF"/>
-<ellipse opacity="0.1" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 814.75 485.05)" fill="#1EBBFF"/>
-<ellipse opacity="0.4" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 594.95 485.05)" fill="#1EBBFF"/>
-<ellipse opacity="0.4" rx="39.25" ry="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 594.95 375.15)" fill="#1EBBFF"/>
-<circle r="39.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 704.85 594.95)" fill="#1EBBFF"/>
+<g opacity="0.8">
+<circle opacity="0.7" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 183.875 896.125)" fill="#20263D"/>
+<circle opacity="0.7" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 326.325 896.125)" fill="#20263D"/>
+<circle opacity="0.7" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 468.775 896.125)" fill="#20263D"/>
+<ellipse opacity="0.1" rx="50.875" ry="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 611.225 896.125)" fill="#20263D"/>
+<circle opacity="0.7" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 753.675 896.125)" fill="#20263D"/>
+<circle opacity="0.7" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 896.125 896.125)" fill="#20263D"/>
+<circle opacity="0.4" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 326.325 753.675)" fill="#20263D"/>
+<ellipse opacity="0.6" rx="50.875" ry="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 326.325 611.225)" fill="#20263D"/>
+<ellipse opacity="0.7" rx="50.875" ry="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 468.775 611.225)" fill="#20263D"/>
+<circle opacity="0.4" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 468.775 468.775)" fill="#20263D"/>
+<circle opacity="0.4" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 896.125 326.325)" fill="#20263D"/>
+<ellipse opacity="0.9" rx="50.875" ry="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 611.225 183.875)" fill="#20263D"/>
+<circle r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 468.775 753.675)" fill="#20263D"/>
+<ellipse opacity="0.7" rx="50.875" ry="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 611.225 753.675)" fill="#20263D"/>
+<circle opacity="0.4" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 753.675 753.675)" fill="#20263D"/>
+<circle opacity="0.7" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 896.125 753.675)" fill="#20263D"/>
+<circle opacity="0.1" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 611.225 611.225)" fill="#20263D"/>
+<ellipse opacity="0.7" rx="50.875" ry="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 896.125 611.225)" fill="#20263D"/>
+<circle opacity="0.1" r="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 896.125 468.775)" fill="#20263D"/>
+<ellipse opacity="0.4" rx="50.875" ry="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 611.225 468.775)" fill="#20263D"/>
+<ellipse opacity="0.4" rx="50.875" ry="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 611.225 326.325)" fill="#20263D"/>
+<ellipse rx="50.875" ry="50.875" transform="matrix(1.19249e-08 1 1 -1.19249e-08 753.675 611.225)" fill="#20263D"/>
+</g>
 </svg>

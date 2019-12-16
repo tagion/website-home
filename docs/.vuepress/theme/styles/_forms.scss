@@ -8,7 +8,7 @@
     background-image: none !important;
     background: #fff;
     border: 1px solid mix($primary, white, 10%);
-    transition: all 100ms;
+    transition: all 150ms;
 
     box-sizing: border-box;
 
@@ -83,14 +83,6 @@
     border-color: $success;
   }
 
-  .btn,
-  input,
-  .form-control {
-    &:focus {
-      //   box-shadow: none;
-    }
-  }
-
   .custom-checkbox {
     .custom-control-label {
       user-select: none;
@@ -126,7 +118,30 @@
   .spinner-border {
     position: relative;
   }
-}
+
+  &.t-form--dark {
+    input,
+    .form-control {
+      background: $primary;
+      border: 1px solid mix($primary, white, 90%);
+      opacity: 0.8;
+      color: #fff;
+      
+      &:focus {
+        color: #fff;
+        background: $primary;
+        border-color: 1px solid mix($primary, white, 60%);
+        opacity: 0.9;
+      }
+      
+      &:disabled {
+        background: #f6f6f6;
+        border-color: #eee !important;
+        color: #aaa;
+      }
+    }
+  }
+ }
 
 input {
   /* Remove First */

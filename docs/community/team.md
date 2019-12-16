@@ -75,6 +75,21 @@ Tobias has a degree in graphical communication from Danish School of Media and J
 
 <div class="clearfix"></div>
 
+### James Godfrey
+
+**Chief Investment Officer.**
+
+<img data-src="/team/godfrey.jpg" alt="James Godfrey" loading="lazy" class="lazy wiki-image-small wiki-image-float-right"/>
+
+James brings more than 30 years of management experience in the banking sector. Leading in companies such as Union Bank of Switzerland, Mizuho International and Nomura International plc.
+
+Recently James decided to apply his broad financial and trading experience to Blockchain and field of cryptocurrencies in particular, which brings him to Tagion as a Chief Investment Officer.
+
+[LinkedIn](https://www.linkedin.com/in/james-godfrey-9248754a/)
+
+<div class="clearfix"></div>
+
+
 ### Vlad Pazych
 
 **Digital Marketing Manager.**
@@ -99,7 +114,7 @@ Alex brings years of experience in application and system-level engineering. He 
 
 <div class="clearfix"></div>
 
-### Oksana Perederii 
+### Oksana Perederii
 
 **Marketer and Office Manager.**
 
@@ -114,11 +129,11 @@ Prior to Tagion, Oksana has experience from being a Project Manager at Polaric S
 
 ### Leif Bloch Rasmussen
 
-**Systems and governance.**
+**Systems and Governance.**
 
 <img data-src="/team/lr.jpg" alt="Leif Bloch Rasmussen" loading="lazy" class="lazy wiki-image-small wiki-image-float-right"/>
 
-Leif is an associate professor at Copenhagen Business School within IT and economics. He has spent his career as an academic worked with Commons, IT Governance, cybernetics information systems and converging of technologies i.e. nanotechnology and IT. Innovation and entrepreneurship. 
+Leif is an associate professor at Copenhagen Business School within IT and economics. He has spent his career as an academic worked with Commons, IT Governance, cybernetics information systems and converging of technologies i.e. nanotechnology and IT. Innovation and entrepreneurship.
 
 [LinkedIn](https://www.linkedin.com/in/leif-bloch-rasmussen-38663a4/)
 
@@ -126,7 +141,7 @@ Leif is an associate professor at Copenhagen Business School within IT and econo
 
 ### Richard Kastelein
 
-**Strategy, PR & Media.**
+**Communications, Marketing and Strategy.**
 
 <img data-src="/team/kastalein.jpg" alt="Richard Kastelein" loading="lazy" class="lazy wiki-image-small wiki-image-float-right"/>
 
@@ -135,10 +150,6 @@ Honorary Ph.D. at Jiangxi Ahead Institute of Software & Technology (Blockchain F
 [LinkedIn](https://www.linkedin.com/in/expathos/)
 
 <div class="clearfix"></div>
-
-
-
-
 
 ## Project Management Team
 
@@ -155,7 +166,7 @@ Founder & CEO, TrustedIn Trading
 
 <img data-src="/team/sam.jpg" alt="Sam Kawtharani " loading="lazy" class="lazy wiki-image-small wiki-image-float-right mt-6"/>
 
-### Sam Kawtharani 
+### Sam Kawtharani
 
 Corl co-founder and Fintech Advisor
 
@@ -165,11 +176,10 @@ Corl co-founder and Fintech Advisor
 
 ## Strategic Consultants
 
-
 <div class="clearfix"></div>
 <img data-src="/team/harboe.jpg" alt="Michael Harboe" loading="lazy" class="lazy wiki-image-small wiki-image-float-right mt-6"/>
 
-### Michael Harboe 
+### Michael Harboe
 
 Strategic Advisor, CEO at Virsabi
 
@@ -179,7 +189,7 @@ Strategic Advisor, CEO at Virsabi
 
 <img data-src="/team/avital.jpg" alt="Michel Avital  " loading="lazy" class="lazy wiki-image-small wiki-image-float-right mt-6"/>
 
-### Michel Avital 
+### Michel Avital
 
 Professor at Copenhagen Business School
 

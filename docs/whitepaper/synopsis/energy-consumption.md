@@ -14,7 +14,7 @@ description: Bitcoin mining accounts for 0.29% of the world's annual electricity
 
 _Bitcoin mining accounts for 0.29% of the world's annual electricity consumption. Mining of a single bitcoin block consumes enough energy to power more than 28 U.S. homes for a day. Tagion consumes 10,000% less energy, compared to Bitcoin._
 
-<img src="/figures/energy-consumption.svg" alt="Energy Consumption" class="wiki-image-figure"/>
+<img data-src="/figures/energy-consumption.svg" loading="lazy"  alt="Energy Consumption" class="wiki-image-figure lazy"/>
 
 In the world of cryptos it is well known that the most popular networks, such as Bitcoin and Ethereum are anything but energy conscious, as they lean against the proof-of-work protocol[^1]. Tagion’s proof-of-people protocol uses insignificant, close to zero, energy compared to proof-of-work. 
 

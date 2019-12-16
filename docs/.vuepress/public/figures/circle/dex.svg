@@ -1,14 +1,15 @@
 <svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1080" height="1080" rx="540" fill="#20263D"/>
-<ellipse opacity="0.9" cx="556.086" cy="582.512" rx="67.9398" ry="68.0202" fill="#1EBBFF"/>
-<ellipse opacity="0.6" cx="268.341" cy="744.961" rx="66.3412" ry="66.4197" fill="#1EBBFF"/>
-<circle opacity="0.7" r="27.1447" transform="matrix(-0.706688 0.707525 -0.706688 -0.707525 476.956 443.271)" fill="#1EBBFF"/>
-<ellipse opacity="0.9" cx="369.851" cy="580.912" rx="29.5738" ry="29.6088" fill="#1EBBFF"/>
-<ellipse opacity="0.6" cx="399.425" cy="269.62" rx="65.5419" ry="65.6195" fill="#1EBBFF"/>
-<ellipse opacity="0.3" cx="492.942" cy="798.577" rx="78.3306" ry="78.4233" fill="#1EBBFF"/>
-<ellipse opacity="0.7" cx="268.341" cy="443.271" rx="60.7462" ry="60.8181" fill="#1EBBFF"/>
-<ellipse opacity="0.7" cx="774.292" cy="562.506" rx="47.9575" ry="48.0143" fill="#1EBBFF"/>
-<ellipse opacity="0.8" cx="726.336" cy="768.968" rx="75.1334" ry="75.2224" fill="#1EBBFF"/>
-<ellipse opacity="0.7" cx="787.082" cy="389.655" rx="91.9185" ry="92.0274" fill="#1EBBFF"/>
-<ellipse opacity="0.6" cx="603.244" cy="297.628" rx="59.1476" ry="59.2176" fill="#1EBBFF"/>
+<g opacity="0.8">
+<ellipse opacity="0.9" cx="559.217" cy="591.003" rx="81.588" ry="81.7657" fill="#20263D"/>
+<ellipse opacity="0.6" cx="213.668" cy="786.278" rx="79.6682" ry="79.8419" fill="#20263D"/>
+<circle opacity="0.7" r="32.6139" transform="matrix(-0.706337 0.707876 -0.706337 -0.707876 464.191 423.623)" fill="#20263D"/>
+<ellipse opacity="0.9" cx="335.57" cy="589.078" rx="35.5148" ry="35.5921" fill="#20263D"/>
+<ellipse opacity="0.6" cx="371.085" cy="214.88" rx="78.7084" ry="78.8799" fill="#20263D"/>
+<ellipse opacity="0.3" cx="483.388" cy="850.729" rx="94.0661" ry="94.2711" fill="#20263D"/>
+<ellipse opacity="0.7" cx="213.668" cy="423.623" rx="72.9492" ry="73.1082" fill="#20263D"/>
+<ellipse opacity="0.7" cx="821.258" cy="566.954" rx="57.5915" ry="57.717" fill="#20263D"/>
+<ellipse opacity="0.8" cx="763.667" cy="815.137" rx="90.2267" ry="90.4233" fill="#20263D"/>
+<ellipse opacity="0.7" cx="836.616" cy="359.173" rx="110.384" ry="110.624" fill="#20263D"/>
+<ellipse opacity="0.6" cx="615.849" cy="248.548" rx="71.0295" ry="71.1843" fill="#20263D"/>
+</g>
 </svg>

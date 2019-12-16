@@ -14,7 +14,7 @@ description: If you want to move fast, you pack light. In Tagion, a node does no
 
 _If you want to move fast, you pack light. In Tagion, a node does not keep a complete history of transactions, but only alive records._
 
-<img src="/figures/use-of-data.svg" alt="Use of Data" class="wiki-image-figure"/>
+<img data-src="/figures/use-of-data.svg" loading="lazy"  alt="Use of Data" class="wiki-image-figure lazy"/>
 
 Most DLTs uses a decentralised immutable database for storage. The blockchain data structure is immutable meaning all data should be stored forever and cannot be deleted. 
 

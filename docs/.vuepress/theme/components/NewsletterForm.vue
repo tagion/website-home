@@ -11,8 +11,8 @@
       :method="formAction ? 'post' : ''"
       :target="formAction ? '_blank' : ''"
       class="t-form"
+      :class="{'t-form--dark': !!dark}"
     >
-      <!-- <b-form-text text-variant="muted" class="pb-1">Don't miss important updates:</b-form-text> -->
       <b-input-group size="sm" pill>
         <b-input
           class="email-field"
@@ -41,7 +41,7 @@
             </span>
             <span v-else>
               <span class="fas fa-envelope"></span>
-              <span class>Subscribe</span>
+              <span class>Subscribe to Newsletter</span>
             </span>
           </b-button>
         </div>
@@ -54,6 +54,11 @@
 
 <script>
 export default {
+  props: {
+    dark: {
+      type: Boolean
+    }
+  },
   data() {
     return {
       email: "",

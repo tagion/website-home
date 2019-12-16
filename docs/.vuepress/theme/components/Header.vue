@@ -3,7 +3,7 @@
     <b-container class="d-flex justify-content-between">
       <div class="header__logo-wrapper">
         <router-link to="/">
-          <img class="header__logo" src="../images/wordmark-light.svg" alt="Tagion Logo" />
+          <img class="header__logo" src="../images/logomark-white.svg" alt="Tagion Logo" />
         </router-link>
       </div>
 

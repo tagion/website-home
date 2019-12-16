@@ -14,7 +14,7 @@ description: Power concentration made impossible. Tagion’s governance model is
 
 _Power concentration made impossible. Tagion’s governance model is based on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom._
 
-<img src="/figures/governance.svg" alt="Governance" class="wiki-image-figure"/>
+<img data-src="/figures/governance.svg" loading="lazy"  alt="Governance" class="wiki-image-figure lazy"/>
 
 The Tragedy of the Commons is an economic problem in which every individual has an incentive to consume a resource at the expense of every other individual with no way to exclude anyone from consuming. It results in overconsumption, under investment, and ultimately depletion of the resource.
 

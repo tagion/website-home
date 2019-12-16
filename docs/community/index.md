@@ -13,7 +13,7 @@ Tagion is an **open banking protocol**, that enables a **digital peer-to-peer ca
 
 ---
 
-_This website is a community-driven knowladge base about Tagion and an ecosystem around it. Found an typo or some other problem? Please let us now via [support@tagion.org](mailto:support@tagion.org) or [opening an issue on GitHub](https://github.com/tagion/homepage/issues/new)._
+_This website is a community-driven knowledge base about Tagion and an ecosystem around it. Found an typo or some other problem? Please let us now via [support@tagion.org](mailto:support@tagion.org) or [opening an issue on GitHub](https://github.com/tagion/homepage/issues/new)._
 
 ---
 

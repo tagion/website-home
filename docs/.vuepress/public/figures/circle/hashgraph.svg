@@ -1,39 +1,40 @@
 <svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1080" height="1080" rx="540" fill="#20263D"/>
-<circle opacity="0.7" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 279.25 800.75)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 383.55 800.75)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 487.85 800.75)" fill="#1EBBFF"/>
-<ellipse opacity="0.1" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 592.15 800.75)" fill="#1EBBFF"/>
-<circle opacity="0.7" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 696.45 800.75)" fill="#1EBBFF"/>
-<circle opacity="0.7" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 800.75 800.75)" fill="#1EBBFF"/>
-<ellipse opacity="0.4" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 383.55 696.45)" fill="#1EBBFF"/>
-<circle r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 279.25 696.45)" fill="#1EBBFF"/>
-<ellipse opacity="0.1" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 279.25 592.15)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 279.25 487.85)" fill="#1EBBFF"/>
-<ellipse opacity="0.1" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 279.25 383.55)" fill="#1EBBFF"/>
-<circle opacity="0.7" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 279.25 279.25)" fill="#1EBBFF"/>
-<ellipse opacity="0.6" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 383.55 592.15)" fill="#1EBBFF"/>
-<ellipse opacity="0.2" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 383.55 487.85)" fill="#1EBBFF"/>
-<circle opacity="0.1" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 383.55 383.55)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 383.55 279.25)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 487.85 592.15)" fill="#1EBBFF"/>
-<circle opacity="0.4" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 487.85 487.85)" fill="#1EBBFF"/>
-<ellipse rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 487.85 383.55)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 487.85 279.25)" fill="#1EBBFF"/>
-<ellipse opacity="0.9" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 592.15 279.25)" fill="#1EBBFF"/>
-<ellipse rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 487.85 696.45)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 592.15 696.45)" fill="#1EBBFF"/>
-<circle opacity="0.4" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 696.45 696.45)" fill="#1EBBFF"/>
-<circle opacity="0.7" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 800.75 696.45)" fill="#1EBBFF"/>
-<circle opacity="0.1" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 592.15 592.15)" fill="#1EBBFF"/>
-<ellipse opacity="0.4" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 592.15 487.85)" fill="#1EBBFF"/>
-<ellipse opacity="0.4" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 592.15 383.55)" fill="#1EBBFF"/>
-<ellipse rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 696.45 592.15)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 800.75 592.15)" fill="#1EBBFF"/>
-<ellipse opacity="0.7" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 696.45 487.85)" fill="#1EBBFF"/>
-<ellipse opacity="0.4" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 696.45 383.55)" fill="#1EBBFF"/>
-<ellipse opacity="0.6" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 800.75 487.85)" fill="#1EBBFF"/>
-<ellipse opacity="0.5" rx="37.25" ry="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 800.75 383.55)" fill="#1EBBFF"/>
-<circle opacity="0.7" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 800.75 279.25)" fill="#1EBBFF"/>
-<circle opacity="0.7" r="37.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 696.45 279.25)" fill="#1EBBFF"/>
+<g opacity="0.8">
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 202.25 877.75)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 337.35 877.75)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 472.45 877.75)" fill="#20263D"/>
+<ellipse opacity="0.1" rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 607.55 877.75)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 742.65 877.75)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 877.75 877.75)" fill="#20263D"/>
+<circle opacity="0.4" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 337.35 742.65)" fill="#20263D"/>
+<circle r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 202.25 742.65)" fill="#20263D"/>
+<ellipse opacity="0.1" rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 202.25 607.55)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 202.25 472.45)" fill="#20263D"/>
+<circle opacity="0.1" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 202.25 337.35)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 202.25 202.25)" fill="#20263D"/>
+<ellipse opacity="0.6" rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 337.35 607.55)" fill="#20263D"/>
+<circle opacity="0.2" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 337.35 472.45)" fill="#20263D"/>
+<circle opacity="0.1" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 337.35 337.35)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 337.35 202.25)" fill="#20263D"/>
+<ellipse opacity="0.7" rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 472.45 607.55)" fill="#20263D"/>
+<circle opacity="0.4" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 472.45 472.45)" fill="#20263D"/>
+<circle r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 472.45 337.35)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 472.45 202.25)" fill="#20263D"/>
+<ellipse opacity="0.9" rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 607.55 202.25)" fill="#20263D"/>
+<circle r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 472.45 742.65)" fill="#20263D"/>
+<ellipse opacity="0.7" rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 607.55 742.65)" fill="#20263D"/>
+<circle opacity="0.4" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 742.65 742.65)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 877.75 742.65)" fill="#20263D"/>
+<circle opacity="0.1" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 607.55 607.55)" fill="#20263D"/>
+<ellipse opacity="0.4" rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 607.55 472.45)" fill="#20263D"/>
+<ellipse opacity="0.4" rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 607.55 337.35)" fill="#20263D"/>
+<ellipse rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 742.65 607.55)" fill="#20263D"/>
+<ellipse opacity="0.7" rx="48.25" ry="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 877.75 607.55)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 742.65 472.45)" fill="#20263D"/>
+<circle opacity="0.4" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 742.65 337.35)" fill="#20263D"/>
+<circle opacity="0.6" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 877.75 472.45)" fill="#20263D"/>
+<circle opacity="0.5" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 877.75 337.35)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 877.75 202.25)" fill="#20263D"/>
+<circle opacity="0.7" r="48.25" transform="matrix(1.19249e-08 1 1 -1.19249e-08 742.65 202.25)" fill="#20263D"/>
+</g>
 </svg>
