@@ -61,8 +61,8 @@
                   style="position: relative; z-index: 5; width: 100%; height; 100%;"
                 >
                   <iframe
-                    class="hero__video"
-                    src="https://www.youtube.com/embed/2xPvrTZDAp8?modestbranding=1&rel=0"
+                    class="hero__video lazy"
+                    data-src="https://www.youtube.com/embed/2xPvrTZDAp8?modestbranding=1&rel=0"
                     allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>

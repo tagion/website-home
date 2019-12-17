@@ -24,13 +24,15 @@ export default {
     };
   },
   mounted() {
-    this.$loadScript("https://medium-widget.pixelpoint.io/widget.js")
-      .then(() => {
-        this.initMedium();
-      })
-      .catch(() => {
-        console.error("Can't load Medium publication");
-      });
+    setTimeout(() => {
+      this.$loadScript("https://medium-widget.pixelpoint.io/widget.js")
+        .then(() => {
+          this.initMedium();
+        })
+        .catch(() => {
+          console.error("Can't load Medium publication");
+        });
+    }, 500);
   },
   beforeDestroy() {
     let element = this.$refs["medium-widget"];
