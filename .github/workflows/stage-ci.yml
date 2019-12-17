@@ -1,0 +1,16 @@
+name: CI Stage
+
+on: 
+  push:
+    branches:
+    - stage
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Deploy Stage
+      run: sh ./deploy.sh stage
