@@ -4,8 +4,8 @@
       <div class="landing">
         <reveal class="hero">
           <b-container class="lcontainer lcontainer--hero">
-            <div class="hero__background"></div>
-            <b-row class="hero_content">
+            <div class="hero__background" ref="heroBackground"></div>
+            <b-row class="hero_content pt-3">
               <b-col cols="12" xl="5">
                 <reveal class="hero__quote" child opacity direction="up">
                   <h2>
@@ -311,6 +311,10 @@ export default {
     } else {
       this.handleRevealAll();
     }
+
+    setTimeout(() => {
+      this.$refs.heroBackground.classList.add('hero__background--loaded')
+    }, 1000);
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.throttleReveal);

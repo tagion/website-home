@@ -25,3 +25,9 @@ Learn more about [Funnel](/docs/funnel.md).
 Scripting Engine is a component of Tagion Node software. Though at the moment, it is available as a separate package, so developers can get familiar with the Funnel language and try executing some scripts.
 
 [Execute your first Funnel script with Docker](/docs/scripting-engine.md).
+
+## Node Demonstration
+
+We released a Node in a docker container to demonstrate the process of processing events.
+
+Learn more about [Node Demonstration](/docs/node-demo.md).

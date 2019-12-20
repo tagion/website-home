@@ -17,7 +17,8 @@ let config = {
       "/docs/": [
         ["/docs/", "Welcome"],
         ["/docs/funnel", "Funnel"],
-        ["/docs/scripting-engine", "Scripting Engine"]
+        ["/docs/scripting-engine", "Scripting Engine"],
+        ["/docs/node-demo", "Node Demonstration"],
       ],
       "/whitepaper/": [
         ["/whitepaper/", "Overview"],
