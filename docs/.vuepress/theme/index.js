@@ -68,7 +68,8 @@ if (process.env.APP_ENV === "production") {
         "/meta/privacy-policy.html",
         "/meta/terms-of-use.html",
         "/meta/500.html",
-        "/404.html"
+        "/404.html",
+        "/tagionpresentation.pdf",
       ]
     }
   ]);

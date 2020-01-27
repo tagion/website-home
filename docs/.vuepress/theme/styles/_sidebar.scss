@@ -11,8 +11,8 @@
 }
 
 .layout-sidebar {
-  border-left: 1px solid rgb(228, 231, 235);
-  background: #f8f9fa;
+  background: #fff;
+  border-left: 1px dotted rgb(228, 231, 235);
 
   @include media-breakpoint-down(md) {
     border-left: none;
@@ -25,6 +25,7 @@
   padding-left: 2.3em;
   padding-right: 1em;
   color: mix($dark, #fff, 80%);
+  
 
   .nav {
     flex-direction: column;

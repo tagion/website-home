@@ -12,7 +12,11 @@ description: Read about Tagion Currency, DEX, Hashgraph and Governance. Tagion i
 
 If you want to get better understanding of Tagion and its purpose, you can download [Whitepaper in PDF](/tagionwhitepaper.pdf). Very soon the whole paper will be published on this website for better reading experience.
 
+<img data-src="/testsketch.jpg" loading="lazy"  alt="Hashgraph" class="wiki-image-figure lazy"/>
+
+
 For even deeper technical understanding, here is the [Technical Paper](/tagiontechpaper.pdf).
+
 
 ## Synopsis
 

@@ -4,86 +4,28 @@
       <div class="landing">
         <reveal class="hero">
           <b-container class="lcontainer lcontainer--hero">
-            <div class="hero__background" ref="heroBackground"></div>
-            <b-row class="hero_content pt-3">
+            <b-row class="hero_content">
               <b-col cols="12" xl="5">
                 <reveal class="hero__quote" child opacity direction="up">
                   <h2>
-                    <span class="hero__quote-muted">Creating a</span>
-                    <br />
-                    <span class="hero__quote-accent">Sustainable</span>
-                    <br />
-                    <span class="hero__quote-muted">Economic</span>
-                    <br />
-                    <span class="hero__quote-muted">World</span>
+                    <span>Open Banking Protocol for Digital Era</span>
                   </h2>
                 </reveal>
                 <div class="hero__details">
                   <reveal child opacity direction="down" :delay="250">
-                    <p>
-                      <b>Tagion</b> is a peer-to-peer cryptocurrency designed for adoption on a massive scale.
+                    <p>Subscribe to our newsletter to stay in the loop.
+                            <br />You can unsubscribe at any time.
+
                     </p>
                   </reveal>
 
-                  <div class="hero__buttons mt-5">
-                    <div class="hero__button-wrapper">
-                      <reveal child opacity direction="down" :delay="350">
-                        <social-buttons light class="mb-3" />
-                      </reveal>
-                      <reveal child opacity direction="down" :delay="450">
-                        <p>
-                          <small>
-                            Subscribe to our newsletter to stay in the loop.
-                            <br />You can unsubscribe at any time.
-                          </small>
-                        </p>
-                      </reveal>
-                      <reveal
-                        child
-                        opacity
-                        direction="down"
-                        :delay="550"
-                        style="position: relative; z-index: 5;"
-                      >
-                        <newsletter-form dark class="hero__newsletter" />
-                      </reveal>
-                    </div>
-                  </div>
                 </div>
-              </b-col>
-              <b-col cols="12" xl="7">
-                <reveal
-                  class="hero__video-wrapper"
-                  child
-                  opacity
-                  direction="up"
-                  :delay="750"
-                  style="position: relative; z-index: 5; width: 100%; height; 100%;"
-                >
-                  <iframe
-                    class="hero__video lazy"
-                    data-src="https://www.youtube.com/embed/2xPvrTZDAp8?modestbranding=1&rel=0"
-                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </reveal>
               </b-col>
             </b-row>
           </b-container>
         </reveal>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--grey" id="starter-section">
-          <b-container class="lcontainer lcontainer--bulletpoints">
-            <reveal class="lcontainer__headline">
-              <reveal child opacity direction="up">
-                <h2>
-                  <span class="lcontainer__headline__number">1.</span> Creating a Sustainable Economic World
-                </h2>
-              </reveal>
-              <reveal child opacity direction="down">
-                <p>Tagion is a decentralized monetary system with basic banking services built-in. We aim to create an infrastructure to unify cryptocurrencies into one interconnected system.</p>
-              </reveal>
-            </reveal>
+          <b-container class="lcontainer">
             <reveal class="feature-cards" :delay="300">
               <router-link to="/whitepaper/synopsis/dex.html" class="feature-card">
                 <reveal child opacity direction="left" :delay="100">
@@ -102,7 +44,7 @@
                 <reveal child opacity direction="left" :delay="200">
                   <div class="feature-card__internal">
                     <img data-src="/figures/circle/governance.svg" loading="lazy" class="lazy" />
-                    <h4>Democratic Governance</h4>
+                    <h4>Inclusive Governance</h4>
                     <p>
                       We based Tagion’s governance model on the
                       <b>"Governing the Commons"</b> work by the Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom.
@@ -115,7 +57,7 @@
                 <reveal child opacity direction="left" :delay="300">
                   <div class="feature-card__internal">
                     <img data-src="/figures/circle/hashgraph.svg" loading="lazy" class="lazy" />
-                    <h4>Hashgraph Consensus</h4>
+                    <h4>Elastic Money Supply</h4>
                     <p>
                       Instead of Blockchain, Tagion uses
                       <b>Hashgraph</b> - a leaderless aBFT consensus mechanism.
@@ -127,9 +69,8 @@
               </router-link>
             </reveal>
           </b-container>
-        </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--dark">
+        <!-- <div class="lcontainer-wrapper lcontainer-wrapper--dark">
           <b-container class="lcontainer lcontainer--bluebg lcontainer--roadmap">
             <b-row>
               <b-col cols="12" xl="5" class="d-flex align-items-center">
@@ -157,9 +98,9 @@
               </b-col>
             </b-row>
           </b-container>
-        </div>
+        </div> -->
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--grey pt-0">
+        <div class="lcontainer-wrapper  pt-0">
           <b-container class="lcontainer lcontainer--news">
             <reveal class="lcontainer__headline">
               <reveal child direction="up" opacity>
@@ -176,9 +117,9 @@
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--dark">
+        <div class="lcontainer-wrapper lcontainer-wrapper--grey">
           <b-container
-            class="lcontainer lcontainer--bluebg lcontainer--illustrated lcontainer--whitepaper"
+            class="lcontainer lcontainer--illustrated lcontainer--whitepaper"
           >
             <reveal class="lcontainer__headline">
               <reveal child direction="up" opacity>
@@ -235,8 +176,8 @@
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--dark">
-          <b-container class="lcontainer lcontainer--bluebg lcontainer--narrow">
+        <div class="lcontainer-wrapper lcontainer-wrapper--grey">
+          <b-container class="lcontainer lcontainer--narrow">
             <reveal class="lcontainer__headline" :delay="100">
               <reveal direction="up" opacity child>
                 <h2>Trust & Transparency</h2>
@@ -253,7 +194,7 @@
                   @click="$analytics.triggerEvent({category: 'Exploration', action: 'TrustedInTrading', fields: {placement: 'Landing'}})"
                   reveal
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
+                  rel="dofollow"
                 >See Tagion on TrustedIn Trading</brand-button>
               </reveal>
             </reveal>

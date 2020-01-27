@@ -12,15 +12,15 @@
 
   .hero {
     overflow-y: hidden;
-    min-height: 40em;
-    min-height: 80vh;
+    // min-height: 40em;
+    // min-height: 100vh;
     padding-top: $header-height;
     position: relative;
-    color: #fff;
-    background: $primary-darker;
+    color: $primary-darker;
+    background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: left;
     text-align: left;
     overflow: hidden;
@@ -74,12 +74,13 @@
       transition: opacity 1000ms;
 
       &.hero__background--loaded {
-        opacity: .3;
+        opacity: 0.3;
         background: url(../../public/bgphoto1.jpg);
       }
     }
 
     .hero__details {
+      margin: auto;
       margin-top: 0;
 
       p {
@@ -93,7 +94,7 @@
     }
 
     .hero_content {
-      margin-top: -4rem;
+      margin-top: 2rem;
 
       @include media-breakpoint-down(lg) {
         margin-top: 0;
@@ -127,7 +128,7 @@
     .hero__quote {
       position: relative;
       color: #fff;
-      font-weight: 700;
+      font-weight: 400;
 
       @include media-breakpoint-down(xl) {
         max-width: 50%;
@@ -138,12 +139,13 @@
       }
 
       h2 {
-        font-size: 3em;
+        font-size: 2.4em;
         margin-bottom: 0.6em;
-        font-weight: 500;
-        text-transform: uppercase;
-        font-weight: 600;
-        line-height: 1;
+        font-weight: 400;
+        // text-transform: uppercase;
+        color: $primary;
+        font-weight: 300;
+        line-height: 1.4;
 
         @include media-breakpoint-down(sm) {
           font-size: 2.4em;
@@ -151,12 +153,14 @@
       }
 
       .hero__quote-muted {
-        color: #fff;
-        opacity: 0.5;
+        color: $primary-darker;
+        font-weight: 600;
+        opacity: 0.6;
       }
 
       .hero__quote-accent {
-        color: #fff;
+        color: $primary-darker;
+        font-weight: 600;
       }
 
       @include media-breakpoint-down(md) {
@@ -168,15 +172,15 @@
       position: relative;
       z-index: 5;
 
-      .btn.btn-secondary {
-        background: #fff;
-        color: $primary;
-        opacity: 0.8;
-      }
+      // .btn.btn-secondary {
+      //   background: #fff;
+      //   color: $primary;
+      //   opacity: 0.8;
+      // }
 
-      .form-text.text-danger {
-        color: #fff !important;
-      }
+      // .form-text.text-danger {
+      //   color: #fff !important;
+      // }
 
       .email-field {
         max-width: 20rem;
@@ -362,7 +366,7 @@
 
     img {
       transition: all 200ms ease;
-      height: 9rem;
+      height: 3rem;
       margin: auto;
       margin-bottom: 0.8rem;
     }
@@ -480,8 +484,8 @@
     font-size: 1em;
     font-weight: 500;
     line-height: 1.1;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    // text-transform: uppercase;
+    // letter-spacing: 1px;
     margin-bottom: 0.5em;
     color: $secondary;
   }
