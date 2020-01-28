@@ -6,7 +6,7 @@ sidebarDepth: 0
 editLink: false
 shareButtons: true
 
-image: /figures/png/money-supply.png
+image: /figures/circle/png/money-supply.png
 description: Fractional banking not allowed. Tagion aims to bring trust back to the market and financial systems.
 ---
 
@@ -14,7 +14,7 @@ description: Fractional banking not allowed. Tagion aims to bring trust back to 
 
 _Fractional banking not allowed. Tagion aims to bring trust back to the market and financial systems._
 
-<img data-src="/figures/money-supply.svg" loading="lazy"  alt="Money Supply" class="wiki-image-figure lazy"/>
+<img data-src="/figures/circle/money-supply.svg" loading="lazy"  alt="Money Supply" class="wiki-image-figure lazy"/>
 
 Money is a social phenomenon based on trust in it having future value and being acceptable as payment. Hence a money issuing function is needed that can gain trust by users over time. Trust cannot be gained, if such a function is overly complex and non-transparent or if it relies on external variables from other systems. 
 

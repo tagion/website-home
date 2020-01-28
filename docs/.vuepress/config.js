@@ -9,10 +9,10 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      { text: "Network", link: "/whitepaper/" },
-      { text: "Developers", link: "/community/" },
-      { text: "Businesses", link: "/whitepaper/" },
-      { text: "Individuals", link: "/docs/" },
+      { text: "Network", link: "/network/" },
+      { text: "Developers", link: "/developers/" },
+      { text: "Businesses", link: "/businesses/" },
+      { text: "Individuals", link: "/individuals/" },
     ],
     sidebar: {
       "/docs/": [

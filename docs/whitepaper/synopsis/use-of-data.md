@@ -6,7 +6,7 @@ sidebarDepth: 0
 editLink: false
 shareButtons: true
 
-image: /figures/png/use-of-data.png
+image: /figures/circle/png/use-of-data.png
 description: Most DLTs uses a decentralised immutable database for storage. The blockchain data structure is immutable meaning all data should be stored forever and cannot be deleted.
 ---
 
@@ -14,7 +14,7 @@ description: Most DLTs uses a decentralised immutable database for storage. The 
 
 _If you want to move fast, you pack light. In Tagion, a node does not keep a complete history of transactions, but only alive records._
 
-<img data-src="/figures/use-of-data.svg" loading="lazy"  alt="Use of Data" class="wiki-image-figure lazy"/>
+<img data-src="/figures/circle/use-of-data.svg" loading="lazy"  alt="Use of Data" class="wiki-image-figure lazy"/>
 
 Most DLTs uses a decentralised immutable database for storage. The blockchain data structure is immutable meaning all data should be stored forever and cannot be deleted.
 

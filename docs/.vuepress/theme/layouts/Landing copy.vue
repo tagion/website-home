@@ -3,49 +3,45 @@
     <template slot="root-content">
       <div class="landing">
         <reveal class="hero">
-          <div class="hero__background"></div>
-          <b-container class="lcontainer">
-            <reveal class="hero__quote" child opacity direction="up">
-              <h2>
-                <span>Open Banking Protocol</span>
-              </h2>
-            </reveal>
-            <reveal class="hero__summary" child opacity direction="up" :delay="300">
-              <p>Tagion provides liquidity in the multi-blockchain world, connecting cryptocurrencies, instead of fighting them.</p>
-            </reveal>
-            <div class="hero__details">
-              <reveal child opacity direction="down" :delay="250">
-                <p></p>
-              </reveal>
-              <div class="mb-3">
-                <reveal child opacity direction="down" :delay="350">
-                  <social-buttons dark />
+          <b-container class="lcontainer lcontainer--hero">
+            <b-row class="hero_content">
+              <b-col cols="12" xl="5">
+                <reveal class="hero__quote" child opacity direction="up">
+                  <h2>
+                    <span>Open Banking Protocol for Digital Era</span>
+                  </h2>
                 </reveal>
-              </div>
-              <div>
-                <reveal child opacity direction="down" :delay="450">
-                  <small class="hero__join-note">Join our community now:</small>
-                  <newsletter-form />
-                </reveal>
-              </div>
-            </div>
+                <div class="hero__details">
+                  <reveal child opacity direction="down" :delay="250">
+                    <p>Subscribe to our newsletter to stay in the loop.
+                            <br />You can unsubscribe at any time.
 
-            <div class="hero__cards feature-cards">
+                    </p>
+                  </reveal>
+
+                </div>
+              </b-col>
+            </b-row>
+          </b-container>
+        </reveal>
+
+          <b-container class="lcontainer">
+            <reveal class="feature-cards" :delay="300">
               <router-link to="/whitepaper/synopsis/dex.html" class="feature-card">
-                <reveal child opacity direction="left" :delay="1000">
+                <reveal child opacity direction="left" :delay="100">
                   <div class="feature-card__internal">
-                    <img data-src="/figures/circle/hashgraph.svg" loading="lazy" class="lazy" />
+                    <img data-src="/figures/circle/dex.svg" loading="lazy" class="lazy" />
                     <h4>Decentralized Exchange Protocol</h4>
                     <p>
                       DEX protocol enables a
-                      <b>trustless</b> exchange of any cryptocurrency that supports Hash Time Locked Contract. Tagion is not a service, it's a protocol.
+                      <b>trustless</b> exchange of any cryptocurrency that supports Lightning Protocol. Tagion aims to unify cryptocurrencies instead of fighting them.
                     </p>
                     <p class="feature-card__read-more">Read more</p>
                   </div>
                 </reveal>
               </router-link>
               <router-link to="/whitepaper/synopsis/governance.html" class="feature-card">
-                <reveal child opacity direction="left" :delay="800">
+                <reveal child opacity direction="left" :delay="200">
                   <div class="feature-card__internal">
                     <img data-src="/figures/circle/governance.svg" loading="lazy" class="lazy" />
                     <h4>Inclusive Governance</h4>
@@ -58,67 +54,92 @@
                 </reveal>
               </router-link>
               <router-link to="/whitepaper/synopsis/consensus.html" class="feature-card">
-                <reveal child opacity direction="left" :delay="600">
+                <reveal child opacity direction="left" :delay="300">
                   <div class="feature-card__internal">
-                    <img data-src="/figures/circle/money-supply.svg" loading="lazy" class="lazy" />
+                    <img data-src="/figures/circle/hashgraph.svg" loading="lazy" class="lazy" />
                     <h4>Elastic Money Supply</h4>
                     <p>
-                      To scale properly, money supply must match the adoption.
-                      Tagion does not have a hard cap, but elastic supply instead, making it true sound money.
+                      Instead of Blockchain, Tagion uses
+                      <b>Hashgraph</b> - a leaderless aBFT consensus mechanism.
+                      <b>Fast payments</b>, low energy consumption, efficient data usage.
                     </p>
                     <p class="feature-card__read-more">Read more</p>
                   </div>
                 </reveal>
               </router-link>
-            </div>
+            </reveal>
           </b-container>
-        </reveal>
 
-        <div class="lcontainer-wrapper">
-          <b-container class="lcontainer">
+        <!-- <div class="lcontainer-wrapper lcontainer-wrapper--dark">
+          <b-container class="lcontainer lcontainer--bluebg lcontainer--roadmap">
+            <b-row>
+              <b-col cols="12" xl="5" class="d-flex align-items-center">
+                <reveal class="lcontainer__headline">
+                  <reveal child direction="up" opacity>
+                    <h2>
+                      <span class="lcontainer__headline__number">2.</span>Roadmap
+                    </h2>
+                  </reveal>
+                  <reveal child direction="down" opacity>
+                    <p>
+                      The team behind Tagion has spent a significant amount of time, funding itself, while building core components: Hashgraph, Gossip protocol,
+                      DART database, HiBON data format, the underlying API and more. We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project.
+                    </p>
+                  </reveal>
+                  <reveal child direction="right" opacity :delay="200">
+                    <brand-button reveal to="/community/roadmap.html" class="mt-5">Detailed Roadmap</brand-button>
+                  </reveal>
+                </reveal>
+              </b-col>
+              <b-col cols="12" xl="7" class="d-none d-md-block">
+                <reveal opacity direction="up" :delay="700">
+                  <roadmap class="lcontainer--roadmap__roadmap" />
+                </reveal>
+              </b-col>
+            </b-row>
+          </b-container>
+        </div> -->
+
+        <div class="lcontainer-wrapper  pt-0">
+          <b-container class="lcontainer lcontainer--news">
             <reveal class="lcontainer__headline">
               <reveal child direction="up" opacity>
-                <h2>Start Playing With Developer Tools</h2>
+                <h2>
+                  <span class="lcontainer__headline__number">3.</span>Latest from Tagion
+                </h2>
               </reveal>
-              <reveal child direction="up" opacity :delay="200">
-                <p>[A paragraph about dev tools]</p>
-              </reveal>
+            </reveal>
+            <reveal class="mt-4" opacity direction="up" :delay="500">
+              <div>
+                <news />
+              </div>
             </reveal>
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper">
-          <b-container class="lcontainer">
+        <div class="lcontainer-wrapper lcontainer-wrapper--grey">
+          <b-container
+            class="lcontainer lcontainer--illustrated lcontainer--whitepaper"
+          >
             <reveal class="lcontainer__headline">
               <reveal child direction="up" opacity>
-                <h2>Contribute With Your Ideas</h2>
-              </reveal>
-              <reveal child direction="up" opacity :delay="200">
-                <p>[A paragraph on how to contribute ideas on reddit]</p>
-              </reveal>
-            </reveal>
-          </b-container>
-        </div>
-
-        <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper">
-          <b-container class="lcontainer lcontainer--illustrated lcontainer--whitepaper">
-            <reveal class="lcontainer__headline">
-              <reveal child direction="up" opacity>
-                <h2>Technical Paper</h2>
+                <h2>
+                  The Tagion
+                  <br />Whitepaper
+                </h2>
               </reveal>
               <reveal child direction="down" opacity>
-                <p>Currency, DEX, Hashgraph and Governance.</p>
+                <p class="mb-4">Currency, DEX, Hashgraph and Governance.</p>
               </reveal>
-              <reveal child direction="right" opacity :delay="500" class="mt-4">
+              <reveal child direction="right" opacity :delay="500">
                 <brand-button
                   href="/tagionwhitepaper.pdf"
                   @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
                   reveal
-                  variant="down"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
                   class="brand-button--down"
-                >Download PDF</brand-button>
+                >Download Whitepaper</brand-button>
               </reveal>
             </reveal>
             <div class="lcontainer__illustrations">
@@ -133,7 +154,9 @@
           <b-container class="lcontainer lcontainer--team">
             <reveal class="lcontainer__headline">
               <reveal child direction="up" opacity>
-                <h2>Meet People Behind Tagion</h2>
+                <h2>
+                  <span class="lcontainer__headline__number">4.</span>Tagion Team
+                </h2>
               </reveal>
             </reveal>
             <reveal class="team-table">
@@ -152,19 +175,31 @@
             </reveal>
           </b-container>
         </div>
-      </div>
 
-      <div class="lcontainer-wrapper">
-        <b-container class="lcontainer">
-          <reveal class="lcontainer__headline">
-            <reveal child direction="up" opacity>
-              <h2>Tagion is Committed to Transparency</h2>
+        <div class="lcontainer-wrapper lcontainer-wrapper--grey">
+          <b-container class="lcontainer lcontainer--narrow">
+            <reveal class="lcontainer__headline" :delay="100">
+              <reveal direction="up" opacity child>
+                <h2>Trust & Transparency</h2>
+              </reveal>
+              <reveal direction="down" opacity child>
+                <p>
+                  <b>We are fully committed to transparency.</b> Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.
+                </p>
+              </reveal>
+
+              <reveal child direction="right" opacity :delay="450" class="mt-4">
+                <brand-button
+                  href="https://www.trustedintrading.com/profile/tagion/"
+                  @click="$analytics.triggerEvent({category: 'Exploration', action: 'TrustedInTrading', fields: {placement: 'Landing'}})"
+                  reveal
+                  target="_blank"
+                  rel="dofollow"
+                >See Tagion on TrustedIn Trading</brand-button>
+              </reveal>
             </reveal>
-            <reveal child direction="down" opacity>
-              <p>We are fully committed to transparency. Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.</p>
-            </reveal>
-          </reveal>
-        </b-container>
+          </b-container>
+        </div>
       </div>
     </template>
   </layout-default>
@@ -219,7 +254,7 @@ export default {
     }
 
     setTimeout(() => {
-      this.$refs.heroBackground.classList.add("hero__background--loaded");
+      this.$refs.heroBackground.classList.add('hero__background--loaded')
     }, 1000);
   },
   beforeDestroy() {

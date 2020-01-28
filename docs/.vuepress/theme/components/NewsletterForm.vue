@@ -29,7 +29,7 @@
         />
         <div class="input-group-append">
           <b-button
-            variant="secondary"
+            variant="primary"
             :type="!inputDisabled ? 'submit' : ''"
             :class="{disabled: inputDisabled}"
             :disabled="inputDisabled"
@@ -41,7 +41,7 @@
             </span>
             <span v-else>
               <span class="fas fa-envelope"></span>
-              <span class>Subscribe to Newsletter</span>
+              <span class>Join Community</span>
             </span>
           </b-button>
         </div>

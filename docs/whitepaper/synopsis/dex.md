@@ -6,7 +6,7 @@ sidebarDepth: 0
 editLink: false
 shareButtons: true
 
-image: /figures/png/dex.png
+image: /figures/circle/png/dex.png
 description: DEX allows everyone to make exchanges between supported cryptocurrencies with no mediator.
 ---
 
@@ -16,7 +16,7 @@ description: DEX allows everyone to make exchanges between supported cryptocurre
 
 _DEX allows everyone to make exchanges between supported cryptocurrencies with no mediator._
 
-<img data-src="/figures/dex.svg" loading="lazy"  alt="DEX" class="wiki-image-figure lazy"/>
+<img data-src="/figures/circle/dex.svg" loading="lazy"  alt="DEX" class="wiki-image-figure lazy"/>
 
 Tagion has ordering, making it possible to do fair price discovery and price matching decentralised, which when combined with the routing functionality of the Lightning Network, lets the Tagion network accomplish decentralised exchange between Lightning Network compatible cryptocurrencies (Tagions, Bitcoin, Ether, Litecoin and more). Bids and asks are placed in the network, which gives full transparency and order depth for all users, not limited by a central exchange.
 The Tagion decentralised exchange, DEX, always trades alien currencies against Tagions (TGN), which helps to create high liquidity and thus heightens the matching probability. For example, a user exchanging BTC to LTC means that two exchanges are required. The first is BTC to TGN and the second TGN to LTC.
