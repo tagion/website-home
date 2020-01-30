@@ -13,6 +13,8 @@ let config = {
       { text: "Developers", link: "/developers/" },
       { text: "Businesses", link: "/businesses/" },
       { text: "Individuals", link: "/individuals/" },
+      { text: "", link: "sep" },
+      { text: "Roadmap", link: "/community/roadmap.html" },
     ],
     sidebar: {
       "/docs/": [

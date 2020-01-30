@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFF;
+  background: #fff;
   height: $header-height;
   padding-bottom: 0.2rem;
   border-bottom: 1px dotted rgb(228, 231, 235);
@@ -94,6 +94,15 @@
     align-items: center;
     justify-content: center;
   }
+
+  .nav-separator  {
+    width: 1px;
+    height: 10px;
+    background: $border-light;
+    position: relative;
+    top: 2px;
+    margin: 0 .6rem;
+  }
 }
 
 .landing-page.layout-page.sidebar-open {
@@ -118,16 +127,17 @@ body.scrolled-down {
 .nav a.nav-link--button {
   display: inline-block;
   border-radius: 100px !important;
-  border: 1px solid #ffffff22;
+  border: 1px solid #eee;
   box-sizing: border-box;
   margin-left: 0.8rem !important;
   transition: all 100ms;
   color: mix($primary, #fff, 20%);
   padding: 0.2rem 0.8rem;
+  color: $primary-lighter;
 
   &:hover {
     background: #ffffff11;
-    border-color: #ffffff33;
+    border-color: #ddd;
   }
 
   &::after {

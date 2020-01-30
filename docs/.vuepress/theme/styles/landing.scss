@@ -15,7 +15,7 @@
   border-bottom: 1px dotted #eee;
 
   .hero__background {
-    background: url(../../public/hero-sketch-1.jpg);
+    background: url(../../public/hero-pattern.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
@@ -53,12 +53,8 @@
     font-weight: 400;
     padding-top: 1em;
 
-    @include media-breakpoint-down(xl) {
-      max-width: 50%;
-    }
-
-    @include media-breakpoint-down(lg) {
-      max-width: 60%;
+    @include media-breakpoint-down(sm) {
+      padding-top: 0em;
     }
 
     h2 {
@@ -68,8 +64,12 @@
       line-height: 1.4;
       margin-bottom: 0.1em;
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         font-size: 2.4em;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 2em;
       }
     }
 
@@ -97,6 +97,14 @@
       margin-left: 0.1rem;
       font-weight: 400;
       letter-spacing: 1px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 1.1em;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1em;
+      }
     }
   }
 
@@ -105,6 +113,11 @@
     z-index: 2;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 1.4rem;
+      margin-bottom: .4rem;
+    }
   }
 
   .lcontainer {
@@ -245,7 +258,7 @@
     margin-bottom: 0.1em;
 
     @include media-breakpoint-down(md) {
-      margin-top: 1em;
+      margin-top: 0em;
       margin-bottom: 0.2em;
     }
 
@@ -475,7 +488,7 @@
   }
 
   &.lcontainer--team {
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
   }
 
   &.lcontainer--narrow {
@@ -825,7 +838,7 @@
 
     &::before {
       content: "";
-      background: url(../../public/hero-sketch-1.jpg);
+      background: url(../../public/hero-pattern.svg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: right center;

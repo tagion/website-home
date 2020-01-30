@@ -1,4 +1,5 @@
 ---
+redirect_to: "http://example.com"
 title: Tagion Whitepaper
 lang: en-US
 sidebar: true

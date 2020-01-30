@@ -10,20 +10,20 @@
                 <span>Universal Token Protocol</span>
               </h2>
             </div>
-            <div class="hero__summary" child opacity direction="up" :delay="300">
+            <div class="hero__summary" child opacity direction="up">
               <p>Inclusive. Elastic. Decentralized. Distributed.</p>
             </div>
             <div class="hero__details">
-              <div child opacity direction="down" :delay="250">
+              <div child opacity direction="down">
                 <p></p>
               </div>
               <div class="mb-3">
-                <div child opacity direction="down" :delay="350">
+                <div child opacity direction="down">
                   <social-buttons dark />
                 </div>
               </div>
               <div>
-                <div child opacity direction="down" :delay="450">
+                <div child opacity direction="down">
                   <small class="hero__join-note">Get all the important updates first:</small>
                   <newsletter-form />
                 </div>
@@ -31,10 +31,10 @@
             </div>
 
             <div class="hero__cards feature-cards">
-              <div to="/whitepaper/synopsis/dex.html" class="feature-card">
-                <div child opacity direction="left" :delay="1000">
+              <div class="feature-card">
+                <div child opacity direction="left">
                   <div class="feature-card__internal">
-                    <img data-src="/figures/circle/hashgraph.svg" loading="lazy" class="lazy" />
+                    <img src="/icons/dex.svg" />
                     <h4>Decentralized Exchange</h4>
                     <p>
                       Pay with anything anywhere.
@@ -42,34 +42,31 @@
                       <b>open</b> protocol that enables a
                       trustless exchange of any digital Currency that supports Hash Time Locked Contract.
                     </p>
-                    <p class="feature-card__read-more">Read more</p>
                   </div>
                 </div>
               </div>
-              
-              <div to="/whitepaper/synopsis/consensus.html" class="feature-card">
-                <div child opacity direction="left" :delay="600">
+
+              <div class="feature-card">
+                <div child opacity direction="left">
                   <div class="feature-card__internal">
-                    <img data-src="/figures/circle/money-supply.svg" loading="lazy" class="lazy" />
+                    <img src="/icons/money-supply.svg" />
                     <h4>Elastic Money Supply</h4>
                     <p>
                       To scale properly, the money supply must match the demand.
                       Tagion does not have a hard cap, but elastic supply, which aims to create a stable price level.
                     </p>
-                    <p class="feature-card__read-more">Read more</p>
                   </div>
                 </div>
               </div>
-              <div to="/whitepaper/synopsis/governance.html" class="feature-card">
-                <div child opacity direction="left" :delay="800">
+              <div class="feature-card">
+                <div child opacity direction="left">
                   <div class="feature-card__internal">
-                    <img data-src="/figures/circle/governance.svg" loading="lazy" class="lazy" />
+                    <img src="/icons/governance.svg" />
                     <h4>Inclusive Governance</h4>
                     <p>
                       Tagion is open-source and governed as a common resource.
                       Everyone has the same rights in the system, but those who contribute more, have more voting power.
                     </p>
-                    <p class="feature-card__read-more">Read more</p>
                   </div>
                 </div>
               </div>
@@ -220,10 +217,6 @@ export default {
     } else {
       this.handleRevealAll();
     }
-
-    setTimeout(() => {
-      this.$refs.heroBackground.classList.add("hero__background--loaded");
-    }, 1000);
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.throttleReveal);

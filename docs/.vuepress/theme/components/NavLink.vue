@@ -1,5 +1,6 @@
 <template>
-  <router-link class="nav-link" :to="link" v-if="!isExternal(link)" :exact="exact">{{ item.text }}</router-link>
+  <li v-if="isSeparator" class="nav-separator"></li>
+  <router-link class="nav-link" :to="link" v-else-if="!isExternal(link)" :exact="exact">{{ item.text }}</router-link>
   <a
     v-else
     :href="link"
@@ -25,6 +26,10 @@ export default {
   computed: {
     link() {
       return ensureExt(this.item.link);
+    },
+
+    isSeparator() {
+      return this.link === "sep.html";
     },
 
     exact() {

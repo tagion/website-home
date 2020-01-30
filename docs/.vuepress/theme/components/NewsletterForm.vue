@@ -3,8 +3,8 @@
     <b-form
       :novalidate="true"
       :validated="validation"
-      @submit.native.prevent="onSubmit"
-      @keydown.native.enter="onSubmit"
+      @submit.prevent="onSubmit"
+      @keydown.enter="onSubmit"
       v-on:submit.prevent="onSubmit"
       ref="newsletter-form"
       :action="formAction"
@@ -20,7 +20,6 @@
           :value="email"
           :disabled="inputDisabled"
           name="EMAIL"
-          id="mce-EMAIL"
           placeholder="Your Email"
           aria-label="Your Email"
           :state="validation"
