@@ -92,6 +92,18 @@ Recently James decided to apply his broad financial and trading experience to Bl
 <div class="clearfix"></div>
 
 
+### Roxana Nasoi
+
+**Business Developer.**
+
+<img data-src="/team/roxana.jpg" alt="Roxana Nasoi" loading="lazy" class="lazy wiki-image-small wiki-image-float-right"/>
+
+Roxana brings more than 8 years of experience in various fields as a business developer and advisor. Currently, Co-chairman and Head of Community at Hong Kong Israel Trade Association, partner at Aimedis, a board member at Impulse4women, and advisor for Ideagist Blockchain Incubator. Former Upwork Inc ambassador.  
+
+[LinkedIn](https://www.linkedin.com/in/roxananasoi/)
+
+<div class="clearfix"></div>
+
 ### Vlad Pazych
 
 **Digital Marketing Manager.**

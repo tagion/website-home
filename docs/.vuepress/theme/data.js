@@ -30,6 +30,12 @@ export const teamMembers = [
     link: "/community/team.html#james-godfrey"
   },
   {
+    name: "Roxana Nasoi",
+    title: "Business Developer",
+    image: "/team/roxana.jpg",
+    link: "/community/team.html#roxana-nasoi"
+  },
+  {
     name: "Vlad Pazych",
     title: "Digital Marketing Manager",
     image: "/team/vp.jpg",

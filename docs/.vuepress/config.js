@@ -9,7 +9,7 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      { text: "Network", link: "/network/" },
+      { text: "Nodes", link: "/network/" },
       { text: "Developers", link: "/developers/" },
       { text: "Businesses", link: "/businesses/" },
       { text: "Individuals", link: "/individuals/" },

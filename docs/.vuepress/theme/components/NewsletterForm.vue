@@ -41,7 +41,7 @@
             </span>
             <span v-else>
               <span class="fas fa-envelope"></span>
-              <span class>Join Community</span>
+              <span class>Join Newsletter</span>
             </span>
           </b-button>
         </div>

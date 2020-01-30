@@ -2,77 +2,80 @@
   <layout-default class="landing-page" id="landing-page">
     <template slot="root-content">
       <div class="landing">
-        <reveal class="hero">
+        <div class="hero">
           <div class="hero__background"></div>
           <b-container class="lcontainer">
-            <reveal class="hero__quote" child opacity direction="up">
+            <div class="hero__quote" child opacity direction="up">
               <h2>
-                <span>Open Banking Protocol</span>
+                <span>Universal Token Protocol</span>
               </h2>
-            </reveal>
-            <reveal class="hero__summary" child opacity direction="up" :delay="300">
-              <p>Tagion provides liquidity in the multi-blockchain world, connecting cryptocurrencies, instead of fighting them.</p>
-            </reveal>
+            </div>
+            <div class="hero__summary" child opacity direction="up" :delay="300">
+              <p>Inclusive. Elastic. Decentralized. Distributed.</p>
+            </div>
             <div class="hero__details">
-              <reveal child opacity direction="down" :delay="250">
+              <div child opacity direction="down" :delay="250">
                 <p></p>
-              </reveal>
+              </div>
               <div class="mb-3">
-                <reveal child opacity direction="down" :delay="350">
+                <div child opacity direction="down" :delay="350">
                   <social-buttons dark />
-                </reveal>
+                </div>
               </div>
               <div>
-                <reveal child opacity direction="down" :delay="450">
-                  <small class="hero__join-note">Join our community now:</small>
+                <div child opacity direction="down" :delay="450">
+                  <small class="hero__join-note">Get all the important updates first:</small>
                   <newsletter-form />
-                </reveal>
+                </div>
               </div>
             </div>
 
             <div class="hero__cards feature-cards">
-              <router-link to="/whitepaper/synopsis/dex.html" class="feature-card">
-                <reveal child opacity direction="left" :delay="1000">
+              <div to="/whitepaper/synopsis/dex.html" class="feature-card">
+                <div child opacity direction="left" :delay="1000">
                   <div class="feature-card__internal">
                     <img data-src="/figures/circle/hashgraph.svg" loading="lazy" class="lazy" />
-                    <h4>Decentralized Exchange Protocol</h4>
+                    <h4>Decentralized Exchange</h4>
                     <p>
-                      DEX protocol enables a
-                      <b>trustless</b> exchange of any cryptocurrency that supports Hash Time Locked Contract. Tagion is not a service, it's a protocol.
+                      Pay with anything anywhere.
+                      DEX is an
+                      <b>open</b> protocol that enables a
+                      trustless exchange of any digital Currency that supports Hash Time Locked Contract.
                     </p>
                     <p class="feature-card__read-more">Read more</p>
                   </div>
-                </reveal>
-              </router-link>
-              <router-link to="/whitepaper/synopsis/governance.html" class="feature-card">
-                <reveal child opacity direction="left" :delay="800">
-                  <div class="feature-card__internal">
-                    <img data-src="/figures/circle/governance.svg" loading="lazy" class="lazy" />
-                    <h4>Inclusive Governance</h4>
-                    <p>
-                      We based Tagion’s governance model on the
-                      <b>"Governing the Commons"</b> work by the Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom.
-                    </p>
-                    <p class="feature-card__read-more">Read more</p>
-                  </div>
-                </reveal>
-              </router-link>
-              <router-link to="/whitepaper/synopsis/consensus.html" class="feature-card">
-                <reveal child opacity direction="left" :delay="600">
+                </div>
+              </div>
+              
+              <div to="/whitepaper/synopsis/consensus.html" class="feature-card">
+                <div child opacity direction="left" :delay="600">
                   <div class="feature-card__internal">
                     <img data-src="/figures/circle/money-supply.svg" loading="lazy" class="lazy" />
                     <h4>Elastic Money Supply</h4>
                     <p>
-                      To scale properly, money supply must match the adoption.
-                      Tagion does not have a hard cap, but elastic supply instead, making it true sound money.
+                      To scale properly, the money supply must match the demand.
+                      Tagion does not have a hard cap, but elastic supply, which aims to create a stable price level.
                     </p>
                     <p class="feature-card__read-more">Read more</p>
                   </div>
-                </reveal>
-              </router-link>
+                </div>
+              </div>
+              <div to="/whitepaper/synopsis/governance.html" class="feature-card">
+                <div child opacity direction="left" :delay="800">
+                  <div class="feature-card__internal">
+                    <img data-src="/figures/circle/governance.svg" loading="lazy" class="lazy" />
+                    <h4>Inclusive Governance</h4>
+                    <p>
+                      Tagion is open-source and governed as a common resource.
+                      Everyone has the same rights in the system, but those who contribute more, have more voting power.
+                    </p>
+                    <p class="feature-card__read-more">Read more</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </b-container>
-        </reveal>
+        </div>
 
         <div class="lcontainer-wrapper">
           <b-container class="lcontainer">
@@ -160,7 +163,7 @@
             <reveal child direction="up" opacity>
               <h2>Tagion is Committed to Transparency</h2>
             </reveal>
-            <reveal child direction="down" opacity>
+            <reveal child direction="up" opacity :delay="200">
               <p>We are fully committed to transparency. Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.</p>
             </reveal>
           </reveal>
