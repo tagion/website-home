@@ -120,9 +120,9 @@ b {
   h1 {
     font-size: 2.4em;
     z-index: 5;
-    font-weight: 300;
+    font-weight: 500;
     color: $dark;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.4em;
     position: relative;
     padding-bottom: 0rem;
 
@@ -150,10 +150,15 @@ b {
     display: inline-block;
     position: relative;
     opacity: 1;
+    margin-bottom: 0em;
     margin-top: calc(-1 * #{$header-height} + 0.5em);
 
     @include media-breakpoint-down(lg) {
       font-size: 1.8em;
+    }
+
+    +h3 {
+      margin-top: -3.4rem;
     }
 
     + p {
@@ -161,11 +166,10 @@ b {
     }
   }
   h3 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     z-index: 3;
-    // opacity: 0.9;
-    color: $secondary-darkest;
-    font-weight: 500;
+    color: $primary-darkest;
+    font-weight: 400;
     @include media-breakpoint-down(lg) {
       font-size: 1.3em;
     }

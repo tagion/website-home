@@ -5,7 +5,7 @@
         <router-link to="/">
           <img class="header__logo" src="../images/logomark-white.svg" alt="Tagion Logo" />
         </router-link>
-        <NavLinks class="ml-3 d-none d-lg-flex" />
+        <NavLinks class="header__nav d-none d-lg-flex" />
       </div>
 
       <div class="header__menu justify-content-end">

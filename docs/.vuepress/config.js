@@ -9,12 +9,11 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      { text: "Nodes", link: "/network/" },
-      { text: "Developers", link: "/developers/" },
-      { text: "Businesses", link: "/businesses/" },
-      { text: "Individuals", link: "/individuals/" },
+      { text: "Docs", link: "/docs/" },
+      { text: "Community", link: "/community/" },
       { text: "", link: "sep" },
-      { text: "Roadmap", link: "/community/roadmap.html" },
+      { text: "Whitepaper", link: "/tagionwhitepaper.pdf" },
+      { text: "Technical Paper", link: "/tagiontechpaper.pdf" },
     ],
     sidebar: {
       "/docs/": [
@@ -53,7 +52,8 @@ let config = {
         ["/community/roadmap", "Tagion Roadmap"]
       ]
     },
-    docsRepo: "tagion/homepage/blob/release/docs"
+    docsRepo: "tagion/homepage/blob/release/docs",
+    issueLink: "tagion/homepage/issues/new",
   },
   head: [
     [

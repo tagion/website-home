@@ -18,9 +18,8 @@
     border: none;
     border-radius: 100px;
     color: mix($dark, #fff, 70%);
-    transition: all 100ms linear, width 200ms linear;
+    transition: width 200ms linear;
     padding: 0.1rem 0rem 0.2rem 2.1rem;
-    // top: .1rem;
     height: auto;
     margin-right: .5rem;
 
@@ -30,7 +29,7 @@
 
     &:focus {
       background-color: #ffffff44;
-      color: #ffffff88;
+      color: $primary;
       cursor: text;
       width: 10rem;
       padding: 0.1rem 1.2rem 0.2rem 2.3rem;

@@ -2,7 +2,7 @@
   <layout-default class="landing-page" id="landing-page">
     <template slot="root-content">
       <div class="landing">
-        <div class="hero">
+        <div class="hero mb-4">
           <div class="hero__background"></div>
           <b-container class="lcontainer">
             <div class="hero__quote" child opacity direction="up">
@@ -74,35 +74,65 @@
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper">
-          <b-container class="lcontainer">
-            <reveal class="lcontainer__headline">
+        <div class="lcontainer-wrapper lcontainer-wrapper--story">
+          <b-container class="lcontainer lcontainer--story">
+            <reveal class="lcontainer__story-content">
               <reveal child direction="up" opacity>
-                <h2>Start Playing With Developer Tools</h2>
+                <h2>What is Tagion?</h2>
               </reveal>
               <reveal child direction="up" opacity :delay="200">
-                <p>[A paragraph about dev tools]</p>
+                <p>Tagion is a monetary system and banking system that can handle and settle 100.000s of transactions simultaneously at speeds comparable to the EMVCO (Master/VISA) network. It will be released as open-source and as a common, supported by a democratic governance model.</p>
               </reveal>
             </reveal>
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper">
-          <b-container class="lcontainer">
-            <reveal class="lcontainer__headline">
+        <div class="lcontainer-wrapper lcontainer-wrapper--story">
+          <b-container class="lcontainer lcontainer--story">
+            <reveal class="lcontainer__story-content">
               <reveal child direction="up" opacity>
-                <h2>Contribute With Your Ideas</h2>
+                <h2>Why is Tagion relevant to the world?</h2>
               </reveal>
               <reveal child direction="up" opacity :delay="200">
-                <p>[A paragraph on how to contribute ideas on reddit]</p>
+                <p>Current cryptocurrency systems have failed to gain wide-spread adoption, as several problems prevent these from doing so.</p>
+                <p>Tagion addresses problems such as the speed of transactions, high energy use, inability to efficiently perform decentralized exchanges of cryptocurrencies and failure to adhere to regulations.</p>
+                <p>The incumbent fiat-based systems suffer from several issues too, and here Tagion addresses unequal access to banking, high transaction cost, complicated and costly cross-border transactions among others.</p>
               </reveal>
             </reveal>
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper">
+        <div class="lcontainer-wrapper lcontainer-wrapper--story">
+          <b-container class="lcontainer lcontainer--story">
+            <reveal class="lcontainer__story-content">
+              <reveal child direction="up" opacity>
+                <h2>Where is Tagion beneficial?</h2>
+              </reveal>
+              <reveal child direction="up" opacity :delay="200">
+                <p>Tagion can act as the backbone for almost any transaction-based service as it connects robust security mechanisms and fair ordering mechanisms with parallel execution.</p>
+
+                <p>Tagion enables smooth cross-border transactions at very fair prices and provides an open transaction platform allowing for any person or company to participate. The openness of the system offers businesses and incumbents to compete on equal terms</p>
+              </reveal>
+            </reveal>
+          </b-container>
+        </div>
+
+        <div class="lcontainer-wrapper lcontainer-wrapper--story">
+          <b-container class="lcontainer lcontainer--story">
+            <reveal class="lcontainer__story-content">
+              <reveal child direction="up" opacity>
+                <h2>Who owns and runs Tagion?</h2>
+              </reveal>
+              <reveal child direction="up" opacity :delay="200">
+                <p>Currently, Tagion is funded and developed by its founders. As soon as the network is strong enough to be self-sustainable, it becomes open-sourced, and all IP's transferred to the Tagion foundation. This foundation will be responsible for the funding of projects that further develop Tagion.</p>
+              </reveal>
+            </reveal>
+          </b-container>
+        </div>
+
+        <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper mt-8 mb-4">
           <b-container class="lcontainer lcontainer--illustrated lcontainer--whitepaper">
-            <reveal class="lcontainer__headline">
+            <reveal class="lcontainer__headline" :delay="400">
               <reveal child direction="up" opacity>
                 <h2>Technical Paper</h2>
               </reveal>
@@ -129,6 +159,34 @@
           </b-container>
         </div>
 
+        <div class="lcontainer-wrapper mt-8">
+        <b-container class="lcontainer lcontainer--roadmap">
+          <b-row>
+            <b-col cols="12" xl="5" class="d-flex align-items-center">
+              <reveal class="lcontainer__headline">
+                <reveal child direction="up" opacity>
+                  <h2>Tagion Roadmap</h2>
+                </reveal>
+                <reveal child direction="down" opacity>
+                  <p>
+                    The team behind Tagion has spent a significant amount of time, funding itself, while building core components: Hashgraph, Gossip protocol,
+                    DART database, HiBON data format, the underlying API and more. We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project.
+                  </p>
+                </reveal>
+                <reveal child direction="right" opacity :delay="200">
+                  <brand-button reveal to="/community/roadmap.html" class="mt-5">Detailed Roadmap</brand-button>
+                </reveal>
+              </reveal>
+            </b-col>
+            <b-col cols="12" xl="7" class="d-none d-md-block">
+              <reveal opacity direction="up" :delay="700">
+                <img class="lcontainer--roadmap__roadmap" src="/timeline.svg" />
+              </reveal>
+            </b-col>
+          </b-row>
+        </b-container>
+      </div>
+
         <div class="lcontainer-wrapper lcontainer-wrapper--white">
           <b-container class="lcontainer lcontainer--team">
             <reveal class="lcontainer__headline">
@@ -154,16 +212,37 @@
         </div>
       </div>
 
-      <div class="lcontainer-wrapper">
+      
+
+      <div class="lcontainer-wrapper mb-8 mt-5">
         <b-container class="lcontainer">
-          <reveal class="lcontainer__headline">
-            <reveal child direction="up" opacity>
-              <h2>Tagion is Committed to Transparency</h2>
-            </reveal>
-            <reveal child direction="up" opacity :delay="200">
-              <p>We are fully committed to transparency. Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.</p>
-            </reveal>
-          </reveal>
+          <b-row>
+            <b-col cols="12" lg="8">
+              <reveal class="lcontainer__headline pr-6">
+                <reveal child direction="up" opacity>
+                  <h2>Tagion is Committed to Transparency</h2>
+                </reveal>
+                <reveal child direction="up" opacity :delay="200">
+                  <p>We are fully committed to transparency. Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.</p>
+                </reveal>
+                <reveal child direction="right" opacity :delay="500" class="mt-4">
+                  <brand-button
+                    href="/tagionwhitepaper.pdf"
+                    @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
+                    reveal
+                    variant="right"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                  >Visit Tagion on TrustedIn Trading</brand-button>
+                </reveal>
+              </reveal>
+            </b-col>
+            <b-col cols="12" lg="4" class="mt-8 mt-lg-0 text-center">
+              <reveal direction="left" opacity :delay="300">
+                <img width="120" src="/partners/trustedintrading.png" />
+              </reveal>
+            </b-col>
+          </b-row>
         </b-container>
       </div>
     </template>

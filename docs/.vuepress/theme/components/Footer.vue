@@ -9,7 +9,7 @@
               <router-link to="/community/roadmap.html">Roadmap</router-link>
             </li>
             <li>
-              <router-link to="/whitepaper/">Whitepaper</router-link>
+              <router-link to="/tagionwhitepaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Footer'}})"  target="_blank" rel="noopener noreferrer nofollow">Whitepaper <OutboundLink /></router-link>
             </li>
             <li>
               <a href="/tagiontechpaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'TechpaperDownload', fields: {placement: 'Footer'}})" target="_blank" rel="noopener noreferrer nofollow">

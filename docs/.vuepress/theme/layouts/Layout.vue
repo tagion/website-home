@@ -15,6 +15,10 @@
           <a :href="editLink" target="_blank" title="Edit on Github">
             <span>Edit on GitHub</span>
             <OutboundLink />
+          </a> or
+          <a :href="issueLink" target="_blank" title="Open an issue">
+            <span>Open an issue</span>
+            <OutboundLink />
           </a>
         </div>
       </div>
@@ -62,6 +66,10 @@ export default {
       }
 
       return true;
+    },
+
+    issueLink() {
+      return `https://github.com/${this.$site.themeConfig.issueLink}/`;
     },
 
     editLink() {
