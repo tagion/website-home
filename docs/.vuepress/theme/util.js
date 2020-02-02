@@ -23,7 +23,6 @@ export function isExternal(path) {
 }
 
 export function isMailto(path) {
-  console.log("ismailto", path);
   return /^mailto:/.test(path);
 }
 

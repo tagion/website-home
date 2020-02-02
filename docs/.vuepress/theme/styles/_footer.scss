@@ -4,13 +4,12 @@
 
 .layout-footer {
   background: #fff;
-  border-top: 1px solid rgb(228, 231, 235);
+  border-top: 1px dotted $border-light;
   color: mix($dark, #fff, 60%);
   padding-top: 4em;
   padding-bottom: 6em;
   box-sizing: border-box;
   font-size: 0.95em;
-  
 
   a {
     color: mix($dark, #fff, 80%);
@@ -49,8 +48,6 @@
     margin-top: 6em !important;
   }
 }
-
-
 
 .has-sidebar {
   .row {

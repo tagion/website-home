@@ -9,6 +9,7 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
+      { text: "Tagion", link: "/" },
       { text: "Docs", link: "/docs/" },
       { text: "Community", link: "/community/" },
       { text: "", link: "sep" },

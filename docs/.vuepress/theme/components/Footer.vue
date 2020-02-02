@@ -51,7 +51,7 @@
           <ul
             class="list-inline list-group-transparent list-group-flush list-group-borderless mb-0 text-muted"
           >
-            <li class="list-inline-item pl-0 pr-4 my-1">© Tagion, 2019. All rights reserved.</li>
+            <li class="list-inline-item pl-0 pr-4 my-1">© Tagion, 2020. All rights reserved.</li>
             <li class="list-inline-item pl-0 pr-4 my-1">
               <router-link to="/meta/privacy-policy">Privacy Policy</router-link>
             </li>
