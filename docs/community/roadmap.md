@@ -28,6 +28,7 @@ description: The team behind Tagion has spent a significant amount of time, fund
 - <small>July 2019</small> / Filed patents for [Gossip protocol](/whitepaper/terminology.md#gossip-protocol) and [DART](/whitepaper/terminology.md#dart);
 - <small>September 2019</small> / Formed the core principles of the economic governance model;
 - <small>October 2019</small> / Implemented β-version of HiBON and HiBON-RPC;
+- <small>December 2019</small> / α-launch of developer package and test node;
 
 ## Now
 
@@ -38,7 +39,6 @@ description: The team behind Tagion has spent a significant amount of time, fund
 
 ## Future
 
-- <small>≈ December 2019</small> / α-launch of developer package and test node;
 - <small>≈ April 2020</small> / Launch of open test network;
 - <small>≈ June 2020</small> / α-launch of the [Tagion Network](/whitepaper/terminology.md#tagion-network);
 - <small>≈ Q3 2020</small> / Open-sourcing the Tagion Core library;

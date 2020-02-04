@@ -134,7 +134,7 @@ b {
     }
 
     + h2 {
-      margin-top: -4.8rem;
+      margin-top: -4rem;
 
       @include media-breakpoint-down(lg) {
         margin-top: -3.8rem;
@@ -157,7 +157,7 @@ b {
       font-size: 1.8em;
     }
 
-    +h3 {
+    + h3 {
       margin-top: -3.4rem;
     }
 

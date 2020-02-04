@@ -44,6 +44,77 @@
         font-size: 1em;
       }
     }
+
+    .hero__details-summary-button {
+      display: inline-block;
+      margin-bottom: 4rem;
+    }
+
+    .brand-button {
+      color: $primary;
+
+      .brand-button__text {
+        color: $primary;
+      }
+    }
+
+    .btn {
+      padding: 0.5rem 1.2rem;
+      color: #fff;
+      border-radius: 100px;
+
+      &.btn-summary {
+        margin-right: 1rem;
+      }
+
+      &.btn-social {
+        padding: 0.5rem 1rem 0.5rem;
+        margin-right: 0.8rem;
+        font-size: 0.9em;
+
+        @include media-breakpoint-down(md) {
+          font-size: 0.8em;
+        }
+      }
+
+      svg {
+        width: 1rem;
+        margin-right: 1rem;
+        color: #fff;
+      }
+
+
+
+      &.btn-reddit,
+      &.btn-telegram {
+        opacity: 0.8;
+        background: $primary-lightest;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &.btn-reddit {
+        &:hover {
+          background: #ff4500;
+        }
+
+        svg {
+          position: relative;
+          top: -2px;
+        }
+      }
+      &.btn-telegram {
+        &:hover {
+          background: #0088cc;
+        }
+
+        svg {
+          position: relative;
+          top: -2px;
+        }
+      }
+    }
   }
 
   .hero__join-note {
@@ -56,6 +127,9 @@
     position: relative;
     font-weight: 400;
 
+    @include media-breakpoint-up(lg) {
+      margin-top: -2rem;
+    }
     @include media-breakpoint-down(sm) {
       padding-top: 0em;
     }
@@ -124,8 +198,8 @@
   .hero__cards {
     position: relative;
     z-index: 2;
-    margin-top: 3rem;
-    margin-bottom: 1.4rem;
+    margin-top: 5rem;
+    margin-bottom: 4.4rem;
 
     @include media-breakpoint-down(sm) {
       margin-top: 1.4rem;
@@ -422,8 +496,8 @@
 // Container
 //
 .lcontainer {
-  padding-top: 3em;
-  padding-bottom: 2em;
+  // padding-top: 6em;
+  // padding-bottom: 8em;
 
   &.lcontainer--small-spacing {
     padding-top: 0em;
@@ -581,7 +655,7 @@
         );
         z-index: 3;
         @include media-breakpoint-down(md) {
-          width:2rem;
+          width: 2rem;
         }
       }
       &::after {
@@ -599,7 +673,7 @@
         );
         z-index: 3;
         @include media-breakpoint-down(md) {
-          width:2rem;
+          width: 2rem;
         }
       }
     }
@@ -721,42 +795,6 @@
     }
   }
 
-  &.lcontainer--news {
-    padding-top: 5rem;
-  }
-
-  &.lcontainer--lightbg,
-  &.lcontainer--bluebg {
-    background: #eff1f4;
-    padding: 0;
-    border-radius: 2px;
-
-    h2 {
-      color: #fff;
-    }
-
-    .lcontainer__headline {
-      max-width: 100%;
-      padding: 5em 1em;
-    }
-  }
-
-  &.lcontainer--bluebg {
-    background: #20263d;
-    color: rgb(237, 240, 252);
-  }
-
-  &.lcontainer--team {
-    padding-bottom: 2rem;
-  }
-
-  &.lcontainer--narrow {
-    .lcontainer__headline {
-      padding-top: 3.4rem;
-      padding-bottom: 2.8rem;
-      max-width: 50rem;
-    }
-  }
 
   &.lcontainer--roadmap {
     padding-bottom: 3rem;
@@ -1098,12 +1136,11 @@
   .lcontainer-wrapper-group__paper {
     background: #fff;
     margin: 0 4rem;
-    margin-top: -8rem;
     z-index: 10;
     position: relative;
     padding: 8rem 5rem;
-    box-shadow: 0px 12px 80px rgba($color: #000000, $alpha: 0.2);
-    border-radius: 10px;
+    box-shadow: 0px 12px 80px rgba($color: #000000, $alpha: 0.3);
+    border-radius: 0px;
     border: 1px solid $border-light;
 
     @include media-breakpoint-down(lg) {
@@ -1111,7 +1148,6 @@
     }
     @include media-breakpoint-down(md) {
       margin: 0 1rem;
-      margin-top: -8rem;
       padding: 2rem 1rem;
     }
   }
@@ -1119,6 +1155,8 @@
 
 .lcontainer-wrapper {
   overflow: hidden;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
 
   &--story {
     padding: 0;
@@ -1130,13 +1168,12 @@
   }
 
   &--whitepaper {
-    margin-top: -8rem;
     background: #ffffff;
     border-top: 1px dotted $border-light;
     border-bottom: 1px dotted $border-light;
     padding: 0;
     position: relative;
-    padding-top: 8rem;
+    padding-top: 3rem;
 
     &::before {
       content: "";

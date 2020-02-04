@@ -10,18 +10,19 @@ let config = {
     activeHeaderLinks: true,
     nav: [
       { text: "Tagion", link: "/" },
-      { text: "Docs", link: "/docs/" },
+      { text: "", link: "sep" },
       { text: "Community", link: "/community/" },
+      { text: "Developers", link: "/docs/" },
       { text: "", link: "sep" },
       { text: "Whitepaper", link: "/tagionwhitepaper.pdf" },
-      { text: "Technical Paper", link: "/tagiontechpaper.pdf" },
+      { text: "Technical Paper", link: "/tagiontechpaper.pdf" }
     ],
     sidebar: {
       "/docs/": [
         ["/docs/", "Welcome"],
         ["/docs/funnel", "Funnel"],
         ["/docs/scripting-engine", "Scripting Engine"],
-        ["/docs/node-demo", "Node Demonstration"],
+        ["/docs/node-demo", "Node Demonstration"]
       ],
       "/whitepaper/": [
         ["/whitepaper/", "Overview"],
@@ -50,11 +51,12 @@ let config = {
         ["/community/", "Welcome"],
         ["/community/social-media", "Social Media"],
         ["/community/team", "Tagion Team"],
-        ["/community/roadmap", "Tagion Roadmap"]
+        ["/community/roadmap", "Tagion Roadmap"],
+        ["/community/executive-summary", "Executive Summary"]
       ]
     },
     docsRepo: "tagion/homepage/blob/release/docs",
-    issueLink: "tagion/homepage/issues/new",
+    issueLink: "tagion/homepage/issues/new"
   },
   head: [
     [

@@ -13,24 +13,71 @@
             <div class="hero__summary" child opacity direction="up">
               <p>Inclusive. Elastic. Decentralized. Distributed.</p>
             </div>
-            <div class="hero__details">
-              <div child opacity direction="down">
-                <p></p>
+            <div class="hero__details ">
+              <!-- <div class="hero__details-summary-button">
+                <brand-button
+                  href="/tagionwhitepaper.pdf"
+                  @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >Show Summary</brand-button>
+              </div>-->
+              <div class>
+                <a
+                  href="https://www.reddit.com/r/Tagion/"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  class="btn btn-reddit btn-social"
+                >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="reddit-alien"
+                    class="svg-inline--fa fa-reddit-alien fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"
+                    />
+                  </svg>Discuss on Subreddit
+                </a>
+                <a
+                  href="https://t.me/TagionChat/"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  class="btn btn-telegram btn-social"
+                >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="telegram-plane"
+                    class="svg-inline--fa fa-telegram-plane fa-w-14"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                    />
+                  </svg>Chat on Telegram
+                </a>
               </div>
-              <div class="mb-3">
-                <div child opacity direction="down">
-                  <social-buttons dark />
-                </div>
-              </div>
-              <div>
+
+              <!-- <div>
                 <div child opacity direction="down">
                   <small class="hero__join-note">Get all the important updates first:</small>
                   <newsletter-form />
                 </div>
-              </div>
+              </div>-->
             </div>
 
-            <div class="hero__cards feature-cards">
+            <div class="hero__cards feature-cards feature-cards--four">
               <div class="feature-card">
                 <div child opacity direction="left">
                   <div class="feature-card__internal">
@@ -67,11 +114,80 @@
                   </div>
                 </div>
               </div>
+              <div class="feature-card">
+                <div child opacity direction="left">
+                  <div class="feature-card__internal">
+                    <img src="/icons/governance.svg" />
+                    <h4>Scalable Core Technology</h4>
+                    <p>Tagion and its resources are governed as a Common. All have equal right to participate, but it is the contribution which gives reward and power.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper-group lcontainer-wrapper-group--story">
+        <div class="lcontainer-wrapper">
+          <b-container class="lcontainer">
+            <reveal class="lcontainer__headline lcontainer__headline--small">
+              <reveal child direction="up" opacity>
+                <h2>Scalable Core Technology</h2>
+              </reveal>
+              <reveal child direction="up" opacity :delay="200">
+                <p>We designed Tagion with speed and scalability in mind. The core technology stack allows the network to handle the load needed to run financial services globally.</p>
+              </reveal>
+              <reveal child direction="right" opacity :delay="500" class="mt-4">
+                <brand-button
+                  href="/tagiontechpaper.pdf"
+                  @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
+                  reveal
+                  variant="down"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >Download Technical Paper</brand-button>
+              </reveal>
+            </reveal>
+            <reveal>
+              <div class="feature-cards feature-cards--four">
+                <div class="feature-card">
+                  <reveal child opacity direction="left" :delay="100">
+                    <div class="feature-card__internal">
+                      <h4>Hashgraph Consensus</h4>
+                      <p>Instead of Blockchain and Proof of Work, Tagion uses Hashgraph consensus mechanism. It provides 100% finality and fair ordering of events, while being aBFT and DDoS resistant.</p>
+                    </div>
+                  </reveal>
+                </div>
+
+                <div class="feature-card">
+                  <reveal child opacity direction="left" :delay="200">
+                    <div class="feature-card__internal">
+                      <h4>Sharded Database</h4>
+                      <p>Tagion database was designed to support sharding. When time for scaling comes, the network can instantiate smaller and faster subnetworks without any compromises in security.</p>
+                    </div>
+                  </reveal>
+                </div>
+                <div class="feature-card">
+                  <reveal child opacity direction="left" :delay="300">
+                    <div class="feature-card__internal">
+                      <h4>Energy Effeciency</h4>
+                      <p>Tagion does not use CPU-intensive consensus mechanisms. And we went even further, implementing core software in system language, with effecient memory and CPU usage.</p>
+                    </div>
+                  </reveal>
+                </div>
+                <div class="feature-card">
+                  <reveal child opacity direction="left" :delay="400">
+                    <div class="feature-card__internal">
+                      <h4>Data Deletion</h4>
+                      <p>In Tagion we store not the accounts, but the currency bills. When the bill is spent, the data is deleted. Such design prevents accumulation of dead data.</p>
+                    </div>
+                  </reveal>
+                </div>
+              </div>
+            </reveal>
+          </b-container>
+        </div>
+
+        <!-- <div class="lcontainer-wrapper-group lcontainer-wrapper-group--story">
           <div class="lcontainer-wrapper-group__paper">
             <div class="lcontainer-wrapper lcontainer-wrapper--story">
               <b-container class="lcontainer lcontainer--story">
@@ -197,27 +313,23 @@
               </b-container>
             </div>
           </div>
-        </div>
+        </div>-->
 
         <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper mb-4">
           <b-container class="lcontainer lcontainer--illustrated lcontainer--whitepaper">
             <reveal class="lcontainer__headline" :delay="400">
               <reveal child direction="up" opacity>
-                <h2>Technical Paper</h2>
+                <h2>Executive Summary</h2>
               </reveal>
-              <reveal child direction="down" opacity>
-                <p>Currency, DEX, Hashgraph and Governance.</p>
+              <reveal child direction="up" opacity :delay="200">
+                <p>The world has too many financial (and physical) borders. Tagion was born to break down those borders and enable seamlessly peer-to-peer money transfers. Cheap, quick, fair, and fast for anyone anywhere...</p>
               </reveal>
               <reveal child direction="right" opacity :delay="500" class="mt-4">
                 <brand-button
-                  href="/tagionwhitepaper.pdf"
+                  to="/community/executive-summary.html"
                   @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
                   reveal
-                  variant="down"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  class="brand-button--down"
-                >Download PDF</brand-button>
+                >Read More</brand-button>
               </reveal>
             </reveal>
             <div class="lcontainer__illustrations">
@@ -228,7 +340,7 @@
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--video">
+        <!-- <div class="lcontainer-wrapper lcontainer-wrapper--video">
           <b-container class="lcontainer lcontainer--video">
             <reveal class="lcontainer__headline lcontainer__headline--small">
               <reveal child direction="up" opacity>
@@ -246,7 +358,7 @@
               </reveal>
             </div>
           </b-container>
-        </div>
+        </div>-->
 
         <div class="lcontainer-wrapper mt-10">
           <b-container class="lcontainer lcontainer--roadmap">
@@ -263,12 +375,16 @@
                     </p>
                     <p>We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project and launch the main network.</p>
                   </reveal>
-                  <reveal child direction="right" opacity :delay="200">
-                    <brand-button reveal to="/community/roadmap.html" class="mt-5">Detailed Roadmap</brand-button>
+                  <reveal child direction="right" opacity :delay="800">
+                    <brand-button
+                      reveal
+                      to="/community/roadmap.html"
+                      class="mt-5"
+                    >See Detailed Roadmap</brand-button>
                   </reveal>
                 </reveal>
               </b-col>
-              <b-col cols="12" xl="7" class="mt-8 mt-lg-0 d-none d-md-block">
+              <b-col cols="12" xl="7" class="mt-8 mt-xl-0 d-none d-md-block">
                 <reveal opacity direction="up" :delay="700">
                   <img class="lcontainer--roadmap__roadmap" src="/timeline.svg" />
                 </reveal>
@@ -277,7 +393,7 @@
           </b-container>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--white">
+        <div class="lcontainer-wrapper lcontainer-wrapper--white mb-10">
           <b-container class="lcontainer lcontainer--team">
             <reveal class="lcontainer__headline">
               <reveal child direction="up" opacity>
@@ -300,37 +416,36 @@
             </reveal>
           </b-container>
         </div>
-      </div>
-
-      <div class="lcontainer-wrapper mb-8 mt-5">
-        <b-container class="lcontainer">
-          <b-row>
-            <b-col cols="12" lg="8">
-              <reveal class="lcontainer__headline pr-6">
-                <reveal child direction="up" opacity>
-                  <h2>Tagion is Committed to Transparency</h2>
+        <div class="lcontainer-wrapper">
+          <b-container class="lcontainer">
+            <b-row>
+              <b-col cols="12" lg="8">
+                <reveal class="lcontainer__headline pr-6">
+                  <reveal child direction="up" opacity>
+                    <h2>Tagion is Committed to Transparency</h2>
+                  </reveal>
+                  <reveal child direction="up" opacity :delay="200">
+                    <p>We are fully committed to transparency. Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.</p>
+                  </reveal>
+                  <reveal child direction="right" opacity :delay="500" class="mt-4">
+                    <brand-button
+                      href="https://www.trustedintrading.com/profile/tagion/"
+                      @click="$analytics.triggerEvent({category: 'Exploration', action: 'TrustedInTrading', fields: {placement: 'Landing'}})"
+                      reveal
+                      target="_blank"
+                      rel="dofollow"
+                    >See Tagion on TrustedIn Trading</brand-button>
+                  </reveal>
                 </reveal>
-                <reveal child direction="up" opacity :delay="200">
-                  <p>We are fully committed to transparency. Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.</p>
+              </b-col>
+              <b-col cols="12" lg="4" class="mt-8 mt-lg-0 text-center">
+                <reveal direction="left" opacity :delay="300">
+                  <img width="120" src="/partners/trustedintrading.png" />
                 </reveal>
-                <reveal child direction="right" opacity :delay="500" class="mt-4">
-                  <brand-button
-                    href="https://www.trustedintrading.com/profile/tagion/"
-                    @click="$analytics.triggerEvent({category: 'Exploration', action: 'TrustedInTrading', fields: {placement: 'Landing'}})"
-                    reveal
-                    target="_blank"
-                    rel="dofollow"
-                  >See Tagion on TrustedIn Trading</brand-button>
-                </reveal>
-              </reveal>
-            </b-col>
-            <b-col cols="12" lg="4" class="mt-8 mt-lg-0 text-center">
-              <reveal direction="left" opacity :delay="300">
-                <img width="120" src="/partners/trustedintrading.png" />
-              </reveal>
-            </b-col>
-          </b-row>
-        </b-container>
+              </b-col>
+            </b-row>
+          </b-container>
+        </div>
       </div>
     </template>
   </layout-default>
