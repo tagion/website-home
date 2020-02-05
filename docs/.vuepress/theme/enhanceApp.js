@@ -2,9 +2,10 @@ import {
   LayoutPlugin,
   FormPlugin,
   FormInputPlugin,
+  CollapsePlugin,
   BNav,
   BButton,
-  BInputGroup
+  BInputGroup,
 } from "bootstrap-vue";
 import * as VueScrollTo from "vue-scrollto";
 import axios from "axios";
@@ -24,6 +25,7 @@ export default ({ Vue, options, router, siteData }) => {
   Vue.use(VueAxios, axios);
   Vue.use(PrivacyPlugin, { siteData });
   Vue.use(AnalyticsPlugin);
+  Vue.use(CollapsePlugin);
   Vue.use(LoadScript);
   Vue.component("b-nav", BNav);
   Vue.component("b-button", BButton);
