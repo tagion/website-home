@@ -5,6 +5,7 @@ import {
   CollapsePlugin,
   BNav,
   BButton,
+  CardPlugin,
   BInputGroup,
 } from "bootstrap-vue";
 import * as VueScrollTo from "vue-scrollto";
@@ -26,6 +27,7 @@ export default ({ Vue, options, router, siteData }) => {
   Vue.use(PrivacyPlugin, { siteData });
   Vue.use(AnalyticsPlugin);
   Vue.use(CollapsePlugin);
+  Vue.use(CardPlugin);
   Vue.use(LoadScript);
   Vue.component("b-nav", BNav);
   Vue.component("b-button", BButton);

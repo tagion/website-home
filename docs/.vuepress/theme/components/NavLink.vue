@@ -29,7 +29,7 @@ export default {
     },
 
     isSeparator() {
-      return this.link === "sep.html";
+      return this.link.match(/sep.\.html/);
     },
 
     exact() {

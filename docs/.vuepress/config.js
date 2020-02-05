@@ -10,10 +10,10 @@ let config = {
     activeHeaderLinks: true,
     nav: [
       { text: "Tagion", link: "/" },
-      { text: "", link: "sep" },
+      { text: "", link: "sep1" },
       { text: "Community", link: "/community/" },
       { text: "Developers", link: "/docs/" },
-      { text: "", link: "sep" },
+      { text: "", link: "sep2" },
       { text: "Whitepaper", link: "/tagionwhitepaper.pdf" },
       { text: "Technical Paper", link: "/tagiontechpaper.pdf" }
     ],

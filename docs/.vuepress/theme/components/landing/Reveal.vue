@@ -23,11 +23,11 @@ export default {
       type: Boolean
     },
     direction: {
-      type: String,
+      type: String
     },
     delay: {
-        type: Number,
-        default: 0
+      type: Number,
+      default: 0
     }
   }
 };
