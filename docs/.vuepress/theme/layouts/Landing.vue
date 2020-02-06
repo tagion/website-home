@@ -19,7 +19,7 @@
                   href="https://www.reddit.com/r/Tagion/"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  class="btn btn-reddit btn-social"
+                  class="btn btn-reddit btn-social mt-3"
                 >
                   <svg
                     aria-hidden="true"
@@ -41,7 +41,7 @@
                   href="https://t.me/TagionChat/"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  class="btn btn-telegram btn-social"
+                  class="btn btn-telegram btn-social  mt-3"
                 >
                   <svg
                     aria-hidden="true"
@@ -111,7 +111,7 @@
                   <div class="feature-card__internal">
                     <img src="/icons/scalability.svg" />
                     <h4>Scalable Core Technology</h4>
-                    <p>Hashgraph consensus enables low energuy consumption and high throughput. Sharded database with data deletion support prevents dead data accumulation.</p>
+                    <p>Hashgraph consensus enables low energy consumption and high throughput. Sharded database with data deletion support prevents dead data accumulation.</p>
                   </div>
                 </div>
               </div>
@@ -149,6 +149,7 @@
                     <b-card no-body class="mb-1">
                       <b-card-header header-tag="header" class="p-1" role="tab">
                         <b-button
+                          class="btn--tab"
                           block
                           href="#"
                           v-b-toggle.accordion-1
@@ -168,6 +169,7 @@
                     <b-card no-body class="mb-1">
                       <b-card-header header-tag="header" class="p-1" role="tab">
                         <b-button
+                          class="btn--tab"
                           block
                           href="#"
                           v-b-toggle.accordion-2
@@ -189,6 +191,7 @@
                     <b-card no-body class="mb-1">
                       <b-card-header header-tag="header" class="p-1" role="tab">
                         <b-button
+                          class="btn--tab"
                           block
                           href="#"
                           v-b-toggle.accordion-3
@@ -208,9 +211,15 @@
 
                     <b-card no-body class="mb-1">
                       <b-card-header header-tag="header" class="p-1" role="tab">
-                        <b-button block href="#" v-b-toggle.accordion-3 variant="info">Scalability</b-button>
+                        <b-button
+                          class="btn--tab"
+                          block
+                          href="#"
+                          v-b-toggle.accordion-4
+                          variant="info"
+                        >Scalability</b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                      <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
                         <b-card-body>
                           <b-card-text>
                             <p>Combining Tagion DEX with DART provides Tagion with the speed and scalability needed to become the underlying network for all everyday financial services.</p>
@@ -221,13 +230,14 @@
                     <b-card no-body class="mb-1">
                       <b-card-header header-tag="header" class="p-1" role="tab">
                         <b-button
+                          class="btn--tab"
                           block
                           href="#"
-                          v-b-toggle.accordion-3
+                          v-b-toggle.accordion-5
                           variant="info"
                         >Market Liquidity</b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                      <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
                         <b-card-body>
                           <b-card-text>
                             <p>A better market liquidity results in efficient markets. With Tagions as intermediate currency, it is possible to exchange all tokenised currencies seamlessly. By pairing all alien currencies with Tagions the resulting reduction of currency pairs enables a simpler market with higher liquidity.</p>
@@ -238,13 +248,14 @@
                     <b-card no-body class="mb-1">
                       <b-card-header header-tag="header" class="p-1" role="tab">
                         <b-button
+                          class="btn--tab"
                           block
                           href="#"
-                          v-b-toggle.accordion-3
+                          v-b-toggle.accordion-6
                           variant="info"
                         >Algorithmically Controlled Dynamic Monetary Policy</b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                      <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
                         <b-card-body>
                           <b-card-text>
                             <p>In general, to keep the market stable, a simple modelling of the use of money must be based on internal variables, such as the velocity of money (total velocity of Tagions), adoption level, supply of money, average transaction sizes and more.</p>
@@ -298,21 +309,23 @@
           </div>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper mb-4">
+        <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper">
           <b-container class="lcontainer lcontainer--illustrated lcontainer--whitepaper">
             <reveal class="lcontainer__headline" :delay="400">
               <reveal child direction="up" opacity>
-                <h2>Executive Summary</h2>
+                <h2>Technical Paper</h2>
               </reveal>
               <reveal child direction="up" opacity :delay="200">
-                <p>The world has too many financial (and physical) borders. Tagion was born to break down those borders and enable seamlessly peer-to-peer money transfers. Cheap, quick, fair, and fast for anyone anywhere...</p>
+                <p>DEX Protocol. Hashgraph Consensus. DART Database. Inclusive Governance.</p>
               </reveal>
               <reveal child direction="right" opacity :delay="500" class="mt-4">
                 <brand-button
-                  to="/community/executive-summary.html"
+                  href="/tagiontechpaper.pdf"
+                  target="_blank"
+                  variant="down"
                   @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
                   reveal
-                >Read More</brand-button>
+                >Download PDF</brand-button>
               </reveal>
             </reveal>
             <div class="lcontainer__illustrations">

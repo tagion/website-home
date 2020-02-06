@@ -31,13 +31,19 @@ export const teamMembers = [
   },
   {
     name: "Roxana Nasoi",
-    title: "Business Developer",
+    title: "Head of Strategy",
     image: "/team/r-nasoi.jpg",
     link: "/community/team.html#roxana-nasoi"
   },
   {
+    name: "Shane McQuillan",
+    title: "Strategist",
+    image: "/team/s-mcquillan.jpg",
+    link: "/community/team.html#shane-mcquillan"
+  },
+  {
     name: "Vlad Pazych",
-    title: "Digital Marketing Manager",
+    title: "Developer Community Manager",
     image: "/team/v-pazych.jpg",
     link: "/community/team.html#vlad-pazych"
   },
@@ -65,12 +71,7 @@ export const teamMembers = [
     image: "/team/r-kastalein.jpg",
     link: "/community/team.html#richard-kastelein"
   },
-  {
-    name: "Shane McQuillan",
-    title: "Project Manager",
-    image: "/team/s-mcquillan.jpg",
-    link: "/community/team.html#shane-mcquillan"
-  },
+  
   {
     name: "Sam Kawtharani",
     title: "Project Manager",

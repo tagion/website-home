@@ -94,13 +94,25 @@ Recently James decided to apply his broad financial and trading experience to Bl
 
 ### Roxana Nasoi
 
-**Business Developer.**
+**Head of Strategy.**
 
 <img data-src="/team/r-nasoi.jpg" alt="Roxana Nasoi" loading="lazy" width="140" height="140" class="lazy wiki-image-small wiki-image-float-right"/>
 
 Roxana brings more than 8 years of experience in various fields as a business developer and advisor. Currently, Co-chairman and Head of Community at Hong Kong Israel Trade Association, partner at Aimedis, a board member at Impulse4women, and advisor for Ideagist Blockchain Incubator. Former Upwork Inc ambassador.  
 
 [LinkedIn](https://www.linkedin.com/in/roxananasoi/)
+
+<div class="clearfix"></div>
+
+<img data-src="/team/s-mcquillan.jpg" alt="Shane McQuillan" loading="lazy" width="140" height="140" class="lazy wiki-image-small wiki-image-float-right mt-6"/>
+
+### Shane McQuillan
+
+**Strategist.**
+
+Founder & CEO, TrustedIn Trading.
+
+[LinkedIn](https://www.linkedin.com/in/startupadviser/)
 
 <div class="clearfix"></div>
 
@@ -166,15 +178,6 @@ Honorary Ph.D. at Jiangxi Ahead Institute of Software & Technology (Blockchain F
 <div class="clearfix"></div>
 
 ## Project Management Team
-
-<div class="clearfix"></div>
-<img data-src="/team/s-mcquillan.jpg" alt="Shane McQuillan" loading="lazy" width="140" height="140" class="lazy wiki-image-small wiki-image-float-right mt-6"/>
-
-### Shane McQuillan
-
-Founder & CEO, TrustedIn Trading
-
-[LinkedIn](https://www.linkedin.com/in/startupadviser/)
 
 <div class="clearfix"></div>
 
