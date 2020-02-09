@@ -23,6 +23,7 @@
         </div>
       </div>
     </div>
+
     <template slot="footer-pagenav">
       <b-container>
         <page-nav v-if="pageNavEnabled" :sidebarItems="sidebarItems" />
@@ -33,17 +34,14 @@
 
 <script>
 import LayoutDefault from "@theme/components/LayoutDefault";
-import CookiesNotification from "@theme/components/CookiesNotification";
-import PageNav from "@theme/components/PageNav";
-import ShareButtons from "@theme/components/ShareButtons";
 import { resolveSidebarItems } from "../util";
 
 export default {
   components: {
     LayoutDefault,
-    CookiesNotification,
-    PageNav,
-    ShareButtons
+    CookiesNotification: () => import("@theme/components/CookiesNotification"),
+    PageNav: () => import("@theme/components/PageNav"),
+    ShareButtons: () => import("@theme/components/ShareButtons")
   },
 
   computed: {

@@ -34,7 +34,7 @@
   }
 
   .hero__details {
-    margin-top: 0;
+    margin-top: -1rem;
 
     p {
       opacity: 0.8;
@@ -124,13 +124,6 @@
   .hero__quote {
     position: relative;
     font-weight: 400;
-
-    @include media-breakpoint-up(lg) {
-      margin-top: -2rem;
-    }
-    @include media-breakpoint-down(sm) {
-      padding-top: 0em;
-    }
 
     h2 {
       font-size: 2.8em;
@@ -255,7 +248,7 @@
       content: "";
       width: 45%;
       height: 45%;
-      background: url(../images/arrow.svg) center no-repeat;
+      background: url(/icons/arrow.svg) center no-repeat;
       background-size: contain;
     }
   }
@@ -577,8 +570,7 @@
   //
   &.lcontainer--story {
     padding-top: 4rem;
-    padding-bottom: 9rem;
-
+    padding-bottom: 4rem;
 
     color: #fff;
 
@@ -597,13 +589,15 @@
 
     h2 {
       color: #fff;
+      font-weight: 500;
+      font-size: 2em;
     }
 
     @include media-breakpoint-down(lg) {
       font-size: 0.9em;
     }
     @include media-breakpoint-down(md) {
-      font-size: 0.8em;
+      font-size: 0.85em;
 
       h2 {
         margin-bottom: 1rem;
@@ -611,9 +605,28 @@
     }
 
     .lcontainer__story-cards-wrapper {
-      width: 100%;
-      overflow-x: hidden;
+      width: 60%;
       position: relative;
+
+      @include media-breakpoint-down(lg) {
+        width: 70%;
+      }
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+
+      .btn--tab {
+        background: transparent;
+        border: 2px dotted rgba($color: #ffffff, $alpha: 0.5);
+        display: inline-block;
+        text-align: left;
+      }
+
+      .card-body {
+        padding: 0.4rem 2rem;
+        border-left: 2px dotted rgba($color: #ffffff, $alpha: 0.4);
+        margin: 1rem 2rem;
+      }
     }
 
     .lcontainer__story-cards {
@@ -675,7 +688,7 @@
     }
 
     .lcontainer__story-content {
-      max-width: 50%;
+      max-width: 70%;
 
       @include media-breakpoint-down(lg) {
         max-width: 80%;
@@ -857,6 +870,7 @@
 
   &.lcontainer--whitepaper {
     align-items: center;
+
     padding: 0;
     color: $primary;
 
@@ -1034,14 +1048,21 @@
 .lcontainer-wrapper-group {
   &--story {
     background: #fff;
-    
   }
   .lcontainer-wrapper-group__paper {
     background: $secondary;
     margin: 4rem;
-    margin-top: -4rem;
     position: relative;
     z-index: 10;
+    padding: 4rem;
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-down(lg) {
+      margin: 1rem;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 1rem;
+    }
   }
 }
 
@@ -1060,6 +1081,7 @@
   }
 
   &--whitepaper {
+    margin-top: 0rem;
     background: #ffffff;
     border-top: 1px dotted $border-light;
     border-bottom: 1px dotted $border-light;

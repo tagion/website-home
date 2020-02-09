@@ -3,15 +3,15 @@ import {
   FormPlugin,
   FormInputPlugin,
   CollapsePlugin,
+  CardPlugin,
   BNav,
   BButton,
-  CardPlugin,
-  BInputGroup,
+  BInputGroup
 } from "bootstrap-vue";
 import * as VueScrollTo from "vue-scrollto";
 import axios from "axios";
 import VueAxios from "vue-axios";
-import LoadScript from 'vue-plugin-load-script';
+import LoadScript from "vue-plugin-load-script";
 import { AnalyticsPlugin } from "./plugins/analytics";
 import { PrivacyPlugin } from "./plugins/privacy";
 import "focus-visible";

@@ -1,4 +1,4 @@
-export const teamMembers = [
+const teamMembers = [
   {
     name: "Theis Simonsen",
     title: "CEO, Co-founder",
@@ -31,13 +31,19 @@ export const teamMembers = [
   },
   {
     name: "Roxana Nasoi",
-    title: "Business Developer",
+    title: "Head of Strategy",
     image: "/team/r-nasoi.jpg",
     link: "/community/team.html#roxana-nasoi"
   },
   {
+    name: "Shane McQuillan",
+    title: "Strategist",
+    image: "/team/s-mcquillan.jpg",
+    link: "/community/team.html#shane-mcquillan"
+  },
+  {
     name: "Vlad Pazych",
-    title: "Digital Marketing Manager",
+    title: "Developer Community Manager",
     image: "/team/v-pazych.jpg",
     link: "/community/team.html#vlad-pazych"
   },
@@ -65,12 +71,7 @@ export const teamMembers = [
     image: "/team/r-kastalein.jpg",
     link: "/community/team.html#richard-kastelein"
   },
-  {
-    name: "Shane McQuillan",
-    title: "Project Manager",
-    image: "/team/s-mcquillan.jpg",
-    link: "/community/team.html#shane-mcquillan"
-  },
+
   {
     name: "Sam Kawtharani",
     title: "Project Manager",
@@ -90,3 +91,16 @@ export const teamMembers = [
     link: "/community/team.html#michel-avital"
   }
 ];
+
+const seo = {
+  title: "Tagion",
+  headline: "Universal Token Protocol",
+  tagline: "Inclusive. Elastic. Decentralized. Distributed.",
+  description:
+    "Tagion is an open banking protocol, that enables digital peer-to-peer cryptocurrency and a decentralized exchange, governed by its users. By design, Tagion network has no central authority and belongs to all its users. It will be open-sourced and open for everyone to join once the software is ready."
+};
+
+module.exports = {
+  teamMembers,
+  seo
+};

@@ -69,7 +69,7 @@ if (process.env.APP_ENV === "production") {
         "/meta/terms-of-use.html",
         "/meta/500.html",
         "/404.html",
-        "/tagionpresentation.pdf",
+        "/tagionpresentation.pdf"
       ]
     }
   ]);
