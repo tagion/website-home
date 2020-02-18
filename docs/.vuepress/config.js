@@ -14,6 +14,7 @@ let config = {
       { text: "Community", link: "/community/" },
       { text: "Developers", link: "/docs/" },
       { text: "", link: "sep2" },
+      { text: "Forum", link: "https://forum.tagion.org" },
       { text: "Whitepaper", link: "/tagionwhitepaper.pdf" },
       { text: "Technical Paper", link: "/tagiontechpaper.pdf" }
     ],

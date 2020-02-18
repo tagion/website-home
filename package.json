@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "Official tagion.org homepage",
   "scripts": {
-    "dev": "NODE_ENV=development APP_ENV=development vuepress dev docs",
-    "build": "APP_ENV=production vuepress build docs",
-    "build:staging": "APP_ENV=staging vuepress build docs"
+    "dev": "cross-env NODE_ENV=development APP_ENV=development vuepress dev docs",
+    "build": "cross-env APP_ENV=production vuepress build docs",
+    "build:staging": "cross-env APP_ENV=staging vuepress build docs"
   },
   "author": "Vlad Pazych <vp@tagion.org>",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "@markspec/vuepress-plugin-footnote": "^1.1.1",
     "@vuepress/plugin-active-header-links": "^1.0.2",
     "@vuepress/plugin-last-updated": "^1.0.2",
+    "cross-env": "^7.0.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-footnote": "^3.0.2",
     "node-sass": "^4.13.1",
