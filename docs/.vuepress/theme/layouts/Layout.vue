@@ -33,15 +33,15 @@
 </template>
 
 <script>
-import LayoutDefault from "@theme/components/LayoutDefault";
-import { resolveSidebarItems } from "../util";
+import LayoutDefault from "@theme/components/layout/LayoutDefault";
+import { resolveSidebarItems } from "@theme/util";
 
 export default {
   components: {
     LayoutDefault,
-    CookiesNotification: () => import("@theme/components/CookiesNotification"),
-    PageNav: () => import("@theme/components/PageNav"),
-    ShareButtons: () => import("@theme/components/ShareButtons")
+    CookiesNotification: () => import("@theme/components/sealed/CookiesNotification"),
+    PageNav: () => import("@theme/components/sealed/PageNav"),
+    ShareButtons: () => import("@theme/components/sealed/ShareButtons")
   },
 
   computed: {

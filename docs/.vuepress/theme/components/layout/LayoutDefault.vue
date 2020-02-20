@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper" :class="pageClasses" class="layout-page">
     <div class="layout-header">
-      <Header
+      <HeaderStatic
         :class="{ 'home': isLanding }"
         @toggle-sidebar="toggleSidebar"
         @toggle-mode="toggleMode"
@@ -33,11 +33,11 @@
 </template>
 
 <script>
-import Footer from "./Footer";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import SidebarButton from "./SidebarButton.vue";
-import CookiesNotification from "./CookiesNotification.vue";
+import Footer from "../sealed/Footer";
+import HeaderStatic from "../sealed/HeaderStatic";
+import Sidebar from "../sealed/Sidebar";
+import SidebarButton from "../sealed/SidebarButton.vue";
+import CookiesNotification from "../sealed/CookiesNotification.vue";
 
 export default {
   props: ["sidebarItems"],
@@ -49,7 +49,7 @@ export default {
   },
   components: {
     Footer,
-    Header,
+    HeaderStatic,
     Sidebar,
     SidebarButton,
     CookiesNotification
@@ -124,4 +124,4 @@ export default {
 };
 </script>
 
-<style src="../styles/global.scss" lang="scss"></style>
+<style src="../../styles/global.scss" lang="scss"></style>

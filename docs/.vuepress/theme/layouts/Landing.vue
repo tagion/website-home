@@ -403,17 +403,15 @@
 </template>
 
 <script>
-import LayoutDefault from "@theme/components/LayoutDefault";
-import RevealGroup from "@theme/components/landing/RevealGroup";
-// import WhitePaper from "@theme/components/WhitePaper";
-// import Roadmap from "@theme/components/Roadmap";
-import BrandButton from "@theme/components/BrandButton";
-import SocialButtons from "@theme/components/SocialButtons";
-import DownloadBrandButton from "@theme/components/DownloadBrandButton";
-import NewsletterForm from "@theme/components/NewsletterForm";
-import TeamCard from "@theme/components/landing/TeamCard";
-import Reveal from "@theme/components/landing/Reveal";
-import News from "@theme/components/landing/News";
+import LayoutDefault from "@theme/components/layout/LayoutDefault";
+import RevealGroup from "@theme/components/transition/RevealGroup";
+import BrandButton from "@theme/components/sealed/BrandButton";
+import SocialButtons from "@theme/components/sealed/SocialButtons";
+import DownloadBrandButton from "@theme/components/sealed/DownloadBrandButton";
+import NewsletterForm from "@theme/components/sealed/NewsletterForm";
+import TeamCard from "@theme/components/sealed/TeamCard";
+import Reveal from "@theme/components/transition/Reveal";
+import News from "@theme/components/sealed/News";
 
 import { isMobile } from "@theme/util";
 import { teamMembers } from "@theme/data";
@@ -427,8 +425,8 @@ export default {
   components: {
     LayoutDefault,
     RevealGroup,
-    WhitePaper: () => import("@theme/components/WhitePaper"),
-    Roadmap: () => import("@theme/components/Roadmap"),
+    WhitePaper: () => import("@theme/components/sealed/WhitePaper"),
+    Roadmap: () => import("@theme/components/sealed/Roadmap"),
     BrandButton,
     DownloadBrandButton,
     SocialButtons,

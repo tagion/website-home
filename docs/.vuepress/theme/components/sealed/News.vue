@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Spinner from "@theme/components/Spinner";
+import Spinner from "./Spinner";
 
 export default {
   components: {

@@ -6,7 +6,7 @@
 
 <script>
 import * as throttle from "lodash.throttle";
-import { isMobile } from "../../util";
+import { isMobile } from "@theme/util";
 
 export default {
     data() {

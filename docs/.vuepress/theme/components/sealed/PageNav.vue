@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-import { resolvePage } from "../util";
+import { resolvePage } from "@theme/util";
 import isString from "lodash/isString";
 import isNil from "lodash/isNil";
 

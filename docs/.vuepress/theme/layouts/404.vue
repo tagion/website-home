@@ -1,19 +1,17 @@
 <template>
-  <layout-default>
-    <div class="typography typography--full">
-      <h1 class="mb-0">Page Not Found</h1>
-      <h4 class="mb-2 text-muted">We couldn't find what you were looking for.</h4>
-      <p class="text-muted">It will be very helpful, if you contact the owner of the site that linked you to this URL and let them know their link is broken.</p>
-    </div>
-  </layout-default>
+  <layout-error>
+    <template slot="title">404 | Page Not Found</template>
+    <template slot="description">We couldn't find what you were looking for.</template>
+    <template slot="description-extra">It will be very helpful, if you contact the owner of the site that linked you to this URL and let them know their link is broken.</template>
+  </layout-error>
 </template>
 
 <script>
-import LayoutDefault from "@theme/components/LayoutDefault";
+import LayoutError from "./Error";
 
 export default {
   components: {
-    LayoutDefault
+    LayoutError
   }
 };
 </script>
