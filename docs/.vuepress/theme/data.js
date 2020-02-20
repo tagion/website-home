@@ -31,7 +31,7 @@ const teamMembers = [
   },
   {
     name: "Roxana Nasoi",
-    title: "Head of Strategy",
+    title: "Cheif Strategy Officer",
     image: "/team/r-nasoi.jpg",
     link: "/community/team.html#roxana-nasoi"
   },

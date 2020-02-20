@@ -68,9 +68,14 @@
       }
 
       &.btn-social {
-        padding: 0.5rem 1rem 0.5rem;
+        padding: 0.5rem 1.2rem 0.6rem;
         margin-right: 0.8rem;
         font-size: 0.9em;
+        background: $primary-lightest;
+
+        &:hover {
+          background: $primary;
+        }
 
         @include media-breakpoint-down(md) {
           font-size: 0.8em;
@@ -86,7 +91,7 @@
       &.btn-reddit,
       &.btn-telegram {
         opacity: 0.8;
-        background: $primary-lightest;
+       
 
         &:hover {
           opacity: 1;

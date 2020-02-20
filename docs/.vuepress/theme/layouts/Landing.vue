@@ -16,49 +16,12 @@
             <div class="hero__details">
               <div class>
                 <a
-                  href="https://www.reddit.com/r/Tagion/"
+                  href="https://forum.tagion.org/t/new-members-intro-corner/30"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  class="btn btn-reddit btn-social mt-3"
-                >
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fab"
-                    data-icon="reddit-alien"
-                    class="svg-inline--fa fa-reddit-alien fa-w-16"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"
-                    />
-                  </svg>Discuss on Subreddit
-                </a>
-                <a
-                  href="https://t.me/TagionChat/"
-                  target="_blank"
-                  rel="nofollow noopener noreferrer"
-                  class="btn btn-telegram btn-social  mt-3"
-                >
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fab"
-                    data-icon="telegram-plane"
-                    class="svg-inline--fa fa-telegram-plane fa-w-14"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
-                    />
-                  </svg>Chat on Telegram
-                </a>
+                  class="btn btn-social mt-3"
+                >Say Hello in Tagion Forum</a>
+                
               </div>
 
               <!-- <div>
@@ -75,9 +38,7 @@
                   <div class="feature-card__internal">
                     <img src="/icons/dex.svg" />
                     <h4>Decentralized Exchange</h4>
-                    <p>
-                      Pay with anything anywhere. DEX is an open protocol that enables a trustless exchange of any digital currency that supports HTLC (Hash Time Locked Contract).
-                    </p>
+                    <p>Pay with anything anywhere. DEX is an open protocol that enables a trustless exchange of any digital currency that supports HTLC (Hash Time Locked Contract).</p>
                   </div>
                 </div>
               </div>
@@ -87,9 +48,7 @@
                   <div class="feature-card__internal">
                     <img src="/icons/money-supply.svg" />
                     <h4>Elastic Money Supply</h4>
-                    <p>
-                      To scale properly, the money supply must match demand. Tagion does not have a hard cap, but makes use of elastic supply, which aims to create a stable price level.
-                    </p>
+                    <p>To scale properly, the money supply must match demand. Tagion does not have a hard cap, but makes use of elastic supply, which aims to create a stable price level.</p>
                   </div>
                 </div>
               </div>
@@ -107,7 +66,7 @@
                   <div class="feature-card__internal">
                     <img src="/icons/scalability.svg" />
                     <h4>Scalable Core Technology</h4>
-                    <p>Tagion builds on a modular and scalable core. Each module can be changed and optimised. Main modules are the distributed database, scripting engine, Hashgraph and gossip mechanism. </p>
+                    <p>Tagion builds on a modular and scalable core. Each module can be changed and optimised. Main modules are the distributed database, scripting engine, Hashgraph and gossip mechanism.</p>
                   </div>
                 </div>
               </div>
