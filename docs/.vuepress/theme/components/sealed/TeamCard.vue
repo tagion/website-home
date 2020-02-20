@@ -1,19 +1,25 @@
 <template>
-  <router-link :to="link" class="team-table__card">
+  <a :href="link" target="_blank" rel="nofollow noopener noreferrer" class="team-table__card">
     <div class="team-table__card-bio">
       <div class="team-table__card-header-row">
-        <img loading="lazy" class="lazy" width="100" :data-src="image" />
+        <img
+          loading="lazy"
+          class="lazy"
+          width="100"
+          :data-src="image"
+        />
         <div class="team-table__card-header">
           <h5>
             {{name}}
             <br />
             <span class="team-table__card-position">{{title}}</span>
           </h5>
-          <p class="team-table__card-read-more">Read more</p>
+          <p class="team-table__card-read-more">LinkedIn</p>
         </div>
       </div>
     </div>
-  </router-link>
+  </a>
+
 </template>
 
 <script>

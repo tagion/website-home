@@ -2,17 +2,37 @@
   <footer class="footer">
     <b-container>
       <b-row>
-        <b-col cols="12" sm="6" xl="4" class="outbound-negative-space-fix mt-8 mt-sm-0">
+        <b-col
+          cols="12"
+          sm="6"
+          xl="4"
+          class="outbound-negative-space-fix mt-8 mt-sm-0"
+        >
           <h6 class="mb-3">Quick Links</h6>
           <b-nav vertical>
             <li>
-              <router-link to="/community/roadmap.html">Roadmap</router-link>
+              <a
+                target="_blank"
+                href="https://forum.tagion.org/"
+              >Official Forum
+                <OutboundLink /></a>
             </li>
             <li>
-              <router-link to="/tagionwhitepaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Footer'}})"  target="_blank" rel="noopener noreferrer nofollow">Whitepaper <OutboundLink /></router-link>
+              <a
+                href="https://github.com/tagion/resources/raw/master/whitepaper/tagion-whitepaper.pdf"
+                @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Footer'}})"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >Whitepaper
+                <OutboundLink /></a>
             </li>
             <li>
-              <a href="/tagiontechpaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'TechpaperDownload', fields: {placement: 'Footer'}})" target="_blank" rel="noopener noreferrer nofollow">
+              <a
+                href="https://github.com/tagion/resources/raw/master/technical-paper/tagion-technical-paper.pdf"
+                @click="$analytics.triggerEvent({category: 'Exploration', action: 'TechpaperDownload', fields: {placement: 'Footer'}})"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 Technical Paper
                 <OutboundLink />
               </a>
@@ -37,20 +57,25 @@
             </li>
           </b-nav>
         </b-col>
-        <b-col class="col-newsletter mt-8 mt-xl-0 outbound-negative-space-fix" cols=12 xl=4>
-          <h6 class="mb-3">Join Us</h6>
-          <social-buttons class="mb-3 mt-3" dark />
+        <b-col
+          class="col-newsletter mt-8 mt-xl-0 outbound-negative-space-fix"
+          cols=12
+          xl=4
+        >
+          <h6 class="mb-3">Communication Channels</h6>
+          <social-buttons
+            class="mb-3 mt-3"
+            dark
+          />
           <p class="mb-1"><small>By joining, you agree with our <router-link to="/meta/privacy-policy"><u>Privacy Policy</u></router-link>.</small></p>
           <newsletter-form class="footer-newsletter" />
-          
+
         </b-col>
       </b-row>
 
       <b-row class="mt-10 align-items-md-center">
         <b-col cols="12">
-          <ul
-            class="list-inline list-group-transparent list-group-flush list-group-borderless mb-0 text-muted"
-          >
+          <ul class="list-inline list-group-transparent list-group-flush list-group-borderless mb-0 text-muted">
             <li class="list-inline-item pl-0 pr-4 my-1">© Tagion, 2020. All rights reserved.</li>
             <li class="list-inline-item pl-0 pr-4 my-1">
               <router-link to="/meta/privacy-policy">Privacy Policy</router-link>

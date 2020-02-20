@@ -148,3 +148,31 @@ body.scrolled-down {
     display: none;
   }
 }
+
+.header--static {
+  height: 7rem;
+  background: transparent;
+  border: none;
+  z-index: 0;
+  font-size: 1.1em;
+
+  .nav {
+
+    a {
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        height: 2px;
+        bottom: -3px;
+      }
+    }
+  }
+
+  .header__logo {
+    height: 2.4rem;
+    top: 3px;
+  }
+}

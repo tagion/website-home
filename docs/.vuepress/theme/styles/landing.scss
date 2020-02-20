@@ -9,7 +9,8 @@
 
 .landing .hero {
   position: relative;
-  padding-top: $header-height;
+  margin-top: -4rem;
+  padding-top: 4rem;
   color: $primary-darker;
   background: #fff;
   border-bottom: 1px dotted #eee;
@@ -91,7 +92,6 @@
       &.btn-reddit,
       &.btn-telegram {
         opacity: 0.8;
-       
 
         &:hover {
           opacity: 1;
@@ -1056,7 +1056,6 @@
   }
   .lcontainer-wrapper-group__paper {
     background: $secondary;
-    margin: 4rem;
     position: relative;
     z-index: 10;
     padding: 4rem;
@@ -1136,6 +1135,7 @@
 
 .team-table {
   .team-table__card {
+    cursor: pointer;
     display: block;
     margin-top: 2rem;
     position: relative;
@@ -1357,5 +1357,40 @@
     border: 0;
     min-height: 70vh;
     height: 30rem;
+  }
+}
+
+.team-card-modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none;
+  
+  &--visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .team-card-modal__card {
+    max-width: 50vw;
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+    border-radius: 3px;
+    z-index: 2;
+    padding: 1rem 2rem;
+
+    @include media-breakpoint-down(md) {
+      max-width: 90vw;
+    }
   }
 }

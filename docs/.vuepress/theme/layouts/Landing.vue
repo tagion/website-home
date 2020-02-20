@@ -1,16 +1,29 @@
 <template>
-  <layout-default class="landing-page" id="landing-page">
+  <layout-default
+    class="landing-page"
+    id="landing-page"
+  >
     <template slot="root-content">
       <reveal-group class="landing">
         <div class="hero">
           <div class="hero__background"></div>
           <b-container class="lcontainer">
-            <div class="hero__quote" child opacity direction="up">
+            <div
+              class="hero__quote"
+              child
+              opacity
+              direction="up"
+            >
               <h2>
                 <span>Universal Token Protocol</span>
               </h2>
             </div>
-            <div class="hero__summary" child opacity direction="up">
+            <div
+              class="hero__summary"
+              child
+              opacity
+              direction="up"
+            >
               <p>Inclusive. Elastic. Decentralized. Scalable.</p>
             </div>
             <div class="hero__details">
@@ -18,23 +31,19 @@
                 <a
                   href="https://forum.tagion.org/t/new-members-intro-corner/30"
                   target="_blank"
-                  rel="nofollow noopener noreferrer"
                   class="btn btn-social mt-3"
                 >Say Hello in Tagion Forum</a>
-                
-              </div>
 
-              <!-- <div>
-                <div child opacity direction="down">
-                  <small class="hero__join-note">Get all the important updates first:</small>
-                  <newsletter-form />
-                </div>
-              </div>-->
+              </div>
             </div>
 
             <div class="hero__cards feature-cards feature-cards--four">
               <div class="feature-card">
-                <div child opacity direction="left">
+                <div
+                  child
+                  opacity
+                  direction="left"
+                >
                   <div class="feature-card__internal">
                     <img src="/icons/dex.svg" />
                     <h4>Decentralized Exchange</h4>
@@ -44,7 +53,11 @@
               </div>
 
               <div class="feature-card">
-                <div child opacity direction="left">
+                <div
+                  child
+                  opacity
+                  direction="left"
+                >
                   <div class="feature-card__internal">
                     <img src="/icons/money-supply.svg" />
                     <h4>Elastic Money Supply</h4>
@@ -53,7 +66,11 @@
                 </div>
               </div>
               <div class="feature-card">
-                <div child opacity direction="left">
+                <div
+                  child
+                  opacity
+                  direction="left"
+                >
                   <div class="feature-card__internal">
                     <img src="/icons/governance.svg" />
                     <h4>Inclusive Governance</h4>
@@ -62,7 +79,11 @@
                 </div>
               </div>
               <div class="feature-card">
-                <div child opacity direction="left">
+                <div
+                  child
+                  opacity
+                  direction="left"
+                >
                   <div class="feature-card__internal">
                     <img src="/icons/scalability.svg" />
                     <h4>Scalable Core Technology</h4>
@@ -79,10 +100,19 @@
             <div class="lcontainer-wrapper lcontainer-wrapper--story">
               <b-container class="lcontainer lcontainer--story">
                 <reveal class="lcontainer__headline lcontainer__story-content">
-                  <reveal child direction="up" opacity>
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                  >
                     <h2>The Big Why</h2>
                   </reveal>
-                  <reveal child direction="up" opacity :delay="200">
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                    :delay="200"
+                  >
                     <p>The world has too many financial (and physical) borders. Tagion was born to break down those borders and enable seamlessly peer-to-peer money transfers. Cheap, quick, fair, and fast for anyone anywhere.</p>
                   </reveal>
                 </reveal>
@@ -92,17 +122,38 @@
             <div class="lcontainer-wrapper lcontainer-wrapper--story">
               <b-container class="lcontainer lcontainer--story">
                 <reveal class="lcontainer__headline lcontainer__story-content">
-                  <reveal child direction="up" opacity>
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                  >
                     <h2>The Inquiring How</h2>
                   </reveal>
-                  <reveal child direction="up" opacity :delay="200">
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                    :delay="200"
+                  >
                     <p>Current cryptocurrency systems have failed to gain wide-spread adoption, as several problems prevent these from doing so.</p>
                   </reveal>
                 </reveal>
-                <reveal :delay="300" class="lcontainer__story-cards-wrapper">
+                <reveal
+                  :delay="500"
+                  opacity
+                  direction="up"
+                  class="lcontainer__story-cards-wrapper"
+                >
                   <div role="tablist">
-                    <b-card no-body class="mb-1">
-                      <b-card-header header-tag="header" class="p-1" role="tab">
+                    <b-card
+                      no-body
+                      class="mb-1"
+                    >
+                      <b-card-header
+                        header-tag="header"
+                        class="p-1"
+                        role="tab"
+                      >
                         <b-button
                           class="btn--tab"
                           block
@@ -111,7 +162,11 @@
                           variant="info"
                         >Network Throughput</b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
+                      <b-collapse
+                        id="accordion-1"
+                        accordion="my-accordion"
+                        role="tabpanel"
+                      >
                         <b-card-body>
                           <b-card-text>
                             <p>Tagion uses hashgraph for consensus, which in the Tagion implementation, makes it possible to process more than 20.000 transactions per second per shard. In comparison, VISA does around 1,700 transactions per second on average.</p>
@@ -121,8 +176,15 @@
                       </b-collapse>
                     </b-card>
 
-                    <b-card no-body class="mb-1">
-                      <b-card-header header-tag="header" class="p-1" role="tab">
+                    <b-card
+                      no-body
+                      class="mb-1"
+                    >
+                      <b-card-header
+                        header-tag="header"
+                        class="p-1"
+                        role="tab"
+                      >
                         <b-button
                           class="btn--tab"
                           block
@@ -131,7 +193,11 @@
                           variant="info"
                         >Speed of Transactions</b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                      <b-collapse
+                        id="accordion-2"
+                        accordion="my-accordion"
+                        role="tabpanel"
+                      >
                         <b-card-body>
                           <b-card-text>
                             <p>Transactions on Tagion are validated in two to three seconds, putting it on par with VISA in terms of validation speed.</p>
@@ -143,8 +209,15 @@
                       </b-collapse>
                     </b-card>
 
-                    <b-card no-body class="mb-1">
-                      <b-card-header header-tag="header" class="p-1" role="tab">
+                    <b-card
+                      no-body
+                      class="mb-1"
+                    >
+                      <b-card-header
+                        header-tag="header"
+                        class="p-1"
+                        role="tab"
+                      >
                         <b-button
                           class="btn--tab"
                           block
@@ -153,7 +226,11 @@
                           variant="info"
                         >Storage and Computational Power</b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                      <b-collapse
+                        id="accordion-3"
+                        accordion="my-accordion"
+                        role="tabpanel"
+                      >
                         <b-card-body>
                           <b-card-text>
                             <p>Most DLTs uses a decentralised immutable database for storage. The blockchain data structure is immutable, meaning all data should be stored forever.</p>
@@ -164,8 +241,15 @@
                       </b-collapse>
                     </b-card>
 
-                    <b-card no-body class="mb-1">
-                      <b-card-header header-tag="header" class="p-1" role="tab">
+                    <b-card
+                      no-body
+                      class="mb-1"
+                    >
+                      <b-card-header
+                        header-tag="header"
+                        class="p-1"
+                        role="tab"
+                      >
                         <b-button
                           class="btn--tab"
                           block
@@ -174,7 +258,11 @@
                           variant="info"
                         >Scalability</b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
+                      <b-collapse
+                        id="accordion-4"
+                        accordion="my-accordion"
+                        role="tabpanel"
+                      >
                         <b-card-body>
                           <b-card-text>
                             <p>Combining Tagion DEX with DART provides Tagion with the speed and scalability needed to become the underlying network for all everyday financial services.</p>
@@ -182,8 +270,15 @@
                         </b-card-body>
                       </b-collapse>
                     </b-card>
-                    <b-card no-body class="mb-1">
-                      <b-card-header header-tag="header" class="p-1" role="tab">
+                    <b-card
+                      no-body
+                      class="mb-1"
+                    >
+                      <b-card-header
+                        header-tag="header"
+                        class="p-1"
+                        role="tab"
+                      >
                         <b-button
                           class="btn--tab"
                           block
@@ -192,7 +287,11 @@
                           variant="info"
                         >Market Liquidity</b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
+                      <b-collapse
+                        id="accordion-5"
+                        accordion="my-accordion"
+                        role="tabpanel"
+                      >
                         <b-card-body>
                           <b-card-text>
                             <p>A better market liquidity results in efficient markets. With Tagions as intermediate currency, it is possible to exchange all tokenised currencies seamlessly. By pairing all alien currencies with Tagions the resulting reduction of currency pairs enables a simpler market with higher liquidity.</p>
@@ -200,8 +299,15 @@
                         </b-card-body>
                       </b-collapse>
                     </b-card>
-                    <b-card no-body class="mb-1">
-                      <b-card-header header-tag="header" class="p-1" role="tab">
+                    <b-card
+                      no-body
+                      class="mb-1"
+                    >
+                      <b-card-header
+                        header-tag="header"
+                        class="p-1"
+                        role="tab"
+                      >
                         <b-button
                           class="btn--tab"
                           block
@@ -210,7 +316,11 @@
                           variant="info"
                         >Algorithmically Controlled Dynamic Monetary Policy</b-button>
                       </b-card-header>
-                      <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
+                      <b-collapse
+                        id="accordion-6"
+                        accordion="my-accordion"
+                        role="tabpanel"
+                      >
                         <b-card-body>
                           <b-card-text>
                             <p>In general, to keep the market stable, a simple modelling of the use of money must be based on internal variables, such as the velocity of money (total velocity of Tagions), adoption level, supply of money, average transaction sizes and more.</p>
@@ -228,13 +338,20 @@
 
             <div class="lcontainer-wrapper lcontainer-wrapper--story">
               <b-container class="lcontainer lcontainer--story">
-                <reveal
-                  class="lcontainer__headline lcontainer__story-content lcontainer__story-content--singlecolumn"
-                >
-                  <reveal child direction="up" opacity>
+                <reveal class="lcontainer__headline lcontainer__story-content lcontainer__story-content--singlecolumn">
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                  >
                     <h2>The Significant What</h2>
                   </reveal>
-                  <reveal child direction="up" opacity :delay="200">
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                    :delay="200"
+                  >
                     <div class="lcontainer__story-content-singlecolumn">
                       <p>Tagion is a decentralised and permissionless banking network – run and owned by its users. Its genuinely fair and democratic governance model builds on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom. Tagion is self-sustainable and seen as a common resource that lets developers create new financial markets with a few clicks.</p>
                       <p>The elastic money supply and absence of a hard cap keep the value of the network tokens stable - and in time – Tagion will be a thrust less monetary system with an algorithmically controlled dynamic monetary supply. Given all developers, the possibility of creating a more sustainable economic world.</p>
@@ -246,13 +363,20 @@
 
             <div class="lcontainer-wrapper lcontainer-wrapper--story">
               <b-container class="lcontainer lcontainer--story lcontainer--story-last">
-                <reveal
-                  class="lcontainer__headline lcontainer__story-content lcontainer__story-content--multicolumn"
-                >
-                  <reveal child direction="up" opacity>
+                <reveal class="lcontainer__headline lcontainer__story-content lcontainer__story-content--multicolumn">
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                  >
                     <h2>The Practical Where</h2>
                   </reveal>
-                  <reveal child direction="up" opacity :delay="200">
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                    :delay="200"
+                  >
                     <div class="lcontainer__story-content-multicolumn">
                       <p>Tagion is a universal token protocol that acts as the backbone for almost any transaction-based service such as C2C cross-border payments and daily micro-transactions and seamlessly exchange between all tokenised currencies.</p>
                       <p>Finally, Tagion is a vital aid for solving United Nations Sustainable Development Goal 10.c: by 2030, reduce to less than 3% the transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5%</p>
@@ -266,14 +390,32 @@
 
         <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper">
           <b-container class="lcontainer lcontainer--illustrated lcontainer--whitepaper">
-            <reveal class="lcontainer__headline" :delay="400">
-              <reveal child direction="up" opacity>
+            <reveal
+              class="lcontainer__headline"
+              :delay="400"
+            >
+              <reveal
+                child
+                direction="up"
+                opacity
+              >
                 <h2>Technical Paper</h2>
               </reveal>
-              <reveal child direction="up" opacity :delay="200">
+              <reveal
+                child
+                direction="up"
+                opacity
+                :delay="200"
+              >
                 <p>DEX Protocol. Hashgraph Consensus. DART Database. Inclusive Governance.</p>
               </reveal>
-              <reveal child direction="right" opacity :delay="500" class="mt-4">
+              <reveal
+                child
+                direction="right"
+                opacity
+                :delay="500"
+                class="mt-4"
+              >
                 <brand-button
                   href="/tagiontechpaper.pdf"
                   target="_blank"
@@ -284,7 +426,10 @@
               </reveal>
             </reveal>
             <div class="lcontainer__illustrations">
-              <reveal class="lcontainer__illustration" :delay="200">
+              <reveal
+                class="lcontainer__illustration"
+                :delay="200"
+              >
                 <white-paper />
               </reveal>
             </div>
@@ -314,19 +459,37 @@
         <div class="lcontainer-wrapper mt-10">
           <b-container class="lcontainer lcontainer--roadmap">
             <b-row>
-              <b-col cols="12" xl="5" class="d-flex align-items-center">
+              <b-col
+                cols="12"
+                xl="5"
+                class="d-flex align-items-center"
+              >
                 <reveal class="lcontainer__headline">
-                  <reveal child direction="up" opacity>
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                  >
                     <h2>Tagion Roadmap</h2>
                   </reveal>
-                  <reveal child direction="up" opacity :delay="200">
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                    :delay="200"
+                  >
                     <p>
                       The team behind Tagion has spent a significant amount of time, funding itself, while building core components: Hashgraph, Gossip protocol,
                       DART database, HiBON data format, the underlying API and more.
                     </p>
                     <p>We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project and launch the main network.</p>
                   </reveal>
-                  <reveal child direction="right" opacity :delay="800">
+                  <reveal
+                    child
+                    direction="right"
+                    opacity
+                    :delay="800"
+                  >
                     <brand-button
                       reveal
                       to="/community/roadmap.html"
@@ -335,9 +498,20 @@
                   </reveal>
                 </reveal>
               </b-col>
-              <b-col cols="12" xl="7" class="mt-8 mt-xl-0 d-none d-md-block">
-                <reveal opacity direction="up" :delay="700">
-                  <img class="lcontainer--roadmap__roadmap" src="/timeline.svg" />
+              <b-col
+                cols="12"
+                xl="7"
+                class="mt-8 mt-xl-0 d-none d-md-block"
+              >
+                <reveal
+                  opacity
+                  direction="up"
+                  :delay="700"
+                >
+                  <img
+                    class="lcontainer--roadmap__roadmap"
+                    src="/timeline.svg"
+                  />
                 </reveal>
               </b-col>
             </b-row>
@@ -345,16 +519,30 @@
         </div>
 
         <div class="lcontainer-wrapper lcontainer-wrapper--white mb-10">
-          <b-container class="lcontainer lcontainer--team">
+          <b-container class="lcontainer lcontainer--team pb-3">
             <reveal class="lcontainer__headline">
-              <reveal child direction="up" opacity>
+              <reveal
+                child
+                direction="up"
+                opacity
+              >
                 <h2>Meet People Behind Tagion</h2>
               </reveal>
             </reveal>
             <reveal class="team-table">
               <b-row>
-                <b-col cols="12" md="6" xl="4" v-for="(teamMember, index) in teamMembers">
-                  <reveal child opacity direction="left" :delay="50 * index">
+                <b-col
+                  cols="12"
+                  md="6"
+                  xl="4"
+                  v-for="(teamMember, index) in teamMembers"
+                >
+                  <reveal
+                    child
+                    opacity
+                    direction="left"
+                    :delay="50 * index"
+                  >
                     <team-card
                       :name="teamMember.name"
                       :title="teamMember.title"
@@ -368,17 +556,35 @@
           </b-container>
         </div>
         <div class="lcontainer-wrapper">
-          <b-container class="lcontainer">
+          <b-container class="lcontainer ">
             <b-row>
-              <b-col cols="12" lg="8">
+              <b-col
+                cols="12"
+                lg="8"
+              >
                 <reveal class="lcontainer__headline pr-6">
-                  <reveal child direction="up" opacity>
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                  >
                     <h2>Tagion is Committed to Transparency</h2>
                   </reveal>
-                  <reveal child direction="up" opacity :delay="200">
+                  <reveal
+                    child
+                    direction="up"
+                    opacity
+                    :delay="200"
+                  >
                     <p>We are fully committed to transparency. Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.</p>
                   </reveal>
-                  <reveal child direction="right" opacity :delay="500" class="mt-4">
+                  <reveal
+                    child
+                    direction="right"
+                    opacity
+                    :delay="500"
+                    class="mt-4"
+                  >
                     <brand-button
                       href="https://www.trustedintrading.com/profile/tagion/"
                       @click="$analytics.triggerEvent({category: 'Exploration', action: 'TrustedInTrading', fields: {placement: 'Landing'}})"
@@ -389,15 +595,36 @@
                   </reveal>
                 </reveal>
               </b-col>
-              <b-col cols="12" lg="4" class="mt-8 mt-lg-0 text-center">
-                <reveal direction="left" opacity :delay="300">
-                  <img width="120" src="/partners/trustedintrading.png" />
+              <b-col
+                cols="12"
+                lg="4"
+                class="mt-8 mt-lg-0 text-center"
+              >
+                <reveal
+                  direction="left"
+                  opacity
+                  :delay="300"
+                >
+                  <img
+                    width="120"
+                    src="/partners/trustedintrading.png"
+                  />
                 </reveal>
               </b-col>
             </b-row>
           </b-container>
         </div>
       </reveal-group>
+      <!-- <div class="team-card-modal" :class="{'team-card-modal--visible': selectedTeamMember}">
+        <div class="team-card-modal__card" v-if="selectedTeamMember">
+           <img
+          loading="lazy"
+          class="lazy"
+          width="100"
+          :data-src="selectedTeamMember.image"
+        />
+        </div>
+      </div> -->
     </template>
   </layout-default>
 </template>
@@ -419,7 +646,8 @@ import { teamMembers } from "@theme/data";
 export default {
   data() {
     return {
-      teamMembers
+      teamMembers,
+      selectedTeamMember: undefined
     };
   },
   components: {
@@ -434,6 +662,14 @@ export default {
     TeamCard,
     Reveal,
     News
+  },
+  methods: {
+    openTeamCard(teamMember) {
+      this.selectedTeamMember = teamMember;
+    },
+    closeTeamCard() {
+      this.selectedTeamMember = false;
+    }
   }
 };
 </script>
