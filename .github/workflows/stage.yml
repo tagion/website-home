@@ -19,5 +19,5 @@ jobs:
         BASE_BRANCH: stage # The branch the action should deploy from.
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: docs/.vuepress/dist # The folder the action should deploy.
-        BUILD_SCRIPT: ${{ secrets.COMMAND }} # The build script the action should run prior to deploying.
+        BUILD_SCRIPT: npm install && npm run build:stage # The build script the action should run prior to deploying.
         CNAME: stage.tagion.org
