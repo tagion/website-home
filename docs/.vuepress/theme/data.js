@@ -125,11 +125,12 @@ Carsten has a brilliant ability to combine deep technological understanding with
 ];
 
 const seo = {
+  domain: 'https://tagion.org',
   title: "Tagion",
   headline: "Universal Token Protocol",
   tagline: "Inclusive. Elastic. Decentralized. Distributed.",
   description:
-    "Tagion is an open banking protocol, that enables digital peer-to-peer cryptocurrency and a decentralized exchange, governed by its users. By design, Tagion network has no central authority and belongs to all its users. It will be open-sourced and open for everyone to join once the software is ready."
+    "Tagion is a universal token protocol, that enables digital peer-to-peer cryptocurrency and a decentralized exchange, governed by its users. By design, Tagion network has no central authority and belongs to all its users. It will be open-sourced and open for everyone to join once the software is ready."
 };
 
 module.exports = {
