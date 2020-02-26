@@ -1,9 +1,9 @@
-name: Build and Deploy
+name: Release
 
 on:
   push:	
     branches:	
-      - stage
+      - release
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
       uses: grasilife/github-pages-deploy-action@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: stage # The branch the action should deploy from.
+        BASE_BRANCH: release # The branch the action should deploy from.
         BRANCH: gh-pages # The branch the action should deploy to.
         FOLDER: dist # The folder the action should deploy.
-        BUILD_SCRIPT: npm install && npm run build:stage # The build script the action should run prior to deploying.
+        BUILD_SCRIPT: ${{ secrets.COMMAND }} # The build script the action should run prior to deploying.
