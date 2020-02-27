@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@master
         with:
           ref: release
-        if: github.repository == "tagion/homepage"
+        if: github.repository == tagion/homepage
         
       - name: Build and Deploy
         uses: testthedocs/github-pages-deploy-action@master
@@ -21,4 +21,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BUILD_DIR: ./docs/.vuepress/dist
           BUILD_SCRIPT: "npm install && npm run-script build && echo 'tagion.org' > ./docs/.vuepress/dist/CNAME"
-        if: github.repository == "tagion/homepage"
+        if: github.repository == tagion/homepage
