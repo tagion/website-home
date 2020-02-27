@@ -6,5 +6,7 @@ module.exports = {
   "/whitepaper.pdf":
     "https://github.com/tagion/resources/raw/master/whitepaper/tagion-whitepaper.pdf",
   "/tagionwhitepaper.pdf":
+    "https://github.com/tagion/resources/raw/master/whitepaper/tagion-whitepaper.pdf",
+  "/tagionpresentation.pdf":
     "https://github.com/tagion/resources/raw/master/whitepaper/tagion-whitepaper.pdf"
 };
