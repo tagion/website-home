@@ -1,17 +1,17 @@
 .layout-sidebar-button {
-  background: $primary;
+  background: #fff;
   border-radius: 4rem;
   cursor: pointer;
   z-index: 19;
   transition: all 0.1s linear;
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid $primary-lightest;
 
   .icon {
     display: inline-block;
   }
 
   .layout-sidebar-button__text {
-    color: #fff;
+    color: $primary;
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
@@ -23,7 +23,7 @@
 
   .menu-icon {
     svg {
-      fill: #fff;
+      fill: $primary;
     }
 
     .menu-icon__top,

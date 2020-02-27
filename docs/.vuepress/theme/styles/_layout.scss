@@ -10,7 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding-top: $header-height;
   font-size: 1em;
 
   &.landing-page {
@@ -22,12 +21,11 @@ body {
 // Header
 //
 .layout-header {
-  position: fixed;
-  z-index: 20;
+  // position: fixed;
+  z-index: 2;
   left: 0;
   right: 0;
   top: 0;
-  height: $header-height;
 }
 
 //
@@ -121,7 +119,7 @@ body {
     opacity: 0;
     pointer-events: none;
     transform: translateY(10px);
-    top: $header-height;
+    top: 0;
     .sidebar {
       padding-top: 0;
     }

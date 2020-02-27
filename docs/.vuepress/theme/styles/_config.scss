@@ -27,19 +27,19 @@ $grid-breakpoints: (
 // Overrides
 // =========================================================
 
-$primary: #20263D;
+$primary: #20263d;
 $primary-lighter: mix(#fff, $primary, 30%);
 $primary-darker: mix(#000, $primary, 20%);
 $primary-darkest: mix(#000, $primary, 80%);
 $primary-lightest: mix(#fff, $primary, 50%);
 
-$secondary: #1D31E3;
+$secondary: #1d31e3;
 $secondary-darker: mix(#000, $secondary, 30%);
 $secondary-darkest: mix(#000, $secondary, 60%);
 $secondary-lighter: mix(#fff, $secondary, 50%);
 $secondary-lightest: mix(#fff, $secondary, 90%);
 
-$tertiary: #1EBBFF;
+$tertiary: #1ebbff;
 $tertiary-darker: rgb(22, 122, 165);
 $tertiary-lighter: rgb(127, 208, 243);
 
@@ -55,6 +55,8 @@ $dark-darker: mix(#000, $dark, 10%);
 $dark-lighter: mix(#fff, $dark, 10%);
 
 $light: #f2f5f9;
+$border-light: rgb(228, 231, 235);
+$border-dark: rgb(221, 223, 226);
 
 $transition-timing: 100ms;
 $transition-timing-sm: 75ms;
@@ -266,7 +268,7 @@ $card-count: map-merge(
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: "Barlow", "Poppins", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif: "Poppins", Helvetica, Arial, sans-serif !default;
 $font-family-font-awesome-icon: "Font Awesome 5 Free" !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically 16px

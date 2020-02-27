@@ -12,10 +12,6 @@ b {
   font-weight: 500;
 }
 
-.typography {
-  margin: auto;
-}
-
 .has-sidebar {
   .typography {
     margin: 0;
@@ -122,23 +118,13 @@ b {
   }
 
   h1 {
-    font-size: 2.8em;
+    font-size: 2.4em;
     z-index: 5;
-    font-weight: 600;
+    font-weight: 500;
     color: $dark;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.4em;
     position: relative;
-    padding-bottom: 1rem;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0rem;
-      width: 40%;
-      height: 4px;
-      background: #{$primary}55;
-      left: -0.3rem;
-    }
+    padding-bottom: 0rem;
 
     @include media-breakpoint-down(lg) {
       font-size: 2.4em;
@@ -148,7 +134,7 @@ b {
     }
 
     + h2 {
-      margin-top: -4.8rem;
+      margin-top: -4rem;
 
       @include media-breakpoint-down(lg) {
         margin-top: -3.8rem;
@@ -158,26 +144,21 @@ b {
   h2 {
     font-size: 2em;
     z-index: 4;
-    font-weight: 500;
+    font-weight: 300;
     padding-right: 0.2em;
     color: $primary;
     display: inline-block;
     position: relative;
     opacity: 1;
+    margin-bottom: 0em;
     margin-top: calc(-1 * #{$header-height} + 0.5em);
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -0.7rem;
-      width: 40%;
-      height: 4px;
-      background: #{$primary}55;
-      left: -0.3rem;
-    }
 
     @include media-breakpoint-down(lg) {
       font-size: 1.8em;
+    }
+
+    + h3 {
+      margin-top: -3.4rem;
     }
 
     + p {
@@ -185,11 +166,10 @@ b {
     }
   }
   h3 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     z-index: 3;
-    // opacity: 0.9;
-    color: $secondary-darkest;
-    font-weight: 500;
+    color: $primary-darkest;
+    font-weight: 400;
     @include media-breakpoint-down(lg) {
       font-size: 1.3em;
     }

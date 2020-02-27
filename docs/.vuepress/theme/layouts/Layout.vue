@@ -15,10 +15,15 @@
           <a :href="editLink" target="_blank" title="Edit on Github">
             <span>Edit on GitHub</span>
             <OutboundLink />
+          </a> or
+          <a :href="issueLink" target="_blank" title="Open an issue">
+            <span>Open an issue</span>
+            <OutboundLink />
           </a>
         </div>
       </div>
     </div>
+
     <template slot="footer-pagenav">
       <b-container>
         <page-nav v-if="pageNavEnabled" :sidebarItems="sidebarItems" />
@@ -28,18 +33,15 @@
 </template>
 
 <script>
-import LayoutDefault from "@theme/components/LayoutDefault";
-import CookiesNotification from "@theme/components/CookiesNotification";
-import PageNav from "@theme/components/PageNav";
-import ShareButtons from "@theme/components/ShareButtons";
-import { resolveSidebarItems } from "../util";
+import LayoutDefault from "@theme/components/layout/LayoutDefault";
+import { resolveSidebarItems } from "@theme/util";
 
 export default {
   components: {
     LayoutDefault,
-    CookiesNotification,
-    PageNav,
-    ShareButtons
+    CookiesNotification: () => import("@theme/components/sealed/CookiesNotification"),
+    PageNav: () => import("@theme/components/sealed/PageNav"),
+    ShareButtons: () => import("@theme/components/sealed/ShareButtons")
   },
 
   computed: {
@@ -62,6 +64,10 @@ export default {
       }
 
       return true;
+    },
+
+    issueLink() {
+      return `https://github.com/${this.$site.themeConfig.issueLink}/`;
     },
 
     editLink() {

@@ -12,17 +12,15 @@
     width: 0;
     border-color: transparent;
     position: relative;
-    background: transparent url(../images/icon-search-white.svg) 0.5rem 0.5rem
-      no-repeat;
+    background: transparent url(/icons/search.svg) 0.5rem 0.5rem no-repeat;
     background-size: 1rem;
     border: none;
     border-radius: 100px;
     color: mix($dark, #fff, 70%);
-    transition: all 100ms linear, width 200ms linear;
+    transition: width 200ms linear;
     padding: 0.1rem 0rem 0.2rem 2.1rem;
-    // top: .1rem;
     height: auto;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 
     &:hover {
       background-color: #ffffff22;
@@ -30,7 +28,7 @@
 
     &:focus {
       background-color: #ffffff44;
-      color: #ffffff88;
+      color: $primary;
       cursor: text;
       width: 10rem;
       padding: 0.1rem 1.2rem 0.2rem 2.3rem;

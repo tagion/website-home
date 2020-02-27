@@ -21,7 +21,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: all 150ms ease;
+      transition: transform 150ms ease;
       opacity: 0.6;
 
       svg {
@@ -51,7 +51,7 @@
 
   &--dark {
     li a {
-      background: $secondary;
+      background: $primary-lightest;
       opacity: 1;
       color: #fff;
       &:hover {

@@ -1,16 +1,15 @@
 .layout-footer-nav {
-  background: #f8f9fa;
+  background: #fff;
 }
 
 .layout-footer {
-  background: #f8f9fa;
-  border-top: 1px solid rgb(228, 231, 235);
+  background: #fff;
+  border-top: 1px dotted $border-light;
   color: mix($dark, #fff, 60%);
   padding-top: 4em;
   padding-bottom: 6em;
   box-sizing: border-box;
   font-size: 0.95em;
-  
 
   a {
     color: mix($dark, #fff, 80%);
@@ -29,13 +28,13 @@
   h6 {
     font-weight: bold;
     color: mix($dark, #fff, 70%);
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   h6 {
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     font-weight: 500 !important;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: $secondary;
   }
 
@@ -49,8 +48,6 @@
     margin-top: 6em !important;
   }
 }
-
-
 
 .has-sidebar {
   .row {

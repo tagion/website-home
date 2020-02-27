@@ -2,12 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $primary-darker;
-  border-bottom: 1px solid mix($primary-darker, #fff, 90%);
+  background: #fff;
   height: $header-height;
   padding-bottom: 0.2rem;
-  transition: background 200ms ease, border-color 200ms ease,
+  border-bottom: 1px dotted rgb(228, 231, 235);
+  transition: background 200ms ease,
     transform 600ms cubic-bezier(0.19, 1, 0.22, 1);
+
+    .header__nav {
+      margin-left: 1.2rem;
+    }
 
   .header__logo-wrapper {
     display: flex;
@@ -26,8 +30,9 @@
     align-items: center;
 
     a {
-      color: mix($primary, #fff, 20%);
+      color: mix($primary, #fff, 90%);
       opacity: 0.7;
+      font-weight: 500;
       position: relative;
       display: inline-block;
 
@@ -36,8 +41,8 @@
         position: absolute;
         left: 50%;
         right: 50%;
-        height: 3px;
-        bottom: 2px;
+        height: 2px;
+        bottom: -13px;
         background: mix($primary, #fff, 40%);
         transition: all 100ms linear;
         border-radius: 100px;
@@ -64,13 +69,13 @@
 
       &.router-link-active {
         opacity: 1;
-        color: mix($primary, #fff, 20%);
+        color: mix($primary, #fff, 90%);
 
         &::after {
           left: 40%;
           right: 40%;
           opacity: 1;
-          background: mix($primary, #fff, 20%);
+          background: mix($primary, #fff, 90%);
         }
       }
     }
@@ -78,9 +83,8 @@
 
   .header__logo {
     height: 1.8rem;
-    opacity: 0.9;
+    opacity: 0.85;
     position: relative;
-    top: 1px;
     transition: opacity 100ms linear;
 
     &:hover {
@@ -90,19 +94,18 @@
 
   .header__menu {
     display: flex;
-    min-width: 50%;
+    min-width: 10rem;
     align-items: center;
     justify-content: center;
   }
-}
 
-body:not(.scrolled) {
-  .landing-page:not(.sidebar-open) {
-    .header {
-      transition: background 200ms, border 500ms;
-      background: transparent;
-      border-bottom: 1px solid transparent;
-    }
+  .nav-separator  {
+    width: 1px;
+    height: 10px;
+    background: $border-light;
+    position: relative;
+    top: 2px;
+    margin: 0 .6rem;
   }
 }
 
@@ -127,21 +130,49 @@ body.scrolled-down {
 
 .nav a.nav-link--button {
   display: inline-block;
-  // background: #ffffff22;
   border-radius: 100px !important;
-  border: 1px solid #ffffff22;
+  border: 1px solid #eee;
   box-sizing: border-box;
   margin-left: 0.8rem !important;
   transition: all 100ms;
   color: mix($primary, #fff, 20%);
   padding: 0.2rem 0.8rem;
+  color: $primary-lighter;
 
   &:hover {
     background: #ffffff11;
-    border-color: #ffffff33;
+    border-color: #ddd;
   }
 
   &::after {
     display: none;
+  }
+}
+
+.header--static {
+  height: 7rem;
+  background: transparent;
+  border: none;
+  z-index: 0;
+  font-size: 1.1em;
+
+  .nav {
+
+    a {
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        height: 2px;
+        bottom: -3px;
+      }
+    }
+  }
+
+  .header__logo {
+    height: 2.4rem;
+    top: 3px;
   }
 }
