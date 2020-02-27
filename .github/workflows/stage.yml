@@ -11,16 +11,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - uses: actions/setup-node@v1
         with:
-          node-version: "10.x"
+          ref: stage
 
       - name: Build and Deploy
-        uses: grasilife/github-pages-deploy-action@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: stage
-          BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
-          BUILD_SCRIPT: npm install && npm run-script build
-          CNAME: stage.tagion.org
+        uses: testthedocs/github-pages-deploy-action@master
+          env:
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+            BUILD_DIR: ./docs/.vuepress/dist # The folder, the action should deploy.
+            BUILD_SCRIPT: npm install && npm run-script build # The build script the action should run prior to deploying.
