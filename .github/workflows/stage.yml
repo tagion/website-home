@@ -1,4 +1,5 @@
 name: Stage
+if: ${{ github.repository }} == "tagion/homepage.stage"
 
 on:
   push:
@@ -19,4 +20,4 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BUILD_DIR: ./docs/.vuepress/dist
-          BUILD_SCRIPT: "npm install && npm run-script build && echo 'stage.tagion.org' > CNAME && echo 'User-agent: *' > robots.txt && echo 'Disallow: *' >> robots.txt"
+          BUILD_SCRIPT: "npm install && npm run-script build && echo 'stage.tagion.org' > ./docs/.vuepress/dist/CNAME && echo 'User-agent: *\nDisallow: *' > ./docs/.vuepress/dist/robots.txt"
