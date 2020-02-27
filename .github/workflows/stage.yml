@@ -14,12 +14,9 @@ jobs:
         with:
           ref: stage
 
-      - name: Setup CNAME
-        run: "echo 'stage.tagion.org' > CNAME && echo 'User-agent: *' > robots.txt && echo 'Disallow: *' >> robots.txt"
-
       - name: Build and Deploy
         uses: testthedocs/github-pages-deploy-action@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BUILD_DIR: ./docs/.vuepress/dist
-          BUILD_SCRIPT: npm install && npm run-script build
+          BUILD_SCRIPT: "npm install && npm run-script build && echo 'stage.tagion.org' > CNAME && echo 'User-agent: *' > robots.txt && echo 'Disallow: *' >> robots.txt"
