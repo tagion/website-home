@@ -1,28 +1,28 @@
 name: Stage
 
 on:
-  push:	
-    branches:	
+  push:
+    branches:
       - stage
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
-    
-    - name: Setup Node
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '13.x'
+      - name: Checkout
+        uses: actions/checkout@master
 
-    - name: Build and Deploy
-      uses: grasilife/github-pages-deploy-action@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: stage
-        BRANCH: gh-pages
-        FOLDER: docs/.vuepress/dist
-        BUILD_SCRIPT: npm install && npm run-script build
-        CNAME: stage.tagion.org
+      - name: Setup Node
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "13.x"
+
+      - name: Build and Deploy
+        uses: grasilife/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BASE_BRANCH: stage
+          BRANCH: gh-pages
+          FOLDER: docs/.vuepress/dist
+          BUILD_SCRIPT: npm install && npm run-script build
+          CNAME: stage.tagion.org
