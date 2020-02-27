@@ -14,9 +14,12 @@ jobs:
         with:
           ref: stage
 
+      - name: Setup CNAME
+        run: echo 'stage.tagion.org' > CNAME
+
       - name: Build and Deploy
         uses: testthedocs/github-pages-deploy-action@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BUILD_DIR: ./docs/.vuepress/dist # The folder, the action should deploy.
-          BUILD_SCRIPT: npm install && npm run-script build # The build script the action should run prior to deploying.
+          BUILD_DIR: ./docs/.vuepress/dist
+          BUILD_SCRIPT: npm install && npm run-script build
