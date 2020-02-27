@@ -4,10 +4,14 @@ on:
   push:
     branches:
       - release
+  pull_request:
+    branches:
+      - release
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    if: github.repository == 'tagion/homepage'
     steps:
       - name: Checkout
         uses: actions/checkout@master
