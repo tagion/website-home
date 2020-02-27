@@ -15,7 +15,7 @@ jobs:
           ref: stage
 
       - name: Setup CNAME
-        run: echo 'stage.tagion.org' > CNAME
+        run: "echo 'stage.tagion.org' > CNAME && echo 'User-agent: *' > robots.txt && echo 'Disallow: *' >> robots.txt"
 
       - name: Build and Deploy
         uses: testthedocs/github-pages-deploy-action@master
