@@ -10,15 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        if: ${{ github.repository }} == "tagion/homepage"
         uses: actions/checkout@master
         with:
           ref: release
-
+        if: github.repository == "tagion/homepage"
+        
       - name: Build and Deploy
-        if: ${{ github.repository }} == "tagion/homepage"
         uses: testthedocs/github-pages-deploy-action@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BUILD_DIR: ./docs/.vuepress/dist
           BUILD_SCRIPT: "npm install && npm run-script build && echo 'tagion.org' > ./docs/.vuepress/dist/CNAME"
+        if: github.repository == "tagion/homepage"
