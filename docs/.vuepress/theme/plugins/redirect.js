@@ -8,11 +8,34 @@ function createRedirectTemplate(to) {
       <head>
           <title>Redirecting...</title>
           <meta http-equiv = "refresh" content = "0; url = ${to}" />
+          <style>
+              body {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                  font-family: Arial, Helvetica, sans-serif;
+                  min-height: 100vh;
+              }
+            
+              p {
+                  display: block;
+                  margin: 16px;
+              }
+
+              p.small {
+                  font-size: .8em;
+                  margin: 3px;
+              }
+          </style>
       </head>
       <body>
-          <p>Redirecting to ${to}...</p>
+          <p><b>Oops, this page does not exist anymore.</b></p>
+          <p class="small">Redirecting to...</p>
+          <p class="small"><a href="${to}">${to}</a></p>
       </body>
-    </html>`;
+    </html>
+    `;
 }
 
 function createRedirects() {
@@ -23,11 +46,6 @@ function createRedirects() {
 
       let fromUrlArray = key.split("/");
       fromUrlArray.shift();
-      //   let fromUrlFilename = `${fromUrlArray[fromUrlArray.length - 1]}`;
-      //   if (fromUrlFilename.indexOf(".") == -1) {
-      //     fromUrlFilename += ".html";
-      //   }
-      //   fromUrlArray.pop();
 
       let fromUrlFilename = "index.html";
 
