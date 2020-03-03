@@ -2,6 +2,7 @@
 
 <center><h1>Welcome to Tagion!</h1></center>
 
+![Release](https://github.com/tagion/homepage/workflows/Release/badge.svg?branch=release) ![Stage](https://github.com/tagion/homepage.stage/workflows/Stage/badge.svg?branch=stage)
 
 [Tagion.org](https://tagion.org) is a primary online resource for the Tagion community. It is improved and changed over time through the contributions of community members who submit content, give feedback, or volunteer their time to managing its evolution.
 
