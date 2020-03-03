@@ -1,16 +1,27 @@
-name: CI Stage
+name: Stage
 
-on: 
+on:
   push:
     branches:
-    - stage
+      - stage
+  pull_request:
+    branches:
+      - stage
 
 jobs:
-  build:
-
+  build-and-deploy:
+    if: github.repository == 'tagion/homepage.stage'
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - name: Deploy Stage
-      run: sh ./deploy.sh stage
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          ref: stage
+
+      - name: Build and Deploy
+        uses: testthedocs/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BUILD_DIR: ./docs/.vuepress/dist
+          BUILD_SCRIPT: "npm install && npm run-script build:stage && echo 'stage.tagion.org' > ./docs/.vuepress/dist/CNAME && echo 'User-agent: *\nDisallow: *' > ./docs/.vuepress/dist/robots.txt"
+        
