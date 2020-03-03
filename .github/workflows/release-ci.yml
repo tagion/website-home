@@ -1,16 +1,26 @@
-name: CI Release
+name: Release
 
-on: 
+on:
   push:
     branches:
-    - release
+      - release
+  pull_request:
+    branches:
+      - release
 
 jobs:
-  build:
-
+  build-and-deploy:
+    if: github.repository == 'tagion/homepage'
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - name: Deploy Release
-      run: sh ./deploy.sh
+      - name: Checkout
+        uses: actions/checkout@master
+        with:
+          ref: release
+
+      - name: Build and Deploy
+        uses: testthedocs/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BUILD_DIR: ./docs/.vuepress/dist
+          BUILD_SCRIPT: "npm install && npm run-script build && echo 'tagion.org' > ./docs/.vuepress/dist/CNAME"
