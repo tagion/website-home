@@ -417,7 +417,7 @@
                 class="mt-4"
               >
                 <brand-button
-                  href="/tagiontechpaper.pdf"
+                  href="https://github.com/tagion/resources/raw/master/technical-paper/tagion-technical-paper.pdf"
                   target="_blank"
                   variant="down"
                   @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
