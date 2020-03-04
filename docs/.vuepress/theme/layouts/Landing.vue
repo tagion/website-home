@@ -548,6 +548,7 @@
                       :title="teamMember.title"
                       :image="teamMember.image"
                       :link="teamMember.link"
+                      :about="teamMember.about"
                     ></team-card>
                   </reveal>
                 </b-col>

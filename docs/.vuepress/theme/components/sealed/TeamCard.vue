@@ -1,5 +1,10 @@
 <template>
-  <a :href="link" target="_blank" rel="nofollow noopener noreferrer" class="team-table__card">
+  <a
+    :href="link"
+    target="_blank"
+    rel="nofollow noopener noreferrer"
+    class="team-table__card"
+  >
     <div class="team-table__card-bio">
       <div class="team-table__card-header-row">
         <img
@@ -17,6 +22,9 @@
           <p class="team-table__card-read-more">LinkedIn</p>
         </div>
       </div>
+      <div class="team-table__card-about">
+        <p v-html="aboutFormatted"></p>
+      </div>
     </div>
   </a>
 
@@ -24,6 +32,11 @@
 
 <script>
 export default {
-  props: ["name", "title", "link", "image"]
+  props: ["name", "title", "link", "image", "about"],
+  computed: {
+    aboutFormatted: function() {
+      return this.about.replace(/(?:\r\n|\r|\n)/g, "<br>");
+    }
+  }
 };
 </script>

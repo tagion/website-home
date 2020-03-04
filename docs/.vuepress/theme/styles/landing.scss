@@ -1140,20 +1140,41 @@
     margin-top: 2rem;
     position: relative;
     transition: transform 100ms ease;
+    z-index: 1;
+
+  
 
     .team-table__card-read-more {
       color: $secondary;
       font-weight: 600;
       opacity: 0;
       transition: opacity 200ms, transform 200ms;
-      position: absolute;
-      bottom: -1.4rem;
+      // position: absolute;
+      margin-top: -.2rem;
+      margin-bottom: -.6rem;
       font-size: 0.7em;
       transform: translateY(4px);
 
       @include media-breakpoint-down(sm) {
         opacity: 0;
-        bottom: -1.2rem;
+        // bottom: -1.2rem;
+      }
+    }
+
+    .team-table__card-about {
+      font-size: 0.9em;
+      top: calc(100% + .7rem);
+        left: 0;
+        padding-top: 0.6rem;
+        width: 100%;
+    }
+
+    &:hover {
+      z-index: 3;
+
+      @include media-breakpoint-up(md) {
+        .team-table__card-about {
+        }
       }
     }
 
@@ -1199,6 +1220,8 @@
       border: 2px solid #{$primary-lightest}55;
       border-radius: 1000px;
       margin-right: 1.4rem;
+      position: relative;
+      z-index: 1;
     }
   }
 

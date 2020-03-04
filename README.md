@@ -1,6 +1,6 @@
-<center><a href="https://tagion.org"><img alt="tagion logo" src="https://github.com/tagion/resources/raw/master/branding/logomark.svg?sanitize=true" alt="tagion.org" height="60"></a></center>
+<a href="https://tagion.org"><img alt="tagion logo" src="https://github.com/tagion/resources/raw/master/branding/logomark.svg?sanitize=true" alt="tagion.org" height="60"></a>
 
-<center><h1>Welcome to Tagion!</h1></center>
+<h1>Welcome to Tagion!</h1>
 
 ![Release](https://github.com/tagion/homepage/workflows/Release/badge.svg?branch=release) ![Stage](https://github.com/tagion/homepage.stage/workflows/Stage/badge.svg?branch=stage)
 
