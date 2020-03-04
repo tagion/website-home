@@ -8,5 +8,5 @@ module.exports = {
   "/tagionwhitepaper.pdf":
     "https://github.com/tagion/resources/raw/master/whitepaper/tagion-whitepaper.pdf",
   "/tagionpresentation.pdf":
-    "https://github.com/tagion/resources/raw/master/whitepaper/tagion-whitepaper.pdf"
+    "https://github.com/tagion/resources/raw/master/presentation/tagion-presentation.pdf"
 };
