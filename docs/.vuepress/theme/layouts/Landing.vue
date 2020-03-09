@@ -27,13 +27,19 @@
               <p>Inclusive. Elastic. Decentralized. Scalable.</p>
             </div>
             <div class="hero__details">
-              <div class>
+              <div class="mt-3">
+
                 <a
                   href="https://forum.tagion.org/t/new-members-intro-corner/30"
                   target="_blank"
-                  class="btn btn-social mt-3"
-                >Say Hello in Tagion Forum</a>
-
+                  class="btn btn-social"
+                >Go to Forum</a>
+                <a
+                  href="https://t.me/tagionChat"
+                  target="_blank"
+                  class="btn btn-social"
+                >Chat in Telegram</a>
+                <newsletter-form class="mt-4" />
               </div>
             </div>
 

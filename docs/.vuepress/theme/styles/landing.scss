@@ -48,7 +48,7 @@
 
     .hero__details-summary-button {
       display: inline-block;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
 
     .brand-button {
@@ -62,7 +62,7 @@
     .btn {
       padding: 0.5rem 1.2rem;
       color: #fff;
-      border-radius: 100px;
+      // border-radius: 100px;
 
       &.btn-summary {
         margin-right: 1rem;
@@ -194,7 +194,7 @@
   .hero__cards {
     position: relative;
     z-index: 2;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 4.4rem;
 
     @include media-breakpoint-down(sm) {
