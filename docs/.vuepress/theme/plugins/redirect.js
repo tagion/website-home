@@ -30,7 +30,6 @@ function createRedirectTemplate(to) {
           </style>
       </head>
       <body>
-          <p><b>Oops, this page does not exist anymore.</b></p>
           <p class="small">Redirecting to...</p>
           <p class="small"><a href="${to}">${to}</a></p>
       </body>
