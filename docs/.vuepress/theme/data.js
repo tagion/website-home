@@ -38,7 +38,7 @@ const teamMembers = [
     name: "Roxana Nasoi",
     title: "Cheif Strategy Officer",
     image: "/team/r-nasoi.jpg",
-    about: `Over 8 years of experience as a business developer and advisor. Co-chairman and Head of Community at Hong Kong Israel Trade Association, partner at Aimedis, a board member at Impulse4women, and advisor for Ideagist Blockchain Incubator.`,
+    about: `Over 10 years of experience as a business developer and advisor. Co-chairman and Head of Community at Hong Kong Israel Trade Association, partner at Aimedis, a board member at Impulse4women, and advisor for Ideagist Blockchain Incubator. Before that - Elance / Upwork ambassador for 6 years. Roxana wears many hats, literally.`,
     link: "https://www.linkedin.com/in/roxananasoi/"
   },
   {
@@ -46,7 +46,7 @@ const teamMembers = [
     title: "Digital Trust Protocol",
     image: "/team/c-keutmann.jpg",
     about: `Over 20 years of experience working with software architecture and development. Specialized on the SharePoint platform working as an independent consultant, awarded six times Microsoft SharePoint MVP. Worked with open-source digital trust protocol for the last 3 years.`,
-    link: "https://www.linkedin.com/in/roxananasoi/"
+    link: "https://www.linkedin.com/in/keutmann/"
   },
   {
     name: "Shane McQuillan",
