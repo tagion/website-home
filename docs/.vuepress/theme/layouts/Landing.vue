@@ -490,7 +490,7 @@
                     </p>
                     <p>We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project and launch the main network.</p>
                   </reveal>
-                  <reveal
+                  <!-- <reveal
                     child
                     direction="right"
                     opacity
@@ -501,7 +501,7 @@
                       to="/community/roadmap.html"
                       class="mt-5"
                     >See Detailed Roadmap</brand-button>
-                  </reveal>
+                  </reveal> -->
                 </reveal>
               </b-col>
               <b-col

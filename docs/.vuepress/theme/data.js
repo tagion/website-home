@@ -45,7 +45,7 @@ const teamMembers = [
     name: "Carsten Keutmann",
     title: "Digital Trust Protocol",
     image: "/team/c-keutmann.jpg",
-    about: `Over 20 years of experience working with software architecture and development. Specialized on the SharePoint platform working as an independent consultant, awarded six times Microsoft SharePoint MVP.`,
+    about: `Over 20 years of experience working with software architecture and development. Specialized on the SharePoint platform working as an independent consultant, awarded six times Microsoft SharePoint MVP. Worked with open-source digital trust protocol for the last 3 years.`,
     link: "https://www.linkedin.com/in/roxananasoi/"
   },
   {
