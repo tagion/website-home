@@ -17,7 +17,7 @@
               >Official Forum
                 <OutboundLink /></a>
             </li>
-            <li>
+            <!-- <li>
               <a
                 href="https://github.com/tagion/resources/raw/master/whitepaper/tagion-whitepaper.pdf"
                 @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Footer'}})"
@@ -25,7 +25,7 @@
                 rel="noopener noreferrer nofollow"
               >Whitepaper
                 <OutboundLink /></a>
-            </li>
+            </li> -->
             <li>
               <a
                 href="https://github.com/tagion/resources/raw/master/technical-paper/tagion-technical-paper.pdf"
