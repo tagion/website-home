@@ -22,7 +22,7 @@ const teamMembers = [
   },
   {
     name: "Tobias Ambs-Thomsen",
-    title: "CMO",
+    title: "CMO, part owner",
     image: "/team/t-thomsen.jpg",
     about: `Over 20 years in visual communication and marketing in both advertising agencies and large companies. Was Marketing Director at ACT.Global leading them to seven new international markets.`,
     link: "https://www.linkedin.com/in/tambsthomsen/"
@@ -43,14 +43,14 @@ const teamMembers = [
   },
   {
     name: "Carsten Keutmann",
-    title: "Digital Trust Protocol",
+    title: "Core Developer, Digital Trust Protocol",
     image: "/team/c-keutmann.jpg",
     about: `Over 20 years of experience working with software architecture and development. Specialized on the SharePoint platform working as an independent consultant, awarded six times Microsoft SharePoint MVP. Worked with open-source digital trust protocol for the last 3 years.`,
     link: "https://www.linkedin.com/in/keutmann/"
   },
   {
     name: "Shane McQuillan",
-    title: "Strategist",
+    title: "Head of Growth​",
     image: "/team/s-mcquillan.jpg",
     about: `Over 25 years of experience working with startups in all aspects and stages. Has been at the forefront of development with Blockchain based startups. CEO and founder at TrustedIn Trading.`,
     link: "https://www.linkedin.com/in/startupadviser/"
