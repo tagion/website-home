@@ -226,3 +226,14 @@ body {
     padding-right: 15px;
   }
 }
+
+.row--big-gutter {
+  margin-left: -30px;
+  margin-right: -30px;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

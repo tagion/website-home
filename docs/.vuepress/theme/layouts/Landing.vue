@@ -93,7 +93,7 @@
                   <div class="feature-card__internal">
                     <img src="/icons/scalability.svg" />
                     <h4>Scalable Core Technology</h4>
-                    <p>Tagion builds on a modular and scalable core. Each module can be changed and optimised. Main modules are the distributed database, scripting engine, Hashgraph and gossip mechanism.</p>
+                    <p>Tagion builds on a modular and scalable core. Each module can be changed and optimised. The main modules comprise of the distributed database, scripting engine, Hashgraph and gossip mechanism.</p>
                   </div>
                 </div>
               </div>
@@ -176,7 +176,7 @@
                         <b-card-body>
                           <b-card-text>
                             <p>Tagion uses hashgraph for consensus, which in the Tagion implementation, makes it possible to process more than 20.000 transactions per second per shard. In comparison, VISA does around 1,700 transactions per second on average.</p>
-                            <p>Tagion is architected to be able to scale to hundreds of Shards that operate equally fast in parallel.</p>
+                            <p>Tagion is architected to be able to scale to hundreds of Shards that operate in tandem without loss of efficiency.</p>
                           </b-card-text>
                         </b-card-body>
                       </b-collapse>
@@ -206,9 +206,9 @@
                       >
                         <b-card-body>
                           <b-card-text>
-                            <p>Transactions on Tagion are validated in two to three seconds, putting it on par with VISA in terms of validation speed.</p>
-                            <p>The fast validation time is reached by the use of hashgraph for consensus and an efficient patent-pending gossip mechanism. The hashgraph algorithm and the accompanying mathematical proof was discovered by Leemon Baird.</p>
-                            <p>The algorithms ensure that all nodes, infinite time, reach the same order of events - as long as more than two-thirds of the nodes in the network follow the same consensus rules. In doing so, the nodes confirm and validate any action on the network, such as a money transfer, money exchange, or data interactions.</p>
+                            <p>Transactions on Tagion are validated in between two or three seconds, placing it on par with major credit card operators in terms of validation speed.</p>
+                            <p>A fast validation time is reached through the use of Hashgraph for consensus and an efficient (Patent Pending) gossip Mechanism. The Hashgraph algorithm and the accompanying mathematical proof was initially discovered by Leemon Baird. </p>
+                            <p>The algorithm ensures that all nodes, infinite time, reach the same order of events - as long as more than two-thirds of the nodes in the network follow the same consensus rules. In doing so, the nodes confirm and validate any action on the network, such as a money transfer, money exchange, or data interactions.</p>
                             <p>The gossip mechanisms optimise data exchange between nodes to happen most efficiently.</p>
                           </b-card-text>
                         </b-card-body>
@@ -239,7 +239,7 @@
                       >
                         <b-card-body>
                           <b-card-text>
-                            <p>Most DLTs uses a decentralised immutable database for storage. The blockchain data structure is immutable, meaning all data should be stored forever.</p>
+                            <p>Most DLTs use a decentralised, immutable database for storage. The blockchain data structure is immutable, meaning all data should be stored forever. </p>
                             <p>Tagion uses a distributed database for storage, meaning a node only stores a part of the data. DART (Distributed Archive of Random Transactions) gives away with immutability, and only the output of a transaction is stored, while input and calculations are omitted, helping to reduce size. The innovation in terms of data utilisation is, however, that once a bill becomes irrelevant, it is deleted, rather than kept forever.</p>
                             <p>The mechanism transforms an exponential workload into a linear workload, which saves vast amounts of CPU power.</p>
                           </b-card-text>
@@ -271,7 +271,7 @@
                       >
                         <b-card-body>
                           <b-card-text>
-                            <p>Combining Tagion DEX with DART provides Tagion with the speed and scalability needed to become the underlying network for all everyday financial services.</p>
+                            <p>Combining Tagion DEX with DART provides Tagion with the speed and scalability needed to become an underlying network for any and all everyday financial services.</p>
                           </b-card-text>
                         </b-card-body>
                       </b-collapse>
@@ -300,7 +300,7 @@
                       >
                         <b-card-body>
                           <b-card-text>
-                            <p>A better market liquidity results in efficient markets. With Tagions as intermediate currency, it is possible to exchange all tokenised currencies seamlessly. By pairing all alien currencies with Tagions the resulting reduction of currency pairs enables a simpler market with higher liquidity.</p>
+                            <p>Better market liquidity results in a more efficient market. With Tagions as an intermediate currency, it is possible to exchange all tokenised currencies seamlessly. By pairing all alien currencies with Tagions, the resulting reduction of currency pairs enables a simpler market with higher liquidity.</p>
                           </b-card-text>
                         </b-card-body>
                       </b-collapse>
@@ -641,11 +641,11 @@
                 direction="up"
                 opacity
               >
-                <h2>Meet People Behind Tagion</h2>
+                <h2 class="text-center mb-5">Meet People Behind Tagion</h2>
               </reveal>
             </reveal>
             <reveal class="team-table">
-              <b-row>
+              <b-row class="row--big-gutter justify-content-center">
                 <b-col
                   cols="12"
                   md="6"

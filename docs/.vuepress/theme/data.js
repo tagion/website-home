@@ -50,7 +50,7 @@ const teamMembers = [
   },
   {
     name: "Shane McQuillan",
-    title: "Head of Growth​",
+    title: "Chief Growth Officer​",
     image: "/team/s-mcquillan.jpg",
     about: `Over 25 years of experience working with startups in all aspects and stages. Has been at the forefront of development with Blockchain based startups. CEO and founder at TrustedIn Trading.`,
     link: "https://www.linkedin.com/in/startupadviser/"
@@ -74,35 +74,42 @@ const teamMembers = [
     name: "Michael Harboe",
     title: "Strategic Advisor",
     image: "/team/m-harboe.jpg",
-    about: `Strategic Advisor, CEO at Virsabi.`,
+    about: `The main focus is the exploration of business opportunities in the utilization of augmented, virtual and mixed reality technologies. Skilled enterprise strategist, with solid cross function experience of business management, sales, IT, marketing and communication.`,
     link: "https://www.linkedin.com/in/michaelharboedk/"
   },
   {
     name: "Michael Avital",
     title: "External Advisor",
     image: "/team/m-avital.jpg",
-    about: `Professor at Copenhagen Business School.`,
+    about: `Specializing in blockchain transformation and development, he is constructing a generative and open path of knowledge work. Michael has a PhD from a Case Western Reserve University. Now, a professor at Copenhagen Business School.`,
     link: "https://www.linkedin.com/in/michelavital/"
   },
   {
     name: "Vlad Pazych",
     title: "Product Owner",
     image: "/team/v-pazych.jpg",
-    about: ``,
+    about: `He is experienced in UI design, full-stack web development and contributed to multiple high-stake commercial and open-source projects. Vlad is managing the development of apps that will drive adoption of the Tagion Network.`,
     link: "https://www.linkedin.com/in/vladpazych/"
   },
   {
     name: "Oleksandr Sushko",
     title: "System Engineer",
     image: "/team/a-sushko.jpg",
-    about: ``,
+    about: `Alex brings years of experience in application and system-level engineering to Tagion Core team. Prior to Tagion, he was leading the development of multiple vital in-house enterprise solutions.`,
     link: "https://www.linkedin.com/in/oleksandr-sushko-691b0313a/"
   },
   {
+    name: "Anton Labensky",
+    title: "Mobile Developer",
+    image: "/team/a-labenskyi.jpg",
+    about: `Years of experience in mobile app development and server solutions. Anton fulfils his passion for user experience design, creating well-thought-out user interfaces that users will love to face.`,
+    link: "https://www.linkedin.com/in/labenskiyantondev/"
+  },
+  {
     name: "Oksana Perederii",
-    title: "Marketer & Office Manager",
+    title: "HR & Marketer",
     image: "/team/o-perederii.jpg",
-    about: ``,
+    about: `Oksana is a truly talented talent hunter. Apart from that, she contributes a lot to marketing and business development. Before Tagion, Oksana was Project Manager and took various marketing roles in Together Networks, Kyiv Post, and MIZOL. Oksana has a Master's degree in Enterprise Economics.`,
     link: "https://www.linkedin.com/in/oksana-perederii-a0237942/"
   },
 ];
