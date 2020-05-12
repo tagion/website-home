@@ -36,6 +36,7 @@
     "moment": "^2.24.0",
     "vue": "^2.6.11",
     "vue-axios": "^2.1.4",
+    "vue-faq-accordion": "^1.5.0",
     "vue-scrollto": "^2.15.0"
   }
 }

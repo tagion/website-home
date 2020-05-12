@@ -33,7 +33,7 @@
                   href="https://forum.tagion.org/t/new-members-intro-corner/30"
                   target="_blank"
                   class="btn btn-social"
-                >Go to Forum</a>
+                >Discuss on Forum</a>
                 <a
                   href="https://t.me/tagionChat"
                   target="_blank"
@@ -360,7 +360,7 @@
                   >
                     <div class="lcontainer__story-content-singlecolumn">
                       <p>Tagion is a decentralised and permissionless banking network – run and owned by its users. Its genuinely fair and democratic governance model builds on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom. Tagion is self-sustainable and seen as a common resource that lets developers create new financial markets with a few clicks.</p>
-                      <p>The elastic money supply and absence of a hard cap keep the value of the network tokens stable - and in time – Tagion will be a thrust less monetary system with an algorithmically controlled dynamic monetary supply. Given all developers, the possibility of creating a more sustainable economic world.</p>
+                      <p>The elastic money supply and absence of a hard cap keep the value of the network tokens stable - and in time – Tagion will be a trustless, algorithmically controlled monetary system, that keeps the token price stable. Given all developers, the possibility of creating a more sustainable economic world.</p>
                     </div>
                   </reveal>
                 </reveal>
@@ -424,7 +424,6 @@
               >
                 <brand-button
                   href="https://github.com/tagion/resources/raw/master/technical-paper/tagion-technical-paper.pdf"
-                  target="_blank"
                   variant="down"
                   @click="$analytics.triggerEvent({category: 'Exploration', action: 'WhitepaperDownload', fields: {placement: 'Landing'}})"
                   reveal
@@ -462,65 +461,175 @@
           </b-container>
         </div>-->
 
-        <div class="lcontainer-wrapper mt-10">
+        <div class="lcontainer-wrapper lcontainer-wrapper--overflowed mt-10">
           <b-container class="lcontainer lcontainer--roadmap">
             <b-row>
               <b-col
                 cols="12"
-                xl="5"
-                class="d-flex align-items-center"
+                xl="6"
+                class="lcontainer__headline-sticky"
               >
-                <reveal class="lcontainer__headline">
-                  <reveal
+                <div class="lcontainer__headline">
+                  <div
                     child
                     direction="up"
                     opacity
                   >
                     <h2>Tagion Roadmap</h2>
-                  </reveal>
-                  <reveal
-                    child
-                    direction="up"
-                    opacity
-                    :delay="200"
-                  >
-                    <p>
-                      The team behind Tagion has spent a significant amount of time, funding itself, while building core components: Hashgraph, Gossip protocol,
-                      DART database, HiBON data format, the underlying API and more.
-                    </p>
-                    <p>We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project and launch the main network.</p>
-                  </reveal>
-                  <!-- <reveal
-                    child
-                    direction="right"
-                    opacity
-                    :delay="800"
-                  >
-                    <brand-button
-                      reveal
-                      to="/community/roadmap.html"
-                      class="mt-5"
-                    >See Detailed Roadmap</brand-button>
-                  </reveal> -->
-                </reveal>
+                    <div
+                      child
+                      direction="up"
+                      opacity
+                      :delay="200"
+                    >
+                      <p>The team behind Tagion has spent a significant amount of time, funding itself, while building core components: Hashgraph, Gossip protocol, DART database, HiBON data format, the underlying API and more.</p>
+                      <p>We keep implementing new functionality and getting closer to the major milestone, where we can open-source the Tagion project and launch the main network.</p>
+                    </div>
+                  </div>
+                </div>
               </b-col>
-              <b-col
-                cols="12"
-                xl="7"
-                class="mt-8 mt-xl-0 d-none d-md-block"
-              >
-                <reveal
-                  opacity
-                  direction="up"
-                  :delay="700"
-                >
-                  <img
-                    class="lcontainer--roadmap__roadmap"
-                    src="/timeline.svg"
-                  />
-                </reveal>
+              <b-col xl="6">
+                <div class="timeline">
+                  <div>
+                    <section class="year">
+                      <h3>2015</h3>
+                      <section>
+                        <ul>
+                          <li>Ideation of BitCuits by Carsten Bleser Rasmussen.</li>
+                        </ul>
+                      </section>
+                    </section>
+                    <section class="year">
+                      <h3>2017</h3>
+                      <section>
+                        <h4>July</h4>
+                        <ul>
+                          <li>Tagion project is formally started by the three founders.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>December</h4>
+                        <ul>
+                          <li>Blockchain-based proof of concept network tested.</li>
+                        </ul>
+                      </section>
+                    </section>
+                    <section class="year">
+                      <h3>2018</h3>
+                      <section>
+                        <h4>January</h4>
+                        <ul>
+                          <li>Redesigned network to use Hashgraph instead of Blockchain.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>April</h4>
+                        <ul>
+                          <li>Confirmed that our design is not violating any patents.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>July</h4>
+                        <ul>
+                          <li>Implemented β-version of HBSON (now HiBON) data format.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>August</h4>
+                        <ul>
+                          <li>Implemented α-version of transaction API.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>October</h4>
+                        <ul>
+                          <li>Implemented α-version of Gossip protocol.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>November</h4>
+                        <ul>
+                          <li>Implemented α-version of Hashgraph consensus protocol.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>December</h4>
+                        <ul>
+                          <li>Formed the core principles of the node governance model.</li>
+                          <li>Successfully tested Hashgraph implementation in closed network.</li>
+                        </ul>
+                      </section>
+                    </section>
+                    <section class="year">
+                      <h3>2019</h3>
+                      <section>
+                        <h4>January</h4>
+                        <ul>
+                          <li>Implemented α-version of scripting engine.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>April</h4>
+                        <ul>
+                          <li>Implemented α-version of DART.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>July</h4>
+                        <ul>
+                          <li>Filed patents for Gossip protocol and DART.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>September</h4>
+                        <ul>
+                          <li>Formed the core principles of the economic governance model.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>October</h4>
+                        <ul>
+                          <li>Implemented β-version of HiBON and HiBON-RPC.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>December</h4>
+                        <ul>
+                          <li>α-launch of developer package and test node.</li>
+                        </ul>
+                      </section>
+                    </section>
+                    <section class="year year--future">
+                      <h3>2020</h3>
+                      <section>
+                        <h4>June</h4>
+                        <ul>
+                          <li>Launch of open test network.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>Q3</h4>
+                        <ul>
+                          <li>Open-sourcing the Tagion Core library.</li>
+                          <li>β-launch of the Tagion Network.</li>
+                        </ul>
+                      </section>
+                    </section>
+                    <section class="year year--future">
+                      <h3>2021</h3>
+                      <section>
+                        <h4>Q1</h4>
+                        <ul>
+                          <li>Launching main network.</li>
+                        </ul>
+                      </section>
+
+                    </section>
+                  </div>
+                </div>
               </b-col>
             </b-row>
+
           </b-container>
         </div>
 

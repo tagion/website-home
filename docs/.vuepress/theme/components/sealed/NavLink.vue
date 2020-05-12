@@ -1,22 +1,36 @@
 <template>
-  <li v-if="isSeparator" class="nav-separator"></li>
-  <router-link class="nav-link" :to="link" v-else-if="!isExternal(link)" :exact="exact">{{ item.text }}</router-link>
+  <li
+    v-if="isSeparator"
+    class="nav-separator"
+  ></li>
+  <router-link
+    class="nav-link"
+    :to="link"
+    v-else-if="!isExternal(link)"
+    :exact="exact"
+  >{{ item.text }}</router-link>
   <a
     v-else
     :href="link"
     class="nav-link external"
-    :target="isMailto(link) || isTel(link) ? null : '_blank'"
-    :rel="isMailto(link) || isTel(link) ? null : 'noopener noreferrer nofollow'"
+    :target="isMailto(link) || isTel(link) || isDownload ? null : '_blank'"
+    :rel="isMailto(link) || isTel(link) || isDownload ? null : 'noopener noreferrer nofollow'"
   >
     {{ item.text }}
-    <OutboundLink />
+    <OutboundLink v-if="!isDownload" />
+    <DownloadLink v-else-if="isDownload" />
   </a>
 </template>
 
 <script>
+import DownloadLink from "./DownloadLink";
 import { isExternal, isMailto, isTel, ensureExt } from "@theme/util";
 
 export default {
+  components: {
+    DownloadLink
+  },
+
   props: {
     item: {
       required: true
@@ -26,6 +40,11 @@ export default {
   computed: {
     link() {
       return ensureExt(this.item.link);
+    },
+
+    isDownload() {
+      console.log(this.item.kind);
+      return this.item.kind == "download";
     },
 
     isSeparator() {

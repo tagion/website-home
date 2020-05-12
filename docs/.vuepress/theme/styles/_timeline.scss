@@ -1,0 +1,124 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.timeline {
+    position: relative;
+    display: table;
+    height: 100%;
+    margin: {
+        top: 5rem;
+    }
+
+    div {
+        &:after {
+            content: "";
+            width: 2px;
+            position: absolute;
+            top: 0.8rem;
+            bottom: 0rem;
+            left: 58px;
+            z-index: 1;
+            background: #babcc2;
+        }
+        &:before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            bottom: 0rem;
+            @include border-radius(50%);
+            left: 55px;
+            z-index: 1;
+            background: #babcc2;
+        }
+    }
+    h3 {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 5rem;
+        color: #999DAE;
+        margin: 0;
+        font-size: 1.1em;
+    }
+    section.year {
+        position: relative;
+
+        &:first-child section {
+            margin-top: -1.3em;
+            padding-bottom: 0px;
+        }
+
+        section {
+            position: relative;
+            padding-bottom: 1.25em;
+            margin-bottom: 2.2em;
+            
+            h4 {
+                position: absolute;
+                bottom: 0;
+                font: {
+                    size: 0.9em;
+                    weight: 400;
+                }
+                line-height: 1.2em;
+                margin: 0;
+                padding: 0 0 0 83px;
+                color: #969aa8;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0 0 0 75px;
+                margin: -1.35rem 0 1em;
+                max-width: 100%;
+                font-size: .95em;
+
+                &:last-child {
+                    margin: {
+                        bottom: 0;
+                    }
+                }
+                &:first-of-type:after {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    background: #3c4257;
+                    border: 2px solid #ffffff;
+                    @include border-radius(50%);
+                    position: absolute;
+                    left: 54px;
+                    top: 8px;
+                    z-index: 2;
+                }
+                li {
+                    margin-left: 0.5rem;
+
+                    &:not(:first-child) {
+                        margin-top: 0.2rem;
+                    }
+
+                    span.price {
+                        color: mediumturquoise;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    section.year--future {
+       
+
+        section {
+    
+            ul {
+                &:first-of-type:after {
+                    background: #b3b7c2;
+                    border: 4px solid #ffffff;
+                }
+            }
+        }
+    }
+}

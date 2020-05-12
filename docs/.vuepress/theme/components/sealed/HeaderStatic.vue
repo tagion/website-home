@@ -8,7 +8,7 @@
         <router-link to="/">
           <img
             class="header__logo"
-            src="/logo.svg"
+            src="/logo-tagion.svg"
             alt="Tagion Logo"
           />
         </router-link>

@@ -71,13 +71,6 @@ const teamMembers = [
   },
 
   {
-    name: "Sam Kawtharani",
-    title: "Project Manager",
-    image: "/team/s-kawtharani.jpg",
-    about: `Corl co-founder and Fintech Advisor.`,
-    link: "https://www.linkedin.com/in/hkawtharani/"
-  },
-  {
     name: "Michael Harboe",
     title: "Strategic Advisor",
     image: "/team/m-harboe.jpg",

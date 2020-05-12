@@ -82,7 +82,7 @@
   }
 
   .header__logo {
-    height: 1.8rem;
+    height: 2.4rem;
     opacity: 0.85;
     position: relative;
     transition: opacity 100ms linear;
@@ -172,7 +172,7 @@ body.scrolled-down {
   }
 
   .header__logo {
-    height: 2.4rem;
-    top: 3px;
+    height: 3rem;
+    margin-right: .8rem;
   }
 }
