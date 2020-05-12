@@ -20,7 +20,7 @@
     "sass-loader": "^7.1.0",
     "url": "^0.11.0",
     "vue-plugin-load-script": "^1.2.0",
-    "vuepress": "^1.2.0",
+    "vuepress": "^1.5.0",
     "vuepress-plugin-canonical": "^1.0.0",
     "vuepress-plugin-check-md": "0.0.2",
     "vuepress-plugin-img-lazy": "^1.0.1",
