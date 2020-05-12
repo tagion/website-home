@@ -2,6 +2,13 @@ body {
   position: relative;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 //
 // Page
 //
@@ -164,12 +171,14 @@ body {
 //
 // Footer
 //
-.layout-footer, .layout-footer-nav {
+.layout-footer,
+.layout-footer-nav {
   flex-shrink: 0;
 }
 
 .has-sidebar {
-  .layout-footer, .layout-footer-nav {
+  .layout-footer,
+  .layout-footer-nav {
     .container {
       @include media-breakpoint-up(lg) {
         padding-right: calc(#{$sidebar-width-lg} + 2rem);

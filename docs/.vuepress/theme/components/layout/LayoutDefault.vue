@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper" :class="pageClasses" class="layout-page">
+  <div id="wrapper" :class="{...pageClasses, 'preload': !pageLoaded}" class="layout-page">
     <div class="layout-header">
       <HeaderStatic
         :class="{ 'home': isLanding }"
@@ -44,7 +44,8 @@ export default {
   data() {
     return {
       isSidebarOpen: false,
-      darkMode: false
+      darkMode: false,
+      pageLoaded: false
     };
   },
   components: {
@@ -57,6 +58,7 @@ export default {
   mounted() {
     this.$analytics.recordUtm(this.$route);
     this.$analytics.init();
+    this.pageLoaded = true;
 
     const hash = this.$route.hash;
     if (hash) {
@@ -95,6 +97,7 @@ export default {
     },
     pageClasses() {
       const userPageClass = this.$page.frontmatter.pageClass;
+
       return [
         {
           home: this.isLanding,
