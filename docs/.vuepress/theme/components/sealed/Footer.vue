@@ -83,7 +83,7 @@
 
       <b-row class="mt-10 align-items-md-center">
         <b-col cols="12">
-          <div class="d-flex">
+          <div class="d-flex align-items-start">
             <img
               class="footer__logo"
               src="/logo.svg"

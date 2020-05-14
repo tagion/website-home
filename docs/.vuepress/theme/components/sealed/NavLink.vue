@@ -43,7 +43,6 @@ export default {
     },
 
     isDownload() {
-      console.log(this.item.kind);
       return this.item.kind == "download";
     },
 

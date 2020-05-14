@@ -10,7 +10,6 @@
         <img
           loading="lazy"
           class="lazy"
-          width="100"
           :data-src="image"
         />
       </div>

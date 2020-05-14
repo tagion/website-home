@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper" :class="{...pageClasses, 'preload': !pageLoaded}" class="layout-page">
+  <div id="wrapper" :class="pageClasses" class="layout-page">
     <div class="layout-header">
       <HeaderStatic
         :class="{ 'home': isLanding }"
@@ -45,7 +45,8 @@ export default {
     return {
       isSidebarOpen: false,
       darkMode: false,
-      pageLoaded: false
+      pageLoaded: false,
+      
     };
   },
   components: {
@@ -103,7 +104,8 @@ export default {
           home: this.isLanding,
           "has-sidebar": this.showSidebar,
           "sidebar-open": this.isSidebarOpen,
-          "dark-mode": this.darkMode === "true"
+          "dark-mode": this.darkMode === "true",
+          'preload': !this.pageLoaded
         },
         userPageClass
       ];
