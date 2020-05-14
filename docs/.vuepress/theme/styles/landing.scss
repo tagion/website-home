@@ -1241,6 +1241,9 @@
   .team-table__card-avatar {
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
     
     img {
       width: 5em;
@@ -1249,8 +1252,8 @@
       border: 2px solid #fff;
       border-radius: 400px;
       margin: auto;
-      margin-top: -2.4rem;
-      margin-bottom: .4rem;
+      margin-top: -3.5em;
+      margin-bottom: 0rem;
       position: relative;
       z-index: 1;
     }
