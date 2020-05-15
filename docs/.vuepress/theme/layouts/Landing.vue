@@ -634,7 +634,7 @@
 
         <div class="lcontainer-wrapper lcontainer-wrapper--white mb-10">
           <b-container class="lcontainer lcontainer--team pb-3">
-            <reveal class="lcontainer__headline">
+            <reveal class="">
               <reveal
                 child
                 direction="up"
