@@ -28,13 +28,6 @@ const teamMembers = [
     link: "https://www.linkedin.com/in/tambsthomsen/"
   },
   {
-    name: "James Godfrey",
-    title: "Chief Investment Officer",
-    image: "/team/j-godfrey.jpg",
-    about: `Over 30 years of management experience in the banking sector. Leading in Union Bank of Switzerland, Mizuho International and Nomura International plc.`,
-    link: "https://www.linkedin.com/in/james-godfrey-9248754a/"
-  },
-  {
     name: "Roxana Nasoi",
     title: "Cheif Strategy Officer",
     image: "/team/r-nasoi.jpg",
