@@ -107,7 +107,7 @@ const teamMembers = [
   },
   {
     name: "Oksana Perederii",
-    title: "HR & Marketer",
+    title: "Marketer",
     image: "/team/o-perederii.jpg",
     about: `Oksana is a truly talented talent hunter. Apart from that, she contributes a lot to marketing and business development. Before Tagion, Oksana was Project Manager and took various marketing roles in Together Networks, Kyiv Post, and MIZOL. Oksana has a Master's degree in Enterprise Economics.`,
     link: "https://www.linkedin.com/in/oksana-perederii-a0237942/"

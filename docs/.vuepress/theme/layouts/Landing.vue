@@ -271,7 +271,7 @@
                       >
                         <b-card-body>
                           <b-card-text>
-                            <p>Combining Tagion DEX with DART provides Tagion with the speed and scalability needed to become an underlying network for any and all everyday financial services.</p>
+                            <p>Combining Tagion DEX with DART provides Tagion with the speed and scalability needed to become an underlying network for any everyday financial services.</p>
                           </b-card-text>
                         </b-card-body>
                       </b-collapse>
@@ -331,8 +331,7 @@
                           <b-card-text>
                             <p>In general, to keep the market stable, a simple modelling of the use of money must be based on internal variables, such as the velocity of money (total velocity of Tagions), adoption level, supply of money, average transaction sizes and more.</p>
                             <p>The model can be used as a measure for demand on liquidity and be the basis for the addition or removal of money, to keep the market stable.</p>
-                            <p>The system burns money after each transaction and all fees. Rewards are given to nodes, when consensus is reached. If the reward sums up to more than the burned fees, there is a money increase in the system, and the sum is lower than the burned fees, the opposite is true, i.e. a money decrease.</p>
-                            <p>These features enable the world's first genuine decentralised exchange: Tagion DEX. With Tagion DEX it will be possible to seamlessly pay in all cryptos and FIAT's with a simple swipe.</p>
+                            <p>On the one side, each transaction fee is burned, decreasing the money supply. On the other - rewards are given to random active nodes. Tagion's algorithm ensures a balance between those two, ensuring a stable value of Tagions.</p>
                           </b-card-text>
                         </b-card-body>
                       </b-collapse>
@@ -383,7 +382,7 @@
                     opacity
                     :delay="200"
                   >
-                    <div class="lcontainer__story-content-multicolumn">
+                    <div>
                       <p>Tagion is a universal token protocol that acts as the backbone for almost any transaction-based service such as C2C cross-border payments and daily micro-transactions and seamlessly exchange between all tokenised currencies.</p>
                       <p>Finally, Tagion is a vital aid for solving United Nations Sustainable Development Goal 10.c: by 2030, reduce to less than 3% the transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5%</p>
                     </div>
