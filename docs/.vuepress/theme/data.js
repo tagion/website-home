@@ -35,13 +35,6 @@ const teamMembers = [
     link: "https://www.linkedin.com/in/roxananasoi/"
   },
   {
-    name: "Shane McQuillan",
-    title: "Chief Growth Officer​",
-    image: "/team/s-mcquillan.jpg",
-    about: `Over 25 years of experience working with startups in all aspects and stages. Has been at the forefront of development with Blockchain based startups. CEO and founder at TrustedIn Trading.`,
-    link: "https://www.linkedin.com/in/startupadviser/"
-  },
-  {
     name: "Carsten Keutmann",
     title: "Core Developer, Digital Trust Protocol",
     image: "/team/c-keutmann.jpg",
