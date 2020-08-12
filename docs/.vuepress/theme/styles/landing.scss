@@ -71,6 +71,7 @@
       &.btn-social {
         padding: 0.5rem 1.2rem 0.6rem;
         margin-right: 0.8rem;
+        margin-top: 1rem;
         font-size: 0.9em;
         background: $primary-lightest;
 
@@ -80,6 +81,14 @@
 
         @include media-breakpoint-down(md) {
           font-size: 0.8em;
+        }
+      }
+
+      &.btn-accent {
+        background: $secondary;
+
+        &:hover {
+          background: $secondary-darkest;
         }
       }
 

@@ -15,7 +15,7 @@
               direction="up"
             >
               <h2>
-                <span>Universal Token Protocol</span>
+                <span>Open Monetary and Banking System</span>
               </h2>
             </div>
             <div
@@ -27,8 +27,7 @@
               <p>Inclusive. Elastic. Decentralized. Scalable.</p>
             </div>
             <div class="hero__details">
-              <div class="mt-3">
-
+              <div class="mt-1">
                 <a
                   href="https://forum.tagion.org/t/new-members-intro-corner/30"
                   target="_blank"
@@ -39,6 +38,11 @@
                   target="_blank"
                   class="btn btn-social"
                 >Chat in Telegram</a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="btn btn-social btn-accent"
+                >Alphanet Release</a>
                 <newsletter-form class="mt-4" />
               </div>
             </div>
@@ -119,7 +123,7 @@
                     opacity
                     :delay="200"
                   >
-                    <p>The world has too many financial (and physical) borders. Tagion was born to break down those borders and enable seamlessly peer-to-peer money transfers. Cheap, quick, fair, and fast for anyone anywhere.</p>
+                    <p>The world has too many financial (and physical) borders. Tagion was born to break down those borders and enable seamlessly peer-to-peer money transfers. Cheap, fair, and fast for anyone anywhere.</p>
                   </reveal>
                 </reveal>
               </b-container>
@@ -358,8 +362,8 @@
                     :delay="200"
                   >
                     <div class="lcontainer__story-content-singlecolumn">
-                      <p>Tagion is a decentralised and permissionless banking network – run and owned by its users. Its genuinely fair and democratic governance model builds on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom. Tagion is self-sustainable and seen as a common resource that lets developers create new financial markets with a few clicks.</p>
-                      <p>The elastic money supply and absence of a hard cap keep the value of the network tokens stable - and in time – Tagion will be a trustless, algorithmically controlled monetary system, that keeps the token price stable. Given all developers, the possibility of creating a more sustainable economic world.</p>
+                      <p>Tagion is a decentralised and permissionless monetary and banking system – run and owned by its users. Its genuinely fair and democratic governance model builds on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom. Tagion is self-sustainable and seen as a common resource that lets developers create new financial markets with a few clicks.</p>
+                      <p>The elastic money supply and absence of a hard cap keep the value of the network tokens stable - and in time – Tagion will be a trustless, algorithmically controlled monetary and banking system, that keeps the token price stable. Given all developers, the possibility of creating a more sustainable economic world.</p>
                     </div>
                   </reveal>
                 </reveal>
@@ -391,6 +395,29 @@
               </b-container>
             </div>
           </div>
+        </div>
+
+        <div class="lcontainer-wrapper">
+          <b-container class="lcontainer lcontainer--video">
+            <reveal class="lcontainer__headline lcontainer__headline--small">
+              <reveal
+                child
+                direction="up"
+                opacity
+              >
+                <h2>Alpha Test Net Release</h2>
+              </reveal>
+            </reveal>
+            <div class="intro-video mt-5">
+              <reveal
+                direction="up"
+                opacity
+                :delay="400"
+              >
+
+              </reveal>
+            </div>
+          </b-container>
         </div>
 
         <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper">
@@ -458,7 +485,7 @@
               </reveal>
             </div>
           </b-container>
-        </div>-->
+        </div> -->
 
         <div class="lcontainer-wrapper lcontainer-wrapper--overflowed mt-10">
           <b-container class="lcontainer lcontainer--roadmap">
@@ -598,19 +625,24 @@
                         </ul>
                       </section>
                     </section>
-                    <section class="year year--future">
+                    <section class="year">
                       <h3>2020</h3>
                       <section>
                         <h4>June</h4>
                         <ul>
-                          <li>Launch of open test network.</li>
+                          <li><code>_basic</code> release on GitHub.</li>
                         </ul>
                       </section>
                       <section>
-                        <h4>Q3</h4>
+                        <h4>July</h4>
                         <ul>
-                          <li>Open-sourcing the Tagion Core library.</li>
-                          <li>β-launch of the Tagion Network.</li>
+                          <li>HiBON release on GitHub.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>August</h4>
+                        <ul>
+                          <li>Alpha test network release.</li>
                         </ul>
                       </section>
                     </section>
@@ -618,6 +650,13 @@
                       <h3>2021</h3>
                       <section>
                         <h4>Q1</h4>
+                        <ul>
+                          <li>Open-sourcing the Tagion Core library.</li>
+                          <li>β-launch of the Tagion Network.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>Q2</h4>
                         <ul>
                           <li>Launching main network.</li>
                         </ul>
@@ -670,76 +709,8 @@
             </reveal>
           </b-container>
         </div>
-        <div class="lcontainer-wrapper">
-          <b-container class="lcontainer ">
-            <b-row>
-              <b-col
-                cols="12"
-                lg="8"
-              >
-                <reveal class="lcontainer__headline pr-6">
-                  <reveal
-                    child
-                    direction="up"
-                    opacity
-                  >
-                    <h2>Tagion is Committed to Transparency</h2>
-                  </reveal>
-                  <reveal
-                    child
-                    direction="up"
-                    opacity
-                    :delay="200"
-                  >
-                    <p>We are fully committed to transparency. Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.</p>
-                  </reveal>
-                  <reveal
-                    child
-                    direction="right"
-                    opacity
-                    :delay="500"
-                    class="mt-4"
-                  >
-                    <brand-button
-                      href="https://www.trustedintrading.com/profile/tagion/"
-                      @click="$analytics.triggerEvent({category: 'Exploration', action: 'TrustedInTrading', fields: {placement: 'Landing'}})"
-                      reveal
-                      target="_blank"
-                      rel="dofollow"
-                    >See Tagion on TrustedIn Trading</brand-button>
-                  </reveal>
-                </reveal>
-              </b-col>
-              <b-col
-                cols="12"
-                lg="4"
-                class="mt-8 mt-lg-0 text-center"
-              >
-                <reveal
-                  direction="left"
-                  opacity
-                  :delay="300"
-                >
-                  <img
-                    width="120"
-                    src="/partners/trustedintrading.png"
-                  />
-                </reveal>
-              </b-col>
-            </b-row>
-          </b-container>
-        </div>
+        
       </reveal-group>
-      <!-- <div class="team-card-modal" :class="{'team-card-modal--visible': selectedTeamMember}">
-        <div class="team-card-modal__card" v-if="selectedTeamMember">
-           <img
-          loading="lazy"
-          class="lazy"
-          width="100"
-          :data-src="selectedTeamMember.image"
-        />
-        </div>
-      </div> -->
     </template>
   </layout-default>
 </template>
@@ -762,7 +733,7 @@ export default {
   data() {
     return {
       teamMembers,
-      selectedTeamMember: undefined
+      selectedTeamMember: undefined,
     };
   },
   components: {
@@ -776,7 +747,7 @@ export default {
     NewsletterForm,
     TeamCard,
     Reveal,
-    News
+    News,
   },
   methods: {
     openTeamCard(teamMember) {
@@ -784,8 +755,8 @@ export default {
     },
     closeTeamCard() {
       this.selectedTeamMember = false;
-    }
-  }
+    },
+  },
 };
 </script>
 

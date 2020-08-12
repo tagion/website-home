@@ -121,4 +121,17 @@
             }
         }
     }
+    section.year {
+       
+
+        section.month--future {
+    
+            ul {
+                &:first-of-type:after {
+                    background: #b3b7c2;
+                    border: 4px solid #ffffff;
+                }
+            }
+        }
+    }
 }
