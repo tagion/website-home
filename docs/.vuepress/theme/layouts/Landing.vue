@@ -15,7 +15,7 @@
               direction="up"
             >
               <h2>
-                <span>Universal Token Protocol</span>
+                <span>Open Monetary and Banking System</span>
               </h2>
             </div>
             <div
@@ -27,8 +27,7 @@
               <p>Inclusive. Elastic. Decentralized. Scalable.</p>
             </div>
             <div class="hero__details">
-              <div class="mt-3">
-
+              <div class="mt-1">
                 <a
                   href="https://forum.tagion.org/t/new-members-intro-corner/30"
                   target="_blank"
@@ -39,6 +38,11 @@
                   target="_blank"
                   class="btn btn-social"
                 >Chat in Telegram</a>
+                <a
+                  href="https://github.com/tagion/alpha"
+                  target="_blank"
+                  class="btn btn-social btn-accent"
+                >AlphaOne Network Release</a>
                 <newsletter-form class="mt-4" />
               </div>
             </div>
@@ -119,7 +123,7 @@
                     opacity
                     :delay="200"
                   >
-                    <p>The world has too many financial (and physical) borders. Tagion was born to break down those borders and enable seamlessly peer-to-peer money transfers. Cheap, quick, fair, and fast for anyone anywhere.</p>
+                    <p>The world has too many financial (and physical) borders. Tagion was born to break down those borders and enable seamlessly peer-to-peer money transfers. Cheap, fair, and fast for anyone anywhere.</p>
                   </reveal>
                 </reveal>
               </b-container>
@@ -358,8 +362,8 @@
                     :delay="200"
                   >
                     <div class="lcontainer__story-content-singlecolumn">
-                      <p>Tagion is a decentralised and permissionless banking network – run and owned by its users. Its genuinely fair and democratic governance model builds on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom. Tagion is self-sustainable and seen as a common resource that lets developers create new financial markets with a few clicks.</p>
-                      <p>The elastic money supply and absence of a hard cap keep the value of the network tokens stable - and in time – Tagion will be a trustless, algorithmically controlled monetary system, that keeps the token price stable. Given all developers, the possibility of creating a more sustainable economic world.</p>
+                      <p>Tagion is a decentralised and permissionless monetary and banking system – run and owned by its users. Its genuinely fair and democratic governance model builds on the ideas and design principles of Nobel Memorial Prize winner in Economic Sciences, Elinor Ostrom. Tagion is self-sustainable and seen as a common resource that lets developers create new financial markets with a few clicks.</p>
+                      <p>The elastic money supply and absence of a hard cap keep the value of the network tokens stable - and in time – Tagion will be a trustless, algorithmically controlled monetary and banking system, that keeps the token price stable. Given all developers, the possibility of creating a more sustainable economic world.</p>
                     </div>
                   </reveal>
                 </reveal>
@@ -391,6 +395,151 @@
               </b-container>
             </div>
           </div>
+        </div>
+
+        <div class="lcontainer-wrapper lcontainer-wrapper--alphanet">
+          <b-container class="lcontainer lcontainer--video">
+            <reveal class="lcontainer__headline lcontainer__headline--small">
+              <reveal
+                child
+                direction="up"
+                opacity
+              >
+                <h2>AlphaOne Network Release</h2>
+                <reveal
+                  child
+                  direction="up"
+                  opacity
+                  :delay="200"
+                >
+                  <p>Tagion has released its first public network, called AlphaOne Network. This creates the first opportunity for the community and developers to test the network's functionalities.
+                  </p>
+                </reveal>
+                <reveal
+                  child
+                  direction="right"
+                  opacity
+                  :delay="500"
+                  class="mt-4"
+                >
+                  <brand-button
+                    href="https://github.com/tagion/alpha"
+                    @click="$analytics.triggerEvent({category: 'Exploration', action: 'Alphanet', fields: {placement: 'Landing'}})"
+                    reveal
+                  >Read More on GitHub</brand-button>
+                </reveal>
+              </reveal>
+            </reveal>
+            <reveal>
+              <div class="hero__cards feature-cards feature-cards--six">
+                <div class="feature-card">
+                  <reveal
+                    child
+                    opacity
+                    direction="left"
+                    :delay="100"
+                  >
+                    <div class="feature-card__internal">
+                      <img src="/icons/alphanet/alphanet-icon-api.svg" />
+                      <h4>Network API & Discovery Protocol</h4>
+                      <p>We are testing the Node discovery in a distributed setup, and the transaction API. The discussion around the API is open, critique, and new ideas are welcome.</p>
+                    </div>
+                  </reveal>
+                </div>
+                <div class="feature-card">
+                  <reveal
+                    child
+                    opacity
+                    direction="left"
+                    :delay="200"
+                  >
+                    <div class="feature-card__internal">
+                      <img src="/icons/alphanet/alphanet-icon-crowd.svg" />
+                      <h4>Proof of Community</h4>
+                      <p>We are testing the Node selection algorithm and trust system models and experimenting with parameters that affect trust scores.</p>
+                    </div>
+                  </reveal>
+                </div>
+                <div class="feature-card">
+                  <reveal
+                    child
+                    opacity
+                    direction="left"
+                    :delay="300"
+                  >
+                    <div class="feature-card__internal">
+                      <img src="/icons/alphanet/alphanet-icon-exchange.svg" />
+                      <h4>Basic DEX Algorithms</h4>
+                      <p>DEX development entering the active stage. We are starting to integrate with other chains via Lightning algorithms.</p>
+                    </div>
+                  </reveal>
+                </div>
+                <div class="feature-card">
+                  <reveal
+                    child
+                    opacity
+                    direction="left"
+                    :delay="400"
+                  >
+                    <div class="feature-card__internal">
+                      <img src="/icons/alphanet/alphanet-icon-balance.svg" />
+                      <h4>Network Stability & Capacity </h4>
+                      <p>A distributed network suggests a variety of hardware, working simultaneously. We are actively testing the stability and how we can ensure minimal hardware requirements are met.</p>
+                    </div>
+                  </reveal>
+                </div>
+                <div class="feature-card">
+                  <reveal
+                    child
+                    opacity
+                    direction="left"
+                    :delay="400"
+                  >
+                    <div class="feature-card__internal">
+                      <img src="/icons/alphanet/alphanet-icon-database.svg" />
+                      <h4>DART & Sharding
+                      </h4>
+                      <p>DART (the database) was designed with sharding in mind. Finally, we are able to test DART synchronization algorithms and shards in the wild.</p>
+                    </div>
+                  </reveal>
+                </div>
+                <div class="feature-card">
+                  <reveal
+                    child
+                    opacity
+                    direction="left"
+                    :delay="400"
+                  >
+                    <div class="feature-card__internal">
+                      <img src="/icons/alphanet/alphanet-icon-contract.svg" />
+                      <h4>Stateless Smart Contract Engine
+
+                      </h4>
+                      <p>Testing the web-assembly based virtual engine for execution of stateless smart contracts. Fine-tuning our resource-limitations.</p>
+                    </div>
+                  </reveal>
+                </div>
+              </div>
+              <div class="lcontainer-extra-information">
+                <reveal
+                  child
+                  opacity
+                  direction="left"
+                  :delay="700"
+                >
+                  <p class="mb-1"><strong>Bounty Program</strong></p>
+                  <p class="mt-0">To gain data and optimize the network Tagion has started a bounty hunt for developers and others who wish to test and help improve the network. More information on Tagion and the bounty hunt can be found <a
+                      target="_blank"
+                      href="https://t.me/tagionchat"
+                    >here</a>, or contact Tagion CSO <a
+                      target="_blank"
+                      href="mailto:rn@i25s.com"
+                    >Roxana Nasoi</a>.</p>
+
+                </reveal>
+              </div>
+            </reveal>
+          </b-container>
         </div>
 
         <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper">
@@ -458,7 +607,7 @@
               </reveal>
             </div>
           </b-container>
-        </div>-->
+        </div> -->
 
         <div class="lcontainer-wrapper lcontainer-wrapper--overflowed mt-10">
           <b-container class="lcontainer lcontainer--roadmap">
@@ -598,19 +747,24 @@
                         </ul>
                       </section>
                     </section>
-                    <section class="year year--future">
+                    <section class="year">
                       <h3>2020</h3>
                       <section>
                         <h4>June</h4>
                         <ul>
-                          <li>Launch of open test network.</li>
+                          <li><code>_basic</code> release on GitHub.</li>
                         </ul>
                       </section>
                       <section>
-                        <h4>Q3</h4>
+                        <h4>July</h4>
                         <ul>
-                          <li>Open-sourcing the Tagion Core library.</li>
-                          <li>β-launch of the Tagion Network.</li>
+                          <li>HiBON release on GitHub.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>August</h4>
+                        <ul>
+                          <li>Alpha test network release.</li>
                         </ul>
                       </section>
                     </section>
@@ -618,6 +772,13 @@
                       <h3>2021</h3>
                       <section>
                         <h4>Q1</h4>
+                        <ul>
+                          <li>Open-sourcing the Tagion Core library.</li>
+                          <li>β-launch of the Tagion Network.</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h4>Q2</h4>
                         <ul>
                           <li>Launching main network.</li>
                         </ul>
@@ -668,78 +829,58 @@
                 </b-col>
               </b-row>
             </reveal>
+            <div class="global-team-information">
+              <reveal
+                direction="up"
+                opacity
+                :delay="400"
+              >
+                <p>Tagion is an open-source project with members contributing from all over the planet. The company currently funding and developing Tagion, I25s, is located in Denmark and Ukraine. Currently, there are 15+ full-time resources working on the Tagion project. </p>
+              </reveal>
+            </div>
           </b-container>
         </div>
-        <div class="lcontainer-wrapper">
-          <b-container class="lcontainer ">
-            <b-row>
-              <b-col
-                cols="12"
-                lg="8"
+
+        <div class="lcontainer-wrapper lcontainer-wrapper--white mb-10">
+          <b-container class="lcontainer lcontainer--team pb-3">
+            <reveal class="">
+              <reveal
+                child
+                direction="up"
+                opacity
               >
-                <reveal class="lcontainer__headline pr-6">
-                  <reveal
-                    child
-                    direction="up"
-                    opacity
-                  >
-                    <h2>Tagion is Committed to Transparency</h2>
-                  </reveal>
-                  <reveal
-                    child
-                    direction="up"
-                    opacity
-                    :delay="200"
-                  >
-                    <p>We are fully committed to transparency. Tagion partners up with TrustedIn Trading, the platform to ensure responsibility and transparency in the wild world of cryptocurrency startups.</p>
-                  </reveal>
-                  <reveal
-                    child
-                    direction="right"
-                    opacity
-                    :delay="500"
-                    class="mt-4"
-                  >
-                    <brand-button
-                      href="https://www.trustedintrading.com/profile/tagion/"
-                      @click="$analytics.triggerEvent({category: 'Exploration', action: 'TrustedInTrading', fields: {placement: 'Landing'}})"
-                      reveal
-                      target="_blank"
-                      rel="dofollow"
-                    >See Tagion on TrustedIn Trading</brand-button>
-                  </reveal>
-                </reveal>
-              </b-col>
-              <b-col
-                cols="12"
-                lg="4"
-                class="mt-8 mt-lg-0 text-center"
-              >
-                <reveal
-                  direction="left"
-                  opacity
-                  :delay="300"
+                <h2 class="text-center mb-5">Advisers</h2>
+              </reveal>
+            </reveal>
+            <reveal class="team-table">
+              <b-row class="row--big-gutter justify-content-center">
+                <b-col
+                  cols="12"
+                  lg="6"
+                  xl="3"
+                  v-for="(teamMember, index) in advisers"
                 >
-                  <img
-                    width="120"
-                    src="/partners/trustedintrading.png"
-                  />
-                </reveal>
-              </b-col>
-            </b-row>
+                  <reveal
+                    child
+                    opacity
+                    direction="left"
+                    :delay="50 * index"
+                  >
+                    <team-card
+                      :name="teamMember.name"
+                      :title="teamMember.title"
+                      :image="teamMember.image"
+                      :link="teamMember.link"
+                      :about="teamMember.about"
+                    ></team-card>
+                  </reveal>
+                </b-col>
+              </b-row>
+            </reveal>
           </b-container>
         </div>
+
       </reveal-group>
-      <!-- <div class="team-card-modal" :class="{'team-card-modal--visible': selectedTeamMember}">
-        <div class="team-card-modal__card" v-if="selectedTeamMember">
-           <img
-          loading="lazy"
-          class="lazy"
-          width="100"
-          :data-src="selectedTeamMember.image"
-        />
-        </div>
-      </div> -->
     </template>
   </layout-default>
 </template>
@@ -756,13 +897,14 @@ import Reveal from "@theme/components/transition/Reveal";
 import News from "@theme/components/sealed/News";
 
 import { isMobile } from "@theme/util";
-import { teamMembers } from "@theme/data";
+import { teamMembers, advisers } from "@theme/data";
 
 export default {
   data() {
     return {
       teamMembers,
-      selectedTeamMember: undefined
+      advisers,
+      selectedTeamMember: undefined,
     };
   },
   components: {
@@ -776,7 +918,7 @@ export default {
     NewsletterForm,
     TeamCard,
     Reveal,
-    News
+    News,
   },
   methods: {
     openTeamCard(teamMember) {
@@ -784,8 +926,8 @@ export default {
     },
     closeTeamCard() {
       this.selectedTeamMember = false;
-    }
-  }
+    },
+  },
 };
 </script>
 

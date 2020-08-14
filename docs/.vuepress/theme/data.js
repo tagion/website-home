@@ -34,13 +34,77 @@ const teamMembers = [
     about: `Over 10 years of experience in online business. Co-chairman and Head of Community at Hong Kong Israel Trade Association, partner at Aimedis, a board member at Impulse4women, and advisor for Ideagist Blockchain Incubator. Before that - Elance / Upwork ambassador for 6 years. Roxana wears many hats, literally.`,
     link: "https://www.linkedin.com/in/roxananasoi/"
   },
-  {
-    name: "Carsten Keutmann",
-    title: "Core Developer, Digital Trust Protocol",
-    image: "/team/c-keutmann.jpg",
-    about: `Over 20 years of experience working with software architecture and development. Specialized on the SharePoint platform working as an independent consultant, awarded six times Microsoft SharePoint MVP. Worked with open-source digital trust protocol for the last 3 years.`,
-    link: "https://www.linkedin.com/in/keutmann/"
-  },
+  // {
+  //   name: "Shane McQuillan",
+  //   title: "Chief Growth Officer​",
+  //   image: "/team/s-mcquillan.jpg",
+  //   about: `Over 25 years of experience working with startups in all aspects and stages. Has been at the forefront of development with Blockchain based startups. CEO and founder at TrustedIn Trading.`,
+  //   link: "https://www.linkedin.com/in/startupadviser/"
+  // },
+  // {
+  //   name: "Carsten Keutmann",
+  //   title: "Core Developer, Digital Trust Protocol",
+  //   image: "/team/c-keutmann.jpg",
+  //   about: `Over 20 years of experience working with software architecture and development. Specialized on the SharePoint platform working as an independent consultant, awarded six times Microsoft SharePoint MVP. Worked with open-source digital trust protocol for the last 3 years.`,
+  //   link: "https://www.linkedin.com/in/keutmann/"
+  // },
+  // {
+  //   name: "James Hydzik",
+  //   title: "Mobile Developer",
+  //   image: "/team/j-hydzik.jpg",
+  //   about: `---`,
+  //   link: "https://www.linkedin.com/in/james-hydzik-7375131/"
+  // },
+
+
+
+
+  // {
+  //   name: "Oksana Perederii",
+  //   title: "Operations",
+  //   image: "/team/o-perederii.jpg",
+  //   about: `Oksana is a truly talented talent hunter. Apart from that, she contributes a lot to marketing and business development. Before Tagion, Oksana was Project Manager and took various marketing roles in Together Networks, Kyiv Post, and MIZOL. Oksana has a Master's degree in Enterprise Economics.`,
+  //   link: "https://www.linkedin.com/in/oksana-perederii-a0237942/"
+  // },
+
+  // {
+  //   name: "Oleksandr Sushko",
+  //   title: "System Engineer, Architect",
+  //   image: "/team/a-sushko.jpg",
+  //   about: `Alex brings years of experience in application and system-level engineering to Tagion Core team. Prior to Tagion, he was leading the development of multiple vital in-house enterprise solutions.`,
+  //   link: "https://www.linkedin.com/in/oleksandr-sushko-691b0313a/"
+  // },
+  // {
+  //   name: "Anton Labensky",
+  //   title: "Mobile Developer",
+  //   image: "/team/a-labenskyi.jpg",
+  //   about: `Years of experience in mobile app development and server solutions. Anton fulfils his passion for user experience design, creating well-thought-out user interfaces that users will love to face.`,
+  //   link: "https://www.linkedin.com/in/labenskiyantondev/"
+  // },
+  // {
+  //   name: "Oleh Kuziv",
+  //   title: "API Developer",
+  //   image: "/team/o-kuziv.jpg",
+  //   about: `---`,
+  //   link: "#"
+  // },
+  // {
+  //   name: "Melanie Guerrero",
+  //   title: "Social Media",
+  //   image: "/team/m-guerrero.jpg",
+  //   about: `---`,
+  //   link: "https://www.linkedin.com/in/melanie-guerrero-a9445327/"
+  // },
+  // {
+  //   name: "Vlad Pazych",
+  //   title: "Product Owner",
+  //   image: "/team/v-pazych.jpg",
+  //   about: `Experienced in UI design, full-stack web development.Vlad contributed to multiple high-stake commercial and open-source projects. Now hw is managing the development of apps that will drive adoption of the Tagion Network.`,
+  //   link: "https://www.linkedin.com/in/vladpazych/"
+  // },
+];
+
+const advisers = [
   {
     name: "Leif Bloch Rasmussen",
     title: "Economic Governance Advisor",
@@ -48,14 +112,6 @@ const teamMembers = [
     about: `Associate professor at Copenhagen Business School. Spent his career as an academic worked with Commons, IT Governance, cybernetics information systems and converging of technologies.`,
     link: "https://www.linkedin.com/in/leif-bloch-rasmussen-38663a4/"
   },
-  {
-    name: "Richard Kastelein",
-    title: "Communications, Marketing & Strategy",
-    image: "/team/r-kastalein.jpg",
-    about: `Honorary Ph.D. at Jiangxi Ahead Institute of Software & Technology (Blockchain Faculty) in China. Publisher Blockchain News, Director Token. Agency, Blockchain Partners.`,
-    link: "https://www.linkedin.com/in/expathos/"
-  },
-
   {
     name: "Michael Harboe",
     title: "Strategic Advisor",
@@ -71,32 +127,11 @@ const teamMembers = [
     link: "https://www.linkedin.com/in/michelavital/"
   },
   {
-    name: "Vlad Pazych",
-    title: "Product Owner",
-    image: "/team/v-pazych.jpg",
-    about: `He is experienced in UI design, full-stack web development and contributed to multiple high-stake commercial and open-source projects. Vlad is managing the development of apps that will drive adoption of the Tagion Network.`,
-    link: "https://www.linkedin.com/in/vladpazych/"
-  },
-  {
-    name: "Oleksandr Sushko",
-    title: "System Engineer",
-    image: "/team/a-sushko.jpg",
-    about: `Alex brings years of experience in application and system-level engineering to Tagion Core team. Prior to Tagion, he was leading the development of multiple vital in-house enterprise solutions.`,
-    link: "https://www.linkedin.com/in/oleksandr-sushko-691b0313a/"
-  },
-  {
-    name: "Anton Labensky",
-    title: "Mobile Developer",
-    image: "/team/a-labenskyi.jpg",
-    about: `Years of experience in mobile app development and server solutions. Anton fulfils his passion for user experience design, creating well-thought-out user interfaces that users will love to face.`,
-    link: "https://www.linkedin.com/in/labenskiyantondev/"
-  },
-  {
-    name: "Oksana Perederii",
-    title: "Marketer",
-    image: "/team/o-perederii.jpg",
-    about: `Oksana is a truly talented talent hunter. Apart from that, she contributes a lot to marketing and business development. Before Tagion, Oksana was Project Manager and took various marketing roles in Together Networks, Kyiv Post, and MIZOL. Oksana has a Master's degree in Enterprise Economics.`,
-    link: "https://www.linkedin.com/in/oksana-perederii-a0237942/"
+    name: "Richard Kastelein",
+    title: "Communications, Marketing & Strategy",
+    image: "/team/r-kastalein.jpg",
+    about: `Honorary Ph.D. at Jiangxi Ahead Institute of Software & Technology (Blockchain Faculty) in China. Publisher Blockchain News, Director Token. Agency, Blockchain Partners.`,
+    link: "https://www.linkedin.com/in/expathos/"
   },
 ];
 
@@ -111,5 +146,6 @@ const seo = {
 
 module.exports = {
   teamMembers,
+  advisers,
   seo
 };
