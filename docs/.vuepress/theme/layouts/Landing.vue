@@ -423,6 +423,7 @@
                   class="mt-4"
                 >
                   <brand-button
+                    target="_blank"
                     href="https://github.com/tagion/alpha"
                     @click="$analytics.triggerEvent({category: 'Exploration', action: 'Alphanet', fields: {placement: 'Landing'}})"
                     reveal
