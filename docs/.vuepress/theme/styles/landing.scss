@@ -476,6 +476,28 @@
     // }
   }
 
+  &.feature-cards--six {
+    .feature-card {
+      flex-basis: 33%;
+
+      @include media-breakpoint-down(md) {
+        flex-basis: 100%;
+      }
+
+      .feature-card__internal {
+        position: relative;
+        transition: all 200ms ease;
+        text-align: left;
+  
+        img {
+          transition: all 200ms ease;
+          height: 6rem;
+          margin: auto;
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+  }
   &.feature-cards--four {
     .feature-card {
       flex-basis: 50%;
@@ -967,7 +989,8 @@
           opacity: 0;
           transform: scale(0.9);
           transform-origin: center bottom;
-          transition: opacity 400ms ease, transform 1500ms cubic-bezier(0.19, 1, 0.22, 1);
+          transition: opacity 400ms ease,
+            transform 1500ms cubic-bezier(0.19, 1, 0.22, 1);
 
           .wp-element {
             transform-origin: 0 100%;
@@ -1156,6 +1179,118 @@
       }
     }
   }
+
+  &--alphanet {
+    background: $secondary;
+    background: linear-gradient(106.39deg, #4b5df8 7.56%, #1123c8 83.42%);
+    margin: 0rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    margin: 1rem;
+    margin-top: -4rem;
+    margin-bottom: -2rem;
+    z-index: 15;
+    position: relative;
+    border-radius: 6px;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+
+    h2 {
+      font-weight: 500;
+      font-size: 2em;
+    }
+
+    .lcontainer p {
+      color: #fff;
+    }
+
+    .lcontainer-extra-information {
+      // font-size: .9em;
+      font-style: italic;
+      max-width: 40rem;
+      margin-top: 7rem;
+      opacity: .7;
+
+      a {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+     
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin: 0rem;
+      border-radius: 0;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      box-shadow: 0px 4px 48px rgba($color: $secondary-darker, $alpha: 0.6);
+    }
+
+    .lcontainer {
+      h2 {
+        color: #fff;
+
+        .lcontainer__headline__number {
+          color: #fff;
+
+          &::after {
+            background: #fff;
+          }
+        }
+      }
+
+      .brand-button {
+        color: #fff;
+
+        .brand-button__icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          width: 30px;
+          margin-right: 1rem;
+          border-radius: 10rem;
+          background: #fff;
+          color: $secondary;
+          transition: all 400ms;
+
+          &::before {
+            content: "";
+            width: 45%;
+            height: 45%;
+            background: url(/icons/arrow-dark.svg) center no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+
+      .feature-card {
+        h4 {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.global-team-information {
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  p {
+    margin:auto;
+    text-align: center;
+    max-width: 50rem;
+    font-size: 1.4em;
+  }
 }
 
 .team-table {
@@ -1197,7 +1332,7 @@
       padding-top: 0.6rem;
       width: 100%;
       text-align: center;
-      opacity: .7;
+      opacity: 0.7;
     }
 
     &:hover {
@@ -1240,7 +1375,6 @@
       margin: auto;
       display: block;
       line-height: 0.8;
-      
     }
 
     p {
@@ -1253,7 +1387,7 @@
     align-items: center;
     justify-content: center;
     height: 3em;
-    
+
     img {
       width: 5em;
       min-height: auto;
@@ -1327,7 +1461,8 @@
   .medium-widget {
     opacity: 0;
     transform: translateY(15px);
-    transition: opacity 600ms linear, transform 1900ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: opacity 600ms linear,
+      transform 1900ms cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   &.lcontainer__medium-widget--loaded {
