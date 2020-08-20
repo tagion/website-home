@@ -38,11 +38,11 @@
                   target="_blank"
                   class="btn btn-social"
                 >Chat in Telegram</a>
-                <a
+                <!-- <a
                   href="https://github.com/tagion/alpha"
                   target="_blank"
                   class="btn btn-social btn-accent"
-                >AlphaOne Network Release</a>
+                >AlphaOne Network Release</a> -->
                 <newsletter-form class="mt-4" />
               </div>
             </div>
@@ -397,7 +397,7 @@
           </div>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--alphanet">
+        <!-- <div class="lcontainer-wrapper lcontainer-wrapper--alphanet">
           <b-container class="lcontainer lcontainer--video">
             <reveal class="lcontainer__headline lcontainer__headline--small">
               <reveal
@@ -541,7 +541,7 @@
               </div>
             </reveal>
           </b-container>
-        </div>
+        </div> -->
 
         <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper">
           <b-container class="lcontainer lcontainer--illustrated lcontainer--whitepaper">
