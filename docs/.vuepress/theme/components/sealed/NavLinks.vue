@@ -1,6 +1,6 @@
 <template>
   <b-nav v-if="userLinks.length">
-    <li v-for="item in userLinks" :key="item.link">
+    <li v-for="item in userLinks" :key="item.link" :class="linkClasses(item)">
       <NavLink :item="item" />
     </li>
   </b-nav>
@@ -25,6 +25,18 @@ export default {
     }
   },
   methods: {
+    linkClasses(item) {
+      let classes = {}
+      if (item.showOnly) {
+        classes[`menu-item--show-only-${item.showOnly}`] = true;
+      }
+
+      if (item.hideOnly) {
+        classes[`menu-item--hide-only-${item.hideOnly}`] = true;
+      }
+
+      return classes;
+    },
     isActive
   }
 };

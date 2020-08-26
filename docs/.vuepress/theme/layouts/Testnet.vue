@@ -1,21 +1,47 @@
 <template>
   <layout-default
-    class="landing-page"
+    class="landing-page testnet-page"
     id="landing-page"
   >
     <template slot="root-content">
       <reveal-group class="landing">
 
         <div class="container-wrapper">
-          <b-container class="container">
+          <b-container class="container py-4">
             <b-row class="d-flex justify-content-lg-between">
-              <b-col cols="12" lg="6" class="p-0">
-                <TokenForm />
-                <NodeList />
+              <b-col
+                cols="12"
+                lg="5"
+                class="px-3"
+              >
+                <reveal
+                  delay="50"
+                  direction="up"
+                  opacity
+                >
+                  <NodeList />
+                </reveal>
+                <reveal
+                  delay="150"
+                  direction="up"
+                  opacity
+                >
+                  <TokenForm />
+                </reveal>
               </b-col>
 
-              <b-col cols="12" lg="6" class="p-0">
-                <Hashgraph />
+              <b-col
+                cols="12"
+                lg="7"
+                class="px-3 px-lg-0"
+              >
+                <reveal
+                  delay="100"
+                  direction="up"
+                  opacity
+                >
+                  <Hashgraph />
+                </reveal>
               </b-col>
             </b-row>
           </b-container>
@@ -38,9 +64,9 @@ import Reveal from "@theme/components/transition/Reveal";
 import News from "@theme/components/sealed/News";
 
 import { isMobile } from "@theme/util";
-import NodeList from '../components/sealed/NodeList';
-import Hashgraph from '../components/sealed/Hashgraph';
-import TokenForm from '../components/sealed/TokenForm';
+import NodeList from "../components/sealed/NodeList";
+import Hashgraph from "../components/sealed/Hashgraph";
+import TokenForm from "../components/sealed/TokenForm";
 
 export default {
   data() {

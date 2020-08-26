@@ -237,3 +237,16 @@ body {
     padding-left: 30px;
   }
 }
+
+.menu-item--hide-only-lg {
+  @include media-breakpoint-only(lg) {
+    display: none;
+  }
+}
+
+.menu-item--show-only-lg {
+  display: none;
+  @include media-breakpoint-only(lg) {
+    display: list-item;
+  }
+}
