@@ -11,7 +11,7 @@
             <b-row class="d-flex justify-content-lg-between">
               <b-col
                 cols="12"
-                lg="5"
+                lg="6"
                 class="px-3"
               >
                 <reveal
@@ -19,14 +19,13 @@
                   direction="up"
                   opacity
                 >
-                  <NetworkStatus />
-                  <NodeList />
+                  <TokenForm />
                 </reveal>
               </b-col>
 
               <b-col
                 cols="12"
-                lg="7"
+                lg="6"
                 class="px-3 px-lg-0"
               >
                 <reveal
@@ -34,7 +33,6 @@
                   direction="up"
                   opacity
                 >
-                  <Hashgraph />
                 </reveal>
               </b-col>
             </b-row>

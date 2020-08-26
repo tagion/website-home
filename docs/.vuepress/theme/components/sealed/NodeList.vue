@@ -3,8 +3,7 @@
     tag="article"
     class="testnet-card testnet-card--nodelist"
   >
-    <h2>AlphaOne Status</h2>
-
+    <h2>AlphaOne Active Nodes</h2>
     <div
       v-for="item in items"
       v-on:click="select($event)"
