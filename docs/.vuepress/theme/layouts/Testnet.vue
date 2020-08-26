@@ -6,9 +6,18 @@
     <template slot="root-content">
       <reveal-group class="landing">
 
-        <div class="lcontainer-wrapper">
-          <b-container class="lcontainer">
-            Here
+        <div class="container-wrapper">
+          <b-container class="container">
+            <b-row class="d-flex justify-content-lg-between">
+              <b-col cols="12" lg="6" class="p-0">
+                <TokenForm />
+                <NodeList />
+              </b-col>
+
+              <b-col cols="12" lg="6" class="p-0">
+                <Hashgraph />
+              </b-col>
+            </b-row>
           </b-container>
         </div>
 
@@ -29,6 +38,9 @@ import Reveal from "@theme/components/transition/Reveal";
 import News from "@theme/components/sealed/News";
 
 import { isMobile } from "@theme/util";
+import NodeList from '../components/sealed/NodeList';
+import Hashgraph from '../components/sealed/Hashgraph';
+import TokenForm from '../components/sealed/TokenForm';
 
 export default {
   data() {
@@ -40,11 +52,13 @@ export default {
     BrandButton,
     SocialButtons,
     Reveal,
+    NodeList,
+    Hashgraph,
+    TokenForm,
   },
   methods: {},
 };
 </script>
-
 
 <style src="../styles/landing.scss" lang="scss"></style>
 <style src="../styles/testnet.scss" lang="scss"></style>
