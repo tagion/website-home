@@ -11,66 +11,75 @@
 }
 
 .testnet-card {
-    max-width: 100%;
-    border-radius: 0.2rem;
-    background-color: #f5f7fb;
-    overflow: hidden;
-    margin: 0 0 1rem;
+  max-width: 100%;
+  border-radius: 0.2rem;
+  background-color: #f5f7fb;
+  overflow: hidden;
+  margin: 0 0 1rem;
 
-    .card-text {
-        padding: 0 .8rem;
-        font-size: 1rem;
+  .card-text {
+    padding: 0 0.8rem;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    background: rgba(#000, 0.05);
+  }
+
+  h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem 0;
+    opacity: 0.7;
+  }
+
+  .svg-icon {
+    height: 1.2rem;
+  }
+
+  input:disabled {
+    opacity: 0.7;
+  }
+
+  &.testnet-card--nodelist {
+    padding-bottom: 0.8rem;
+
+    .node-item {
+      font-family: "Courier New", Courier, monospace;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 0.1rem 0.8rem;
+      font-size: 0.8rem;
+
+      &:hover {
+        background: rgba(#000, 0.02);
+      }
+
+      span {
+        display: block;
+      }
     }
-
-    h2 {
-        font-size: 0.8rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        padding: 0.4rem 0.8rem;
-        background: rgba(#000, 0.05);
-    }
-
-    h4 {
-        font-size: 0.8rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        padding: 0.4rem 0.8rem 0;
-        opacity: 0.7;
-        
-    }
-
-    .svg-icon {
-        height: 1.2rem;
-    }
-
-    input:disabled {
-        opacity: .7;
-    }
-
-    &.testnet-card--nodelist {
-        padding-bottom: .8rem;
-        
-        .node-item {
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            justify-content: space-between;
-            cursor: pointer;
-            padding: .1rem .8rem;
-            font-size: .8rem;
-
-            &:hover {
-                background: rgba(#000, 0.02);
-            }
-
-            span {
-                display: block;
-            }
-        }
-    }
+  }
 }
 
 .testnet-page {
-    .get-token-button {
-        white-space: nowrap;
-    }
+  .get-token-button {
+    white-space: nowrap;
+  }
+}
+
+.hashgraph-visuals {
+  height: 550px;
+  width: 100%;
+  position: relative;
+
+  .hashgraph-visuals__container {
+    height: 100%;
+  }
 }

@@ -47,7 +47,7 @@ export default ({ Vue, options, router, siteData }) => {
   }
 
   Vue.use(new VueSocketIO({
-    debug: process.env.APP_ENV === 'development',
+    debug: false || process.env.APP_ENV === 'development',
     connection: socketLink,
     vuex: false
   }))

@@ -5,7 +5,13 @@
   >
     <h2>Hashgraph - 123.341.22.11</h2>
     <b-card-text style='text-align: center;'>
-      <canvas></canvas>
+      <div class="hashgraph-visuals">
+        <div
+          id="hashgraph-visuals"
+          ref="hashgraphVisuals"
+          class="hashgraph-visuals__container"
+        ></div>
+      </div>
       <button @click="subscribe">connect</button>
       <button @click="unsubscribe">disconnect</button>
       {{isConnected}}
@@ -15,6 +21,8 @@
 </template>
 
 <script>
+import Graph from "@theme/lib/graph.js";
+
 export default {
   name: "Hashgraph",
   props: {
@@ -29,8 +37,9 @@ export default {
     };
   },
   mounted() {
-    // this.connect();
-    console.log(this.$socket)
+    this.graph = new Graph(this.$refs.hashgraphVisuals);
+    
+    this.subscribe();
   },
   sockets: {
     connect() {
@@ -54,6 +63,7 @@ export default {
       );
 
       this.isSubscribed = true;
+      this.graph.handleQueue();
     },
     unsubscribe() {
       this.sockets.unsubscribe(
@@ -67,7 +77,7 @@ export default {
       console.log("result", data);
     },
     onDataUpdate(data) {
-      console.log(data);
+      this.graph.onStateUpdate(data);
     },
   },
 };
