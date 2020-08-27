@@ -26,8 +26,8 @@ export default class Graph {
     this.lastScrollY = 1;
     this.aligned = false;
 
-    this.xStep = 60;
-    this.yStep = 30;
+    this.xStep = 9;
+    this.yStep = 6;
 
     this.style = {
       eventNode: {
@@ -95,81 +95,10 @@ export default class Graph {
         this.deleteQueue.push(event);
       }
     } else if (event.type == hashgraphEventType.spawn) {
-      this.messageQueue.push(event);
-      this.lookup.push(event.id);
+      this._createEventNode(event)
     }
 
     this.scroll();
-  }
-
-  handleQueue() {
-    if (this.queueInterval) {
-      clearInterval(this.queueInterval);
-    }
-
-    if (this.deleteQueueInterval) {
-      clearInterval(this.deleteQueueInterval);
-    }
-
-    if (this.updateQueueInterval) {
-      clearInterval(this.updateQueueInterval);
-    }
-
-    this.deleteQueueInterval = setInterval(() => {
-      if (this.deleteQueue.length) {
-        let event = this.deleteQueue.shift();
-        this._removeEventNode(event);
-
-        // console.log("delete: ", this.deleteQueue.length);
-      }
-      this.layerMain.batchDraw();
-    }, 20);
-
-    this.queueInterval = setInterval(() => {
-      if (this.messageQueue.length > 40) {
-        for (let i = 0; i < 10; i++) {
-          let event = this.messageQueue.shift();
-          this._createEventNode(event);
-        }
-      } else if (this.messageQueue.length) {
-        let event = this.messageQueue.shift();
-        this._createEventNode(event);
-      }
-      // console.log("create: ", this.messageQueue.length);
-
-      // if (this.updateQueue.length) {
-      //   let event = this.updateQueue.shift();
-      //   this._updateEventNode(event);
-
-      //   console.log("update: ", this.updateQueue.length);
-      // }
-
-      this.layerMain.batchDraw();
-    }, 100);
-
-    this.updateQueueInterval = setInterval(() => {
-      if (this.messageQueue.length < 20 && this.updateQueue.length > 0) {
-        // console.log("update: ", this.updateQueue.length);
-        if (this.updateQueue.length > 10) {
-          while (this.updateQueue.length > 10) {
-            let event = this.updateQueue.shift();
-            if (this.lookupCreated.indexOf(event.id) !== -1) {
-              this._updateEventNode(event);
-            } else {
-              this.updateQueue.push(event);
-            }
-          }
-        } else {
-          let event = this.updateQueue.shift();
-          if (this.lookupCreated.indexOf(event.id) !== -1) {
-            this._updateEventNode(event);
-          } else {
-            this.updateQueue.push(event);
-          }
-        }
-      }
-      this.layerMain.batchDraw();
-    }, 80);
   }
 
   _removeEventNode(data) {
@@ -248,19 +177,13 @@ export default class Graph {
       fill: "#fff",
       stroke: "#1b1d2c",
       strokeWidth: 1,
+      radius: 2,
       name: eventId.toString(),
       listening: false,
       id: eventId.toString()
     });
 
     this.groupEvents.add(node);
-
-    new Konva.Tween({
-      node,
-      radius: 8,
-      duration: 0.5,
-      easing: Konva.Easings.StrongEaseOut
-    }).play();
 
     if (mother) {
       this._connectEventNodes(mother, node, "mother");
@@ -327,8 +250,8 @@ export default class Graph {
       points: [node1.x(), node1.y(), node2.x(), node2.y()],
       // points: [node1.x(), node1.y(), node1.x(), node1.y()],
       stroke: "#999",
-      opacity: 0.1,
-      strokeWidth: 2,
+      opacity: 0.4,
+      strokeWidth: 1,
       id: node1.id() + "_line" + suffix,
       listening: false,
       name: node1.id() + "_line" + " " + node2.id() + "_line"
@@ -421,7 +344,6 @@ export default class Graph {
     this.deleteQueue = [];
     this.highestPointY = 0;
 
-    this.scaleX();
     this.scroll();
 
     this.layerMain.batchDraw();

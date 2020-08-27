@@ -63,7 +63,6 @@ export default {
       );
 
       this.isSubscribed = true;
-      this.graph.handleQueue();
     },
     unsubscribe() {
       this.sockets.unsubscribe(
