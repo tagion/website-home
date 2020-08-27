@@ -1,6 +1,7 @@
 module.exports = {
   activeHeaderLinks: true,
   nav: [
+    { text: "AlphaOne", link: "/alphaone" },
     { text: "Testnet", link: "/testnet" },
     { text: "", link: "sep1" },
     { text: "FAQ", link: "https://forum.tagion.org/t/tagion-faq/" },

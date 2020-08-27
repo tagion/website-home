@@ -8,7 +8,7 @@
     <b-card-text>
       You can run a separate testnet, by creating a group and using a provided token.
     </b-card-text>
-<div class="px-1 py-2 pb-3">
+    <div class="px-1 py-2 pb-3">
       <form
         id="token-form"
         @submit="saveFormValues"
@@ -50,7 +50,7 @@
 
         <div class="d-flex justify-content-center mt-3">
           <b-input-group
-          prepend="unique name"
+            prepend="unique name"
             size="sm"
             class="mx-2"
           >
@@ -62,23 +62,7 @@
             />
             <div class="input-group-append">
               <b-button variant="secondary">
-                <svg
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  class="svg clipboard svg-icon"
-                  @click.stop.prevent="copyTestingCode"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="
-                  M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2
-                  0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2
-                "
-                  >
-                  </path>
+                <font-awesome-icon icon="copy" />
                 </svg>
               </b-button>
             </div>

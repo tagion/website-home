@@ -39,7 +39,6 @@
               <span class="d-none d-md-inline">Subscribing...</span>
             </span>
             <span v-else>
-              <span class="fas fa-envelope"></span>
               <span class>Join Newsletter</span>
             </span>
           </b-button>
