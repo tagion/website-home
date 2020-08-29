@@ -1,6 +1,35 @@
 import Konva from "konva";
 
-const hashgraphEventType = {
+const EasingFunctions = {
+  // no easing, no acceleration
+  linear: t => t,
+  // accelerating from zero velocity
+  easeInQuad: t => t * t,
+  // decelerating to zero velocity
+  easeOutQuad: t => t * (2 - t),
+  // acceleration until halfway, then deceleration
+  easeInOutQuad: t => t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t,
+  // accelerating from zero velocity 
+  easeInCubic: t => t * t * t,
+  // decelerating to zero velocity 
+  easeOutCubic: t => (--t) * t * t + 1,
+  // acceleration until halfway, then deceleration 
+  easeInOutCubic: t => t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+  // accelerating from zero velocity 
+  easeInQuart: t => t * t * t * t,
+  // decelerating to zero velocity 
+  easeOutQuart: t => 1 - (--t) * t * t * t,
+  // acceleration until halfway, then deceleration
+  easeInOutQuart: t => t < .5 ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t,
+  // accelerating from zero velocity
+  easeInQuint: t => t * t * t * t * t,
+  // decelerating to zero velocity
+  easeOutQuint: t => 1 + (--t) * t * t * t * t,
+  // acceleration until halfway, then deceleration 
+  easeInOutQuint: t => t < .5 ? 16 * t * t * t * t * t : 1 + 16 * (--t) * t * t * t * t
+}
+
+const EVENT_TYPE = {
   spawn: 1,
   roundCompleted: 2,
   roundReceived: 3,
@@ -9,238 +38,286 @@ const hashgraphEventType = {
   remove: 6,
 }
 
+const STEP = {
+  x: 16,
+  y: 16
+}
+
+const OFFSET = {
+  x: 10,
+  y: 40
+}
+
 export default class Graph {
-  constructor(container) {
-    this.counterNodeSelection = 0;
+  constructor(element, initialState) {
+    this.state = initialState;
+    this.element = element;
+    this.eventsQueue = []
 
-    this.autoScrollAnimation = null;
-    this.messageQueue = [];
-    this.deleteQueue = [];
-    this.updateQueue = [];
-    this.needReset = true;
-    this.nodesNumber = 5;
+    // Positioning helpers:
     this.nodes = [];
-    this.lookup = [];
-    this.lookupCreated = [];
+    this.nodesPlaces = {};
+    this.maxPointX = 0;
+    this.isAlignedX = false;
+    this.isAlignedY = false;
 
-    this.lastScrollY = 1;
-    this.aligned = false;
-
-    this.xStep = 9;
-    this.yStep = 6;
-
-    this.style = {
-      eventNode: {
-        backgroundColor: "#fff",
-        strokeColor: "#444",
-        strokeWidth: 3
-      },
-      eventLine: {
-        fill: "#eee"
-      }
-    };
-
-    this.isConnected = false;
-    this.highestPointY = 0;
-
-    this.element = container;
-
+    // Layaers and stage
     this.stage = new Konva.Stage({
-      container: container.id,
-      width: container.offsetWidth,
-      height: container.offsetHeight,
+      container: element.id,
+      width: element.offsetWidth,
+      height: element.offsetHeight,
       listening: false
     });
 
-    this.stage.width(container.offsetWidth);
-    this.stage.height(container.offsetHeight);
+    this.layerMain = new Konva.Layer({ listening: false });
 
-    this._reset();
+    this.groupLines = new Konva.Group({ listening: false });
+    this.groupEvents = new Konva.Group({ listening: false });
 
+    this.layerMain.add(this.groupLines);
+    this.layerMain.add(this.groupEvents);
+
+    this.stage.add(this.layerMain);
+
+    // Handle resize
     window.addEventListener("resize", e => {
       e.preventDefault();
-
-      this.stage.width(container.offsetWidth);
-      this.stage.height(container.offsetHeight);
-      this.scaleX();
-      this.scroll();
+      this._handleContainerSize();
     });
+
+    this.drawInitialState(initialState);
   }
 
-  scaleX() {
-    if (this.stage.width() < this.xStep * (this.nodesNumber + 1)) {
-      this.layerMain.scaleX(0.7);
-    } else {
-      this.layerMain.scaleX(1);
+  drawInitialState(state) {
+    // Sort
+    const unsortedArray = []
+    for (const nodeId in state) {
+      const nodeIdNumber = parseInt(nodeId);
+
+      if (this.nodes.indexOf(nodeIdNumber) === -1) {
+        this.nodes.push(nodeIdNumber);
+        this.isAlignedY = false;
+      }
+
+      for (const eventId in state[nodeId]) {
+        unsortedArray.push(state[nodeId][eventId])
+      }
     }
-  }
-
-  scroll() {
-    if (this.autoScrollAnimation) this.autoScrollAnimation.stop();
-    this.autoScrollAnimation = new Konva.Animation(frame => {
-      this._autoScroll(frame);
-      return false;
+    const sortedArray = unsortedArray.sort((a, b) => {
+      return a.spawnOrder - b.spawnOrder;
     });
 
-    this.autoScrollAnimation.start();
+    // Draw
+    for (const event of sortedArray) {
+      this._createEventNode(event, true);
+
+      if (event.round) {
+        this._setNodeRound(event, true);
+      }
+
+      if (event.stronglySeeing) {
+        this._setNodeStronglySeeing(event, true);
+      }
+
+      if (event.famous) {
+        this._setNodeFamous(event, true);
+      }
+    }
+
+    this.isAlignedX = false;
+    this._scroll();
   }
 
   onStateUpdate(event) {
-    if (this.nodes.indexOf(event.nodeId) == -1) {
+    this.eventsQueue.push(event);
+    console.log('onstate', this.eventsQueue)
+  }
+
+  handleQueue() {
+    let amount = 5
+    if (this.eventsQueue.length > 60) {
+      amount *= (this.eventsQueue.length / 10);
+    }
+
+    console.log(amount)
+
+    for (let i = 0; i < amount; i++) {
+      console.log('a')
+      // if (this.eventsQueue.length === 0) break;
+      console.log('b')
+
+      const event = this.eventsQueue.shift()
+      if (!event) break;
+      this._handleEvent(event);
+    }
+  }
+
+  _handleEvent(event) {
+    if (this.nodes.indexOf(event.nodeId) === -1) {
       this.nodes.push(event.nodeId);
+      this.isAlignedY = false;
     }
 
-    if (event.type == hashgraphEventType.remove) {
-      if (this.lookup.indexOf(event.id) !== -1) {
-        this.deleteQueue.push(event);
+    if (event.type == EVENT_TYPE.spawn) {
+      this._createEventNode(event);
+      if (!this.isAlignedX) {
+        this._scroll();
       }
-    } else if (event.type == hashgraphEventType.spawn) {
-      this._createEventNode(event)
+    } else if (event.type == EVENT_TYPE.stronglySeeing) {
+      this._setNodeStronglySeeing(event)
+    } else if (event.type == EVENT_TYPE.famous) {
+      this._setNodeFamous(event)
+    } else if (event.type == EVENT_TYPE.roundReceived) {
+      this._setNodeRound(event)
+    } else if (event.type == EVENT_TYPE.remove) {
+      this._removeEventNode(event)
     }
-
-    this.scroll();
   }
 
   _removeEventNode(data) {
-    let nodes = this.layerMain.find("." + data.id);
-    let lineNodes = this.layerMain.find("." + data.id + "_line");
+    const { id } = data
 
-    if (nodes.length) {
-      for (let node of nodes) {
-        new Konva.Tween({
-          node,
-          scaleX: 0,
-          duration: 0.3
-        }).play();
-      }
+    const node = this.layerMain.findOne(`#${id}`);
 
-      for (let node of lineNodes) {
-        new Konva.Tween({
-          node,
-          opacity: 0,
-          duration: 0.15
-        }).play();
-      }
+    if (node) {
+      const fatherLine = this.layerMain.findOne(`#${this._createLineId(node.id(), 'father')}`)
+      const motherLine = this.layerMain.findOne(`#${this._createLineId(node.id(), 'mother')}`)
 
-      setTimeout(() => {
-        for (let node of nodes) {
-          node.destroy();
-        }
-
-        for (let node of lineNodes) {
-          node.destroy();
-        }
-
-        let indexOfEvent = this.lookup.indexOf(data.id);
-        this.lookup.splice(indexOfEvent, 1);
-        indexOfEvent = this.lookupCreated.indexOf(data.id);
-        this.lookupCreated.splice(indexOfEvent, 1);
-      }, 500);
+      node.destroy();
+      if (fatherLine) fatherLine.destroy();
+      if (motherLine) motherLine.destroy();
     }
   }
 
-  _createEventNode(data) {
-    let motherId = data.mother;
-    let fatherId = data.father;
-    let eventId = data.id;
-    let nodeId = data.nodeId;
+  _createEventNode(data, fast) {
+    const { mother, father, id, nodeId } = data
 
-    let mother = this.stage.findOne("#" + motherId);
-    let father = this.stage.findOne("#" + fatherId);
+    const motherNode = mother ? this.stage.findOne(`#${mother}`) : undefined;
+    const fatherNode = father ? this.stage.findOne(`#${father}`) : undefined;
 
-    let positionY = this.stage.height() * (2 / 3) - this.yStep;
-    
+    let positionX = STEP.x;
 
-    if (mother && father) {
-      let motherY = mother.y();
-      let fatherY = father.y();
+    if (motherNode && fatherNode) {
+      const max = Math.max(motherNode.x(), fatherNode.x()) + STEP.x;
+      positionX = max;
+    } else if (fatherNode) {
+      positionX = fatherNode.x() + STEP.x;
+    } else if (motherNode) {
+      positionX = motherNode.x() + STEP.x;
+    } else if (!motherNode && !fatherNode) {
+      if (this.nodesPlaces[nodeId]) {
+        // If place is taken - return;
+        return;
+      }
 
-      let max = Math.min(motherY, fatherY) - this.yStep;
-      positionY = max;
-    } else if (father) {
-      positionY = father.y() - this.yStep;
-    } else if (mother) {
-      positionY = mother.y() - this.yStep;
+      this.nodesPlaces[nodeId] = true;
     }
 
-
-    if (this.highestPointY > positionY) {
-      this.highestPointY = positionY;
-      this.alignedY = false;
+    if (this.maxPointX < positionX) {
+      this.maxPointX = positionX;
+      this.isAlignedX = false;
     }
 
     let nodeIndex = this.nodes.indexOf(nodeId);
 
     let node = new Konva.Circle({
-      x: nodeIndex * this.xStep,
-      y: positionY,
+      x: positionX,
+      y: nodeIndex * STEP.y + OFFSET.y,
       fill: "#fff",
-      stroke: "#1b1d2c",
-      strokeWidth: 1,
-      radius: 2,
-      name: eventId.toString(),
-      listening: false,
-      id: eventId.toString()
+      radius: 6,
+      strokeWidth: 2,
+      stroke: '#444',
+      id: id.toString()
     });
 
     this.groupEvents.add(node);
 
     if (mother) {
-      this._connectEventNodes(mother, node, "mother");
+      this._connectEventNodes(motherNode, node, "mother");
     }
 
     if (father) {
-      this._connectEventNodes(father, node, "father");
+      this._connectEventNodes(fatherNode, node, "father");
     }
 
-    if (data.stronglySeeing) this._makeNodeWitness(data);
-    if (data.famous !== undefined) this._makeNodeFamous(data);
-    this.lookupCreated.push(eventId)
-  }
+    this.layerMain.batchDraw();
 
-  _updateEventNode(data) {
-    let eventId = data.id;
-    if (this.stage.findOne("#" + eventId)) {
-      if (data.stronglySeeing) this._makeNodeWitness(data);
-      if (data.famous !== undefined) this._makeNodeFamous(data);
-    }
-  }
+    if (!fast) {
+      let tween = new Konva.Tween({
+        node: node,
+        radius: 6,
+        duration: fast ? 0 : 1,
+        onUpdate: () => { this.layerMain.batchDraw(); },
+        easing: Konva.Easings.StrongEaseOut,
+        strokeWidth: 2
+      });
 
-  _makeNodeWitness(data, fast) {
-    let node = this.stage.findOne("#" + data.id);
-    if (!node) return;
+      tween.onFinish = () => { tween.destroy(); }
 
-    if (data.stronglySeeing == true) {
-      setTimeout(() => {
-        new Konva.Tween({
-          node,
-          stroke: "#19a0ff",
-          sides: 6,
-          radius: 10,
-          duration: 0.3
-        }).play();
-      }, 100);
+      tween.play();
     }
   }
 
-  _makeNodeFamous(data, fast) {
-    let node = this.stage.findOne("#" + data.id);
-    if (!node) return;
+  _setNodeStronglySeeing(data, fast) {
+    const { id } = data
 
-    if (data.famous !== undefined) {
-      setTimeout(() => {
-        let node = this.stage.findOne("#" + data.id);
-        if (node) {
-          new Konva.Tween({
-            node,
-            stroke: data.famous ? "#00c9a7" : "#de4437",
-            sides: 6,
-            radius: 14,
-            duration: 0.3
-          }).play();
-        }
-      }, 500);
+    const node = this.stage.findOne(`#${id}`);
+
+    if (node) {
+      var tween = new Konva.Tween({
+        node: node,
+        duration: fast ? 0 : .5,
+        fill: '#ff00ff',
+        onUpdate: () => { this.layerMain.batchDraw(); },
+      });
+
+      tween.onFinish = () => { tween.destroy(); }
+      tween.play();
     }
+
+    this.layerMain.batchDraw();
+  }
+
+  _setNodeFamous(data, fast) {
+    const { id } = data
+
+    const node = this.stage.findOne(`#${id}`);
+
+    if (node) {
+      var tween = new Konva.Tween({
+        node: node,
+        duration: fast ? 0 : .5,
+        fill: '#00ffff',
+        onUpdate: () => { this.layerMain.batchDraw(); },
+      });
+
+      tween.onFinish = () => { tween.destroy(); }
+      tween.play();
+    }
+
+    this.layerMain.batchDraw();
+  }
+
+  _setNodeRound(data, fast) {
+    const { id } = data
+
+    const node = this.stage.findOne(`#${id}`);
+
+    if (node) {
+      var tween = new Konva.Tween({
+        node: node,
+        duration: fast ? 0 : .5,
+        onUpdate: () => { this.layerMain.batchDraw(); },
+        easing: Konva.Easings.BounceEaseOut,
+        strokeWidth: 7,
+        radius: 4
+      });
+
+      tween.onFinish = () => { tween.destroy(); }
+      tween.play();
+    }
+
+    this.layerMain.batchDraw();
   }
 
   _connectEventNodes(node1, node2, suffix) {
@@ -248,104 +325,62 @@ export default class Graph {
 
     let lineNode = new Konva.Line({
       points: [node1.x(), node1.y(), node2.x(), node2.y()],
-      // points: [node1.x(), node1.y(), node1.x(), node1.y()],
-      stroke: "#999",
-      opacity: 0.4,
+      stroke: "#eee",
       strokeWidth: 1,
-      id: node1.id() + "_line" + suffix,
-      listening: false,
-      name: node1.id() + "_line" + " " + node2.id() + "_line"
+      id: this._createLineId(node1.id(), suffix),
     });
 
     this.groupLines.add(lineNode);
-
-    // new Konva.Tween({
-    //   node: lineNode,
-    //   points: [node1.x(), node1.y(), node2.x(), node2.y()],
-    //   duration: 0.15
-    // }).play();
+    this.layerMain.batchDraw();
   }
 
-  _autoScroll(frame) {
-    // Y
-
-    if (!this.alignedY) {
-      let newY = -this.highestPointY + this.element.offsetHeight * (1 / 4);
-      let currentY = this.layerMain.y();
-
-      let frameDiff = (frame.timeDiff / 100) * 0.2;
-
-      let diffY = newY - currentY;
-
-      let targetY = currentY + diffY * frameDiff;
-
-      if (Math.abs(targetY - currentY) < 0.3) {
-        targetY = currentY;
-        this.alignedY = true;
-      }
-
-      if (!this.aligned) {
-        this.layerMain.y(currentY + diffY);
-      } else {
-        if (currentY != targetY) {
-          this.layerMain.y(targetY);
-        }
-      }
-
-      // Draw
-      this.layerMain.batchDraw();
-    }
-
-    // X
-
-    if (!this.alignedX) {
-      let newX = this.element.offsetWidth / 2 - (this.nodesNumber / 2) * (this.xStep * this.layerMain.scaleX());
-      let currentX = this.layerMain.x();
-      let diffX = newX - currentX;
-      this.layerMain.x(currentX + diffX);
-
-      // Draw
-      this.layerMain.batchDraw();
-    }
-
-    this.aligned = true;
+  _createLineId(id1, suffix) {
+    return `line_${id1}_${suffix}`
   }
 
-  _reset() {
-    this.needReset = false;
+  _handleContainerSize() {
+    this.stage.width(this.element.offsetWidth);
+    this.stage.height(this.element.offsetHeight);
+    this._scroll();
+  }
 
-    this.nodesNumber = 5;
-    this.nodes = [];
-    this.aligned = false;
-    this.alignedX = false;
-    this.alignedY = false;
+  _scroll() {
+    if (this.autoScrollAnimation) {
+      this.autoScrollAnimation.stop();
+    }
 
-    this.messageQueue = [];
-    this.deleteQueue = [];
-    this.stage.removeChildren();
-    this.stage.clearCache();
+    if (!this.isAlignedX) {
+      if (this.maxPointX <= this.element.offsetWidth * .8) {
+        this.isAlignedX = true;
+        return;
+      }
 
-    this.layerMain = new Konva.Layer({ listening: false });
+      let newX = -this.maxPointX + this.element.offsetWidth * .8;
 
-    this.groupLines = new Konva.Group({ listening: false });
-    this.groupEvents = new Konva.Group({ listening: false });
-    this.groupLabels = new Konva.Group({ listening: false });
+      this.autoScrollAnimation = new Konva.Animation(frame => {
+        this._scrollAnimation(frame, this.layerMain.x(), newX, 1000);
+        return false;
+      });
+    }
 
-    this.layerMain.add(this.groupLines);
-    this.layerMain.add(this.groupEvents);
-    this.layerMain.add(this.groupLabels);
+    this.autoScrollAnimation.start();
+  }
 
-    this.stage.add(this.layerMain);
+  _scrollAnimation(frame, from, to, ms) {
+    let frameProgress = frame.time / ms;
+    let easedFrameProgress = EasingFunctions.easeOutQuad(frameProgress);
 
-    this.lookup = [];
-    this.lookupCreated = [];
-    this.messageQueue = [];
-    this.updateQueue = [];
-    this.deleteQueue = [];
-    this.highestPointY = 0;
+    let diffX = to - from;
+    let targetX = from + diffX * easedFrameProgress;
 
-    this.scroll();
+    if (Math.abs(diffX) < 0.2) {
+      targetX = to;
+      this.isAlignedX = true;
+    }
 
+    this.layerMain.x(targetX);
+
+    // Draw
     this.layerMain.batchDraw();
   }
 }

@@ -1,4 +1,0 @@
----
-title: Testnet
-layout: Testnet
----

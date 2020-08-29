@@ -40,14 +40,15 @@ export default ({ Vue, options, router, siteData }) => {
   Vue.component("b-button", BButton);
   Vue.component("b-input-group", BInputGroup);
 
-  let socketLink = 'http://localhost:3000/monitor';
+  let socketLink = 'http://localhost:4050/monitor';
 
   if (process.env.APP_ENV === 'production') {
     socketLink = 'https://api.monitor.tagion.org/monitor';
   }
 
   Vue.use(new VueSocketIO({
-    debug: false || process.env.APP_ENV === 'development',
+    // debug: false && process.env.APP_ENV === 'development',
+    debug: false,
     connection: socketLink,
     vuex: false
   }))

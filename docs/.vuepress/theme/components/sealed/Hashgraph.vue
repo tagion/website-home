@@ -34,12 +34,19 @@ export default {
     return {
       isConnected: true,
       isSubscribed: false,
+      queueInterval: null,
     };
   },
   mounted() {
-    this.graph = new Graph(this.$refs.hashgraphVisuals);
-    
-    this.subscribe();
+    // this.subscribe();
+  },
+  beforeDestroy() {
+    this.unsubscribe();
+
+    if (this.queueInterval) {
+      clearInterval(this.queueInterval);
+      this.queueInterval = null;
+    }
   },
   sockets: {
     connect() {
@@ -54,28 +61,39 @@ export default {
       this.unsubscribe();
       this.$socket.emit(
         "stateInit",
-        "localhost:10900",
+        "63.32.90.80:10900",
         this.onDataInit.bind(this)
       );
       this.sockets.subscribe(
-        "stateUpdate_localhost:10900",
+        "stateUpdate_63.32.90.80:10900",
         this.onDataUpdate.bind(this)
       );
 
       this.isSubscribed = true;
     },
     unsubscribe() {
-      this.sockets.unsubscribe(
-        "stateUpdate_localhost:10900",
-        this.onDataUpdate
-      );
+      this.sockets.unsubscribe("stateUpdate_63.32.90.80:10900");
+
+      if (this.queueInterval) {
+        clearInterval(this.queueInterval);
+        this.queueInterval = null;
+      }
 
       this.isSubscribed = false;
     },
     onDataInit(data) {
-      console.log("result", data);
+      this.graph = new Graph(this.$refs.hashgraphVisuals, data);
+
+      
+
+      if (this.queueInterval) {
+        clearInterval(this.queueInterval);
+      }
+
+      this.queueInterval = setInterval(this.graph.handleQueue.bind(this.graph), 1000);
     },
     onDataUpdate(data) {
+      console.log(data)
       this.graph.onStateUpdate(data);
     },
   },
