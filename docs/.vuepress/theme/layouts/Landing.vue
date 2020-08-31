@@ -524,7 +524,7 @@
                 </div>
               </div>
               <div class="lcontainer-extra-information">
-                <reveal
+                <!-- <reveal
                   child
                   opacity
                   direction="left"
@@ -546,7 +546,7 @@
                     to="/alphaOne"
                     reveal
                   >Go to AlphaOne Monitor</brand-button>
-                </reveal>
+                </reveal> -->
                 <reveal
                   child
                   opacity
