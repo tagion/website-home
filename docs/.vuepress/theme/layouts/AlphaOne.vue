@@ -95,9 +95,7 @@ export default {
   },
   mounted() {
     this.$socket.emit("nodesInit", {}, this.onNodesInit.bind(this));
-    this.sockets.subscribe("nodesUpdate", (data) =>
-      this.onNodesUpdate.bind(this)
-    );
+    this.sockets.subscribe("nodesUpdate", this.onNodesUpdate.bind(this));
   },
   methods: {
     onNodeSelect(host) {
@@ -113,7 +111,6 @@ export default {
       if (!this.selectedHost) this.selectNode(keys[0]);
     },
     onNodesUpdate(data) {
-      console.log(data);
       this.hosts = data;
     },
   },
