@@ -42,8 +42,10 @@ export default ({ Vue, options, router, siteData }) => {
 
   let socketLink = 'http://localhost:4050/monitor';
 
-  if (process.env.APP_ENV === 'production' || process.env.APP_ENV === 'staging') {
+  if (process.env.APP_ENV === 'production') {
     socketLink = 'https://api.monitor.tagion.org/monitor';
+  } else if (process.env.APP_ENV === 'staging') {
+    socketLink = 'https://tagion-monitor-staging.azurewebsites.net/monitor';
   }
 
   Vue.use(new VueSocketIO({
