@@ -6,7 +6,10 @@
     <template slot="root-content">
 
       <div class="container-wrapper">
-        <b-container class="container py-4">
+        <b-container
+          class="container py-4"
+          v-if="isConnected"
+        >
           <b-row class="d-flex justify-content-lg-between">
             <b-col
               cols="12"
@@ -34,6 +37,14 @@
               />
             </b-col>
           </b-row>
+        </b-container>
+        <b-container
+          class="container py-4"
+          v-else
+        >
+          <div class="not-connected">
+            <div>Not connected to Tagion AlphaOne Monitor</div>
+          </div>
         </b-container>
       </div>
 
@@ -90,18 +101,19 @@ export default {
   },
   methods: {
     onNodeSelect(host) {
-      this.selectNode(host)
+      this.selectNode(host);
     },
     selectNode(ip) {
       this.selectedHost = ip;
     },
     onNodesInit(data) {
+      this.isConnected = true;
       this.hosts = data;
       let keys = Object.keys(this.hosts);
       if (!this.selectedHost) this.selectNode(keys[0]);
     },
     onNodesUpdate(data) {
-      console.log(data)
+      console.log(data);
       this.hosts = data;
     },
   },

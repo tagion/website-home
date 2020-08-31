@@ -58,9 +58,10 @@ export default {
         `${this.address}_10900`,
         this.onDataInit.bind(this)
       );
-      
-      this.sockets.subscribe(`stateUpdate_${this.address}_10900`, this.onDataUpdate.bind(this)
-        
+
+      this.sockets.subscribe(
+        `stateUpdate_${this.address}_10900`,
+        this.onDataUpdate.bind(this)
       );
 
       this.isSubscribed = true;
@@ -88,6 +89,8 @@ export default {
         this.graph.handleQueue.bind(this.graph),
         100
       );
+
+      console.log('Received initial graph')
     },
     onDataUpdate(data) {
       this.graph.onStateUpdate(data);

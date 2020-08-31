@@ -41,7 +41,6 @@ export default {
       
       let count = 0;
       for (let key in this.hosts) {
-        console.log(this.hosts[key])
         if (this.hosts[key]) count++;
       }
       return count;
