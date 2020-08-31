@@ -10,12 +10,12 @@
         <span class="pl-2"> {{hostsAmount}} </span>
       </div>
       <div class="status-item">
-        <span class="pr-2"> Healthy Nodes: </span>
+        <span class="pr-2"> Connected to Monitor: </span>
         <span class="pl-2"> {{healthyHostsAmount}} </span>
       </div>
       <div class="status-item">
         <span class="pr-2"> Health: </span>
-        <span class="pl-2"> {{healthyHostsAmount < 1 ? 'Down' : (healthyHostsAmount >= 7 ? 'Healthy' : 'Critical')}} </span>
+        <span class="pl-2"> {{hostsAmount < 1 ? 'Down' : (healthyHostsAmount >= 7 ? 'Healthy' : 'Critical')}} </span>
       </div>
     </div>
   </b-card>

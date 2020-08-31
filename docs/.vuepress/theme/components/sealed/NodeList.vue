@@ -11,7 +11,7 @@
       :class="{'node-item--selected': key === selected}"
     >
       <span class="pr-2"> {{ key }} </span>
-      <span class="pl-2"> {{status ? 'Online' : 'Offline'}} </span>
+      <span class="pl-2"> {{status ? 'Monitor Connected' : 'Monitor Disconnected'}} </span>
     </div>
   </b-card>
 </template>

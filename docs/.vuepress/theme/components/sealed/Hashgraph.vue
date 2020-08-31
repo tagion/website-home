@@ -3,7 +3,7 @@
     tag="article"
     class="testnet-card"
   >
-    <h2>Hashgraph is {{isConnected ? 'Online' : 'Offline'}} - {{address}}</h2>
+    <h2>Hashgraph | Monitor is {{isConnected ? 'Connected' : 'Disconnected'}} - {{address}}</h2>
     <b-card-text style='text-align: center;'>
       <div class="hashgraph-visuals">
         <div

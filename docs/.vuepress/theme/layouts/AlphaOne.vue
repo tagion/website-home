@@ -30,12 +30,23 @@
               lg="7"
               class="px-3 px-lg-0"
             >
+             
 
               <Hashgraph
                 :isSubscribed="isSubscribed"
                 :address="selectedHost"
                 :isConnected="this.hosts[selectedHost] || false"
               />
+
+               <b-card
+                tag="article"
+                class="testnet-card"
+              >
+                <h2>About Monitor</h2>
+                <b-card-text style='text-align: left;'>
+                  Tagion AlphaOne comes with a monitor function, which lets you better understand how the AlphaOne network is operating, The monitor provides useful information such as network status, active nodes, and a hashgraph showing recent network communication and event ordering between nodes.
+                </b-card-text>
+              </b-card>
             </b-col>
           </b-row>
         </b-container>
@@ -113,7 +124,7 @@ export default {
     },
     onNodesUpdate(data) {
       this.hosts = data;
-    }
+    },
   },
 };
 </script>
