@@ -38,10 +38,10 @@
                   target="_blank"
                   class="btn btn-social"
                 >Chat in Telegram</a>
-                <router-link
-                  to="/alphaOne"
+                <a
+                  @click="scrollToAlphaOne"
                   class="btn btn-social btn-accent"
-                >AlphaOne Network Release</router-link>
+                >AlphaOne Network Release</a>
                 <newsletter-form class="mt-4" />
               </div>
             </div>
@@ -396,7 +396,10 @@
           </div>
         </div>
 
-        <div class="lcontainer-wrapper lcontainer-wrapper--alphanet">
+        <div
+          class="lcontainer-wrapper lcontainer-wrapper--alphanet"
+          ref="alphaone"
+        >
           <b-container class="lcontainer lcontainer--video">
             <reveal class="lcontainer__headline lcontainer__headline--small">
               <reveal
@@ -526,13 +529,38 @@
                   opacity
                   direction="left"
                   :delay="700"
+                  class="mb-3"
+                >
+                  <p class="mb-1"><strong>AlphaOne Monitor</strong></p>
+                  <p class="mt-0">The Tagion AlphaOne comes with a monitor function, which lets you better understand how the AlphaOne network is operating, The monitor provides useful information such as network status, active nodes, and a hashgraph with recent transactions. </p>
+
+                </reveal>
+                <reveal
+                  child
+                  direction="right"
+                  opacity
+                  :delay="500"
+                  class="mb-7"
+                >
+                  <brand-button
+                    to="/alphaOne"
+                    reveal
+                  >Go to AlphaOne Monitor</brand-button>
+                </reveal>
+                <reveal
+                  child
+                  opacity
+                  direction="left"
+                  :delay="900"
                 >
                   <p class="mb-1"><strong>Bounty Program</strong></p>
                   <p class="mt-0">To gain data and optimize the network Tagion has started a bounty hunt for developers and others who wish to test and help improve the network. More information on Tagion and the bounty hunt can be found <a
                       target="_blank"
+                      class="underline"
                       href="https://t.me/tagionchat"
                     >here</a>, or contact Tagion CSO <a
                       target="_blank"
+                      class="underline"
                       href="mailto:rn@i25s.com"
                     >Roxana Nasoi</a>.</p>
 
@@ -926,6 +954,9 @@ export default {
     },
     closeTeamCard() {
       this.selectedTeamMember = false;
+    },
+    scrollToAlphaOne() {
+      this.$scrollTo(this.$refs["alphaone"]);
     },
   },
 };
