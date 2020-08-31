@@ -55,7 +55,7 @@
           v-else
         >
           <div class="not-connected">
-            <div>Not connected to Tagion AlphaOne Monitor</div><br>
+            <div>Not connected to Tagion AlphaOne Monitor</div>
             <div class="text-muted">Please, refresh this page in 2 minutes</div>
           </div>
         </b-container>
