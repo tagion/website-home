@@ -86,7 +86,7 @@ export default class Graph {
       this._handleContainerSize();
     });
 
-    this.drawInitialState(initialState);
+    // this.drawInitialState(initialState);
   }
 
   drawInitialState(state) {
@@ -227,7 +227,7 @@ export default class Graph {
       this.isAlignedX = false;
     }
 
-    let nodeIndex = this.nodes.indexOf(nodeId);
+    let nodeIndex = parseInt(nodeId);
 
     let node = new Konva.Circle({
       x: positionX,
