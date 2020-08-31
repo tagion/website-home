@@ -3,7 +3,7 @@
     tag="article"
     class="testnet-card"
   >
-    <h2>Hashgraph | Monitor is {{isConnected ? 'Connected' : 'Disconnected'}} - {{address}}</h2>
+    <h2>Hashgraph | Monitor is {{isConnected ? 'Connected' : 'Disconnected'}} - {{address}} <span v-if="latestRound">| Latest Round: {{latestRound}}</span></h2>
     <b-card-text style='text-align: center;'>
       <div class="hashgraph-visuals">
         <div
@@ -35,6 +35,7 @@ export default {
       queueInterval: null,
       oldIp: "",
       isSubscribed: false,
+      latestRound: 0
     };
   },
   updated() {
@@ -48,8 +49,6 @@ export default {
       this.subscribe();
       this.oldIp = this.address;
     }
-
-    
   },
   beforeDestroy() {
     this.unsubscribe();
@@ -70,7 +69,7 @@ export default {
         this.onDataInit.bind(this)
       );
 
-      this.sockets.subscribe(`stateUpdate_${this.address}_10900`, (data) => {
+      this.sockets.subscribe(`stateUpdate`, (data) => {
         this.onStateUpdate.bind(this)(data);
       });
 
@@ -79,7 +78,7 @@ export default {
     unsubscribe(ip) {
       const unsubIp = ip || this.address;
       console.log("Unsubscribe from " + unsubIp);
-      this.sockets.unsubscribe(`stateUpdate_${unsubIp}_10900`);
+      this.sockets.unsubscribe(`stateUpdate`);
 
       if (this.queueInterval) {
         clearInterval(this.queueInterval);
@@ -100,10 +99,20 @@ export default {
         100
       );
 
+       if (data.latestRound) {
+        this.latestRound = data.latestRound
+      }
+
       console.log("Received initial graph");
     },
     onStateUpdate(data) {
-      this.graph.onStateUpdate(data);
+      if (this.graph) {
+        this.graph.onStateUpdate(data);
+      }
+
+      if (data.roundCompleted) {
+        this.latestRound = data.round
+      }
     },
   },
 };

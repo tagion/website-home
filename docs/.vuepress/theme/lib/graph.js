@@ -39,7 +39,7 @@ const EVENT_TYPE = {
 }
 
 const STEP = {
-  x: 16,
+  x: 18,
   y: 20
 }
 
@@ -86,7 +86,7 @@ export default class Graph {
       this._handleContainerSize();
     });
 
-    // this.drawInitialState(initialState);
+    this.drawInitialState(initialState);
   }
 
   drawInitialState(state) {
@@ -216,7 +216,7 @@ export default class Graph {
     } else if (!motherNode && !fatherNode) {
       if (this.nodesPlaces[nodeId]) {
         // If place is taken - return;
-        return;
+        // return;
       }
 
       this.nodesPlaces[nodeId] = true;
@@ -274,15 +274,20 @@ export default class Graph {
     const node = this.stage.findOne(`#${id}`);
 
     if (node) {
-      var tween = new Konva.Tween({
-        node: node,
-        duration: fast ? 0 : .5,
-        fill: '#4e8fde',
-        onUpdate: () => { this.layerMain.batchDraw(); },
-      });
+      if (fast) {
+        node.setAttr('fill', '#4e8fde')
+      } else {
 
-      tween.onFinish = () => { tween.destroy(); }
-      tween.play();
+        var tween = new Konva.Tween({
+          node: node,
+          duration: .5,
+          fill: '#4e8fde',
+          onUpdate: () => { this.layerMain.batchDraw(); },
+        });
+
+        tween.onFinish = () => { tween.destroy(); }
+        tween.play();
+      }
     }
 
     this.layerMain.batchDraw();
@@ -294,15 +299,19 @@ export default class Graph {
     const node = this.stage.findOne(`#${id}`);
 
     if (node) {
-      var tween = new Konva.Tween({
-        node: node,
-        duration: fast ? 0 : .5,
-        fill: '#fc8c03',
-        onUpdate: () => { this.layerMain.batchDraw(); },
-      });
+      if (fast) {
+        node.setAttr('fill', '#fc8c03')
+      } else {
+        var tween = new Konva.Tween({
+          node: node,
+          duration: .5,
+          fill: '#fc8c03',
+          onUpdate: () => { this.layerMain.batchDraw(); },
+        });
 
-      tween.onFinish = () => { tween.destroy(); }
-      tween.play();
+        tween.onFinish = () => { tween.destroy(); }
+        tween.play();
+      }
     }
 
     this.layerMain.batchDraw();
@@ -314,9 +323,14 @@ export default class Graph {
     const node = this.stage.findOne(`#${id}`);
 
     if (node) {
+      if (fast) {
+        node.setAttr('strokeWidth', 5)
+        node.setAttr('stroke', '#ddd')
+        node.setAttr('radius', 3)
+      } else {
       var tween = new Konva.Tween({
         node: node,
-        duration: fast ? 0 : .5,
+        duration: .5,
         onUpdate: () => { this.layerMain.batchDraw(); },
         easing: Konva.Easings.StrongEaseOut,
         strokeWidth: 5,
@@ -326,6 +340,7 @@ export default class Graph {
 
       tween.onFinish = () => { tween.destroy(); }
       tween.play();
+    }
     }
 
     this.layerMain.batchDraw();
@@ -411,7 +426,7 @@ export default class Graph {
       this.isAlignedX = true;
     }
 
-    if (typeof targetX === 'number') {
+    if (typeof targetX === 'number' && isFinite(targetX)) {
       this.layerMain.x(targetX);
     }
 
