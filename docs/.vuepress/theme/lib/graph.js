@@ -377,31 +377,25 @@ export default class Graph {
     if (this.isAlignedX) return;
 
 
-    if (this.scrollTimeout) {
-      clearTimeout(this.scrollTimeout);
+    if (this.autoScrollAnimation) {
+      this.autoScrollAnimation.stop();
     }
 
-    this.scrollTimeout = setTimeout(() => {
-      if (this.autoScrollAnimation) {
-        this.autoScrollAnimation.stop();
+    if (!this.isAlignedX) {
+      if (this.maxPointX <= this.element.offsetWidth * .7) {
+        this.isAlignedX = true;
+        return;
       }
 
-      if (!this.isAlignedX) {
-        if (this.maxPointX <= this.element.offsetWidth * .7) {
-          this.isAlignedX = true;
-          return;
-        }
+      let newX = -this.maxPointX + this.element.offsetWidth * .7;
 
-        let newX = -this.maxPointX + this.element.offsetWidth * .7;
+      this.autoScrollAnimation = new Konva.Animation(frame => {
+        this._scrollAnimation(frame, this.layerMain.x(), newX, 500);
+        return false;
+      });
 
-        this.autoScrollAnimation = new Konva.Animation(frame => {
-          this._scrollAnimation(frame, this.layerMain.x(), newX, 500);
-          return false;
-        });
-
-        this.autoScrollAnimation.start();
-      }
-    }, 50);
+      this.autoScrollAnimation.start();
+    }
 
   }
 
