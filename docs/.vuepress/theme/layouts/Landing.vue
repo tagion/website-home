@@ -532,7 +532,7 @@
                   class="mb-3"
                 >
                   <p class="mb-1"><strong>AlphaOne Monitor</strong></p>
-                  <p class="mt-0">The Tagion AlphaOne comes with a monitor function, which lets you better understand how the AlphaOne network is operating, The monitor provides useful information such as network status, active nodes, and a hashgraph with recent transactions. </p>
+                  <p class="mt-0">Tagion AlphaOne comes with a monitor function, which lets you better understand how the AlphaOne network is operating, The monitor provides useful information such as network status, active nodes, and a hashgraph showing recent network communication and event ordering between nodes.</p>
 
                 </reveal>
                 <reveal
