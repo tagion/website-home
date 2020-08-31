@@ -13,7 +13,6 @@
                 lg="6"
                 class="px-3"
               >
-            
                   <TokenForm />
               </b-col>
 

@@ -5,7 +5,18 @@
   >
     <h2>AlphaOne Network Status</h2>
     <div class="network-status">
-      adsf
+      <div class="status-item">
+        <span class="pr-2"> All Nodes: </span>
+        <span class="pl-2"> {{hostsAmount}} </span>
+      </div>
+      <div class="status-item">
+        <span class="pr-2"> Healthy Nodes: </span>
+        <span class="pl-2"> {{healthyHostsAmount}} </span>
+      </div>
+      <div class="status-item">
+        <span class="pr-2"> Health: </span>
+        <span class="pl-2"> {{healthyHostsAmount < 1 ? 'Down' : (healthyHostsAmount >= 7 ? 'Healthy' : 'Critical')}} </span>
+      </div>
     </div>
   </b-card>
 </template>
@@ -13,11 +24,35 @@
 <script>
 export default {
   name: "NodeList",
+  props: {
+    hosts: {
+      type: Object,
+    },
+  },
+  computed: {
+    hostsAmount() {
+      if (this.hosts) {
+        return Object.keys(this.hosts).length;
+      }
+      return 0;
+    },
+    healthyHostsAmount() {
+      if (this.hosts) {
+      
+      let count = 0;
+      for (let key in this.hosts) {
+        console.log(this.hosts[key])
+        if (this.hosts[key]) count++;
+      }
+      return count;
+      }
+    },
+  },
   data() {
     return {
       allNodes: 50,
       activeNodes: 8,
-      startDate: Date.now()
+      startDate: Date.now(),
     };
   },
   methods: {

@@ -3,7 +3,7 @@
     tag="article"
     class="testnet-card"
   >
-    <h2>Hashgraph - 123.341.22.11</h2>
+    <h2>Hashgraph - {{address}}</h2>
     <b-card-text style='text-align: center;'>
       <div class="hashgraph-visuals">
         <div
@@ -12,10 +12,6 @@
           class="hashgraph-visuals__container"
         ></div>
       </div>
-      <button @click="subscribe">connect</button>
-      <button @click="unsubscribe">disconnect</button>
-      {{isConnected}}
-      {{isSubscribed}}
     </b-card-text>
   </b-card>
 </template>
@@ -32,47 +28,47 @@ export default {
   },
   data() {
     return {
-      isConnected: true,
-      isSubscribed: false,
       queueInterval: null,
+      oldIp: "",
+      isSubscribed: false,
     };
   },
-  mounted() {
-    // this.subscribe();
+  updated() {
+    if (this.oldIp !== this.address) {
+      this.unsubscribe(this.oldIp);
+      this.subscribe();
+      this.oldIp = this.address;
+    }
   },
   beforeDestroy() {
     this.unsubscribe();
-
     if (this.queueInterval) {
       clearInterval(this.queueInterval);
       this.queueInterval = null;
     }
   },
-  sockets: {
-    connect() {
-      this.isConnected = true;
-    },
-    disconnect() {
-      this.isConnected = false;
-    },
-  },
+  mounted() {},
   methods: {
     subscribe() {
       this.unsubscribe();
+      console.log("Subscribe to " + this.address);
+
       this.$socket.emit(
         "stateInit",
-        "63.32.90.80:10900",
+        `${this.address}_10900`,
         this.onDataInit.bind(this)
       );
-      this.sockets.subscribe(
-        "stateUpdate_63.32.90.80:10900",
-        this.onDataUpdate.bind(this)
+      
+      this.sockets.subscribe(`stateUpdate_${this.address}_10900`, this.onDataUpdate.bind(this)
+        
       );
 
       this.isSubscribed = true;
     },
-    unsubscribe() {
-      this.sockets.unsubscribe("stateUpdate_63.32.90.80:10900");
+    unsubscribe(ip) {
+      const unsubIp = ip || this.address;
+      console.log("Unsubscribe from " + unsubIp);
+      this.sockets.unsubscribe(`stateUpdate_${unsubIp}_10900`);
 
       if (this.queueInterval) {
         clearInterval(this.queueInterval);
@@ -84,16 +80,16 @@ export default {
     onDataInit(data) {
       this.graph = new Graph(this.$refs.hashgraphVisuals, data);
 
-      
-
       if (this.queueInterval) {
         clearInterval(this.queueInterval);
       }
 
-      this.queueInterval = setInterval(this.graph.handleQueue.bind(this.graph), 1000);
+      this.queueInterval = setInterval(
+        this.graph.handleQueue.bind(this.graph),
+        100
+      );
     },
     onDataUpdate(data) {
-      console.log(data)
       this.graph.onStateUpdate(data);
     },
   },

@@ -38,11 +38,10 @@
                   target="_blank"
                   class="btn btn-social"
                 >Chat in Telegram</a>
-                <!-- <a
-                  href="https://github.com/tagion/alpha"
-                  target="_blank"
+                <router-link
+                  to="/alphaOne"
                   class="btn btn-social btn-accent"
-                >AlphaOne Network Release</a> -->
+                >AlphaOne Network Release</router-link>
                 <newsletter-form class="mt-4" />
               </div>
             </div>
@@ -397,7 +396,7 @@
           </div>
         </div>
 
-        <!-- <div class="lcontainer-wrapper lcontainer-wrapper--alphanet">
+        <div class="lcontainer-wrapper lcontainer-wrapper--alphanet">
           <b-container class="lcontainer lcontainer--video">
             <reveal class="lcontainer__headline lcontainer__headline--small">
               <reveal
@@ -424,7 +423,7 @@
                 >
                   <brand-button
                     target="_blank"
-                    href="https://github.com/tagion/alpha"
+                    href="https://github.com/tagion/alpha_one"
                     @click="$analytics.triggerEvent({category: 'Exploration', action: 'Alphanet', fields: {placement: 'Landing'}})"
                     reveal
                   >Read More on GitHub</brand-button>
@@ -541,7 +540,7 @@
               </div>
             </reveal>
           </b-container>
-        </div> -->
+        </div>
 
         <div class="lcontainer-wrapper lcontainer-wrapper--whitepaper">
           <b-container class="lcontainer lcontainer--illustrated lcontainer--whitepaper">

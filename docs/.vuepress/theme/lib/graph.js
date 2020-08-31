@@ -40,7 +40,7 @@ const EVENT_TYPE = {
 
 const STEP = {
   x: 16,
-  y: 16
+  y: 20
 }
 
 const OFFSET = {
@@ -53,6 +53,7 @@ export default class Graph {
     this.state = initialState;
     this.element = element;
     this.eventsQueue = []
+    this.removeQueue = []
 
     // Positioning helpers:
     this.nodes = [];
@@ -85,7 +86,7 @@ export default class Graph {
       this._handleContainerSize();
     });
 
-    this.drawInitialState(initialState);
+    // this.drawInitialState(initialState);
   }
 
   drawInitialState(state) {
@@ -129,25 +130,31 @@ export default class Graph {
   }
 
   onStateUpdate(event) {
-    this.eventsQueue.push(event);
-    console.log('onstate', this.eventsQueue)
+    if (event.type == HashChangeEvent.remove) {
+      this.removeQueue.push(event);
+    } else {
+
+      this.eventsQueue.push(event);
+    }
   }
 
   handleQueue() {
-    let amount = 5
-    if (this.eventsQueue.length > 60) {
-      amount *= (this.eventsQueue.length / 10);
+    for (let i = 0; i < 100; i++) {
+      if (this.removeQueue.length === 0) break;
+
+      const event = this.removeQueue.shift()
+      this._handleEvent(event);
     }
 
-    console.log(amount)
+    let amount = 1
+    if (this.eventsQueue.length > 100) {
+      amount *= (this.eventsQueue.length / 20);
+    }
 
     for (let i = 0; i < amount; i++) {
-      console.log('a')
-      // if (this.eventsQueue.length === 0) break;
-      console.log('b')
+      if (this.eventsQueue.length === 0) break;
 
       const event = this.eventsQueue.shift()
-      if (!event) break;
       this._handleEvent(event);
     }
   }
@@ -192,6 +199,8 @@ export default class Graph {
   _createEventNode(data, fast) {
     const { mother, father, id, nodeId } = data
 
+    const notItself = this.stage.findOne(`#${id}`)
+    if (notItself) { return; }
     const motherNode = mother ? this.stage.findOne(`#${mother}`) : undefined;
     const fatherNode = father ? this.stage.findOne(`#${father}`) : undefined;
 
@@ -224,7 +233,7 @@ export default class Graph {
       x: positionX,
       y: nodeIndex * STEP.y + OFFSET.y,
       fill: "#fff",
-      radius: 6,
+      radius: fast ? 6 : 2,
       strokeWidth: 2,
       stroke: '#444',
       id: id.toString()
@@ -233,20 +242,21 @@ export default class Graph {
     this.groupEvents.add(node);
 
     if (mother) {
-      this._connectEventNodes(motherNode, node, "mother");
+      this._connectEventNodes(motherNode, node, "mother", fast);
     }
 
     if (father) {
-      this._connectEventNodes(fatherNode, node, "father");
+      this._connectEventNodes(fatherNode, node, "father", fast);
     }
 
     this.layerMain.batchDraw();
 
     if (!fast) {
+
       let tween = new Konva.Tween({
         node: node,
         radius: 6,
-        duration: fast ? 0 : 1,
+        duration: fast ? 0 : .5,
         onUpdate: () => { this.layerMain.batchDraw(); },
         easing: Konva.Easings.StrongEaseOut,
         strokeWidth: 2
@@ -267,7 +277,7 @@ export default class Graph {
       var tween = new Konva.Tween({
         node: node,
         duration: fast ? 0 : .5,
-        fill: '#ff00ff',
+        fill: '#4e8fde',
         onUpdate: () => { this.layerMain.batchDraw(); },
       });
 
@@ -287,7 +297,7 @@ export default class Graph {
       var tween = new Konva.Tween({
         node: node,
         duration: fast ? 0 : .5,
-        fill: '#00ffff',
+        fill: '#fc8c03',
         onUpdate: () => { this.layerMain.batchDraw(); },
       });
 
@@ -308,9 +318,10 @@ export default class Graph {
         node: node,
         duration: fast ? 0 : .5,
         onUpdate: () => { this.layerMain.batchDraw(); },
-        easing: Konva.Easings.BounceEaseOut,
-        strokeWidth: 7,
-        radius: 4
+        easing: Konva.Easings.StrongEaseOut,
+        strokeWidth: 5,
+        stroke: '#ddd',
+        radius: 3
       });
 
       tween.onFinish = () => { tween.destroy(); }
@@ -320,18 +331,36 @@ export default class Graph {
     this.layerMain.batchDraw();
   }
 
-  _connectEventNodes(node1, node2, suffix) {
+  _connectEventNodes(node1, node2, suffix, fast) {
     if (!node1 || !node2) return;
 
+    let points = [node1.x(), node1.y(), node2.x(), node2.y()]
+    if (!fast) {
+      points = [node1.x(), node1.y(), node1.x(), node1.y()]
+    }
+
     let lineNode = new Konva.Line({
-      points: [node1.x(), node1.y(), node2.x(), node2.y()],
-      stroke: "#eee",
+      points: points,
+      stroke: "#aaa",
       strokeWidth: 1,
       id: this._createLineId(node1.id(), suffix),
     });
 
     this.groupLines.add(lineNode);
     this.layerMain.batchDraw();
+
+    if (!fast) {
+      let tween = new Konva.Tween({
+        node: lineNode,
+        duration: fast ? 0 : .5,
+        onUpdate: () => { this.layerMain.batchDraw(); },
+        easing: Konva.Easings.StrongEaseOut,
+        points: [node1.x(), node1.y(), node2.x(), node2.y()]
+      });
+
+      tween.onFinish = () => { tween.destroy(); }
+      tween.play();
+    }
   }
 
   _createLineId(id1, suffix) {
@@ -345,29 +374,39 @@ export default class Graph {
   }
 
   _scroll() {
-    if (this.autoScrollAnimation) {
-      this.autoScrollAnimation.stop();
+    if (this.isAlignedX) return;
+
+
+    if (this.scrollTimeout) {
+      clearTimeout(this.scrollTimeout);
     }
 
-    if (!this.isAlignedX) {
-      if (this.maxPointX <= this.element.offsetWidth * .8) {
-        this.isAlignedX = true;
-        return;
+    this.scrollTimeout = setTimeout(() => {
+      if (this.autoScrollAnimation) {
+        this.autoScrollAnimation.stop();
       }
 
-      let newX = -this.maxPointX + this.element.offsetWidth * .8;
+      if (!this.isAlignedX) {
+        if (this.maxPointX <= this.element.offsetWidth * .7) {
+          this.isAlignedX = true;
+          return;
+        }
 
-      this.autoScrollAnimation = new Konva.Animation(frame => {
-        this._scrollAnimation(frame, this.layerMain.x(), newX, 1000);
-        return false;
-      });
-    }
+        let newX = -this.maxPointX + this.element.offsetWidth * .7;
 
-    this.autoScrollAnimation.start();
+        this.autoScrollAnimation = new Konva.Animation(frame => {
+          this._scrollAnimation(frame, this.layerMain.x(), newX, 500);
+          return false;
+        });
+
+        this.autoScrollAnimation.start();
+      }
+    }, 50);
+
   }
 
   _scrollAnimation(frame, from, to, ms) {
-    let frameProgress = frame.time / ms;
+    let frameProgress = (frame.time + 0.1) / ms;
     let easedFrameProgress = EasingFunctions.easeOutQuad(frameProgress);
 
     let diffX = to - from;
@@ -378,7 +417,9 @@ export default class Graph {
       this.isAlignedX = true;
     }
 
-    this.layerMain.x(targetX);
+    if (typeof targetX === 'number') {
+      this.layerMain.x(targetX);
+    }
 
     // Draw
     this.layerMain.batchDraw();

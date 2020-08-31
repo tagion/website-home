@@ -5,12 +5,13 @@
   >
     <h2>AlphaOne Active Nodes</h2>
     <div
-      v-for="item in items"
-      v-on:click="select($event)"
+      v-for="(status, key) in hosts"
+      v-on:click="select(key)"
       class="node-item"
+      :class="{'node-item--selected': key === selected}"
     >
-      <span class="pr-2"> {{ item.name }} </span>
-      <span class="pl-2"> {{ item.status }} </span>
+      <span class="pr-2"> {{ key }} </span>
+      <span class="pl-2"> {{status ? 'Online' : 'Offline'}} </span>
     </div>
   </b-card>
 </template>
@@ -18,23 +19,17 @@
 <script>
 export default {
   name: "NodeList",
-  data() {
-    return {
-      items: [
-        { name: "node1", status: "active" },
-        { name: "node2", status: "inactive" },
-        { name: "node3", status: "inactive" },
-        { name: "node4", status: "active" },
-        { name: "node1", status: "active" },
-        { name: "node2", status: "inactive" },
-        { name: "node3", status: "inactive" },
-        { name: "node4", status: "active" },
-      ],
-    };
+  props: {
+    hosts: {
+      type: Object,
+    },
+    selected: {
+      type: String
+    }
   },
   methods: {
-    select: function ($event) {
-      console.log(event.target.textContent);
+    select: function (address) {
+      this.$emit("select", address);
     },
   },
 };

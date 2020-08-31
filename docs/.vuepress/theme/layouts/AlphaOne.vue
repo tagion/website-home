@@ -14,8 +14,12 @@
               class="px-3"
             >
 
-              <NetworkStatus />
-              <NodeList />
+              <NetworkStatus :hosts="hosts" />
+              <NodeList
+                @select="onNodeSelect"
+                :hosts="hosts"
+                :selected="selectedHost"
+              />
             </b-col>
 
             <b-col
@@ -24,7 +28,10 @@
               class="px-3 px-lg-0"
             >
 
-              <Hashgraph />
+              <Hashgraph
+                :isSubscribed="isSubscribed"
+                :address="selectedHost"
+              />
             </b-col>
           </b-row>
         </b-container>
@@ -51,7 +58,12 @@ import NetworkStatus from "../components/sealed/NetworkStatus";
 
 export default {
   data() {
-    return {};
+    return {
+      isConnected: false,
+      isSubscribed: false,
+      hosts: {},
+      selectedHost: "",
+    };
   },
   components: {
     LayoutDefault,
@@ -62,7 +74,37 @@ export default {
     TokenForm,
     NetworkStatus,
   },
-  methods: {},
+  sockets: {
+    connect() {
+      this.isConnected = true;
+    },
+    disconnect() {
+      this.isConnected = false;
+    },
+  },
+  mounted() {
+    this.$socket.emit("nodesInit", {}, this.onNodesInit.bind(this));
+    this.sockets.subscribe("nodesUpdate", (data) =>
+      this.onNodesUpdate.bind(this)
+    );
+  },
+  methods: {
+    onNodeSelect(host) {
+      this.selectNode(host)
+    },
+    selectNode(ip) {
+      this.selectedHost = ip;
+    },
+    onNodesInit(data) {
+      this.hosts = data;
+      let keys = Object.keys(this.hosts);
+      if (!this.selectedHost) this.selectNode(keys[0]);
+    },
+    onNodesUpdate(data) {
+      console.log(data)
+      this.hosts = data;
+    },
+  },
 };
 </script>
 
