@@ -34,6 +34,7 @@
               <Hashgraph
                 :isSubscribed="isSubscribed"
                 :address="selectedHost"
+                :isConnected="this.hosts[selectedHost] || false"
               />
             </b-col>
           </b-row>
@@ -112,7 +113,7 @@ export default {
     },
     onNodesUpdate(data) {
       this.hosts = data;
-    },
+    }
   },
 };
 </script>

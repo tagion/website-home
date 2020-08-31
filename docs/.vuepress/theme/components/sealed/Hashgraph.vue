@@ -3,7 +3,7 @@
     tag="article"
     class="testnet-card"
   >
-    <h2>Hashgraph - {{address}}</h2>
+    <h2>Hashgraph is {{isConnected ? 'Online' : 'Offline'}} - {{address}}</h2>
     <b-card-text style='text-align: center;'>
       <div class="hashgraph-visuals">
         <div
@@ -25,6 +25,10 @@ export default {
     address: {
       type: String,
     },
+    isConnected: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {
@@ -34,11 +38,18 @@ export default {
     };
   },
   updated() {
+    if (!this.isConnected && this.address) {
+      this.unsubscribe(this.address);
+      this.subscribe();
+    }
+
     if (this.oldIp !== this.address) {
       this.unsubscribe(this.oldIp);
       this.subscribe();
       this.oldIp = this.address;
     }
+
+    
   },
   beforeDestroy() {
     this.unsubscribe();
@@ -59,10 +70,9 @@ export default {
         this.onDataInit.bind(this)
       );
 
-      this.sockets.subscribe(
-        `stateUpdate_${this.address}_10900`,
-        this.onDataUpdate.bind(this)
-      );
+      this.sockets.subscribe(`stateUpdate_${this.address}_10900`, (data) => {
+        this.onStateUpdate.bind(this)(data);
+      });
 
       this.isSubscribed = true;
     },
@@ -90,9 +100,9 @@ export default {
         100
       );
 
-      console.log('Received initial graph')
+      console.log("Received initial graph");
     },
-    onDataUpdate(data) {
+    onStateUpdate(data) {
       this.graph.onStateUpdate(data);
     },
   },
