@@ -30,7 +30,6 @@
               lg="7"
               class="px-3 px-lg-0"
             >
-             
 
               <Hashgraph
                 :isSubscribed="isSubscribed"
@@ -38,7 +37,7 @@
                 :isConnected="this.hosts[selectedHost] || false"
               />
 
-               <b-card
+              <b-card
                 tag="article"
                 class="testnet-card"
               >
@@ -87,6 +86,7 @@ export default {
       isSubscribed: false,
       hosts: {},
       selectedHost: "",
+      socketTimeout: undefined,
     };
   },
   components: {
@@ -98,19 +98,27 @@ export default {
     TokenForm,
     NetworkStatus,
   },
-  sockets: {
-    connect() {
-      this.isConnected = true;
-    },
-    disconnect() {
-      this.isConnected = false;
-    },
-  },
   mounted() {
-    this.$socket.emit("nodesInit", {}, this.onNodesInit.bind(this));
-    this.sockets.subscribe("nodesUpdate", this.onNodesUpdate.bind(this));
+    this.connectSocket();
   },
+  beforeDestroy() {
+    this.clearTimeoutSocket();
+  },
+
   methods: {
+    connectSocket() {
+      this.$socket.emit("nodesInit", {}, this.onNodesInit.bind(this));
+      this.sockets.subscribe("nodesUpdate", this.onNodesUpdate.bind(this));
+      // this.clearTimeoutSocket();
+
+      // this.socketTimeout = setTimeout(() => {
+      // }, 100);
+    },
+    clearTimeoutSocket() {
+      if (this.socketTimeout) {
+        clearTimeout(this.socketTimeout);
+      }
+    },
     onNodeSelect(host) {
       this.selectNode(host);
     },

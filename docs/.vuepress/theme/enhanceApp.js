@@ -47,10 +47,11 @@ export default ({ Vue, options, router, siteData }) => {
   } else if (process.env.APP_ENV === 'staging') {
     socketLink = 'https://tagion-monitor-staging.azurewebsites.net/monitor';
   }
+  socketLink = 'https://api.monitor.tagion.org/monitor';
 
   Vue.use(new VueSocketIO({
     debug: false,
-    connection: socketLink,
-    vuex: false
+    vuex: false,
+    connection: socketLink
   }))
 };

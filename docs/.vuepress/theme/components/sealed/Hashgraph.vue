@@ -3,7 +3,7 @@
     tag="article"
     class="testnet-card"
   >
-    <h2>Hashgraph | Monitor is {{isConnected ? 'Connected' : 'Disconnected'}} - {{address}} <span v-if="latestRound">| Latest Round: {{latestRound}}</span></h2>
+    <h2>Hashgraph | Monitor is {{isConnected ? 'Connected' : 'Disconnected'}} - {{address}} <span v-if="latestRound !== undefined">| Latest Round: {{latestRound}}</span></h2>
     <b-card-text style='text-align: center;'>
       <div class="hashgraph-visuals">
         <div
@@ -35,8 +35,14 @@ export default {
       queueInterval: null,
       oldIp: "",
       isSubscribed: false,
-      latestRound: 0
+      latestRound: undefined,
     };
+  },
+  created() {
+    if (this.isConnected && this.address) {
+      this.unsubscribe(this.address);
+      this.subscribe();
+    }
   },
   updated() {
     if (!this.isConnected && this.address) {
@@ -47,6 +53,7 @@ export default {
     if (this.oldIp !== this.address) {
       this.unsubscribe(this.oldIp);
       this.subscribe();
+      this.latestRound = undefined;
       this.oldIp = this.address;
     }
   },
@@ -57,7 +64,6 @@ export default {
       this.queueInterval = null;
     }
   },
-  mounted() {},
   methods: {
     subscribe() {
       this.unsubscribe();
@@ -76,6 +82,11 @@ export default {
       this.isSubscribed = true;
     },
     unsubscribe(ip) {
+      if (this.graph) {
+        this.graph.destroy();
+      }
+      this.graph = undefined;
+
       const unsubIp = ip || this.address;
       console.log("Unsubscribe from " + unsubIp);
       this.sockets.unsubscribe(`stateUpdate`);
@@ -88,7 +99,7 @@ export default {
       this.isSubscribed = false;
     },
     onDataInit(data) {
-      this.graph = new Graph(this.$refs.hashgraphVisuals, data);
+      this.graph = new Graph(this.$refs.hashgraphVisuals);
 
       if (this.queueInterval) {
         clearInterval(this.queueInterval);
@@ -99,11 +110,7 @@ export default {
         100
       );
 
-       if (data.latestRound) {
-        this.latestRound = data.latestRound
-      }
-
-      console.log("Received initial graph");
+      console.log(data);
     },
     onStateUpdate(data) {
       if (this.graph) {
@@ -111,7 +118,7 @@ export default {
       }
 
       if (data.roundCompleted) {
-        this.latestRound = data.round
+        this.latestRound = data.round;
       }
     },
   },

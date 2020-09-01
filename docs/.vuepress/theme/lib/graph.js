@@ -49,15 +49,13 @@ const OFFSET = {
 }
 
 export default class Graph {
-  constructor(element, initialState) {
-    this.state = initialState;
+  constructor(element) {
     this.element = element;
     this.eventsQueue = []
     this.removeQueue = []
 
     // Positioning helpers:
     this.nodes = [];
-    this.nodesPlaces = {};
     this.maxPointX = 0;
     this.isAlignedX = false;
     this.isAlignedY = false;
@@ -85,48 +83,10 @@ export default class Graph {
       e.preventDefault();
       this._handleContainerSize();
     });
-
-    // this.drawInitialState(initialState);
   }
 
-  drawInitialState(state) {
-    // Sort
-    const unsortedArray = []
-    for (const nodeId in state) {
-      const nodeIdNumber = parseInt(nodeId);
-
-      if (this.nodes.indexOf(nodeIdNumber) === -1) {
-        this.nodes.push(nodeIdNumber);
-        this.isAlignedY = false;
-      }
-
-      for (const eventId in state[nodeId]) {
-        unsortedArray.push(state[nodeId][eventId])
-      }
-    }
-    const sortedArray = unsortedArray.sort((a, b) => {
-      return a.spawnOrder - b.spawnOrder;
-    });
-
-    // Draw
-    for (const event of sortedArray) {
-      this._createEventNode(event, true);
-
-      if (event.round) {
-        this._setNodeRound(event, true);
-      }
-
-      if (event.stronglySeeing) {
-        this._setNodeStronglySeeing(event, true);
-      }
-
-      if (event.famous) {
-        this._setNodeFamous(event, true);
-      }
-    }
-
-    this.isAlignedX = false;
-    this._scroll();
+  destroy() {
+    this.element.innerHtml = ''
   }
 
   onStateUpdate(event) {
@@ -213,13 +173,6 @@ export default class Graph {
       positionX = fatherNode.x() + STEP.x;
     } else if (motherNode) {
       positionX = motherNode.x() + STEP.x;
-    } else if (!motherNode && !fatherNode) {
-      if (this.nodesPlaces[nodeId]) {
-        // If place is taken - return;
-        // return;
-      }
-
-      this.nodesPlaces[nodeId] = true;
     }
 
     if (this.maxPointX < positionX) {
@@ -328,19 +281,19 @@ export default class Graph {
         node.setAttr('stroke', '#ddd')
         node.setAttr('radius', 3)
       } else {
-      var tween = new Konva.Tween({
-        node: node,
-        duration: .5,
-        onUpdate: () => { this.layerMain.batchDraw(); },
-        easing: Konva.Easings.StrongEaseOut,
-        strokeWidth: 5,
-        stroke: '#ddd',
-        radius: 3
-      });
+        var tween = new Konva.Tween({
+          node: node,
+          duration: .5,
+          onUpdate: () => { this.layerMain.batchDraw(); },
+          easing: Konva.Easings.StrongEaseOut,
+          strokeWidth: 5,
+          stroke: '#ddd',
+          radius: 3
+        });
 
-      tween.onFinish = () => { tween.destroy(); }
-      tween.play();
-    }
+        tween.onFinish = () => { tween.destroy(); }
+        tween.play();
+      }
     }
 
     this.layerMain.batchDraw();
@@ -404,12 +357,14 @@ export default class Graph {
 
       let newX = -this.maxPointX + this.element.offsetWidth * .7;
 
-      this.autoScrollAnimation = new Konva.Animation(frame => {
-        this._scrollAnimation(frame, this.layerMain.x(), newX, 500);
-        return false;
-      });
+      if (newX != this.layerMain.x()) {
+        this.autoScrollAnimation = new Konva.Animation(frame => {
+          this._scrollAnimation(frame, this.layerMain.x(), newX, 500);
+          return false;
+        });
 
-      this.autoScrollAnimation.start();
+        this.autoScrollAnimation.start();
+      }
     }
 
   }
@@ -433,4 +388,45 @@ export default class Graph {
     // Draw
     this.layerMain.batchDraw();
   }
+
+
+  // drawInitialState(state) {
+  //   // Sort
+  //   const unsortedArray = []
+  //   for (const nodeId in state) {
+  //     const nodeIdNumber = parseInt(nodeId);
+
+  //     if (this.nodes.indexOf(nodeIdNumber) === -1) {
+  //       this.nodes.push(nodeIdNumber);
+  //       this.isAlignedY = false;
+  //     }
+
+  //     for (const eventId in state[nodeId]) {
+  //       unsortedArray.push(state[nodeId][eventId])
+  //     }
+  //   }
+  //   const sortedArray = unsortedArray.sort((a, b) => {
+  //     return a.spawnOrder - b.spawnOrder;
+  //   });
+
+  //   // Draw
+  //   for (const event of sortedArray) {
+  //     this._createEventNode(event, true);
+
+  //     if (event.round) {
+  //       this._setNodeRound(event, true);
+  //     }
+
+  //     if (event.stronglySeeing) {
+  //       this._setNodeStronglySeeing(event, true);
+  //     }
+
+  //     if (event.famous) {
+  //       this._setNodeFamous(event, true);
+  //     }
+  //   }
+
+  //   this.isAlignedX = false;
+  //   this._scroll();
+  // }
 }
