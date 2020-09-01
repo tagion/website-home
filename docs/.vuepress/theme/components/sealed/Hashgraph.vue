@@ -71,7 +71,7 @@ export default {
 
       this.$socket.emit(
         "stateInit",
-        `${this.address}_10900`,
+        `${this.address}`,
         this.onDataInit.bind(this)
       );
 
