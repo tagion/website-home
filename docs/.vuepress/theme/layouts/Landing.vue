@@ -590,6 +590,9 @@
                 :delay="200"
               >
                 <p>DEX Protocol. Hashgraph Consensus. DART Database. Inclusive Governance.</p>
+                <p class="text-muted">
+                  This Technical Paper is a living document that will be updated as the project develops, and new concepts are being developed. In other words, the document version in front of you represents our thinking as of that moment. Open finance is a rapidly growing field, so feel free to contact us regarding our latest developments.
+                </p>
               </reveal>
               <reveal
                 child
