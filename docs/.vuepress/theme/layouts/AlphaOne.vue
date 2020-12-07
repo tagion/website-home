@@ -8,54 +8,12 @@
       <div class="container-wrapper">
         <b-container
           class="container py-4"
-          v-if="isConnected"
-        >
-          <b-row class="d-flex justify-content-lg-between">
-            <b-col
-              cols="12"
-              lg="5"
-              class="px-3"
-            >
-
-              <NetworkStatus :hosts="hosts" />
-              <NodeList
-                @select="onNodeSelect"
-                :hosts="hosts"
-                :selected="selectedHost"
-              />
-            </b-col>
-
-            <b-col
-              cols="12"
-              lg="7"
-              class="px-3 px-lg-0"
-            >
-
-              <Hashgraph
-                :isSubscribed="isSubscribed"
-                :address="selectedHost"
-                :isConnected="this.hosts[selectedHost] || false"
-              />
-
-              <b-card
-                tag="article"
-                class="testnet-card"
-              >
-                <h2>About Monitor</h2>
-                <b-card-text style='text-align: left;'>
-                  Tagion AlphaOne comes with a monitor function, which lets you better understand how the AlphaOne network is operating, The monitor provides useful information such as network status, active nodes, and a hashgraph showing recent network communication and event ordering between nodes.
-                </b-card-text>
-              </b-card>
-            </b-col>
-          </b-row>
-        </b-container>
-        <b-container
-          class="container py-4"
-          v-else
         >
           <div class="not-connected">
-            <div>Not connected to Tagion AlphaOne Monitor</div>
-            <div class="text-muted">Please, refresh this page in 2 minutes</div>
+            <div>Tagion AlphaOne Status</div>
+            <div class="text-muted w-50">
+              Tagion has completed testing on our AlphaOne network. This network is currently not running. We gained very useful data by running the network, and we are presently implementing it in AlphaTwo, which we will launch soon.
+            </div>
           </div>
         </b-container>
       </div>
