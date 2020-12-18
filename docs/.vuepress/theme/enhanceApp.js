@@ -40,7 +40,8 @@ export default ({ Vue, options, router, siteData }) => {
   Vue.component("b-button", BButton);
   Vue.component("b-input-group", BInputGroup);
 
-  let socketLink = 'http://localhost:4050/monitor';
+  // let socketLink = 'http://localhost:4050/monitor';
+  let socketLink = 'https://monitor.tagion.org/monitor';
 
   if (process.env.APP_ENV === 'production') {
     socketLink = 'https://monitor.tagion.org/monitor';
