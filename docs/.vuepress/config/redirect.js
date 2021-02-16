@@ -1,4 +1,6 @@
 module.exports = {
+  "/":
+    "https://www.tagion.org",
   "/technicalpaper.pdf":
     "https://github.com/tagion/resources/raw/master/technical-paper/tagion-technical-paper.pdf",
   "/tagiontechpaper.pdf":

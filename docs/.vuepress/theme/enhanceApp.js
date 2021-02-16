@@ -43,11 +43,11 @@ export default ({ Vue, options, router, siteData }) => {
   // let socketLink = 'http://localhost:4050/monitor';
   let socketLink = 'https://monitor.tagion.org/monitor';
 
-  if (process.env.APP_ENV === 'production') {
-    socketLink = 'https://monitor.tagion.org/monitor';
-  } else if (process.env.APP_ENV === 'staging') {
-    socketLink = 'https://tagion-monitor-staging.azurewebsites.net/monitor';
-  }
+  // if (process.env.APP_ENV === 'production') {
+  //   socketLink = 'https://monitor.tagion.org/monitor';
+  // } else if (process.env.APP_ENV === 'staging') {
+  //   socketLink = 'https://tagion-monitor-staging.azurewebsites.net/monitor';
+  // }
 
   Vue.use(new VueSocketIO({
     debug: false,
