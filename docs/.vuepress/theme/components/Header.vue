@@ -3,13 +3,22 @@
     <b-container class="d-flex justify-content-between">
       <div class="header__logo-wrapper">
         <router-link to="/">
-          <img class="header__logo" src="../images/logomark-white.svg" alt="Tagion Logo" />
+          <img
+            class="header__logo"
+            src="../images/logomark-circle-black.svg"
+            alt="Tagion Logo"
+          />
+          <div class="header__title">
+            <div class="header__title-name">Tagion</div>
+            <div class="header__title-sub">Modern Network Money</div>
+          </div>
         </router-link>
       </div>
 
       <div class="header__menu justify-content-end">
         <SearchBox v-if="$site.themeConfig.search !== false" />
         <NavLinks class="d-none d-lg-flex" />
+        <social-buttons class="ml-3" />
       </div>
     </b-container>
   </header>
@@ -18,18 +27,19 @@
 <script>
 import NavLinks from "./NavLinks.vue";
 import SearchBox from "./SearchBox.vue";
+import SocialButtons from "./SocialButtons";
 import * as throttle from "lodash.throttle";
 
 export default {
-  components: { NavLinks, SearchBox },
+  components: { NavLinks, SearchBox, SocialButtons },
   data() {
     return {
       lastScrollY: undefined,
-      headerElement: undefined
+      headerElement: undefined,
     };
   },
   mounted() {
-    this.headerElement = document.getElementById('header');
+    this.headerElement = document.getElementById("header");
     window.addEventListener("scroll", this.throttleHeaderScrolled);
     this.throttleHeaderScrolled();
   },
@@ -37,7 +47,7 @@ export default {
     window.removeEventListener("scroll", this.throttleHeaderScrolled);
   },
   methods: {
-    throttleHeaderScrolled: throttle(function() {
+    throttleHeaderScrolled: throttle(function () {
       let scrollY = window.scrollY;
 
       if (scrollY > 5) {
@@ -56,7 +66,7 @@ export default {
       }
 
       this.lastScrollY = scrollY;
-    }, 0)
-  }
+    }, 0),
+  },
 };
 </script>

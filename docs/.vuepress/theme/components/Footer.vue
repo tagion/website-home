@@ -40,8 +40,6 @@
         <b-col class="col-newsletter mt-8 mt-xl-0 outbound-negative-space-fix" cols=12 xl=4>
           <h6 class="mb-3">Join Us</h6>
           <social-buttons class="mb-3 mt-3" dark />
-          <p class="mb-1"><small>By subscribing to newsletter, you agree with our <router-link to="/meta/privacy-policy"><u>Privacy Policy</u></router-link>.</small></p>
-          <newsletter-form class="footer-newsletter" />
           
         </b-col>
       </b-row>
@@ -51,16 +49,6 @@
           <ul
             class="list-inline list-group-transparent list-group-flush list-group-borderless mb-0 text-muted"
           >
-            <li class="list-inline-item pl-0 pr-4 my-1">© Tagion, 2019. All rights reserved.</li>
-            <li class="list-inline-item pl-0 pr-4 my-1">
-              <router-link to="/meta/privacy-policy">Privacy Policy</router-link>
-            </li>
-            <li class="list-inline-item pl-0 pr-4 my-1">
-              <router-link to="/meta/cookie-policy">Cookie Policy</router-link>
-            </li>
-            <li class="list-inline-item pl-0 pr-4 my-1">
-              <router-link to="/meta/terms-of-use">Terms of Use</router-link>
-            </li>
           </ul>
         </b-col>
       </b-row>
@@ -69,12 +57,10 @@
 </template>
 
 <script>
-import NewsletterForm from "./NewsletterForm";
 import SocialButtons from "./SocialButtons";
 
 export default {
   components: {
-    NewsletterForm,
     SocialButtons
   }
 };

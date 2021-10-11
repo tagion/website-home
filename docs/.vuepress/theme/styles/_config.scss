@@ -27,19 +27,19 @@ $grid-breakpoints: (
 // Overrides
 // =========================================================
 
-$primary: #20263D;
+$primary: #141516;
 $primary-lighter: mix(#fff, $primary, 30%);
 $primary-darker: mix(#000, $primary, 20%);
 $primary-darkest: mix(#000, $primary, 80%);
 $primary-lightest: mix(#fff, $primary, 50%);
 
-$secondary: #1D31E3;
+$secondary: #e4530f;
 $secondary-darker: mix(#000, $secondary, 30%);
 $secondary-darkest: mix(#000, $secondary, 60%);
 $secondary-lighter: mix(#fff, $secondary, 50%);
 $secondary-lightest: mix(#fff, $secondary, 90%);
 
-$tertiary: #1EBBFF;
+$tertiary: #0d56f1;
 $tertiary-darker: rgb(22, 122, 165);
 $tertiary-lighter: rgb(127, 208, 243);
 
@@ -50,11 +50,13 @@ $info-lighter: mix(#fff, $info, 15%);
 $warning: #edbd1f;
 $white: #fff;
 
-$dark: #353838;
+$dark: #242424;
 $dark-darker: mix(#000, $dark, 10%);
 $dark-lighter: mix(#fff, $dark, 10%);
 
-$light: #f2f5f9;
+$light: #f8f8f8;
+$light-darker: mix(#000, $light, 10%);
+$light-lighter: mix(#fff, $light, 10%);
 
 $transition-timing: 100ms;
 $transition-timing-sm: 75ms;
@@ -266,7 +268,7 @@ $card-count: map-merge(
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: "Barlow", "Poppins", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif: "Ubuntu", "Poppins", Helvetica, Arial, sans-serif !default;
 $font-family-font-awesome-icon: "Font Awesome 5 Free" !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically 16px

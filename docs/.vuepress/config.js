@@ -9,9 +9,8 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      { text: "Docs", link: "/docs/" },
-      { text: "Community", link: "/community/" },
-      { text: "Whitepaper", link: "/whitepaper/" }
+      { text: "Wiki", link: "/docs/" },
+      { text: "Whitepaper", link: "https://google.com" },
     ],
     sidebar: {
       "/docs/": [
@@ -60,7 +59,7 @@ let config = {
           "width=device-width,initial-scale=1,maximum-scale=6,maximum-scale=1"
       }
     ],
-    ["link", { rel: "icon", type: "image/png", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "/favicon.svg" }],
     ["meta", { name: "twitter:creator", content: "@TagionTeam" }]
   ],
   markdown: {
