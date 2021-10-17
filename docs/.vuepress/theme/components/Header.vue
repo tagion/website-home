@@ -10,7 +10,7 @@
           />
           <div class="header__title">
             <div class="header__title-name">Tagion</div>
-            <div class="header__title-sub">Modern Network Money</div>
+            <div class="header__title-sub">Money for #OpenEconomy</div>
           </div>
         </router-link>
       </div>
@@ -18,7 +18,6 @@
       <div class="header__menu justify-content-end">
         <SearchBox v-if="$site.themeConfig.search !== false" />
         <NavLinks class="d-none d-lg-flex" />
-        <social-buttons class="ml-3" />
       </div>
     </b-container>
   </header>

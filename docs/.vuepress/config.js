@@ -9,8 +9,9 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      { text: "Wiki", link: "/docs/" },
-      { text: "Whitepaper", link: "https://google.com" },
+      { text: "Meet", link: "/" },
+      { text: "Learn", link: "/docs/" },
+      { text: "Join", link: "/docs/" },
     ],
     sidebar: {
       "/docs/": [

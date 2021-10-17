@@ -37,10 +37,22 @@
             </li>
           </b-nav>
         </b-col>
-        <b-col class="col-newsletter mt-8 mt-xl-0 outbound-negative-space-fix" cols=12 xl=4>
-          <h6 class="mb-3">Join Us</h6>
-          <social-buttons class="mb-3 mt-3" dark />
-          
+        <b-col class="mt-8 mt-sm-0 mt-xl-0 outbound-negative-space-fix">
+          <h6 class="mb-3">Social Media</h6>
+          <b-nav vertical>
+            <li>
+              <a href="mailto:info@tagion.org">
+                Twitter
+                <OutboundLink />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@tagion.org">
+                LinkedIn
+                <OutboundLink />
+              </a>
+            </li>
+          </b-nav>
         </b-col>
       </b-row>
 

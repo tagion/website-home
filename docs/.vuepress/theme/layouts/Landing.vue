@@ -2,8 +2,8 @@
   <layout-default class="landing-page" id="landing-page">
     <template slot="root-content">
       <div class="landing">
-        <div class="lcontainer-wrapper">
-          <b-container class="lcontainer lcontainer--bulletpoints">
+        <div class="content-wrapper">
+          <b-container>
             <Content />
           </b-container>
         </div>

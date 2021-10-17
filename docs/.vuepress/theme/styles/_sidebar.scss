@@ -11,8 +11,8 @@
 }
 
 .layout-sidebar {
-  border-left: 1px solid rgb(228, 231, 235);
-  background: #f8f9fa;
+  border-left: 1px dotted rgb(228, 231, 235);
+  background: #fff;
 
   @include media-breakpoint-down(md) {
     border-left: none;
