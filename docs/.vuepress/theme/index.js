@@ -1,4 +1,3 @@
-const path = require("path");
 const moment = require("moment");
 
 let config = {
@@ -24,7 +23,7 @@ let config = {
         image: ($page, $site) =>
           $page.frontmatter.image
             ? ($site.themeConfig.domain || "") + $page.frontmatter.image
-            : ($site.themeConfig.domain || "") + "/avatar-black.png",
+            : ($site.themeConfig.domain || "") + "/logomark-square-black.png",
         publishedAt: $page =>
           $page.frontmatter.date && new Date($page.frontmatter.date),
         modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated)
@@ -64,9 +63,6 @@ if (process.env.APP_ENV === "production") {
     {
       hostname: "https://tagion.org",
       exclude: [
-        "/meta/cookie-policy.html",
-        "/meta/privacy-policy.html",
-        "/meta/terms-of-use.html",
         "/meta/500.html",
         "/404.html"
       ]

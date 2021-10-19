@@ -172,12 +172,14 @@ body {
 //
 // Footer
 //
-.layout-footer, .layout-footer-nav {
+.layout-footer,
+.layout-footer-nav {
   flex-shrink: 0;
 }
 
 .has-sidebar {
-  .layout-footer, .layout-footer-nav {
+  .layout-footer,
+  .layout-footer-nav {
     .container {
       @include media-breakpoint-up(lg) {
         padding-right: calc(#{$sidebar-width-lg} + 2rem);

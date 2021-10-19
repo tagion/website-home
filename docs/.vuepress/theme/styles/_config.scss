@@ -21,7 +21,7 @@ $grid-breakpoints: (
   md: $md,
   lg: $lg,
   xl: $xl,
-  xxl: $xxl
+  xxl: $xxl,
 ) !default;
 
 // Overrides
@@ -143,7 +143,7 @@ $secondary-colors: map-merge(
     "twitter": $twitter,
     "instagram": $instagram,
     "github": $github,
-    "gray": $gray-200
+    "gray": $gray-200,
   ),
   $secondary-colors
 );
@@ -153,7 +153,7 @@ $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "white": $white,
-    "indigo": $indigo
+    "indigo": $indigo,
   ),
   $theme-colors
 );
@@ -169,36 +169,36 @@ $spacers: map-merge(
   (
     0: 0,
     1: (
-      $spacer * 0.25
+      $spacer * 0.25,
     ),
     2: (
-      $spacer * 0.5
+      $spacer * 0.5,
     ),
     3: $spacer,
     4: (
-      $spacer * 1.5
+      $spacer * 1.5,
     ),
     5: (
-      $spacer * 2
+      $spacer * 2,
     ),
     6: (
-      $spacer * 2.5
+      $spacer * 2.5,
     ),
     7: (
-      $spacer * 3
+      $spacer * 3,
     ),
     8: (
-      $spacer * 3.5
+      $spacer * 3.5,
     ),
     9: (
-      $spacer * 4
+      $spacer * 4,
     ),
     10: (
-      $spacer * 4.5
+      $spacer * 4.5,
     ),
     11: (
-      $spacer * 5
-    )
+      $spacer * 5,
+    ),
   ),
   $spacers
 );
@@ -212,20 +212,20 @@ $content-spacers: map-merge(
   (
     0: 0,
     1: (
-      $content-space * 2
+      $content-space * 2,
     ),
     2: (
-      $content-space * 4
+      $content-space * 4,
     ),
     3: (
-      $content-space * 8
+      $content-space * 8,
     ),
     4: (
-      $content-space * 12.5
+      $content-space * 12.5,
     ),
     5: (
-      $content-space * 15
-    )
+      $content-space * 15,
+    ),
   ),
   $content-spacers
 );
@@ -246,7 +246,7 @@ $sizes: map-merge(
     80: 80%,
     85: 85%,
     100: 100%,
-    auto: auto
+    auto: auto,
   ),
   $sizes
 );
@@ -258,7 +258,7 @@ $card-count: map-merge(
   (
     2: 2,
     3: 3,
-    4: 4
+    4: 4,
   ),
   $card-count
 );

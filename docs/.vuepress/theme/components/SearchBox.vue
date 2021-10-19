@@ -5,7 +5,7 @@
       aria-label="Search"
       :value="query"
       class="form-control"
-      :class="{ 'focused': focused }"
+      :class="{ focused: focused }"
       autocomplete="off"
       spellcheck="false"
       @focus="focused = true"
@@ -23,6 +23,7 @@
       <li
         class="suggestion"
         v-for="(s, i) in suggestions"
+        :key="i"
         :class="{ focused: i === focusIndex }"
         @mousedown="go(i)"
         @mouseenter="focus(i)"
@@ -42,7 +43,7 @@ export default {
     return {
       query: "",
       focused: false,
-      focusIndex: 0
+      focusIndex: 0,
     };
   },
 
@@ -60,7 +61,7 @@ export default {
       const { pages, themeConfig } = this.$site;
       const max = themeConfig.searchMaxSuggestions || 5;
       const localePath = this.$localePath;
-      const matches = item =>
+      const matches = (item) =>
         item.title && item.title.toLowerCase().indexOf(query) > -1;
       const res = [];
       for (let i = 0; i < pages.length; i++) {
@@ -84,7 +85,7 @@ export default {
               res.push(
                 Object.assign({}, p, {
                   path: p.path + "#" + h.slug,
-                  header: h
+                  header: h,
                 })
               );
             }
@@ -99,7 +100,7 @@ export default {
       const navCount = (this.$site.themeConfig.nav || []).length;
       const repo = this.$site.repo ? 1 : 0;
       return navCount + repo <= 2;
-    }
+    },
   },
 
   methods: {
@@ -147,7 +148,7 @@ export default {
 
     unfocus() {
       this.focusIndex = -1;
-    }
-  }
+    },
+  },
 };
 </script>

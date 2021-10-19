@@ -4,9 +4,6 @@
       <Content />
 
       <div class="forkbox">
-        <div v-if="shareEnabled" class="mb-3">
-          <share-buttons />
-        </div>
         <div v-if="$page.lastUpdated">
           <span>Last edit:</span>
           <span class="forkbox__secondary-date">{{$page.lastUpdated}}</span>
@@ -29,17 +26,13 @@
 
 <script>
 import LayoutDefault from "@theme/components/LayoutDefault";
-import CookiesNotification from "@theme/components/CookiesNotification";
 import PageNav from "@theme/components/PageNav";
-import ShareButtons from "@theme/components/ShareButtons";
 import { resolveSidebarItems } from "../util";
 
 export default {
   components: {
     LayoutDefault,
-    CookiesNotification,
     PageNav,
-    ShareButtons
   },
 
   computed: {

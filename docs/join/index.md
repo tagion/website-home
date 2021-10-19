@@ -8,7 +8,7 @@ editLink: false
 description: Read about Tagion Currency, DEX, Hashgraph and Governance. Tagion is a decentralized monetary system with basic banking services built-in. We aim to create an infrastructure to unify cryptocurrencies into one interconnected system.
 ---
 
-# Tagion Whitepaper
+# Join Tagion
 
 If you want to get better understanding of Tagion and its purpose, you can download [Whitepaper in PDF](/tagionwhitepaper.pdf). Very soon the whole paper will be published on this website for better reading experience.
 

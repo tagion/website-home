@@ -13,6 +13,9 @@ let config = {
       { text: "Learn", link: "/docs/" },
       { text: "Join", link: "/docs/" },
     ],
+    footer: [
+
+    ],
     sidebar: {
       "/docs/": [
         ["/docs/", "Welcome"],
@@ -60,8 +63,8 @@ let config = {
           "width=device-width,initial-scale=1,maximum-scale=6,maximum-scale=1"
       }
     ],
-    ["link", { rel: "icon", href: "/favicon.svg" }],
-    ["meta", { name: "twitter:creator", content: "@TagionTeam" }]
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["meta", { name: "twitter:creator", content: "@tagionorg" }]
   ],
   markdown: {
     anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: "" },

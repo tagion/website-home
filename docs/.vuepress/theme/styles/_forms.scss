@@ -107,12 +107,12 @@
   }
 
   .btn-muted {
-      background: $dark;
-      color: #eee;
-      
-      &:hover {
-        background: mix($dark, #fff, 80%);
-      }
+    background: $dark;
+    color: #eee;
+
+    &:hover {
+      background: mix($dark, #fff, 80%);
+    }
   }
 
   .spinner-border {
@@ -126,14 +126,14 @@
       border: 1px solid mix($primary, white, 90%);
       opacity: 0.8;
       color: #fff;
-      
+
       &:focus {
         color: #fff;
         background: $primary;
         border-color: 1px solid mix($primary, white, 60%);
         opacity: 0.9;
       }
-      
+
       &:disabled {
         background: #f6f6f6;
         border-color: #eee !important;
@@ -141,7 +141,7 @@
       }
     }
   }
- }
+}
 
 input {
   /* Remove First */

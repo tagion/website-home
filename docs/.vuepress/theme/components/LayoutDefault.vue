@@ -28,7 +28,6 @@
       <Footer :class="{ 'home': isLanding }" />
     </div>
     <SidebarButton @toggle-sidebar="toggleSidebar()" />
-    <cookies-notification />
   </div>
 </template>
 
@@ -37,7 +36,6 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import SidebarButton from "./SidebarButton.vue";
-import CookiesNotification from "./CookiesNotification.vue";
 
 export default {
   props: ["sidebarItems"],
@@ -51,8 +49,7 @@ export default {
     Footer,
     Header,
     Sidebar,
-    SidebarButton,
-    CookiesNotification
+    SidebarButton
   },
   mounted() {
     this.$analytics.recordUtm(this.$route);

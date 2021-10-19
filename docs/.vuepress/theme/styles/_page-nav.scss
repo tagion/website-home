@@ -11,11 +11,10 @@
       @include media-breakpoint-down(xs) {
         flex-direction: column-reverse;
 
-
         .prev {
-            margin-top: 2rem;
+          margin-top: 2rem;
         }
-    }
+      }
 
       .nav-label {
         font-size: 0.6em;
@@ -23,32 +22,31 @@
       }
 
       .next {
-
         text-align: right;
       }
 
       .prev,
       .next {
         font-size: 1.7rem;
-        padding-top: .6rem;
+        padding-top: 0.6rem;
 
         @include media-breakpoint-down(lg) {
-            font-size: 1.5rem;
+          font-size: 1.5rem;
         }
 
         @include media-breakpoint-down(md) {
-            font-size: 1.4rem;
+          font-size: 1.4rem;
         }
 
         @include media-breakpoint-down(sm) {
-            font-size: 1.4rem;
+          font-size: 1.4rem;
         }
-        
+
         a {
           border-bottom: 1px solid #ddd;
 
           &:hover {
-              border-color: $primary;
+            border-color: $primary;
           }
         }
       }

@@ -63,11 +63,8 @@
 </template>
 
 <script>
-import SocialButtons from "./SocialButtons";
-
 export default {
   components: {
-    SocialButtons
   }
 };
 </script>

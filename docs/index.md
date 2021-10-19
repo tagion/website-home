@@ -5,9 +5,13 @@ sidebar: false
 layout: Landing
 
 description: Tagion is an open banking protocol, that enables digital peer-to-peer cryptocurrency and a decentralized exchange, governed by its users. By design, Tagion network has no central authority and belongs to all its users. It will be open-sourced and open for everyone to join once the software is ready.
-
-image: /bgphoto1.jpg
 ---
+
+<div class="intro">
+
+**Tagion** is an **network money** that can be used as an effecient **medium of exchange**, convenient **unit of account** and reliable **store of value**.
+
+</div>
 
 <!-- Humans tried many forms of money, the effecient ones boosted economic growth, while ineffecient one stalled or even crashed it. We know from history that money system matters, and we now the money must be **unit of account**, **medium of exchange** and **store of value**.
 
@@ -18,20 +22,6 @@ We live in the era of digitalization and globalization. Computing and internet t
 Our money don't integrate properly in the digital world, creating need for middlemen, resulting in higher fees.
 
 The world is hungry for a more effecient currency -->
-<div class="intro">
-
-**Tagion** is an **network money** that can be used as an effecient **medium of exchange**, convenient **unit of account** and reliable **store of value**.
-
-
-
-</div>
-
-<div class="buttons">
-
-<a href="#">🤓 Learn More</a>
-<a href="#" class="button-accent">😎 Join #NetworkEconomy</a> 
-
-</div>
 
 <div class="features">
 
@@ -41,7 +31,7 @@ The world is hungry for a more effecient currency -->
 <span class="em-1 em-1-2">🚀</span>
 <span class="em-1 em-1-3">🚀</span> -->
 
-## Fast Transactions
+## The World is Changing
 
 Transactions are **confirmed in seconds**, and reach 100% finality in less than minute. You only need to wait for finality for large transactions.
 
@@ -53,7 +43,7 @@ Transactions are **confirmed in seconds**, and reach 100% finality in less than 
 <span class="em-2 em-2-2">📱</span>
 <span class="em-2 em-2-3">📱</span> -->
 
-## Native Integrations
+## New Network Economy
 
 Tagion **integrates natively with any software**. Instead of using middlemen, we can **use money directly** in everyday apps.
 
@@ -64,7 +54,7 @@ Tagion **integrates natively with any software**. Instead of using middlemen, we
 <span class="em-3 em-3-2">🔐</span>
 <span class="em-3 em-3-3">🔐</span> -->
 
-## Cryptographic Security
+## Network Money
 
 Ownership of tagions is **guaranteed by cutting-edge cryptography**. Nobody except you has access to your money.
 
@@ -81,4 +71,13 @@ Ownership of tagions is **guaranteed by cutting-edge cryptography**. Nobody exce
 **Aanybody can be part of the network**. The rules are controlled by the network via weighted voting, thus the system serves the interests of majority.
 
 </div>
+</div>
+
+
+
+<div class="buttons">
+
+<a href="#">🤓 Learn More</a>
+<a href="#" class="button-accent">😎 Join #NetworkEconomy</a> 
+
 </div>

@@ -62,3 +62,8 @@ The stage.tagion.org is hosted in [another repo](https://github.com/tagion/homep
 Site content (except promo pages) is in `/docs` folder. Everything else in `/docs/.vuepress`.
 
 We don't use `master` branch since it is indexable by search engines, which makes duplicate content, which is bad for SEO.
+
+# To Do
+
+- [ ] Add localization support (404, theme elements, pages)
+- [ ] Refactor styles to support themes

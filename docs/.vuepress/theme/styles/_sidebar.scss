@@ -111,7 +111,7 @@
     }
 
     li .sidebar-group {
-      margin-top: .8rem;
+      margin-top: 0.8rem;
     }
 
     li:first-child .sidebar-group {
@@ -119,7 +119,7 @@
     }
 
     li:last-child {
-      margin-bottom: .6rem;
+      margin-bottom: 0.6rem;
     }
 
     li a + ul {
@@ -153,8 +153,6 @@
           opacity: 1;
           color: $secondary;
         }
-
-
       }
 
       a + ul {
