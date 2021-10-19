@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
-  border-bottom: 1px dotted mix($light-darker, #fff, 90%);
+  background: $primary-darker;
+  // border-bottom: 1px solid mix($primary-darker, #fff, 90%);
   height: $header-height;
   padding-bottom: 0.2rem;
   transition: background 200ms ease, border-color 200ms ease,
@@ -23,25 +23,25 @@
           opacity: 1;
         }
       }
-    }
 
-    .header__title {
-      display: flex;
-      flex-direction: column;
-      margin-left: 0.4rem;
+      .header__title {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.4rem;
 
-      .header__title-name {
-        font-weight: 700;
-        font-size: 0.95em;
-        white-space: nowrap;
-        color: $dark;
-      }
+        .header__title-name {
+          font-weight: 700;
+          font-size: 0.95em;
+          white-space: nowrap;
+          color: $light;
+        }
 
-      .header__title-sub {
-        font-size: 0.75em;
-        margin-top: -0.2rem;
-        color: $gray-600;
-        white-space: nowrap;
+        .header__title-sub {
+          font-size: 0.75em;
+          margin-top: -0.2rem;
+          color: $gray-400;
+          white-space: nowrap;
+        }
       }
     }
   }
@@ -53,7 +53,7 @@
     align-items: center;
 
     a {
-      color: $dark;
+      color: mix($primary, #fff, 20%);
       opacity: 0.7;
       position: relative;
       display: inline-block;
@@ -65,7 +65,7 @@
         right: 50%;
         height: 3px;
         bottom: 2px;
-        background: $dark-darker;
+        background: mix($primary, #fff, 40%);
         transition: all 100ms linear;
         border-radius: 100px;
         opacity: 0;
@@ -91,13 +91,13 @@
 
       &.router-link-active {
         opacity: 1;
-        color: $dark-darker;
+        color: mix($primary, #fff, 20%);
 
         &::after {
           left: 40%;
           right: 40%;
           opacity: 1;
-          background: $dark-darker;
+          background: mix($primary, #fff, 20%);
         }
       }
     }
@@ -108,7 +108,7 @@
     position: relative;
     top: 1px;
     transition: opacity 100ms linear;
-    opacity: 0.8;
+    opacity: 1;
   }
 
   .header__menu {
@@ -116,6 +116,16 @@
     min-width: 50%;
     align-items: center;
     justify-content: center;
+  }
+}
+
+body:not(.scrolled) {
+  .landing-page {
+    .header {
+      transition: background 200ms, border 500ms;
+      background: transparent;
+      // border-bottom: 1px solid transparent;
+    }
   }
 }
 

@@ -10,7 +10,7 @@
           />
           <div class="header__title">
             <div class="header__title-name">Tagion</div>
-            <div class="header__title-sub">Money for #OpenEconomy</div>
+            <div class="header__title-sub">Money for #NetworkEconomy</div>
           </div>
         </router-link>
       </div>

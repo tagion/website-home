@@ -9,7 +9,20 @@
 .landing {
   padding-top: $header-height;
   color: $dark;
-  background-image: url(../../public/bgphoto1.jpg);
+  // background-image: url(../../public/bgphoto2.jpg);
+  // background-size: 100%;
+  // position: relative;
+  
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background: #000;
+  //   opacity: .3;
+  // }
 
   .content-wrapper {
     // padding-top: 3rem;
@@ -42,20 +55,36 @@
   }
 
   .intro {
-    margin-top: 8rem;
-    margin-bottom: 5rem;
+    margin-top: 8em;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 1.4em;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0.2em;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: $light-darker;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 8em;
+    }
 
     p {
-      font-size: 1.4em;
-      // font-style: italic;
+      font-size: 1.75em;
       // font-family: Georgia, 'Times New Roman', Times, serif;
       // line-height: 1.4;
       position: relative;
       color: $dark-lighter;
-      max-width: 70%;
+      max-width: 60%;
 
       @include media-breakpoint-down(lg) {
         max-width: 100%;
+        font-size: 1.5em;
       }
 
       strong {
@@ -65,14 +94,40 @@
       }
     }
 
-    .buttons {
-      a {
-        font-size: 0.8em;
-        // padding: 0.4em 1.2em;
-        color: $secondary;
-        font-weight: 600;
-        margin-right: 1em;
+    
+  }
+
+  .buttons {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
+    p {
+      max-width: 100%;
+    }
+
+    a {
+      font-size: 1.3em;
+      // padding: 0.4em 1.2em;
+      color: $primary-lighter;
+      font-weight: 600;
+      margin-right: .6em;
+      border: 1px dotted $primary-lighter;
+      padding: 0.6em 1.2em;
+      border-radius: 100px;
+      transition: background 100ms;
+      &:hover {
+        background: $light;
       }
+      &.button-accent {
+        color: $secondary;
+        border: 1px dotted $secondary;
+
+        &:hover {
+          background: $secondary-lightest;
+        }
+      }
+
+      
     }
   }
 
@@ -92,6 +147,11 @@
       margin-right: 2rem;
       position: relative;
       cursor: default;
+
+      h2 {
+        font-weight: 600;
+        color: $primary-lighter;
+      }
 
       &:hover {
         span {

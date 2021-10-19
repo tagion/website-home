@@ -20,14 +20,16 @@ Our money don't integrate properly in the digital world, creating need for middl
 The world is hungry for a more effecient currency -->
 <div class="intro">
 
-**Tagion is an open money system** that acts as an effecient **medium of exchange**, convenient **unit of account** and reliable **store of value**.
+**Tagion** is an **network money** that can be used as an effecient **medium of exchange**, convenient **unit of account** and reliable **store of value**.
+
+
+
+</div>
 
 <div class="buttons">
 
-<a href="#">🤓 Explore Wiki</a>
-<a href="#">😎 Join #OpenEconomy</a> 
-
-</div>
+<a href="#">🤓 Learn More</a>
+<a href="#" class="button-accent">😎 Join #NetworkEconomy</a> 
 
 </div>
 
@@ -41,7 +43,7 @@ The world is hungry for a more effecient currency -->
 
 ## Fast Transactions
 
-Transactions are **accepted in seconds**, and reach 100% finality in less than minute. For small everyday transactions, the initial acceptance is enough. Once the transaction is final, it can't be reversed.
+Transactions are **confirmed in seconds**, and reach 100% finality in less than minute. You only need to wait for finality for large transactions.
 
 </div>
 
@@ -53,7 +55,7 @@ Transactions are **accepted in seconds**, and reach 100% finality in less than m
 
 ## Native Integrations
 
-Tagion is written as computer code. It **integrates natively with any software**, creating potential to change how we use money in everyday life. Instead of using banks, we can **use money directly in everyday apps**.
+Tagion **integrates natively with any software**. Instead of using middlemen, we can **use money directly** in everyday apps.
 
 </div>
 <div class="feature">
@@ -64,7 +66,7 @@ Tagion is written as computer code. It **integrates natively with any software**
 
 ## Cryptographic Security
 
-Ownership of tagions is **guaranteed by cutting-edge cryptography**. Only the owner of the private key to the tag can spend it. Your "wallet" application stores all private keys encrypted, and **nobody except you has access to your money**.
+Ownership of tagions is **guaranteed by cutting-edge cryptography**. Nobody except you has access to your money.
 
 </div>
 
@@ -76,7 +78,7 @@ Ownership of tagions is **guaranteed by cutting-edge cryptography**. Only the ow
 
 ## Open Rules
 
-**Aanybody can be part of the network**. The rules are fully controlled by the network via weighted voting, making sure the system serves the interests of majority.
+**Aanybody can be part of the network**. The rules are controlled by the network via weighted voting, thus the system serves the interests of majority.
 
 </div>
 </div>

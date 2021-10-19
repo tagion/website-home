@@ -30,6 +30,12 @@ body {
   height: $header-height;
 }
 
+.landing-page:not(.sidebar-open) {
+  .layout-header {
+    position: absolute;
+  }
+}
+
 //
 // Body
 //
