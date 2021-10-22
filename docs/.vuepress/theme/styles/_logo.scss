@@ -1,0 +1,44 @@
+.logo__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  .logo__logo {
+    height: 2.4em;
+    position: relative;
+    top: 1px;
+    transition: opacity 100ms linear;
+    opacity: 0.8;
+  }
+
+  a {
+    display: flex;
+
+    &:hover {
+      .logo__logo {
+        opacity: 1;
+      }
+    }
+  }
+
+  .logo__title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.4em;
+
+    .logo__title-name {
+      font-weight: 700;
+      font-size: 0.95em;
+      white-space: nowrap;
+      color: $dark;
+    }
+
+    .logo__title-sub {
+      font-size: 0.75em;
+      margin-top: -0.2em;
+      color: $gray-600;
+      white-space: nowrap;
+    }
+  }
+}

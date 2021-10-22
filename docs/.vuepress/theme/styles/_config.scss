@@ -27,10 +27,10 @@ $grid-breakpoints: (
 // Overrides
 // =========================================================
 
-$primary: #141516;
+$primary: #3e4044;
+$primary-darker: mix(#000, $primary, 10%);
+$primary-darkest: mix(#000, $primary, 30%);
 $primary-lighter: mix(#fff, $primary, 30%);
-$primary-darker: mix(#000, $primary, 20%);
-$primary-darkest: mix(#000, $primary, 80%);
 $primary-lightest: mix(#fff, $primary, 50%);
 
 $secondary: #e4530f;

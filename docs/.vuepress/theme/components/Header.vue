@@ -1,7 +1,7 @@
 <template>
   <header class="header" id="header">
     <b-container class="d-flex justify-content-between">
-      <div class="header__logo-wrapper">
+      <div class="header-logo__wrapper">
         <logo />
       </div>
 

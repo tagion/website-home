@@ -9,7 +9,7 @@
               <router-link to="/community/roadmap.html">Roadmap</router-link>
             </li>
             <li>
-              <router-link to="/whitepaper/">Whitepaper</router-link>
+              <router-link to="/whitepaper/">Concepts</router-link>
             </li>
             <li>
               <a href="/tagiontechpaper.pdf" @click="$analytics.triggerEvent({category: 'Exploration', action: 'TechpaperDownload', fields: {placement: 'Footer'}})" target="_blank" rel="noopener noreferrer nofollow">
@@ -34,6 +34,17 @@
                 Reddit
                 <OutboundLink />
               </a>
+            </li>
+            <li>
+              <a href="mailto:support@tagion.org">
+                Tagion Force
+                <OutboundLink />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@tagion.org">
+                Telegram
+              </a>  (invite-only)
             </li>
           </b-nav>
         </b-col>

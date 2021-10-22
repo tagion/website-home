@@ -1,13 +1,13 @@
 <template>
-  <router-link to="/">
+  <router-link class="logo__wrapper" to="/">
     <img
-      class="header__logo"
-      src="/logomark-square-black.svg"
+      class="logo__logo"
+      src="/logomark-circle-black.svg"
       alt="Tagion Logo"
     />
-    <div class="header__title">
-      <div class="header__title-name">Tagion</div>
-      <div class="header__title-sub">Money for #NetworkEconomy</div>
+    <div class="logo__title">
+      <div class="logo__title-name">Tagion</div>
+      <div class="logo__title-sub">Money for #NetworkEconomy</div>
     </div>
   </router-link>
 </template>

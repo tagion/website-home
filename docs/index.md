@@ -1,83 +1,96 @@
 ---
 title: Home
-date: December 16, 2019
+date: October 22, 2021
 sidebar: false
 layout: Landing
 
-description: Tagion is an open banking protocol, that enables digital peer-to-peer cryptocurrency and a decentralized exchange, governed by its users. By design, Tagion network has no central authority and belongs to all its users. It will be open-sourced and open for everyone to join once the software is ready.
+description: Tagion is money for the new network economy.
 ---
 
 <div class="intro">
 
-**Tagion** is an **network money** that can be used as an effecient **medium of exchange**, convenient **unit of account** and reliable **store of value**.
+**The world has changed.** The global economy transforms into digital-first networks of connected people, devices, and businesses. Tagion is the **money system** designed **for this new world**.
 
 </div>
-
-<!-- Humans tried many forms of money, the effecient ones boosted economic growth, while ineffecient one stalled or even crashed it. We know from history that money system matters, and we now the money must be **unit of account**, **medium of exchange** and **store of value**.
-
-We live in the era of digitalization and globalization. Computing and internet transformed our world, yet we still choose to use money system designed before  -->
-
-<!-- Our life changes now faster than ever before. Innovations lead to new innovations and the loop accelerates.
-
-Our money don't integrate properly in the digital world, creating need for middlemen, resulting in higher fees.
-
-The world is hungry for a more effecient currency -->
-
-<div class="features">
-
-<div class="feature">
-<!-- 
-<span class="em-1 em-1-1">🚀</span>
-<span class="em-1 em-1-2">🚀</span>
-<span class="em-1 em-1-3">🚀</span> -->
-
-## The World is Changing
-
-Transactions are **confirmed in seconds**, and reach 100% finality in less than minute. You only need to wait for finality for large transactions.
-
-</div>
-
-<div class="feature">
-
-<!-- <span class="em-2 em-2-1">📱</span>
-<span class="em-2 em-2-2">📱</span>
-<span class="em-2 em-2-3">📱</span> -->
-
-## New Network Economy
-
-Tagion **integrates natively with any software**. Instead of using middlemen, we can **use money directly** in everyday apps.
-
-</div>
-<div class="feature">
-
-<!-- <span class="em-3 em-3-1">🔐</span>
-<span class="em-3 em-3-2">🔐</span>
-<span class="em-3 em-3-3">🔐</span> -->
-
-## Network Money
-
-Ownership of tagions is **guaranteed by cutting-edge cryptography**. Nobody except you has access to your money.
-
-</div>
-
-<div class="feature">
-
-<!-- <span class="em-4 em-4-1">🗳</span>
-<span class="em-4 em-4-2">🗳</span>
-<span class="em-4 em-4-3">🗳</span> -->
-
-## Open Rules
-
-**Aanybody can be part of the network**. The rules are controlled by the network via weighted voting, thus the system serves the interests of majority.
-
-</div>
-</div>
-
-
 
 <div class="buttons">
 
-<a href="#">🤓 Learn More</a>
-<a href="#" class="button-accent">😎 Join #NetworkEconomy</a> 
+<a href="/learn">Learn More</a>
+<a href="/join" class="button-accent">Join #NetworkEconomy</a>
 
+</div>
+
+<div class="features">
+<div class="feature feature--right">
+
+## Digital Revolution
+Digital revolution driven by the accelerating speed of innovation leads to a revolution in **social and economic relationships**, **transforming** the way we communicate and **trade**.
+
+The real economy becomes faster and **more efficient** by moving into **digital space**.
+
+</div>
+<div class="feature">
+
+## Network Economy
+Global **real-time** connections among people, devices, and businesses are a new reality. These connections make up the new type of **borderless network economy**.
+
+The new economy is not localized to territorial or central markets but rather to **virtual** ones based on **shared interests, values, and industries**.
+
+</div>
+<div class="feature feature--right">
+
+## Software Money
+To be truly efficient, digital network economy needs a digital **medium of exchange** and **store of value**.
+
+Today, all of our digital transactions are done by banks and service providers, who actually hold our money for us. 
+
+Tagion is **software money** system, with **cryptographic ownership protection**, enabling us to **transact instantly with anyone anywhere**.
+
+</div>
+<div class="feature">
+
+## Programmed Equality
+**Tagion is programmed** to be **neutral** and **stable**, ensuring equal rights for all participants and long-term stability in the amount of value it represents. 
+
+Furthermore, Tagion is programmed to be **governed openly as a common resource**, meaning we all have **equal rights** to use and improve the money system.
+
+</div>
+<div class="summary">
+
+## Opportunity
+
+Now is the time to act. We are the **community** of **creators**, **entrepreneurs** and **investors**, uniting into **one network** under the shared goal of building the **next-generation economy**, using **Tagion** as our money system of choice. We will be happy to see you among us!
+
+<div class="links">
+<a class="links__link" href="#">
+
+### 🤓 Learn
+
+Dive deep into the core concepts behind Tagion.
+
+</a>
+<a class="links__link" href="#">
+
+### 💬 Discuss
+
+Join the discussions or start one, learn from peers and share ideas.
+
+</a>
+<a class="links__link" href="#">
+
+### 👨‍💻 Build <OutboundLink/>
+
+Get the tools to build on top of Tagion from our GitHub.
+
+</a>
+<a class="links__link" href="#">
+
+### 🚀 Join Force <OutboundLink/>
+
+Start your heroic journey by exploring Tagion Force.
+
+</a>
+</div>
+
+</div>
 </div>
