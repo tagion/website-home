@@ -59,35 +59,35 @@ Furthermore, Tagion is programmed to be **governed openly as a common resource**
 
 ## Opportunity
 
-Now is the time to act. We are the **community** of **creators**, **entrepreneurs** and **investors**, uniting into **one network** under the shared goal of building the **next-generation economy**, using **Tagion** as our money system of choice. We will be happy to see you among us!
+Now is the time to act. We are the **community** of **creators**, **entrepreneurs** and **investors**, uniting into **one network** under the shared goal of building the **next-generation economy**, using **Tagion** as our money system of choice. We are truly happy to see you among us!
 
 <div class="links">
 <a class="links__link" href="#">
 
-### 🤓 Learn
+### 🤓 Dive Deep
 
-Dive deep into the core concepts behind Tagion.
-
-</a>
-<a class="links__link" href="#">
-
-### 💬 Discuss
-
-Join the discussions or start one, learn from peers and share ideas.
+Core concepts behind Tagion.
 
 </a>
 <a class="links__link" href="#">
 
-### 👨‍💻 Build <OutboundLink/>
+### 😎 Join Us
 
-Get the tools to build on top of Tagion from our GitHub.
+Communities across the internet.
 
 </a>
 <a class="links__link" href="#">
 
-### 🚀 Join Force <OutboundLink/>
+### 👨‍💻 Build Your Thing
 
-Start your heroic journey by exploring Tagion Force.
+Tools to build on top of Tagion.
+
+</a>
+<a class="links__link" href="#">
+
+### 🚀 Visit Homebase <OutboundLink/>
+
+Heroic journey of a contributor.
 
 </a>
 </div>
