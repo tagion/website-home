@@ -9,9 +9,10 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      { text: "Meet", link: "/" },
+      { text: "Home", link: "/" },
       { text: "Learn", link: "/docs/" },
-      { text: "Join", link: "/docs/" },
+      { text: "Software", link: "/docs/" },
+      { text: "Community", link: "/docs/" },
     ],
     footer: [
 

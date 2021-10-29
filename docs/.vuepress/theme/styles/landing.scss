@@ -6,26 +6,65 @@
 @import "node_modules/bootstrap/scss/variables";
 
 .landing {
-  padding-top: $header-height;
-  padding-bottom: 3rem;
+  min-height: 100vh;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: $dark;
+  font-family: $font-family-sans-serif-body;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 0.9em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-family-sans-serif-headline;
+  }
+
+  p {
+    strong {
+      font-weight: 500;
+      color: $dark;
+    }
+  }
 
   .landing-logo__wrapper {
     display: flex;
-    align-items: flex-start;
-    font-size: 1.5em;
-    margin-bottom: 2em;
-    margin-top: 4em;
+    justify-content: center;
+    font-size: 1.4em;
+    margin-bottom: 1.6em;
+
+    .logo__wrapper {
+      flex-direction: column;
+
+      .logo__logo {
+        height: 3.4em;
+        margin: 0;
+      }
+
+      .logo__title {
+        margin: 0;
+        text-align: center;
+        line-height: 1.6;
+        margin-top: 0.4em;
+
+        .logo__title-name {
+          font-weight: 400;
+        }
+      }
+    }
   }
 
   p {
     max-width: 60%;
     font-size: 1rem;
     color: $primary-lighter;
-
-    strong {
-      color: $primary;
-    }
   }
 
   h1 {
@@ -47,166 +86,97 @@
   //
   // Special sections
   //
-  .intro {
+  .section-intro {
     position: relative;
-    padding-left: 1.5em;
-    margin-bottom: 3em;
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 0.2em;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      background: $light-darker;
-      border-radius: 10px;
-    }
-
-    @include media-breakpoint-down(lg) {
-      margin-top: 8em;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $font-family-sans-serif-headline;
+    text-align: center;
 
     p {
-      font-size: 1.45em;
       position: relative;
-      color: $dark-lighter;
       max-width: 70%;
+      color: $dark-lighter;
+      font-size: 1.8em;
+      font-weight: 300;
 
       @include media-breakpoint-down(lg) {
         max-width: 100%;
-        font-size: 1.5em;
       }
 
       strong {
-        font-weight: 600;
-        color: $dark;
+        font-weight: 400;
       }
     }
   }
 
-  .buttons {
-    margin-top: 3em;
-    margin-bottom: 12em;
+  .section-links {
+    display: flex;
+    justify-content: center;
+    margin-top: .6em;
+    margin-bottom: 4em;
+    font-size: 1.2em;
+    flex-wrap: wrap;
 
-    p {
-      max-width: 100%;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
     }
 
-    a {
-      font-size: 1.2em;
-      color: $primary-lighter;
-      font-weight: 600;
-      margin-right: 0.6em;
-      border: 2px solid $light-darker;
-      padding: 0.6em 1.2em;
-      border-radius: 0.3em;
+    .links__link {
+      position: relative;
+      display: block;
+      width: 50%;
+      margin-top: 3em;
+      padding: 1.8em 1.2em 0.8em;
+      border-radius: 0.8em;
+      margin-right: .5em;
+      margin-left: .5em;
+      max-width: 18em;
+      background: #f8f8f8;
       transition: background 100ms;
 
-      &:hover {
-        background: $light;
-      }
-
-      &.button-accent {
-        background: $secondary;
-        color: #fff;
-        border-color: transparent;
-
-        &:hover {
-          background: $secondary-darker;
-        }
-      }
-    }
-  }
-
-  .features {
-    margin-bottom: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-    .feature {
-      width: 40%;
-      margin-top: 2rem;
-      margin-bottom: 10em;
-      font-size: 1.2em;
-
-      &--right {
-        align-self: flex-end;
-      }
-
-      &--center {
-        align-self: center;
-      }
-
-      @include media-breakpoint-down(lg) {
-        font-size: 0.9em;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 1em;
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        max-width: 100%;
+        margin-top: 2em;
       }
 
-      h2 {
+      @include media-breakpoint-down(sm) {
+        max-width: 100%;
+      }
+
+      &:hover {
+        background: $secondary-lightest;
+      }
+
+      h3 {
+        font-size: 1em;
+        color: $primary-darker;
         font-weight: 400;
-        font-size: 1.8em;
-        color: $primary;
+        text-align: center;
       }
 
       p {
-        font-size: 0.9em;
+        font-size: 0.8em;
         max-width: 100%;
+        color: $primary-lighter;
       }
     }
-  }
 
-  .summary {
-    border-top: 1px dotted $light-darker;
-    padding-top: 3em;
-    font-size: 1.2em;
-
-    h2 {
-      font-weight: 400;
-      font-size: 1.8em;
-      color: $primary;
-    }
-
-    p {
-      font-size: 0.9em;
-      max-width: 70%;
-    }
-
-    .links {
-      display: flex;
-      align-items: stretch;
-      margin-top: 2em;
-      margin-bottom: 4em;
-
-      .links__link {
-        display: block;
-        width: 100%;
-        border: 2px solid $light-darker;
-        padding: 1em 1.2em 0.6em;
-        border-radius: 0.4em;
-        margin-right: 1em;
-        transition: background 100ms;
-
-        &:nth-child(4) {
-          margin:0;
-        }
-
-        &:hover {
-          background: $light;
-        }
-
-        h3 {
-          font-size: 0.9em;
-        }
-
-        p {
-          font-size: 0.8em;
-          max-width: 100%;
-        }
-      }
+    .links__icon {
+      width: 1.6em;
+      height: 1.6em;
+      top: -0.8em;
+      left: 50%;
+      margin-left: -0.8em;
+      border-radius: 100px;
+      background: #fff;
+      text-align: center;
+      font-size: 1.6em;
+      position: absolute;
     }
   }
 }

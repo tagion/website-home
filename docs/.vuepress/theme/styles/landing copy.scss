@@ -1,0 +1,324 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "./config";
+
+@import "node_modules/bootstrap/scss/variables";
+
+.landing {
+  padding-bottom: 3rem;
+  color: $dark;
+
+  
+
+  @include media-breakpoint-down(sm) {
+    font-size: .9em;
+  }
+
+  .landing-logo__wrapper {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    margin-top: 7em;
+    
+    @include media-breakpoint-down(sm) {
+      margin-top: 3em;
+    }
+  }
+
+  p {
+    max-width: 60%;
+    font-size: 1rem;
+    color: $primary-lighter;
+
+    strong {
+      color: $primary;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 3rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  ul {
+    li {
+      font-size: 1rem;
+    }
+  }
+
+  //
+  // Special sections
+  //
+  .intro {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 2em;
+    
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0.2em;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: $light-darker;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 1.45em;
+      position: relative;
+      color: $dark-lighter;
+      max-width: 70%;
+
+      @include media-breakpoint-down(lg) {
+        max-width: 100%;
+      }
+
+      strong {
+        font-weight: 600;
+        color: $dark;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      max-width: 100%;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 1.2em;
+      color: $primary-lighter;
+      font-weight: 600;
+      margin-right: 0.6em;
+      border: 2px solid $light-darker;
+      padding: 0.6em 1.2em;
+      border-radius: 0.3em;
+      transition: background 100ms;
+      white-space: nowrap;
+      margin-top: 0.8em;
+
+      &:hover {
+        background: $light;
+      }
+
+      &.button-accent {
+        background: $secondary;
+        color: #fff;
+        border-color: transparent;
+
+        &:hover {
+          background: $secondary-darker;
+        }
+      }
+    }
+  }
+
+  .features {
+    margin-top: 5em;
+    padding-top: 3em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top: 1px dotted $light-darker;
+
+    .feature {
+      margin-top: 5em;
+      margin-bottom: 5em;
+      font-size: 1.2em;
+      display: flex;
+      flex-direction: row-reverse;
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column!important;
+      }
+
+      .feature__illustration {
+        display: flex;
+        justify-content: flex-end;
+        
+        @include media-breakpoint-down(lg) {
+          justify-content: flex-start;
+        }
+
+        img {
+          width: 80%;
+          position: relative;
+          
+          @include media-breakpoint-down(md) {
+            width: 100%;
+          }
+        }
+      }
+
+      .feature__text {
+        padding-top: 2.5em;
+        width: 50%;
+        
+        @include media-breakpoint-down(md) {
+          padding-top: 0em;
+          width: 100%;
+        }
+      }
+
+      &--right {
+        align-self: flex-end;
+        flex-direction: row;
+
+        .feature__illustration {
+          justify-content: flex-start;
+        }
+      }
+
+      &--center {
+        align-self: center;
+      }
+
+      h2 {
+        font-weight: 400;
+        font-size: 1.8em;
+        color: $primary;
+      }
+
+      p {
+        font-size: 0.9em;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .summary {
+    border-top: 1px dotted $light-darker;
+    padding-top: 3em;
+    font-size: 1.2em;
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.8em;
+      color: $primary;
+      margin-bottom: 0.4em;
+
+      strong {
+        color: $secondary;
+      }
+    }
+
+    p {
+      font-size: 1em;
+      max-width: 60%;
+      line-height: 1.6;
+
+      @include media-breakpoint-down(md) {
+        max-width: 80%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        max-width: 100%;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      font-size: 1.4em;
+      position: relative;
+      padding-left: 2em;
+      margin-top: 1.4em;
+      margin-bottom: 0.4em;
+    }
+
+    .links {
+      display: flex;
+      align-items: stretch;
+      margin-top: 2em;
+      margin-bottom: 4em;
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+      }
+
+      .links__link {
+        display: block;
+        width: 50%;
+        border: 2px solid $light-darker;
+        padding: 1.2em 1.2em 0.4em;
+        border-radius: 0.4em;
+        margin-right: 1em;
+        transition: background 100ms;
+        max-width: 15em;
+
+        @include media-breakpoint-down(lg) {
+          flex-direction: column;
+          margin-bottom: 1em;
+          max-width: 70%;
+          width: 100%;
+        }
+        
+        @include media-breakpoint-down(sm) {
+          max-width: 100%;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          background: $light;
+        }
+
+        h3 {
+          font-size: 0.9em;
+          color: $primary-darker;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 0.8em;
+          max-width: 100%;
+          color: $primary-lighter;
+        }
+      }
+    }
+
+    .summary__bullets {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 2em;
+
+      .summary__bullet {
+        width: 50%;
+        margin-top: 1em;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+        }
+
+        h3 {
+          font-size: 1.2em;
+        }
+        
+        p {
+          width: 90%;
+          font-size: .8em;
+        }
+      }
+    }
+  }
+}
