@@ -36,7 +36,7 @@ a {
   margin-top: 1rem;
   padding-top: 0rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   font-size: 0.9em;
   color: $dark-lighter;
@@ -61,7 +61,7 @@ a {
   }
 
   a:hover {
-    color: $primary;
+    color: $secondary;
     opacity: 1;
   }
 
@@ -84,7 +84,7 @@ a {
   color: mix($dark, #fff, 60%);
 
   &:hover {
-    color: $primary;
+    color: $secondary;
   }
 }
 
@@ -110,7 +110,7 @@ a {
   margin-left: -2rem;
   margin-right: -2rem;
   position: relative;
-  background: $primary;
+  background: $secondary;
   color: #fff;
   padding: 1.4rem 2.4rem;
   border-radius: 6px;

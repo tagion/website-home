@@ -17,7 +17,7 @@ let config = {
     ],
     sidebar: {
       "/network/": [
-        "/network/",
+        ["/network/", 'Welcome'],
         "/network/communities",
         "/network/faq",
         {
@@ -54,7 +54,7 @@ let config = {
         },
       ],
       "/money/": [
-        "/money/",
+        ["/money/", 'Welcome'],
         "/money/communities",
         "/money/faq",
         "/money/buy",

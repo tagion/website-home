@@ -57,13 +57,13 @@ body {
     margin: 0;
 
     @include media-breakpoint-up(lg) {
-      padding-right: calc(#{$sidebar-width-lg} + 3rem);
+      padding-right: calc(#{$sidebar-width-lg} + 1.6rem);
     }
     @include media-breakpoint-up(xl) {
-      padding-right: calc(#{$sidebar-width-xl} + 3rem);
+      padding-right: calc(#{$sidebar-width-xl} + 1.6rem);
     }
     @include media-breakpoint-up(xxl) {
-      padding-right: calc(#{$sidebar-width-xxl} + 3rem);
+      padding-right: calc(#{$sidebar-width-xxl} + 1.6rem);
     }
   }
 }

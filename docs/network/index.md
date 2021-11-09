@@ -1,11 +1,12 @@
 ---
+title: Network
 lang: en-US
 editLink: true
 sidebar: true
 sidebarDepth: 0
 ---
 
-# Governance
+# Welcome
 
 Tagion is a money system governed openly, as a common good. Anybody can participate in governance, support network's reliability and influence its development.
 

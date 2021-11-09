@@ -13,18 +13,27 @@ b {
 
 .typography {
   margin: auto;
+  width: 65%;
+
+  @include media-breakpoint-down(xl) {
+    width: 80%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
 }
 
 .has-sidebar {
   .typography {
     margin: 0;
+    width: 100%;
   }
 }
 
 .typography {
   font-size: 1em;
   line-height: 1.8;
-  max-width: 800px;
   color: mix($dark, #fff, 90%);
   font-family: $font-family-sans-serif-body;
 
@@ -42,7 +51,7 @@ b {
       border-radius: 0.2rem;
       display: block;
       padding: 0.4rem 0.6rem;
-      background: $primary;
+      background: $secondary;
       color: #fff;
       font-size: 0.8rem;
       line-height: 1.4;
@@ -124,7 +133,7 @@ b {
     font-weight: 500;
     color: $dark;
     position: relative;
-    padding-bottom: .6rem;
+    padding-bottom: 0.6rem;
 
     @include media-breakpoint-down(lg) {
       font-size: 2.4em;
@@ -207,6 +216,10 @@ b {
 
     @include media-breakpoint-down(lg) {
       font-size: 1em;
+    }
+
+    img {
+      margin-bottom: 1em;
     }
   }
 
@@ -304,7 +317,7 @@ b {
   width: 18%;
   margin: 0 2em 1em 0;
   border-radius: 600px;
-  border: 2px solid #{$primary-lightest}55;
+  border: 2px solid #{$secondary-lightest}55;
 }
 
 .wiki-image-float-left {

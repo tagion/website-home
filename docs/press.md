@@ -1,5 +1,4 @@
 ---
-title: Error
 fullwidth: true
 editLink: false
 indexable: false
@@ -8,53 +7,68 @@ lang: en-US
 
 # For Press
 
-## About Tagion
+Tagion is a cryprocurrency project, founded by [Theis Simonsen](https://www.linkedin.com/in/theis-simonsen-32035313/), [Carsten Rasmussen](https://www.linkedin.com/in/carsten-bleser-rasmussen-80699915/) and [Kristian Vestergaard](https://www.linkedin.com/in/kristian-vestergaard-a59b4a/).
 
-Tagion is a universal token protocol. We aim to solve problems such as digital currency interoperability, inflation and deflation, decentralized governance, and scalability.
+The project combines multiple innovative technologies to enable truly decenetralized and scalable cryptocurrency that can be used as money in our everyday life.
 
-## Projects
+## Tagion Goal
 
-Internal projects include:
+Tagion aims to become the most convenient **medium of exchange** and a reliable **store of value**. All decisions throughout project development were and will be driven by this goal.
 
-- **Tagion Protocol** - combination of core protocols;
-- **Tagion SDK** - tools for developers;
-- **Tagion Node** - implementation of network node software;
-- **Tagion Wallet** - implementation of basic wallet functionality.
+## Tagion Features
 
-All listed projects are either open-source or will be open-sourced soon, once the codebase and documentation is prepared for public.
+### Open Governance
 
-## Differentiators
+Tagion addresses governance problem from day one. The aim is to have a decentralized governance system open for all to join.
 
-#### Hashgraph
+Tagion governance consists of following layers:
 
-Instead of Blockchain with proof of work, Tagion is based on Hashgraph consensus mechanism. 
+- Node governance
+
+### Anonymity
+
+Tagion money exist similar to cash bills. Tagion bill is stored in the database as a separate record, once used, the new bill is created.
+
+> The team believes "money must not smell"
+
+### Consensus Mechanism
+
+Instead of Blockchain with proof of work, Tagion is based on Hashgraph consensus mechanism.
 
 > It is an asynchronous Byzantine Fault Tolerance (aBFT) consensus algorithm that they consider capable of securing the platform against attacks. It does not use miners to validate transactions, and uses directed acyclic graphs for time-sequencing transactions without bundling them into blocks.
-> 
+>
 > ---
+>
 > [Taken from Wikipedia](https://en.wikipedia.org/wiki/Hashgraph)
 
-##### Is Hashgraph Patented?
 
-No, the Hashgraph mathematical proof itself is not patented, because only inventions can be patented, not the science itself as the mathematical proof. 
+### Adaptive Money Supply
 
-Swirlds own the US Patent_9,646,029_B1 claiming a distributed database system that reaches consensus with a proof of stake model and the Hashgraph algorithm.
+## Stage of Development
 
-Swirlds have filed the patent in US and Australia. The patent application got refusal in Korea and has chosen not to continue the national phase in Germany (EU).
+The team behind tagion aims to launch the network by the end of 2021. Initially the network will be open for all to use, but require permission to participate in governance. Once the adoption reaches acceptable level, the governance will start to open up in stages. The team expects this to happen between 2022 - 2023.
 
-Tagion used the math behind Hashgrpaph in a completely different way, in a different context, which is its P2P distributed database technology.
+## "Tagion" Name
 
-Tagion as well filed patents in EU, that are related to the gossip and security mechanisms and the database technology.
+There are three things named "Tagion":
 
-#### Decentralized Exchange Protocol
+1. Tagion **software**
+2. Tagion **network**
+3. Tagion **money**
 
-The Hashgraph enables the fair ordering of transactions in a decentralized manner. It makes possible to exchange digital currencies without trusting a middleman.
+![](/press/tagion-name.drawio.svg)
+
+Tagion **software** is owned by [i25s AG](https://i25s.com), and eventually will become open-source. The "Tagion" name will always belong to the original implementation, even if it becomes obsolete in the future.
+
+Tagion **network** is named after the original implementation by **i25s AG**, mentioned above.
+
+Tagion **money** is named after the network that enables that money.
 
 
-#### Inclusive Governance
+## FAQ
 
-Tagion has several layers of governance and built on democratic principles. The network and the code belong to all its users. More about governance on [Tagion Forum](https://forum.tagion.org/c/governance/8).
+Please, refer to [Network FAQ](/network/faq) and [Money FAQ](/money/faq) pages to learn more.
 
-#### Elastic Money Supply
+## Contacts
 
-The fixed hard cap on money supply makes deflationary currency, creating an incentive to hold on to money instead of spending them, which is undesired due to economic reasons. Tagion solves it with an elastic money supply that will expand and contract depending on internal metrics that reflect adoption.
+For press inquiries, please contact us at [pr@tagion.com](mailto:pr@tagion.com).

@@ -88,10 +88,10 @@
       }
 
       &.focused {
-        background-color: mix($primary, #fff, 5%);
+        background-color: mix($secondary, #fff, 5%);
 
         a {
-          color: $primary;
+          color: $secondary;
         }
       }
     }
