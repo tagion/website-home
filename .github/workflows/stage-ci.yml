@@ -3,7 +3,7 @@ name: CI Stage
 on: 
   push:
     branches:
-    - stage
+    - staging
 
 jobs:
   build:
