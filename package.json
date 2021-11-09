@@ -1,13 +1,13 @@
 {
-  "name": "tagion-dot-org-website",
+  "name": "tagion-dot-com",
   "version": "0.0.1",
-  "description": "Official tagion.org homepage",
+  "description": "Official tagion.com homepage",
   "scripts": {
     "dev": "NODE_ENV=development APP_ENV=development vuepress dev docs",
     "build": "APP_ENV=production vuepress build docs",
     "build:staging": "APP_ENV=staging vuepress build docs"
   },
-  "author": "Vlad Pazych <vp@tagion.org>",
+  "author": "Vlad Pazych <vp@tagion.com>",
   "license": "MIT",
   "devDependencies": {
     "@markspec/vuepress-plugin-footnote": "^1.1.1",

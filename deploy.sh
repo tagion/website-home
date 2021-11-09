@@ -1,11 +1,13 @@
 #!/usr/bin/env sh
 
-IS_STAGE="stage"
+IS_STAGE="staging"
 
-# abort on errors
+# Abort on errors
 set -e
 
-# build
+npm install
+
+# Build
 if [ $1 == $IS_STAGE ];
 then
 echo 'Deploying to staging.tagion.org...'
@@ -33,10 +35,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
 if [ $1 == $IS_STAGE ];
 then
 git push -f https://github.com/tagion/website-homepage-staging.git master:gh-pages
