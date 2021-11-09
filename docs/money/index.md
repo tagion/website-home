@@ -1,5 +1,5 @@
 ---
-title: Money
+title: Money | Welcome
 lang: en-US
 editLink: true
 sidebar: true
