@@ -3,14 +3,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-family: $font-family-sans-serif-headline;
+  font-family: $font-family-primary;
 
   .logo__logo {
     height: 2.4em;
     position: relative;
     top: 1px;
     transition: opacity 100ms linear;
-    opacity: 0.8;
+    opacity: 1;
   }
 
   a {
@@ -27,17 +27,19 @@
     display: flex;
     flex-direction: column;
     margin-left: 0.4em;
-
+    
     .logo__title-name {
       font-weight: 700;
       font-size: 0.95em;
+      font-weight: 600;
       white-space: nowrap;
       color: $dark;
     }
-
+    
     .logo__title-sub {
       font-size: 0.75em;
       margin-top: -0.2em;
+      font-weight: 300;
       color: $gray-600;
       white-space: nowrap;
     }

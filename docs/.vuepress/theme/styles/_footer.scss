@@ -10,6 +10,8 @@
   padding-bottom: 6em;
   box-sizing: border-box;
   font-size: 0.95em;
+  font-family: $font-family-secondary;
+  font-weight: 300;
 
   .footer {
     .container {
@@ -51,8 +53,10 @@
 
   p {
     color: mix($dark, #fff, 60%);
+    
+    
   }
-
+  
   .copyright {
     color: mix($dark, #fff, 50%);
     margin-right: 2em;

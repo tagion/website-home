@@ -25,6 +25,8 @@
   padding-left: 2.3em;
   padding-right: 1em;
   color: mix($dark, #fff, 80%);
+  font-family: $font-family-secondary;
+  font-weight: 300;
 
   .nav {
     flex-direction: column;

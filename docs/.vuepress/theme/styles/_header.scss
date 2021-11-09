@@ -6,10 +6,11 @@
   border-bottom: 1px dotted mix($light-darker, #fff, 90%);
   height: $header-height;
   padding-bottom: 0.2rem;
+  font-family: $font-family-secondary;
+  font-weight: 300;
 
   .nav {
     font-size: 0.9em;
-    font-weight: 400;
     display: flex;
     align-items: center;
 
