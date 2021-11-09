@@ -8,10 +8,10 @@ set -e
 # build
 if [ $1 == $IS_STAGE ];
 then
-echo 'Deploying to stage.tagion.org...'
+echo 'Deploying to staging.tagion.org...'
 npm run build:staging
 else
-echo 'Deploying to tagion.org...'
+echo 'Deploying to tagion.com...'
 npm run build
 fi
 
@@ -21,12 +21,12 @@ cd docs/.vuepress/dist
 # if you are deploying to a custom domain
 if [ $1 == $IS_STAGE ];
 then
-echo 'stage.tagion.org' > CNAME
+echo 'staging.tagion.com' > CNAME
 
 echo 'User-agent: *' > robots.txt
 echo 'Disallow: *' >> robots.txt
 else
-echo 'tagion.org' > CNAME
+echo 'tagion.com' > CNAME
 fi
 
 git init
@@ -39,9 +39,9 @@ git commit -m 'deploy'
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 if [ $1 == $IS_STAGE ];
 then
-git push -f https://github.com/tagion/homepage.stage.git master:gh-pages
+git push -f https://github.com/tagion/website-homepage-staging.git master:gh-pages
 else
-git push -f https://github.com/tagion/homepage.git master:gh-pages
+git push -f https://github.com/tagion/website-homepage.git master:gh-pages
 fi
 
 cd -

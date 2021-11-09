@@ -1,7 +1,4 @@
-<center><a href="https://tagion.org"><img alt="tagion logo" src="./docs/.vuepress/public/github/logomark.svg" alt="tagion.org" height="60"></a></center>
-
 <center><h1>Welcome to Tagion!</h1></center>
-
 
 [Tagion.org](https://tagion.org) is a primary online resource for the Tagion community. It is improved and changed over time through the contributions of community members who submit content, give feedback, or volunteer their time to managing its evolution.
 
