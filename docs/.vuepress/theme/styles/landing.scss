@@ -10,8 +10,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: $dark;
-  font-family: $font-family-sans-serif-body;
+  font-family: $font-family-primary;
+
+  .content__default {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   @include media-breakpoint-down(sm) {
     font-size: 0.9em;
@@ -24,7 +32,7 @@
   h4,
   h5,
   h6 {
-    font-family: $font-family-sans-serif-headline;
+    font-family: $font-family-primary;
   }
 
   p {
@@ -37,8 +45,12 @@
   .landing-logo__wrapper {
     display: flex;
     justify-content: center;
-    font-size: 1.4em;
     margin-bottom: 1.6em;
+    font-size: 1.4em;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.2em;
+    }
 
     .logo__wrapper {
       flex-direction: column;
@@ -52,17 +64,18 @@
         margin: 0;
         text-align: center;
         line-height: 1.6;
-        margin-top: 0.4em;
+        margin-top: 0.3em;
 
         .logo__title-name {
-          font-weight: 400;
+          margin-bottom: 0.1em;
+          font-weight: 500;
+          font-family: $font-family-primary;
         }
       }
     }
   }
 
   p {
-    max-width: 60%;
     font-size: 1rem;
     color: $dark;
   }
@@ -92,32 +105,47 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: $font-family-sans-serif-headline;
     text-align: center;
+    max-width: 70%;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 0.9em;
+      max-width: 100%;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 0.8em;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 0.65em;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 0.6em;
+    }
 
     p {
       position: relative;
-      max-width: 67%;
-      color: #666;
-      font-size: 1.8em;
+      color: #888;
+      font-size: 1.7em;
       font-weight: 300;
-
-      @include media-breakpoint-down(xl) {
-        max-width: 85%;
-      }
-
-      @include media-breakpoint-down(lg) {
-        max-width: 78%;
-      }
-      
-      @include media-breakpoint-down(md) {
-        font-size: 1.5em;
-        max-width: 95%;
-      }
 
       strong {
         font-weight: 400;
-        color: #111;
+        color: #333;
+      }
+    }
+
+    .section-intro--accent p {
+      background: rgb(245, 245, 248);
+      padding: 0.2em 0.6em;
+      border-radius: 3px;
+      font-size: 1.8em;
+      color: #222;
+
+      strong {
+        color: #222;
       }
     }
   }
@@ -125,7 +153,7 @@
   .section-links {
     display: flex;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 1.4em;
     margin-bottom: 4em;
     font-size: 1.2em;
     flex-wrap: wrap;
@@ -137,19 +165,17 @@
       width: 50%;
       margin-top: 1em;
       padding: 0;
-      border-radius: 3px;
-      margin-right: 0.5em;
-      margin-left: 0.5em;
+      border-radius: 6px;
+      margin-right: 1em;
+      margin-left: 1em;
       max-width: 17em;
-      background: $primary;
       transition: all 100ms;
       box-sizing: border-box;
+      font-family: $font-family-secondary;
 
       @include media-breakpoint-down(xs) {
-        margin-bottom: 1em;
         width: 100%;
         max-width: 100%;
-        margin-top: 2em;
       }
 
       @include media-breakpoint-down(sm) {
@@ -161,21 +187,50 @@
         font-size: 0.8em;
         text-transform: uppercase;
         letter-spacing: 2px;
-        color: $light;
-        font-weight: 400;
+        color: $dark;
+        font-weight: 500;
         text-align: center;
-        background: #00000044;
-        padding: 0.4em;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
+        padding: 0.8em 0.4em 0.6em;
+        font-family: $font-family-secondary;
+        position: relative;
+        color: $primary;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: -4px;
+          right: -4px;
+          bottom: -0.4em;
+          height: 4px;
+          border-radius: 100px;
+          background: $primary;
+        }
+
+        strong {
+          font-weight: 600;
+        }
       }
 
       &.links__link--economy {
-        background: $tertiary;
+        h3 {
+          color: $tertiary;
+          &::after {
+            background: $tertiary;
+          }
+        }
       }
 
       &:hover {
         opacity: 0.9;
+        background: rgb(245, 245, 248);
+
+        p {
+          color: $dark;
+
+          strong {
+            color: $dark;
+          }
+        }
       }
 
       &:active {
@@ -186,11 +241,14 @@
         font-size: 0.9em;
         max-width: 100%;
         padding: 0.4em 1em;
-        color: #eee;
-
+        font-weight: 300;
+        color: $dark-lighter;
+        transition: color 100ms;
+        
         strong {
-          color: #fff;
-          font-weight: 600;
+          transition: color 100ms;
+          color: $dark-lighter;
+          font-weight: 500;
         }
       }
     }

@@ -61,9 +61,6 @@ export default {
       this.darkMode = localStorage.getItem("dark-mode") || false;
     }
   },
-  updated() {
-    this.$analytics.init();
-  },
   computed: {
     isLanding() {
       return this.$page.title === "Home";

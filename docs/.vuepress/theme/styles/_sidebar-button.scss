@@ -5,6 +5,7 @@
   z-index: 19;
   transition: all 0.1s linear;
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.3);
+  font-family: $font-family-secondary;
 
   .icon {
     display: inline-block;
@@ -13,11 +14,11 @@
   .layout-sidebar-button__text {
     color: #fff;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
     left: 0.8rem;
     user-select: none;
-    font-size: 0.9em;
+    font-size: 0.8em;
     letter-spacing: 1px;
   }
 

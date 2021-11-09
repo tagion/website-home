@@ -40,6 +40,8 @@ a {
   justify-content: space-between;
   font-size: 0.9em;
   color: $dark-lighter;
+  font-family: $font-family-secondary;
+  font-weight: 300;
 
   @include media-breakpoint-down(md) {
     display: block;
@@ -53,11 +55,16 @@ a {
     color: mix($dark, #fff, 60%);
   }
 
+  a {
+    color: $dark;
+  }
+
   a,
   a:hover {
     background: transparent;
     border: none;
     opacity: 0.6;
+    
   }
 
   a:hover {
