@@ -78,14 +78,14 @@
 
       .arrow {
         position: absolute;
-        right: -17px;
-        top: 12px;
+        right: -18px;
+        top: 10px;
         border: solid mix($dark, #fff, 30%);
         border-width: 0 2px 2px 0;
         display: inline-block;
         padding: 3px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
         transition: transform 200ms ease, top 200ms ease;
       }
 

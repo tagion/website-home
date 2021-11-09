@@ -38,9 +38,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: $primary-lighter;
   font-size: 0.9em;
-  color: $primary-lighter;
+  color: $dark-lighter;
 
   @include media-breakpoint-down(md) {
     display: block;

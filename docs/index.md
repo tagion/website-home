@@ -15,20 +15,20 @@ description: Tagion is money for the new network economy.
 </div>
 
 <div class="section-links">
-<a class="links__link" href="/community/">
+<router-link class="links__link" to="/network">
 
-### Governance
+### Tagion Network
 
-**Earn tagions** by supporting and improving the network
+**Earn tagions** by contributing to different layers of the network
 
-</a>
-<a class="links__link links__link--economy" href="/learn/">
+</router-link>
+<router-link class="links__link links__link--economy" to="/money">
 
-### Economy
+### Tagion Money
 
-**Use tagions** as money in the emerging network economy
+**Use tagions** as digital money in the emerging network economy
 
-</a>
+</router-link>
 
 
 

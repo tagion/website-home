@@ -35,7 +35,7 @@
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 1;
-  color: $primary;
+  color: $secondary;
   background-color: #f8f8f8;
   border-color: #eee;
 }
@@ -50,7 +50,7 @@
   color: #fff;
   cursor: default;
   background-color: $primary;
-  border-color: $primary;
+  border-color: $secondary;
 }
 
 .pagination > .disabled > span,

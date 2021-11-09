@@ -1,17 +1,18 @@
 ---
+title: FAQ
 lang: en-US
 editLink: true
 sidebar: true
 sidebarDepth: 0
+
+description: WIP
 ---
 
-# Governance
+# FAQ
 
 Tagion is a money system governed openly, as a common good. Anybody can participate in governance, support network's reliability and influence its development.
 
 Most of tagions created in the system are distributed across governance members (some distributed randomly to active users). 
-
-![](/diagrams/network.drawio.svg)
 
 ## Overview
 

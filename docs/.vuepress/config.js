@@ -9,28 +9,55 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      { text: "Software", link: "/software/" },
       { text: "Network", link: "/network/" },
-      { text: "Wiki", link: "/wiki/" },
+      { text: "Money", link: "/money/" },
     ],
     footer: [
 
     ],
     sidebar: {
-      "/wiki/": [
-        ["/wiki/", "Welcome"],
-      ],
       "/network/": [
-        ["/network/", "Welcome"],
-        ["/network/social-media", "Social Media"],
-        ["/network/team", "Tagion Team"],
-        ["/network/roadmap", "Tagion Roadmap"]
+        "/network/",
+        "/network/communities",
+        "/network/faq",
+        {
+          title: 'Technical Overview',
+          collapsable: true,
+          sidebarDepth: 1,
+          children: [
+            '/network/technical-paper/',
+            '/network/technical-paper/governance',
+            '/network/technical-paper/node-governance',
+            '/network/technical-paper/economic-governance',
+            '/network/technical-paper/system-upgrade-governance',
+            '/network/technical-paper/common-resources',
+            '/network/technical-paper/hashgraph-consensus-mechanism',
+            '/network/technical-paper/distributed-database',
+            '/network/technical-paper/special-records',
+            '/network/technical-paper/scripting-engine',
+            '/network/technical-paper/business-model',
+            '/network/technical-paper/parallelism',
+            '/network/technical-paper/node-stack',
+            '/network/technical-paper/privacy',
+            '/network/technical-paper/decentralised-exchange-using-lightning-network',
+            '/network/technical-paper/hibon-data-format',
+            '/network/technical-paper/hrpc-hibon-remote-procedure-call',
+            '/network/technical-paper/crypto-bank-bill',
+            '/network/technical-paper/network',
+            '/network/technical-paper/network-security',
+            '/network/technical-paper/dex-trading-example',
+            '/network/technical-paper/dex-after-the-trading-match',
+            '/network/technical-paper/gene-distance',
+            '/network/technical-paper/list-of-abbreviations',
+            '/network/technical-paper/references',
+          ]
+        },
       ],
-      "/software/": [
-        ["/software/", "Welcome"],
-        ["/software/social-media", "Social Media"],
-        ["/software/team", "Tagion Team"],
-        ["/software/roadmap", "Tagion Roadmap"]
+      "/money/": [
+        "/money/",
+        "/money/communities",
+        "/money/faq",
+        "/money/buy",
       ]
     },
     docsRepo: "tagion/homepage/blob/release/docs"

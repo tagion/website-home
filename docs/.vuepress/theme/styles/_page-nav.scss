@@ -18,6 +18,10 @@
 
       .nav-label {
         font-size: 0.6em;
+        color: $dark;
+      }
+
+      a {
         color: $secondary;
       }
 
@@ -46,7 +50,7 @@
           border-bottom: 1px solid #ddd;
 
           &:hover {
-            border-color: $primary;
+            border-color: $secondary;
           }
         }
       }

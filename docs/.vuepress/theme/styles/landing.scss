@@ -7,7 +7,6 @@
 
 .landing {
   min-height: 100vh;
-  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,6 +15,7 @@
 
   @include media-breakpoint-down(sm) {
     font-size: 0.9em;
+    padding-top: 3rem;
   }
 
   h1,
@@ -98,7 +98,7 @@
     p {
       position: relative;
       max-width: 67%;
-      color: $dark-lighter;
+      color: #666;
       font-size: 1.8em;
       font-weight: 300;
 
@@ -117,6 +117,7 @@
 
       strong {
         font-weight: 400;
+        color: #111;
       }
     }
   }
@@ -189,7 +190,7 @@
 
         strong {
           color: #fff;
-          font-weight: 500;
+          font-weight: 600;
         }
       }
     }
