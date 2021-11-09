@@ -27,10 +27,6 @@
         display: flex;
         flex-wrap: wrap;
 
-        // @include media-breakpoint-down(lg) {
-        //   flex-direction: column;
-        // }
-
         a {
           margin-right: 2em;
           margin-top: 0.5em;
@@ -70,6 +66,10 @@
 
   .layout-footer {
     @include media-breakpoint-up(lg) {
+      .links {
+        padding-right: 1.8em;
+      }
+
       .container {
         .row {
           margin-right: 2em;

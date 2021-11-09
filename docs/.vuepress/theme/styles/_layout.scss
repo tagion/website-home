@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  // padding-top: $header-height;
+  padding-top: $header-height;
   font-size: 1em;
 
   &.landing-page {
@@ -22,7 +22,7 @@ body {
 // Header
 //
 .layout-header {
-  // position: fixed;
+  position: fixed;
   z-index: 20;
   left: 0;
   right: 0;

@@ -9,48 +9,28 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Learn", link: "/docs/" },
-      { text: "Software", link: "/docs/" },
-      { text: "Community", link: "/docs/" },
+      { text: "Software", link: "/software/" },
+      { text: "Network", link: "/network/" },
+      { text: "Wiki", link: "/wiki/" },
     ],
     footer: [
 
     ],
     sidebar: {
-      "/docs/": [
-        ["/docs/", "Welcome"],
-        ["/docs/funnel", "Funnel"],
-        ["/docs/scripting-engine", "Scripting Engine"]
+      "/wiki/": [
+        ["/wiki/", "Welcome"],
       ],
-      "/whitepaper/": [
-        ["/whitepaper/", "Overview"],
-        {
-          title: "Synopsis",
-          collapsable: false,
-          children: [
-            "/whitepaper/synopsis/dex",
-            "/whitepaper/synopsis/consensus",
-            "/whitepaper/synopsis/governance",
-            "/whitepaper/synopsis/proof-of-people",
-            "/whitepaper/synopsis/transaction-volumes",
-            "/whitepaper/synopsis/transaction-speed",
-            "/whitepaper/synopsis/energy-consumption",
-            "/whitepaper/synopsis/money-supply",
-            "/whitepaper/synopsis/use-of-data"
-          ]
-        },
-        {
-          title: "Other",
-          collapsable: true,
-          children: [["/whitepaper/terminology", "Terminology"]]
-        }
+      "/network/": [
+        ["/network/", "Welcome"],
+        ["/network/social-media", "Social Media"],
+        ["/network/team", "Tagion Team"],
+        ["/network/roadmap", "Tagion Roadmap"]
       ],
-      "/community/": [
-        ["/community/", "Welcome"],
-        ["/community/social-media", "Social Media"],
-        ["/community/team", "Tagion Team"],
-        ["/community/roadmap", "Tagion Roadmap"]
+      "/software/": [
+        ["/software/", "Welcome"],
+        ["/software/social-media", "Social Media"],
+        ["/software/team", "Tagion Team"],
+        ["/software/roadmap", "Tagion Roadmap"]
       ]
     },
     docsRepo: "tagion/homepage/blob/release/docs"

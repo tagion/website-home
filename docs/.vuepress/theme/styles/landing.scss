@@ -97,13 +97,22 @@
 
     p {
       position: relative;
-      max-width: 70%;
+      max-width: 67%;
       color: $dark-lighter;
       font-size: 1.8em;
       font-weight: 300;
 
+      @include media-breakpoint-down(xl) {
+        max-width: 85%;
+      }
+
       @include media-breakpoint-down(lg) {
-        max-width: 100%;
+        max-width: 78%;
+      }
+      
+      @include media-breakpoint-down(md) {
+        font-size: 1.5em;
+        max-width: 95%;
       }
 
       strong {
@@ -115,29 +124,27 @@
   .section-links {
     display: flex;
     justify-content: center;
-    margin-top: .6em;
+    margin-top: 1em;
     margin-bottom: 4em;
     font-size: 1.2em;
     flex-wrap: wrap;
 
-    @include media-breakpoint-down(sm) {
-      flex-direction: column;
-    }
-
     .links__link {
       position: relative;
       display: block;
+      text-align: center;
       width: 50%;
-      margin-top: 3em;
-      padding: 1.8em 1.2em 0.8em;
-      border-radius: 0.8em;
-      margin-right: .5em;
-      margin-left: .5em;
-      max-width: 18em;
-      background: #f8f8f8;
-      transition: background 100ms;
+      margin-top: 1em;
+      padding: 0;
+      border-radius: 3px;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+      max-width: 17em;
+      background: $primary;
+      transition: all 100ms;
+      box-sizing: border-box;
 
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(xs) {
         margin-bottom: 1em;
         width: 100%;
         max-width: 100%;
@@ -145,38 +152,46 @@
       }
 
       @include media-breakpoint-down(sm) {
-        max-width: 100%;
-      }
-
-      &:hover {
-        background: $secondary-lightest;
+        max-width: 80%;
+        width: 80%;
       }
 
       h3 {
-        font-size: 1em;
-        color: $primary-darker;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $light;
         font-weight: 400;
         text-align: center;
+        background: #00000044;
+        padding: 0.4em;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+
+      &.links__link--economy {
+        background: $tertiary;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      &:active {
+        opacity: 0.85;
       }
 
       p {
-        font-size: 0.8em;
+        font-size: 0.9em;
         max-width: 100%;
-        color: $primary-lighter;
-      }
-    }
+        padding: 0.4em 1em;
+        color: #eee;
 
-    .links__icon {
-      width: 1.6em;
-      height: 1.6em;
-      top: -0.8em;
-      left: 50%;
-      margin-left: -0.8em;
-      border-radius: 100px;
-      background: #fff;
-      text-align: center;
-      font-size: 1.6em;
-      position: absolute;
+        strong {
+          color: #fff;
+          font-weight: 500;
+        }
+      }
     }
   }
 }

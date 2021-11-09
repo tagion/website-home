@@ -3,8 +3,7 @@
 }
 
 body {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: $font-family-sans-serif-body;
 }
 
 strong,
@@ -27,8 +26,7 @@ b {
   line-height: 1.8;
   max-width: 800px;
   color: mix($dark, #fff, 90%);
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: $font-family-sans-serif-body;
 
   &--full {
     max-width: 100%;
@@ -95,9 +93,8 @@ b {
     padding-top: calc(#{$header-height} + 0.6em);
     margin-top: calc(-1 * #{$header-height} + 0.7em);
     margin-bottom: 0.2em;
-    font-weight: bold;
-    font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-family: $font-family-sans-serif-headline;
 
     @include media-breakpoint-down(lg) {
       margin-top: calc(-1 * #{$header-height} + 0.4em);
@@ -124,21 +121,10 @@ b {
   h1 {
     font-size: 2.8em;
     z-index: 5;
-    font-weight: 600;
+    font-weight: 500;
     color: $dark;
-    margin-bottom: 0.8em;
     position: relative;
-    padding-bottom: 1rem;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0rem;
-      width: 40%;
-      height: 4px;
-      background: #{$primary}55;
-      left: -0.3rem;
-    }
+    padding-bottom: .6rem;
 
     @include media-breakpoint-down(lg) {
       font-size: 2.4em;
@@ -146,35 +132,17 @@ b {
     @include media-breakpoint-down(md) {
       font-size: 2.1em;
     }
-
-    + h2 {
-      margin-top: -4.8rem;
-
-      @include media-breakpoint-down(lg) {
-        margin-top: -3.8rem;
-      }
-    }
   }
+
   h2 {
     font-size: 2em;
     z-index: 4;
     font-weight: 500;
     padding-right: 0.2em;
-    color: $primary;
+    color: $dark;
     display: inline-block;
     position: relative;
     opacity: 1;
-    margin-top: calc(-1 * #{$header-height} + 0.5em);
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -0.7rem;
-      width: 40%;
-      height: 4px;
-      background: #{$primary}55;
-      left: -0.3rem;
-    }
 
     @include media-breakpoint-down(lg) {
       font-size: 1.8em;
@@ -184,39 +152,46 @@ b {
       margin-top: 1.2rem;
     }
   }
+
   h3 {
     font-size: 1.6em;
     z-index: 3;
-    // opacity: 0.9;
-    color: $secondary-darkest;
+    color: $dark;
     font-weight: 500;
+
     @include media-breakpoint-down(lg) {
       font-size: 1.3em;
     }
   }
+
   h4 {
     font-size: 1.1em;
     z-index: 2;
-    color: $primary;
+    color: $dark;
     font-weight: 500;
+
     @include media-breakpoint-down(lg) {
       font-size: 1.1em;
     }
   }
+
   h5 {
     font-size: 1.1em;
     z-index: 1;
     font-weight: 600;
-    color: $primary;
+    color: $dark;
+
     @include media-breakpoint-down(lg) {
       font-size: 1em;
     }
   }
+
   h6 {
     font-size: 1em;
     z-index: 0;
     font-weight: 600;
-    color: $primary;
+    color: $dark;
+
     @include media-breakpoint-down(lg) {
       font-size: 0.9em;
     }
