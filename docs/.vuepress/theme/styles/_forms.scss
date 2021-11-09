@@ -68,7 +68,7 @@
   .was-validated .form-control:invalid,
   .was-validated .form-control:valid {
     background-image: none !important;
-    // box-shadow: none !important;
+    box-shadow: none !important;
     position: relative;
     padding-right: 1rem;
   }
@@ -148,4 +148,9 @@ input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba($secondary, .4);
 }
