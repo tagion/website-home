@@ -7,6 +7,9 @@
         <a href="/press">For Press</a>
       </div>
     </b-container>
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-spa="auto" data-site="PXTICOGF" defer></script>
+    <!-- / Fathom -->
   </footer>
 </template>
 

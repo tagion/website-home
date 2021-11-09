@@ -52,9 +52,6 @@ export default {
     SidebarButton
   },
   mounted() {
-    this.$analytics.recordUtm(this.$route);
-    this.$analytics.init();
-
     const hash = this.$route.hash;
     if (hash) {
       this.$scrollTo(hash);
@@ -70,9 +67,6 @@ export default {
   computed: {
     isLanding() {
       return this.$page.title === "Home";
-    },
-    isRelaunch() {
-      return this.$page.path === "/relaunch.html";
     },
     posts() {
       return this.$site.pages.filter(
