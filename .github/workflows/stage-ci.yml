@@ -7,9 +7,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
 
     steps:
       - uses: actions/checkout@v2
@@ -49,14 +47,10 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2
         with:
           # Deploy to gh-pages branch
-          target_branch: gh-pages
-          # deploy the default output dir of VuePress
+          repo: tagion/website-home-staging
+          target_branch: master
+          # Deploy the default output dir of VuePress
           build_dir: docs/.vuepress/dist
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-    # - uses: actions/checkout@v1
-    # - name: Deploy Stage
-    #   run: sh ./deploy.sh staging

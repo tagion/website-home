@@ -4,8 +4,8 @@
   "description": "Official tagion.com homepage",
   "scripts": {
     "dev": "NODE_ENV=development APP_ENV=development vuepress dev docs",
-    "build": "APP_ENV=production vuepress build docs && ./config.sh",
-    "build:staging": "APP_ENV=staging vuepress build docs && ./config.sh staging"
+    "build": "APP_ENV=production vuepress build docs && ./config.release.sh",
+    "build:staging": "APP_ENV=staging vuepress build docs && ./config.staging.sh"
   },
   "author": "Vlad Pazych <vp@tagion.com>",
   "license": "MIT",
