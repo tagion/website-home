@@ -49,8 +49,9 @@ jobs:
           # Deploy to gh-pages branch
           repo: tagion/website-home-staging
           target_branch: master
+
           # Deploy the default output dir of VuePress
           build_dir: docs/.vuepress/dist
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.ACCESS_TOKEN }}
