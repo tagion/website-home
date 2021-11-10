@@ -61,10 +61,12 @@ if (process.env.APP_ENV === "production") {
   config.plugins.push([
     "sitemap",
     {
-      hostname: "https://tagion.org",
+      hostname: "https://tagion.com",
       exclude: [
         "/meta/500.html",
-        "/404.html"
+        "/404.html",
+        "/contacts.html",
+        "/press.html"
       ]
     }
   ]);
