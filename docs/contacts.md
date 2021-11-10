@@ -1,13 +1,11 @@
 ---
-title: Error
-fullwidth: true
 editLink: false
 indexable: false
 lang: en-US
 ---
 
-# Contacts
+# Contact us
 
-Unfortunately an error happened and your request was not processed.
-
-Please, try again. If error persists, we will appreciate if you tell us about it via email <support@tagion.org>.
+- Public relations: <pr@tagion.com>
+- Investor relations: <ir@tagion.com>
+- General inquiries, say <info@tagion.com>

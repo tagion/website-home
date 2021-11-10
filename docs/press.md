@@ -1,69 +1,41 @@
 ---
-fullwidth: true
 editLink: false
 indexable: false
 lang: en-US
 ---
 
-# For Press
+# For press
 
-Tagion is a cryprocurrency project, founded by [Theis Simonsen](https://www.linkedin.com/in/theis-simonsen-32035313/), [Carsten Rasmussen](https://www.linkedin.com/in/carsten-bleser-rasmussen-80699915/) and [Kristian Vestergaard](https://www.linkedin.com/in/kristian-vestergaard-a59b4a/).
+Tagion is a cryptocurrency project, started in 2017 by:
 
-The project combines multiple innovative technologies to enable truly decenetralized and scalable cryptocurrency that can be used as money in our everyday life.
+- [Theis Simonsen](https://www.linkedin.com/in/theis-simonsen-32035313/)
+- [Carsten Rasmussen](https://www.linkedin.com/in/carsten-bleser-rasmussen-80699915/)
+- [Kristian Vestergaard](https://www.linkedin.com/in/kristian-vestergaard-a59b4a/)
 
-## Tagion Goal
+Our goal is to create the most convenient **medium of exchange** and a reliable long-term **store of value**.
 
-Tagion aims to become the most convenient **medium of exchange** and a reliable **store of value**. All decisions throughout project development were and will be driven by this goal.
+- Read more about [the Tagion network](/network/);
+- Read more about [the Tagion money](/money/).
 
-## Tagion Features
+## Stage of development
 
-### Open Governance
+The team behind tagion aims to launch the network by the end of 2021. Initially, the network will be open for all to use but require permission to participate in governance. Once the adoption reaches an acceptable level, the governance will start to open up in stages. The team expects this to happen between 2022 - 2023.
 
-Tagion addresses governance problem from day one. The aim is to have a decentralized governance system open for all to join.
-
-Tagion governance consists of following layers:
-
-- Node governance
-
-### Anonymity
-
-Tagion money exist similar to cash bills. Tagion bill is stored in the database as a separate record, once used, the new bill is created.
-
-> The team believes "money must not smell"
-
-### Consensus Mechanism
-
-Instead of Blockchain with proof of work, Tagion is based on Hashgraph consensus mechanism.
-
-> It is an asynchronous Byzantine Fault Tolerance (aBFT) consensus algorithm that they consider capable of securing the platform against attacks. It does not use miners to validate transactions, and uses directed acyclic graphs for time-sequencing transactions without bundling them into blocks.
->
-> ---
->
-> [Taken from Wikipedia](https://en.wikipedia.org/wiki/Hashgraph)
-
-
-### Adaptive Money Supply
-
-## Stage of Development
-
-The team behind tagion aims to launch the network by the end of 2021. Initially the network will be open for all to use, but require permission to participate in governance. Once the adoption reaches acceptable level, the governance will start to open up in stages. The team expects this to happen between 2022 - 2023.
-
-## "Tagion" Name
+## "Tagion" name
 
 There are three things named "Tagion":
 
-1. Tagion **software**
+1. Tagion **client**
 2. Tagion **network**
 3. Tagion **money**
 
+---
+
 ![](/press/tagion-name.drawio.svg)
 
-Tagion **software** is owned by [i25s AG](https://i25s.com), and eventually will become open-source. The "Tagion" name will always belong to the original implementation, even if it becomes obsolete in the future.
+---
 
-Tagion **network** is named after the original implementation by **i25s AG**, mentioned above.
-
-Tagion **money** is named after the network that enables that money.
-
+"Tagion" is the name of the original **network client**, created and owned by [i25s AG](https://i25s.com). Tagion **network** is named after that original client. Tagion **money** (tagions) - named after the network.
 
 ## FAQ
 
@@ -71,4 +43,4 @@ Please, refer to [Network FAQ](/network/faq) and [Money FAQ](/money/faq) pages t
 
 ## Contacts
 
-For press inquiries, please contact us at [pr@tagion.com](mailto:pr@tagion.com).
+For press inquiries, please get in touch with us at [pr@tagion.com](mailto:pr@tagion.com).

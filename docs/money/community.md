@@ -8,21 +8,19 @@ sidebarDepth: 0
 
 # Community
 
-Join the **community** of people who want to use tagions in daily life, as money system of choice. Together, we are creating the much more effecient network economy by:
+Join the **community** of people who want to use tagions in daily life as a money system of choice. Together, we are creating a much more efficient network economy by:
 
-- using tagions to trasnfer value;
-- creating new application
+- using tagions as money;
+- integrating tagions into apps we use on a daily basis;
+- integrating tagions in companies we work or run;
+- accepting tagions in our businesses;
+- creating new apps that utilize tagions;
+- selling tagions p2p to people who trust us.
 
-## Network Economy
+## Platforms
 
-Network economy concept appeared before year 2010. It is used to describe how the real-time connections over the internet led to creation of the new type of economy.
+We are a young but welcoming community! Say hello:
 
-## Build Adoption
-
-For adoption to happen, the Tagion ecosystem must grow, apps that support tagions natively must appear.
-
-We invite you to build you own applications that make use of tagions simple for casual users. For you, it's an opportunity to become an eearly adopter and gain advantage of being among the first to build solutions.
-
-## Integrate in Enterprise
-
-If you are part of large enterprise, your organization can benefit a lot by using tagion internally or between partners due to high security, speed and extremely low fees for any volume.
+- [Telegram](https://t.me/tagionChat)
+- [Discord](https://discord.gg/sDHMT8Rbcj)
+- [Reddit](https://www.reddit.com/r/tagion)

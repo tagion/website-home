@@ -8,7 +8,7 @@ sidebarDepth: 0
 
 # Community
 
-Join the **network community** of creators, educators, entrepreneurs and investors. We govern the network by:
+Join the **network community** of creators, educators, entrepreneurs, and investors. We govern the network by:
 
 - improving core protocols and algorithms;
 - implementing core software;

@@ -186,8 +186,21 @@
         width: 80%;
       }
 
-      h3 {
-        font-size: .9em;
+      &:hover {
+        opacity: 0.9;
+        background: rgb(245, 245, 248);
+
+        p {
+          color: $dark;
+
+          strong {
+            color: $dark;
+          }
+        }
+      }
+
+      .links__link-headline p {
+        font-size: 1.1em;
         text-transform: uppercase;
         letter-spacing: 2px;
         color: $dark;
@@ -197,6 +210,10 @@
         font-family: $font-family-secondary;
         position: relative;
         color: $primary;
+
+        strong {
+          color: $primary;
+        }
 
         &::after {
           content: "";
@@ -237,8 +254,12 @@
       }
 
       &.links__link--economy {
-        h3 {
+        .links__link-headline p {
           color: $tertiary;
+
+          strong {
+            color: $tertiary;
+          }
 
           .arrow {
             border-color: $tertiary;
@@ -250,18 +271,7 @@
         }
       }
 
-      &:hover {
-        opacity: 0.9;
-        background: rgb(245, 245, 248);
-
-        p {
-          color: $dark;
-
-          strong {
-            color: $dark;
-          }
-        }
-      }
+      
 
       &:active {
         opacity: 0.85;
