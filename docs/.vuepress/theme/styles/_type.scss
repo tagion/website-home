@@ -8,7 +8,7 @@ body {
 
 strong,
 b {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .typography {
@@ -156,8 +156,8 @@ b {
     display: inline-block;
     position: relative;
     opacity: 1;
-    margin-bottom: .3em;
-    color: #444;
+    margin-bottom: 0.3em;
+    color: rgb(64, 65, 68);
 
     @include media-breakpoint-down(lg) {
       font-size: 1.8em;
@@ -165,9 +165,10 @@ b {
   }
 
   h3 {
-    font-size: 1.6em;
+    font-size: 1.3em;
     z-index: 3;
     font-weight: 400;
+    color: rgb(75, 76, 80);
 
     @include media-breakpoint-down(lg) {
       font-size: 1.3em;
@@ -175,7 +176,7 @@ b {
   }
 
   h4 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     z-index: 2;
     font-weight: 500;
 
@@ -212,15 +213,15 @@ b {
     line-height: 1.73;
     max-width: 800px;
 
-
     img {
       margin-bottom: 1em;
+      max-width: 100%;
     }
   }
 
   ul,
   ol {
-    margin: 1em 0em 2.2em;
+    margin: 1em 0em 1em;
     position: relative;
     z-index: 6;
     font-size: 0.95em;
@@ -300,6 +301,17 @@ b {
     margin-right: -1rem;
     border-left: 5px solid $secondary;
     border-radius: 6px;
+  }
+
+  .ml-subscribe-form {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      padding-top: 0;
+    }
   }
 }
 

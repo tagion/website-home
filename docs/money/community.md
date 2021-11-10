@@ -1,13 +1,17 @@
 ---
+title: Money | Community
 lang: en-US
 editLink: true
 sidebar: true
 sidebarDepth: 0
 ---
 
-# Communities
+# Community
 
-Tagion is intented to be used as money in the emerging network economy. Obviously, it will take time before you can use tagions in you local stores. But adoption is happening in steps.
+Join the **community** of people who want to use tagions in daily life, as money system of choice. Together, we are creating the much more effecient network economy by:
+
+- using tagions to trasnfer value;
+- creating new application
 
 ## Network Economy
 

@@ -6,21 +6,31 @@ sidebar: true
 sidebarDepth: 0
 ---
 
-# 👋 Welcome
+# The network
 
-Tagion is a money system governed openly, as a common good. Anybody can participate in governance, support network's reliability and influence its development.
+👋 Welcome to the **network side** of Tagion!
 
-Most of tagions created in the system are distributed across governance members (some distributed randomly to active users). 
+Tagion network is a decentralized database where [Tagion money](/money/) exist. You can run Tagion software on your computer to have your own replica of the database, that processes all new transactions, and earn tagions for contributing to the distribution of the network.
 
-## Overview
+We are building up two components that are crucial to make it work:
 
-Tagion network is made up of many computers running certain version of the software, that implements certain protocols.
+1. Tagion database **software**;
+2. Tagion **governance** rules.
 
-- These computers belong to people like us;
-- That software and protocols are created by people like us;
-- We collectively define the rules of the system, thus governing it.
+## Software
 
-Protocols define the governance rules, which in turn control how the software is updated, how new computers can join and how many tokens should the contributors receive.
+**Tagion database software** is free and available for all to use. It connects computers into **one large network**, that collectively make up **one large database**. The data (mostly **tagion bills**), is replicated across the whole network, making it highly accessible and practically impossible to temper with.
 
-In the end, governance comes down to voting, which happens inside the network, where every governance member can participate and cast his voting power, earned by contributing to the network over the long period of time.
+Even though the data is stored publically, tagion bills remain completely anonymous. Only the owner of the bill can spend it (thank you 🙏 cryptography).
 
+## Governance
+
+Tagion governance rules are **written as programs** and stored in the [database](#software) mentioned above. These rules will execute no matter what, **without human intervention**. They define **how** new **participants join** the network, which **protocols they use** and how tagions are **"printed"** or **"burned"** (controlling total supply).
+
+Though sometimes, the rules have to change (e.g. the version of a protocol). To replace the rule in governance, the majority of voting power in the network must agree on the new rule. 
+
+The **voting power** is **distributed** across participants based on the **recognition of their contribution** by other participants. Those who contribute more, have more say in the system.
+
+---
+
+We believe that everybody should have equal rights to money, so nobody can cheat or manipulate the system, as we saw happening around the world so many times. Tagion network enables money that can be used freely without asking for permsission.

@@ -18,13 +18,13 @@ let config = {
     sidebar: {
       "/network/": [
         ["/network/", 'Welcome'],
-        "/network/communities",
-        "/network/faq",
+        ["/network/community", "Community"],
+        ["/network/faq", "FAQ"],
       ],
       "/money/": [
         ["/money/", 'Welcome'],
-        "/money/communities",
-        "/money/faq",
+        ["/money/community", "Community"],
+        ["/money/faq", "FAQ"],
       ]
     },
     docsRepo: "tagion/homepage/blob/release/docs"

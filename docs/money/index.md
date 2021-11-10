@@ -6,20 +6,26 @@ sidebar: true
 sidebarDepth: 0
 ---
 
-# Welcome
+# The Money
 
-Tagion is intented to be used as money in the emerging network economy. Obviously, it will take time before you can use tagions in you local stores. But adoption is happening in steps.
+👋 Welcome to the **money side** of Tagion!
 
-## Network Economy
+[Tagion network](/network/) enables **tagions** - the money that **just exist** for all to use, that **can <u>not</u> be manipulated nor taken down nor censored**. Money as they should be - **medium of exchange**, **unit of account** and **store of value**.
 
-Network economy concept appeared before year 2010. It is used to describe how the real-time connections over the internet led to creation of the new type of economy.
+## Features
 
-## Build Adoption
+### Cryptographic ownership
 
-For adoption to happen, the Tagion ecosystem must grow, apps that support tagions natively must appear.
+To spend a tagion bill, you must digitally "sign it" using its private key. These keys are usually stored securely on your own device. Without the right key, the transaction is not valid, and the network will simply ignore it.
 
-We invite you to build you own applications that make use of tagions simple for casual users. For you, it's an opportunity to become an eearly adopter and gain advantage of being among the first to build solutions.
+### Low fees
 
-## Integrate in Enterprise
+Tagion transcation are really cheap. No matter where and how much you transfer, most of the time you'll pay a fraction of $0.01 equivalent.
 
-If you are part of large enterprise, your organization can benefit a lot by using tagion internally or between partners due to high security, speed and extremely low fees for any volume.
+### Fast transactions
+
+In the legacy banking system, final settlement for money transfer takes days, this is why we use systems like Visa and Mastercard that preconfirm transactions (but take a fee). In Tagion, final settlement usually takes less than a minute, and alternative to pre-confirmation may take seconds.
+
+### Native integrations
+
+Tagion is native to digital world, meaning it can be integrated into any application without the need of banks or service providers. Tagions can be integrated into apps we normally use in our daily life.

@@ -24,7 +24,7 @@ description: Tagion is money for the new network economy.
 
 <router-link class="links__link" to="/network">
 
-### Tagion **Network**
+### Tagion **Network** <i class="arrow left"></i>
 
 **Earn tagions** by contributing to different layers of the network
 
@@ -32,7 +32,7 @@ description: Tagion is money for the new network economy.
 
 <router-link class="links__link links__link--economy" to="/money">
 
-### Tagion **Money**
+### Tagion **Money** <i class="arrow right"></i>
 
 **Use tagions** as digital money in the emerging network economy
 

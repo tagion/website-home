@@ -1,17 +1,13 @@
 ---
-title: FAQ
+title: Network | FAQ
 lang: en-US
 editLink: true
 sidebar: true
-sidebarDepth: 1
-
-description: WIP
+sidebarDepth: 2
 ---
 
 # FAQ
 
-## Who governs Tagion?
-Sense-makers: core concept developers
-Value-makers: programmers and nodes
-Relation makers: evangelists and services on top
-Decision-makers: core developers and node operators
+> 🚧 Oops, this page is still under construction.  
+> 🔔 Follow us on [Twitter](https://twitter.com/tagionOfficial), to know when the site is fully laucnhed.  
+> 🙋 Also, feel free to ask questions you would like to see in this FAQ - [Telegram chat](https://t.me/tagionCaht)

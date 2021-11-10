@@ -68,8 +68,11 @@
 
         .logo__title-name {
           margin-bottom: 0.1em;
-          font-weight: 500;
           font-family: $font-family-primary;
+        }
+
+        .logo__title-sub {
+          display: inline-block;
         }
       }
     }
@@ -92,7 +95,7 @@
 
   ul {
     li {
-      font-size: 1rem;
+      font-size: 0.9em;
     }
   }
 
@@ -184,7 +187,7 @@
       }
 
       h3 {
-        font-size: 0.8em;
+        font-size: .9em;
         text-transform: uppercase;
         letter-spacing: 2px;
         color: $dark;
@@ -200,7 +203,7 @@
           position: absolute;
           left: -4px;
           right: -4px;
-          bottom: -0.4em;
+          bottom: -2px;
           height: 4px;
           border-radius: 100px;
           background: $primary;
@@ -209,11 +212,38 @@
         strong {
           font-weight: 600;
         }
+
+        .arrow {
+          border: solid $primary;
+          border-width: 0 4px 4px 0;
+          display: inline-block;
+          padding: 4px;
+          position: absolute;
+        }
+
+        .right {
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          right: -7px;
+          bottom: -6px;
+        }
+
+        .left {
+          transform: rotate(135deg);
+          -webkit-transform: rotate(135deg);
+          left: -7px;
+          bottom: -6px;
+        }
       }
 
       &.links__link--economy {
         h3 {
           color: $tertiary;
+
+          .arrow {
+            border-color: $tertiary;
+          }
+
           &::after {
             background: $tertiary;
           }
@@ -244,7 +274,7 @@
         font-weight: 300;
         color: $dark-lighter;
         transition: color 100ms;
-        
+
         strong {
           transition: color 100ms;
           color: $dark-lighter;
