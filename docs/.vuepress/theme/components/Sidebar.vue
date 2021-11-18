@@ -4,18 +4,10 @@
       <NavLinks class="d-flex d-lg-none" />
       <slot name="top" />
       <b-nav vertical class="sidebar-links" v-if="items && items.length">
-        <li v-if="isWhitepaper" class="pt-0">
-          <small>
-            <a href="/tagionwhitepaper.pdf" target="_blank" ref="noopener noreferrer nofollow">
-              Download Whitepaper
-              <OutboundLink />
-            </a>
-          </small>
-        </li>
         <li v-if="isWhitepaper" class="mb-3 pt-1">
           <small>
-            <a href="/tagiontechpaper.pdf" target="_blank" ref="noopener noreferrer nofollow">
-              Download Technical Paper
+            <a href="/tagion-tech-paper.pdf" target="_blank" ref="noopener noreferrer nofollow">
+              Download Tech Paper
               <OutboundLink />
             </a>
           </small>
@@ -56,7 +48,7 @@ export default {
 
   computed: {
     isWhitepaper() {
-      return this.$route.fullPath.indexOf("/whitepaper/") !== -1;
+      return this.$route.fullPath.indexOf("/network/") !== -1;
     }
   },
 

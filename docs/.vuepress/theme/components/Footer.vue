@@ -3,6 +3,7 @@
     <b-container>
       <span class="copyright">© All rights reserved, Tagion GmbH</span>
       <div class="links">
+        <a target="_blank" href="/tagion-tech-paper.pdf">Tech Paper <OutboundLink /></a>
         <router-link to="/contacts">Contact Us</router-link>
         <router-link to="/press">For Press</router-link>
       </div>
