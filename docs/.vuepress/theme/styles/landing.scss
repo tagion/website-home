@@ -11,7 +11,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: $dark;
+  color: $light;
+  background: #232429;
   font-family: $font-family-primary;
 
   .content__default {
@@ -38,7 +39,7 @@
   p {
     strong {
       font-weight: 500;
-      color: $dark;
+      color: $light;
     }
   }
 
@@ -130,13 +131,13 @@
 
     p {
       position: relative;
-      color: #888;
+      color: $gray-500;
       font-size: 1.7em;
-      font-weight: 300;
+      font-weight: 400;
 
       strong {
         font-weight: 400;
-        color: #333;
+        color: $gray-300;
       }
     }
 
@@ -186,15 +187,17 @@
         width: 80%;
       }
 
+      
+
       &:hover {
         opacity: 0.9;
-        background: rgb(245, 245, 248);
+        background: #2D2E33;
 
         p {
-          color: $dark;
+          color: $gray-400;
 
           strong {
-            color: $dark;
+            color: $gray-300;
           }
         }
       }
@@ -229,49 +232,7 @@
         strong {
           font-weight: 600;
         }
-
-        .arrow {
-          border: solid $primary;
-          border-width: 0 4px 4px 0;
-          display: inline-block;
-          padding: 4px;
-          position: absolute;
-        }
-
-        .right {
-          transform: rotate(-45deg);
-          -webkit-transform: rotate(-45deg);
-          right: -7px;
-          bottom: -6px;
-        }
-
-        .left {
-          transform: rotate(135deg);
-          -webkit-transform: rotate(135deg);
-          left: -7px;
-          bottom: -6px;
-        }
       }
-
-      &.links__link--economy {
-        .links__link-headline p {
-          color: $tertiary;
-
-          strong {
-            color: $tertiary;
-          }
-
-          .arrow {
-            border-color: $tertiary;
-          }
-
-          &::after {
-            background: $tertiary;
-          }
-        }
-      }
-
-      
 
       &:active {
         opacity: 0.85;
@@ -281,7 +242,7 @@
         font-size: 0.9em;
         max-width: 100%;
         padding: 0.4em 1em;
-        font-weight: 300;
+        font-weight: 400;
         color: $dark-lighter;
         transition: color 100ms;
 
@@ -289,6 +250,14 @@
           transition: color 100ms;
           color: $dark-lighter;
           font-weight: 500;
+        }
+      }
+
+      p {
+        color: $gray-400;
+
+        strong {
+          color: $gray-300;
         }
       }
     }

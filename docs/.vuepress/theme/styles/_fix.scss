@@ -1,6 +1,6 @@
 :not(input) {
   :focus {
-    outline-color: rgba($color: $secondary-lighter, $alpha: 0.5);
+    outline-color: rgba($color: $gray-300, $alpha: 0.5);
     outline-style: dashed;
     outline-width: 3px;
     outline-offset: 3px;

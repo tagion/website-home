@@ -2,7 +2,7 @@
   <router-link class="logo__wrapper" to="/">
     <img
       class="logo__logo"
-      src="/logomark-circle-black.svg"
+      src="/logomark-circle-white.svg"
       alt="Tagion Logo"
     />
     <div class="logo__title">

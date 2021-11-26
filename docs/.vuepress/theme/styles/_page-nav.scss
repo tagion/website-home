@@ -1,5 +1,6 @@
 .layout-footer-nav {
-  border-top: 1px dotted rgb(228, 231, 235);
+  border-top: 1px solid rgb(228, 231, 235);
+  background: #fafafa;
   .page-nav {
     .inner {
       border: none;
@@ -8,7 +9,7 @@
       padding-bottom: 2.6rem;
       padding-right: 1.6rem;
       font-family: $font-family-secondary;
-      font-weight: 300;
+      font-weight: 400;
 
       @include media-breakpoint-down(xs) {
         flex-direction: column-reverse;

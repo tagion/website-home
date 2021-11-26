@@ -2,12 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
-  border-bottom: 1px dotted mix($light-darker, #fff, 90%);
+  background: #232429;
   height: $header-height;
   padding-bottom: 0.2rem;
   font-family: $font-family-secondary;
-  font-weight: 300;
+  font-weight: 400;
 
   .nav {
     font-size: 0.9em;
@@ -15,7 +14,7 @@
     align-items: center;
 
     a {
-      color: $dark;
+      color: $gray-400;
       opacity: 0.7;
       position: relative;
       display: inline-block;
@@ -27,7 +26,7 @@
         right: 50%;
         height: 3px;
         bottom: 2px;
-        background: $dark-darker;
+        background: $gray-400;
         transition: all 100ms linear;
         border-radius: 100px;
         opacity: 0;
@@ -53,13 +52,13 @@
 
       &.router-link-active {
         opacity: 1;
-        color: $dark-darker;
+        color: $gray-100;
 
         &::after {
           left: 40%;
           right: 40%;
           opacity: 1;
-          background: $dark-darker;
+          background: $gray-100;
         }
       }
     }

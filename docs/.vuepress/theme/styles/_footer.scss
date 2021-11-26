@@ -3,15 +3,15 @@
 }
 
 .layout-footer {
-  background: #fff;
-  border-top: 1px dotted rgb(228, 231, 235);
+  background: #16171A;
+  border-top: 1px solid #1d1e22;;
   color: mix($dark, #fff, 60%);
   padding-top: 4em;
   padding-bottom: 6em;
   box-sizing: border-box;
   font-size: 0.95em;
   font-family: $font-family-secondary;
-  font-weight: 300;
+  font-weight: 400;
 
   .footer {
     .container {
@@ -42,12 +42,12 @@
   }
 
   a {
-    color: mix($dark, #fff, 80%);
+    color: mix($light, #000, 70%);
     opacity: 0.8;
 
     &:hover {
       opacity: 1;
-      color: $secondary;
+      color: #fff;
     }
   }
 
