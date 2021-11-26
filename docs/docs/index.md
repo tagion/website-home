@@ -27,10 +27,6 @@ Tagion is **governed collectively** as a common resource. All decisions are made
 
 Innovative aBFT consensus mechanism (Hashgraph) enables sharding for **scalability** and real DEX with price-matching for **interoperability**.
 
-### Low fees
-
-Transaction fees in Tagion are burned, not paid to validators; thus, there is no incentive to keep them high. Most of the time, you'll pay a **fraction of $0.01 equivalent**.
-
 ## Tagion VS Legacy
 
 ### Cryptographic ownership

@@ -4,14 +4,14 @@
       <NavLinks class="d-flex d-lg-none" />
       <slot name="top" />
       <b-nav vertical class="sidebar-links" v-if="items && items.length">
-        <li v-if="isWhitepaper" class="mb-3 pt-1">
+        <!-- <li v-if="isWhitepaper" class="mb-3 pt-1">
           <small>
             <a href="/tagion-tech-paper.pdf" target="_blank" ref="noopener noreferrer nofollow">
               Download Tech Paper
               <OutboundLink />
             </a>
           </small>
-        </li>
+        </li> -->
         <li v-for="(item, i) in items" :key="i">
           <SidebarGroup
             v-if="item.type === 'group'"
