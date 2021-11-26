@@ -48,6 +48,3 @@ Tagion is **native** to the digital world, meaning it can be integrated **direct
 
 **Tagion database software** is free and available for all to use. It connects computers into **one large network**, that collectively make up **one large database**. The data (mostly **tagion bills**) is replicated across the whole network, making it highly accessible and practically impossible to temper with. 
 
-### Anonymity
-
-Even though the data is stored publicly, tagion bills remain **anonymous**, yet only the owner of the bill can spend it (thank you 🙏 cryptography).
