@@ -6,11 +6,10 @@
   font-family: $font-family-primary;
 
   .logo__logo {
-    height: 2.4em;
+    height: 2em;
     position: relative;
-    top: 1px;
+    top: 3px;
     transition: opacity 100ms linear;
-    opacity: 0.8;
   }
 
   &:hover {
@@ -25,19 +24,18 @@
     margin-left: 0.5em;
 
     .logo__title-name {
-      font-size: 1.2em;
-      font-weight: 600;
+      font-size: 1em;
+      font-weight: 400;
       white-space: nowrap;
       position: relative;
-      top: 2px;
-      color: $dark;
+      top: 4px;
+      color: #fff;
     }
 
     .logo__title-sub {
       font-size: 0.75em;
-      margin-top: -0.25em;
       font-weight: 400;
-      color: $gray-600;
+      color: #ddd;
       white-space: nowrap;
       display: none;
     }

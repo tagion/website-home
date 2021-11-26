@@ -82,12 +82,11 @@ body {
 
 .layout-sidebar {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
-  bottom: -10rem;
+  bottom: 0;
   left: 0;
-  z-index: 18;
   padding-top: $header-height;
   width: auto;
   left: 0;
@@ -176,8 +175,12 @@ body {
   flex-shrink: 0;
 }
 
+.layout-footer {
+  position: relative;
+  z-index: 2;
+}
+
 .has-sidebar {
-  .layout-footer,
   .layout-footer-nav {
     .container {
       @include media-breakpoint-up(lg) {

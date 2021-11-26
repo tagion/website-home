@@ -41,7 +41,7 @@ a {
   font-size: 0.9em;
   color: $dark-lighter;
   font-family: $font-family-secondary;
-  font-weight: 300;
+  font-weight: 400;
 
   @include media-breakpoint-down(md) {
     display: block;

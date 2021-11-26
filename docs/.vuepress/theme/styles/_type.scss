@@ -151,7 +151,7 @@ b {
   h2 {
     font-size: 1.8em;
     z-index: 4;
-    font-weight: 300;
+    font-weight: 400;
     padding-right: 0.2em;
     display: inline-block;
     position: relative;
@@ -210,7 +210,7 @@ b {
     position: relative;
     z-index: 6;
     font-size: 0.9em;
-    line-height: 1.73;
+    line-height: 1.5;
     max-width: 800px;
 
     img {
@@ -272,7 +272,7 @@ b {
     z-index: 2;
     border-color: transparent;
     color: $dark;
-    font-weight: 300;
+    font-weight: 400;
 
     @include media-breakpoint-down(sm) {
       display: none;
