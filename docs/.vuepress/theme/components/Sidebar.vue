@@ -48,7 +48,7 @@ export default {
 
   computed: {
     isWhitepaper() {
-      return this.$route.fullPath.indexOf("/network/") !== -1;
+      return this.$route.fullPath.indexOf("/docs/") !== -1;
     }
   },
 

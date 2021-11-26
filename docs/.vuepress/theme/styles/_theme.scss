@@ -10,10 +10,19 @@
 @import "./page-nav";
 @import "./fix";
 
+html, body {
+  background: #232429;
+}
+
+.layout-page {
+  background: #fff;
+}
+
 .page {
   padding-top: 1.4em;
   padding-bottom: 6.8em;
   box-sizing: border-box;
+  
 
   @include media-breakpoint-up(lg) {
     padding-top: 3.4em;

@@ -9,25 +9,19 @@ let config = {
   themeConfig: {
     activeHeaderLinks: true,
     nav: [
-      { text: "Network", link: "/network/" },
-      { text: "Money", link: "/money/" },
+      { text: "Docs", link: "/docs/" },
     ],
     footer: [
 
     ],
     sidebar: {
-      "/network/": [
-        ["/network/", 'Welcome'],
-        ["/network/community", "Community"],
-        ["/network/faq", "FAQ"],
+      "/docs/": [
+        ["/docs/", 'Welcome'],
+        ["/docs/community", "Community"],
+        ["/docs/faq", "FAQ"],
       ],
-      "/money/": [
-        ["/money/", 'Welcome'],
-        ["/money/community", "Community"],
-        ["/money/faq", "FAQ"],
-      ]
     },
-    docsRepo: "tagion/homepage/blob/release/docs"
+    docsRepo: "tagion/website-homepage/blob/master/docs"
   },
   head: [
     [
