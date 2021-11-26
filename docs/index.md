@@ -8,44 +8,23 @@ layout: Landing
 description: Tagion is money for the new network economy.
 ---
 
-<div class="section-intro">
-
-**The world is changing**. The global economy transforms into **digital networks** of connected people, devices, and businesses.
-
-<div class="section-intro--accent">
-
-**Tagion** is a money system **designed** **for this new world**.
-
-</div>
-
-</div>
-
 <div class="section-links">
 
-<router-link class="links__link" to="/network">
+<p>
+<router-link class="links__link" to="/docs">About Tagion</router-link>
+</p>
 
-<div class="links__link-headline"> 
+<a class="links__link" target="_blank" href="https://github.com/tagion">GitHub <OutboundLink /></a>
 
-Tagion **Network** <i class="arrow left"></i>
-
-</div>
-
-**Earn tagions** by contributing to different layers of the network
-
-</router-link>
-
-<router-link class="links__link links__link--economy" to="/money">
-
-<div class="links__link-headline"> 
-
-Tagion **Money** <i class="arrow right"></i>
+<a class="links__link" target="_blank" href="/tagion-tech-paper.pdf">Tech Paper <OutboundLink /></a>
 
 </div>
 
-**Use tagions** as digital money in the emerging network economy
-
-</router-link>
-
 </div>
 
+
+<div class="section-warn">
+<i>🚧</i><br>
+This site is under active reconstruction,<br>
+but some content is <router-link to="/docs">available</router-link>.
 </div>

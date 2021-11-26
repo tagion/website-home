@@ -46,8 +46,8 @@
   .landing-logo__wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 1.6em;
-    font-size: 1.4em;
+    margin-bottom: 1em;
+    font-size: 2em;
 
     @include media-breakpoint-down(sm) {
       font-size: 1.2em;
@@ -65,7 +65,8 @@
         margin: 0;
         text-align: center;
         line-height: 1.6;
-        margin-top: 0.3em;
+        margin-top: 1em;
+        font-size: 0.6em;
 
         .logo__title-name {
           margin-bottom: 0.1em;
@@ -103,9 +104,8 @@
   //
   // Special sections
   //
-  .section-intro {
+  .section-warn {
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -129,35 +129,26 @@
       font-size: 0.6em;
     }
 
-    p {
-      position: relative;
-      color: $gray-500;
-      font-size: 1.7em;
-      font-weight: 400;
+    position: relative;
+    color: $gray-700;
+    font-size: 1.1em;
+    font-weight: 400;
 
-      strong {
-        font-weight: 400;
-        color: $gray-300;
-      }
+    i {
+      font-style: normal;
+      font-size: 2em;
     }
 
-    .section-intro--accent p {
-      background: rgb(245, 245, 248);
-      padding: 0.2em 0.6em;
-      border-radius: 3px;
-      font-size: 1.8em;
-      color: #222;
-
-      strong {
-        color: #222;
-      }
+    a {
+      display: inline;
+      color: $gray-600;;
     }
   }
 
   .section-links {
     display: flex;
     justify-content: center;
-    margin-top: 1.4em;
+    margin-top: 0em;
     margin-bottom: 4em;
     font-size: 1.2em;
     flex-wrap: wrap;
@@ -166,16 +157,19 @@
       position: relative;
       display: block;
       text-align: center;
-      width: 50%;
       margin-top: 1em;
-      padding: 0;
+      font-size: 1.2em;
+      padding: 0.4em 1em;
       border-radius: 6px;
-      margin-right: 1em;
-      margin-left: 1em;
+      margin-right: .6em;
+      margin-left: .6em;
       max-width: 17em;
       transition: all 100ms;
       box-sizing: border-box;
       font-family: $font-family-secondary;
+      color: $light-darker;
+      white-space: nowrap;
+      background: #2d2e33;
 
       @include media-breakpoint-down(xs) {
         width: 100%;
@@ -187,78 +181,9 @@
         width: 80%;
       }
 
-      
-
       &:hover {
         opacity: 0.9;
-        background: #2D2E33;
-
-        p {
-          color: $gray-400;
-
-          strong {
-            color: $gray-300;
-          }
-        }
-      }
-
-      .links__link-headline p {
-        font-size: 1.1em;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: $dark;
-        font-weight: 500;
-        text-align: center;
-        padding: 0.8em 0.4em 0.6em;
-        font-family: $font-family-secondary;
-        position: relative;
-        color: $primary;
-
-        strong {
-          color: $primary;
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          left: -4px;
-          right: -4px;
-          bottom: -2px;
-          height: 4px;
-          border-radius: 100px;
-          background: $primary;
-        }
-
-        strong {
-          font-weight: 600;
-        }
-      }
-
-      &:active {
-        opacity: 0.85;
-      }
-
-      p {
-        font-size: 0.9em;
-        max-width: 100%;
-        padding: 0.4em 1em;
-        font-weight: 400;
-        color: $dark-lighter;
-        transition: color 100ms;
-
-        strong {
-          transition: color 100ms;
-          color: $dark-lighter;
-          font-weight: 500;
-        }
-      }
-
-      p {
-        color: $gray-400;
-
-        strong {
-          color: $gray-300;
-        }
+        background: #37383d;
       }
     }
   }

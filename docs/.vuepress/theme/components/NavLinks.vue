@@ -3,6 +3,26 @@
     <li v-for="item in userLinks" :key="item.link">
       <NavLink :item="item" />
     </li>
+    <li>
+      <a
+        class="nav-link nav-link--button"
+        href="https://github.com/tagion"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+      >
+        GitHub <OutboundLink />
+      </a>
+    </li>
+    <li>
+      <a
+        class="nav-link nav-link--button"
+        href="/tagion-tech-paper.pdf"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+      >
+        Tech Paper <OutboundLink />
+      </a>
+    </li>
   </b-nav>
 </template>
 
@@ -17,16 +37,16 @@ export default {
       return this.$site.themeConfig.nav || [];
     },
     userLinks() {
-      return (this.nav || []).map(link => {
+      return (this.nav || []).map((link) => {
         return Object.assign(resolveNavLinkItem(link), {
-          items: (link.items || []).map(resolveNavLinkItem)
+          items: (link.items || []).map(resolveNavLinkItem),
         });
       });
-    }
+    },
   },
   methods: {
-    isActive
-  }
+    isActive,
+  },
 };
 </script>
 

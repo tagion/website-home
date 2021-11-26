@@ -107,6 +107,7 @@ body {
 .sidebar-open {
   .layout-sidebar {
     display: block;
+    
   }
 }
 
@@ -126,6 +127,8 @@ body {
     pointer-events: none;
     transform: translateY(10px);
     top: $header-height;
+    position: fixed;
+    z-index: 18;
     .sidebar {
       padding-top: 0;
     }

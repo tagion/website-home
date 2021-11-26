@@ -7,7 +7,6 @@
     />
     <div class="logo__title">
       <div class="logo__title-name">Tagion</div>
-      <div class="logo__title-sub">Money for #NetworkEconomy</div>
     </div>
   </router-link>
 </template>

@@ -8,9 +8,7 @@
         <Content />
       </b-container>
     </div>
-    <div class="layout-footer">
-      <Footer :class="{ 'home': true }" />
-    </div>
+
   </div>
 </template>
 
