@@ -17,7 +17,7 @@
     "cross-env": "^7.0.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-footnote": "^3.0.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.1.0",
     "url": "^0.11.0",
     "vue-plugin-load-script": "^1.2.0",
